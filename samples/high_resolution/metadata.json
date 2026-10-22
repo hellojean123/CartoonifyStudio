@@ -1,0 +1,29 @@
+{
+  "image": {
+    "filename": "high_resolution/reference_4k.jpg",
+    "category": "landscape",
+    "title": "File:Beautiful mountain landscape of Nanzhuang in the afternoon on 9th October 2020.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Beautiful_mountain_landscape_of_Nanzhuang_in_the_afternoon_on_9th_October_2020.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Beautiful_mountain_landscape_of_Nanzhuang_in_the_afternoon_on_9th_October_2020.jpg/3840px-Beautiful_mountain_landscape_of_Nanzhuang_in_the_afternoon_on_9th_October_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "Kai3952",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "download_date": "2026-10-22T07:06:53.984230+00:00",
+    "modifications": "Official 3840px thumbnail converted to JPEG; original source contains at least this detail",
+    "description": "Beautiful mountain landscape of Nanzhuang in the afternoon on 9th October 2020.",
+    "original_dimensions": [
+      4000,
+      3000
+    ],
+    "download_dimensions": [
+      3840,
+      2880
+    ]
+  },
+  "attempts": [
+    {
+      "title": "File:Portrait of a participant, Wikiconference India 2026 in Kochi.jpg",
+      "error": "Reference size unsuitable"
+    }
+  ]
+}

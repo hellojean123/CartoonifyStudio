@@ -1,0 +1,1010 @@
+[
+  {
+    "file": "01_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      853,
+      1280
+    ],
+    "output_dimensions": [
+      853,
+      1280
+    ]
+  },
+  {
+    "file": "01_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      853,
+      1280
+    ],
+    "output_dimensions": [
+      853,
+      1280
+    ]
+  },
+  {
+    "file": "01_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      853,
+      1280
+    ],
+    "output_dimensions": [
+      853,
+      1280
+    ]
+  },
+  {
+    "file": "01_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      853,
+      1280
+    ],
+    "output_dimensions": [
+      853,
+      1280
+    ]
+  },
+  {
+    "file": "02_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      1600,
+      1280
+    ],
+    "output_dimensions": [
+      1600,
+      1280
+    ]
+  },
+  {
+    "file": "02_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      1600,
+      1280
+    ],
+    "output_dimensions": [
+      1600,
+      1280
+    ]
+  },
+  {
+    "file": "02_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      1600,
+      1280
+    ],
+    "output_dimensions": [
+      1600,
+      1280
+    ]
+  },
+  {
+    "file": "02_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      1600,
+      1280
+    ],
+    "output_dimensions": [
+      1600,
+      1280
+    ]
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      1600,
+      1280
+    ],
+    "output_dimensions": [
+      1600,
+      1280
+    ]
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      1600,
+      1280
+    ],
+    "output_dimensions": [
+      1600,
+      1280
+    ]
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      1600,
+      1280
+    ],
+    "output_dimensions": [
+      1600,
+      1280
+    ]
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      1600,
+      1280
+    ],
+    "output_dimensions": [
+      1600,
+      1280
+    ]
+  },
+  {
+    "file": "04_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      1228,
+      1280
+    ],
+    "output_dimensions": [
+      1228,
+      1280
+    ]
+  },
+  {
+    "file": "04_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      1228,
+      1280
+    ],
+    "output_dimensions": [
+      1228,
+      1280
+    ]
+  },
+  {
+    "file": "04_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      1228,
+      1280
+    ],
+    "output_dimensions": [
+      1228,
+      1280
+    ]
+  },
+  {
+    "file": "04_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      1228,
+      1280
+    ],
+    "output_dimensions": [
+      1228,
+      1280
+    ]
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      853,
+      1280
+    ],
+    "output_dimensions": [
+      853,
+      1280
+    ]
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      853,
+      1280
+    ],
+    "output_dimensions": [
+      853,
+      1280
+    ]
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      853,
+      1280
+    ],
+    "output_dimensions": [
+      853,
+      1280
+    ]
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      853,
+      1280
+    ],
+    "output_dimensions": [
+      853,
+      1280
+    ]
+  },
+  {
+    "file": "06_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      1920,
+      1280
+    ],
+    "output_dimensions": [
+      1920,
+      1280
+    ]
+  },
+  {
+    "file": "06_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      1920,
+      1280
+    ],
+    "output_dimensions": [
+      1920,
+      1280
+    ]
+  },
+  {
+    "file": "06_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      1920,
+      1280
+    ],
+    "output_dimensions": [
+      1920,
+      1280
+    ]
+  },
+  {
+    "file": "06_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      1920,
+      1280
+    ],
+    "output_dimensions": [
+      1920,
+      1280
+    ]
+  },
+  {
+    "file": "07_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      1094,
+      1280
+    ],
+    "output_dimensions": [
+      1094,
+      1280
+    ]
+  },
+  {
+    "file": "07_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      1094,
+      1280
+    ],
+    "output_dimensions": [
+      1094,
+      1280
+    ]
+  },
+  {
+    "file": "07_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      1094,
+      1280
+    ],
+    "output_dimensions": [
+      1094,
+      1280
+    ]
+  },
+  {
+    "file": "07_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      1094,
+      1280
+    ],
+    "output_dimensions": [
+      1094,
+      1280
+    ]
+  },
+  {
+    "file": "08_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      1396,
+      1280
+    ],
+    "output_dimensions": [
+      1396,
+      1280
+    ]
+  },
+  {
+    "file": "08_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      1396,
+      1280
+    ],
+    "output_dimensions": [
+      1396,
+      1280
+    ]
+  },
+  {
+    "file": "08_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      1396,
+      1280
+    ],
+    "output_dimensions": [
+      1396,
+      1280
+    ]
+  },
+  {
+    "file": "08_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      1396,
+      1280
+    ],
+    "output_dimensions": [
+      1396,
+      1280
+    ]
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      719,
+      1280
+    ],
+    "output_dimensions": [
+      719,
+      1280
+    ]
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      719,
+      1280
+    ],
+    "output_dimensions": [
+      719,
+      1280
+    ]
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      719,
+      1280
+    ],
+    "output_dimensions": [
+      719,
+      1280
+    ]
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      719,
+      1280
+    ],
+    "output_dimensions": [
+      719,
+      1280
+    ]
+  },
+  {
+    "file": "14_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      719,
+      1280
+    ],
+    "output_dimensions": [
+      719,
+      1280
+    ]
+  },
+  {
+    "file": "14_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      719,
+      1280
+    ],
+    "output_dimensions": [
+      719,
+      1280
+    ]
+  },
+  {
+    "file": "14_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      719,
+      1280
+    ],
+    "output_dimensions": [
+      719,
+      1280
+    ]
+  },
+  {
+    "file": "14_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      719,
+      1280
+    ],
+    "output_dimensions": [
+      719,
+      1280
+    ]
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      960,
+      1280
+    ],
+    "output_dimensions": [
+      960,
+      1280
+    ]
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      960,
+      1280
+    ],
+    "output_dimensions": [
+      960,
+      1280
+    ]
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      960,
+      1280
+    ],
+    "output_dimensions": [
+      960,
+      1280
+    ]
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      960,
+      1280
+    ],
+    "output_dimensions": [
+      960,
+      1280
+    ]
+  },
+  {
+    "file": "16_landscape.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      863,
+      1280
+    ],
+    "output_dimensions": [
+      863,
+      1280
+    ]
+  },
+  {
+    "file": "16_landscape.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      863,
+      1280
+    ],
+    "output_dimensions": [
+      863,
+      1280
+    ]
+  },
+  {
+    "file": "16_landscape.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      863,
+      1280
+    ],
+    "output_dimensions": [
+      863,
+      1280
+    ]
+  },
+  {
+    "file": "16_landscape.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      863,
+      1280
+    ],
+    "output_dimensions": [
+      863,
+      1280
+    ]
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      1303,
+      1280
+    ],
+    "output_dimensions": [
+      1303,
+      1280
+    ]
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      1303,
+      1280
+    ],
+    "output_dimensions": [
+      1303,
+      1280
+    ]
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      1303,
+      1280
+    ],
+    "output_dimensions": [
+      1303,
+      1280
+    ]
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      1303,
+      1280
+    ],
+    "output_dimensions": [
+      1303,
+      1280
+    ]
+  },
+  {
+    "file": "18_architecture.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      737,
+      1280
+    ],
+    "output_dimensions": [
+      737,
+      1280
+    ]
+  },
+  {
+    "file": "18_architecture.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      737,
+      1280
+    ],
+    "output_dimensions": [
+      737,
+      1280
+    ]
+  },
+  {
+    "file": "18_architecture.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      737,
+      1280
+    ],
+    "output_dimensions": [
+      737,
+      1280
+    ]
+  },
+  {
+    "file": "18_architecture.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      737,
+      1280
+    ],
+    "output_dimensions": [
+      737,
+      1280
+    ]
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      960,
+      1280
+    ],
+    "output_dimensions": [
+      960,
+      1280
+    ]
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      960,
+      1280
+    ],
+    "output_dimensions": [
+      960,
+      1280
+    ]
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      960,
+      1280
+    ],
+    "output_dimensions": [
+      960,
+      1280
+    ]
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      960,
+      1280
+    ],
+    "output_dimensions": [
+      960,
+      1280
+    ]
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      1792,
+      1280
+    ],
+    "output_dimensions": [
+      1792,
+      1280
+    ]
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      1792,
+      1280
+    ],
+    "output_dimensions": [
+      1792,
+      1280
+    ]
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      1792,
+      1280
+    ],
+    "output_dimensions": [
+      1792,
+      1280
+    ]
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      1792,
+      1280
+    ],
+    "output_dimensions": [
+      1792,
+      1280
+    ]
+  },
+  {
+    "file": "22_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      981,
+      960
+    ],
+    "output_dimensions": [
+      981,
+      960
+    ]
+  },
+  {
+    "file": "22_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      981,
+      960
+    ],
+    "output_dimensions": [
+      981,
+      960
+    ]
+  },
+  {
+    "file": "22_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      981,
+      960
+    ],
+    "output_dimensions": [
+      981,
+      960
+    ]
+  },
+  {
+    "file": "22_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      981,
+      960
+    ],
+    "output_dimensions": [
+      981,
+      960
+    ]
+  },
+  {
+    "file": "26_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      1328,
+      960
+    ],
+    "output_dimensions": [
+      1328,
+      960
+    ]
+  },
+  {
+    "file": "26_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      1328,
+      960
+    ],
+    "output_dimensions": [
+      1328,
+      960
+    ]
+  },
+  {
+    "file": "26_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      1328,
+      960
+    ],
+    "output_dimensions": [
+      1328,
+      960
+    ]
+  },
+  {
+    "file": "26_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      1328,
+      960
+    ],
+    "output_dimensions": [
+      1328,
+      960
+    ]
+  },
+  {
+    "file": "27_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      1439,
+      960
+    ],
+    "output_dimensions": [
+      1439,
+      960
+    ]
+  },
+  {
+    "file": "27_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      1439,
+      960
+    ],
+    "output_dimensions": [
+      1439,
+      960
+    ]
+  },
+  {
+    "file": "27_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      1439,
+      960
+    ],
+    "output_dimensions": [
+      1439,
+      960
+    ]
+  },
+  {
+    "file": "27_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      1439,
+      960
+    ],
+    "output_dimensions": [
+      1439,
+      960
+    ]
+  },
+  {
+    "file": "28_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      1260,
+      960
+    ],
+    "output_dimensions": [
+      1260,
+      960
+    ]
+  },
+  {
+    "file": "28_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      1260,
+      960
+    ],
+    "output_dimensions": [
+      1260,
+      960
+    ]
+  },
+  {
+    "file": "28_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      1260,
+      960
+    ],
+    "output_dimensions": [
+      1260,
+      960
+    ]
+  },
+  {
+    "file": "28_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      1260,
+      960
+    ],
+    "output_dimensions": [
+      1260,
+      960
+    ]
+  },
+  {
+    "file": "29_portrait.jpg",
+    "style": "经典卡通",
+    "original_dimensions": [
+      1439,
+      960
+    ],
+    "output_dimensions": [
+      1439,
+      960
+    ]
+  },
+  {
+    "file": "29_portrait.jpg",
+    "style": "扁平插画",
+    "original_dimensions": [
+      1439,
+      960
+    ],
+    "output_dimensions": [
+      1439,
+      960
+    ]
+  },
+  {
+    "file": "29_portrait.jpg",
+    "style": "美式漫画",
+    "original_dimensions": [
+      1439,
+      960
+    ],
+    "output_dimensions": [
+      1439,
+      960
+    ]
+  },
+  {
+    "file": "29_portrait.jpg",
+    "style": "铅笔素描",
+    "original_dimensions": [
+      1439,
+      960
+    ],
+    "output_dimensions": [
+      1439,
+      960
+    ]
+  }
+]

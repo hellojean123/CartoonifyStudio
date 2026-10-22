@@ -1,0 +1,126 @@
+"""Cartoonify Studio v2: staged previews and one shared CPU resource queue."""
+import time
+import uuid
+import os
+import json
+from pathlib import Path
+os.environ.setdefault('GRADIO_ANALYTICS_ENABLED','False')
+os.environ.setdefault('GRADIO_TEMP_DIR',str(Path(__file__).resolve().parent/'outputs'/'ui_temp'))
+import gradio as gr
+from cartoonify.core import STYLES,PRESETS,Params,process,resize,CACHE
+from cartoonify.service import ROOT,load_cached,job,cancel_job,export_one,batch_export
+
+def make_params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes):
+    return Params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes)
+
+def preview(path,style,*values):
+    if not path: yield None,None,None,'请上传或选择测试照片。';return
+    session=values[-1];p=make_params(*values[:-1]);start=time.perf_counter()
+    try:
+        with job(session) as token:
+            image=load_cached(path)
+            rough=process(resize(image,480),style,p,preview=True,quality='标准',cancel=token.is_set)
+            yield resize(image,1000),rough,None,f'{time.perf_counter()-start:.2f} 秒 · 快速草稿，正在细化（草稿色板可能不同）'
+            if token.is_set(): yield gr.skip(),gr.skip(),None,'已取消';return
+            info={}
+            result=process(image,style,p,preview=True,quality='标准',cancel=token.is_set,diagnostics=info)
+            yield resize(image,1000),result,None,f'{time.perf_counter()-start:.2f} 秒 · 最终预览 {result.shape[1]}×{result.shape[0]} · 保护区域 {len(info["faces"])} · 缓存命中 {info["cache"].get("hits",0)}'
+    except InterruptedError: yield gr.skip(),gr.skip(),None,'处理已取消'
+    except Exception as exc: raise gr.Error(str(exc)) from exc
+
+def export(path,style,*values):
+    if not path: raise gr.Error('请先上传照片')
+    parameter_values=values[:-3];fmt,quality,session=values[-3:]
+    p=make_params(*parameter_values);start=time.perf_counter()
+    try:
+        with job(session) as token:
+            result,dest=export_one(path,style,p,fmt,quality,token.is_set)
+        return resize(load_cached(path),1000),resize(result,1000),str(dest),f'{time.perf_counter()-start:.2f} 秒 · {quality}原尺寸导出 {result.shape[1]}×{result.shape[0]}'
+    except Exception as exc: raise gr.Error(str(exc)) from exc
+
+def batch(paths,style,*values,progress=gr.Progress()):
+    p=make_params(*values[:-3]);fmt,quality,session=values[-3:]
+    try: return batch_export(paths,style,p,fmt,quality,session,progress)
+    except Exception as exc: raise gr.Error(str(exc)) from exc
+
+def defaults(style):
+    index=STYLES.index(style);a,b,c,d=PRESETS[index]
+    return (a,b,gr.update(value=c,minimum=4,maximum=12 if index==2 else 48,visible=index in (1,2),label='明度分级' if index==2 else '调色板颜色数'),d,
+            gr.update(value=False,visible=index==3),True,.75,.8,.5,7,15,.28,.3,.12,'',gr.update(visible=index==2),gr.update(visible=index==3))
+
+def manual_box(left,top,width,height):
+    if left+width>100 or top+height>100: raise gr.Error('保护框超出图片边界，请缩小宽度或高度')
+    return json.dumps([[left/100,top/100,width/100,height/100]])
+
+def build_app():
+    with gr.Blocks(theme=gr.themes.Soft(primary_hue='violet'),title='Cartoonify Studio',css='.gradio-container{max-width:1480px!important} footer{display:none!important}') as demo:
+        session=gr.State(lambda:uuid.uuid4().hex)
+        gr.Markdown('# 🎨 Cartoonify Studio\n纯 CPU · 人像保护 · 分层轮廓 · 原图引导高清导出')
+        with gr.Row():
+            with gr.Column(scale=1):
+                source=gr.File(label='拖拽 JPG / PNG / WebP',file_types=['.jpg','.jpeg','.png','.webp'],type='filepath')
+                style=gr.Dropdown(STYLES,value=STYLES[0],label='风格与预设')
+                outline=gr.Slider(0,1,.5,step=.05,label='整体轮廓强度')
+                smooth=gr.Slider(1,10,6,step=1,label='区域平滑')
+                colors=gr.Slider(4,48,16,step=1,label='调色板颜色数',visible=False)
+                contrast=gr.Slider(.6,1.8,1.03,step=.01,label='对比度')
+                colored=gr.Checkbox(label='彩色铅笔',visible=False)
+                protect=gr.Checkbox(value=True,label='保护人像（自动检测 + 手动区域）')
+                face_strength=gr.Slider(0,1,.75,step=.05,label='人像保护力度')
+                with gr.Accordion('轮廓分层与手动保护',open=False):
+                    outer=gr.Slider(0,1,.8,step=.05,label='主要边缘 / 粗线')
+                    inner=gr.Slider(0,1,.5,step=.05,label='内部纹理 / 细线')
+                    gr.Markdown('自动检测漏掉侧脸时，可按图片百分比添加一个保护框。')
+                    with gr.Row():
+                        left=gr.Slider(0,95,25,step=1,label='左侧位置 %')
+                        top=gr.Slider(0,95,15,step=1,label='顶部位置 %')
+                    with gr.Row():
+                        box_width=gr.Slider(1,100,40,step=1,label='保护宽度 %')
+                        box_height=gr.Slider(1,100,55,step=1,label='保护高度 %')
+                    add_box=gr.Button('应用手动保护框')
+                    clear_box=gr.Button('清除手动保护框')
+                    boxes=gr.Textbox(value='',visible=False)
+                with gr.Group(visible=False) as comic_group:
+                    spacing=gr.Slider(4,18,7,step=.5,label='网点间距（1000 边长参考像素）')
+                    angle=gr.Slider(0,90,15,step=1,label='网点角度')
+                    opacity=gr.Slider(0,.65,.28,step=.01,label='网点浓度')
+                with gr.Group(visible=False) as pencil_group:
+                    shade=gr.Slider(0,.8,.3,step=.02,label='阴影排线')
+                    paper=gr.Slider(0,.4,.12,step=.01,label='纸张颗粒')
+                reset=gr.Button('恢复当前风格默认参数')
+                preview_btn=gr.Button('重新预览',variant='primary')
+                quality=gr.Radio(['标准','精细'],value='精细',label='导出质量',info='精细档使用原图引导重建与原尺寸细线。')
+                fmt=gr.Radio(['PNG','JPG'],value='PNG',label='导出格式')
+                export_btn=gr.Button('处理原始尺寸并导出')
+                stop=gr.Button('取消当前任务')
+            with gr.Column(scale=3):
+                with gr.Row():
+                    before=gr.Image(label='原图预览',interactive=False)
+                    after=gr.Image(label='效果预览',interactive=False)
+                status=gr.Textbox(label='状态与耗时',interactive=False)
+                download=gr.File(label='下载原尺寸结果')
+                gr.Markdown('松开滑块后自动预览：先草稿，再更新统一色板的最终预览。图片在本机处理。')
+        params=[outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes]
+        outputs=[before,after,download,status]
+        triggers=[preview_btn.click,source.change]+[s.release for s in [outline,smooth,colors,contrast,face_strength,outer,inner,spacing,angle,opacity,shade,paper]]+[colored.change,protect.change,boxes.submit]
+        preview_event=gr.on(triggers=triggers,fn=preview,inputs=[source,style,*params,session],outputs=outputs,trigger_mode='always_last',concurrency_id='cpu',concurrency_limit=1,api_name='preview')
+        style_event=style.change(defaults,style,[*params,comic_group,pencil_group],queue=False,api_name='style_defaults')
+        style_event.then(preview,[source,style,*params,session],outputs,concurrency_id='cpu',concurrency_limit=1,trigger_mode='always_last',api_name=False)
+        reset.click(defaults,style,[*params,comic_group,pencil_group],queue=False,api_name=False)
+        add_box.click(manual_box,[left,top,box_width,box_height],boxes,queue=False,api_name=False).then(preview,[source,style,*params,session],outputs,concurrency_id='cpu',concurrency_limit=1,api_name=False)
+        clear_box.click(lambda:'',None,boxes,queue=False,api_name=False).then(preview,[source,style,*params,session],outputs,concurrency_id='cpu',concurrency_limit=1,api_name=False)
+        export_event=export_btn.click(export,[source,style,*params,fmt,quality,session],outputs,concurrency_id='cpu',concurrency_limit=1,api_name='export')
+        with gr.Tab('批量处理'):
+            files=gr.File(file_count='multiple',file_types=['.jpg','.jpeg','.png','.webp'],label='多选照片')
+            go=gr.Button('批量生成原尺寸 ZIP')
+            zip_out=gr.File(label='下载 ZIP');batch_status=gr.Textbox(label='批量状态')
+            batch_event=go.click(batch,[files,style,*params,fmt,quality,session],[zip_out,batch_status],concurrency_id='cpu',concurrency_limit=1,api_name='batch')
+        stop.click(cancel_job,session,status,queue=False,api_name='cancel')
+        with gr.Tab('内置测试照片'):
+            samples=sorted((ROOT/'samples').glob('*.jpg'))
+            gr.Examples([[str(p)] for p in samples],[source],label='点击文件载入')
+            gr.Gallery(value=[str(p) for p in samples],columns=5,label='授权照片画廊')
+        gr.Markdown('输入上限 1600 万像素 / 40 MB；透明区域白底；方向与色彩自动处理。自动人像检测可能漏检侧脸，可添加手动保护框。缓存有内存上限；精细档分块重建，支持取消。')
+    return demo
+
+if __name__=='__main__': build_app().queue(default_concurrency_limit=1,max_size=8).launch(server_name='127.0.0.1',max_file_size='40mb',inbrowser=True)

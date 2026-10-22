@@ -1,0 +1,1842 @@
+[
+  {
+    "file": "01_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.3808828000037465,
+    "png_encoding_seconds": 0.05644220000249334,
+    "stages": {
+      "prepare": 0.14305469999089837,
+      "layers": 0.05354540000553243,
+      "render": 0.1841322999971453,
+      "total": 0.38073269999586046
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 3.7022457122802734,
+    "preview_export_p95_abs_error": 11.0,
+    "fragmented_edge_fraction_before": 0.13889582812890333,
+    "fragmented_edge_fraction_after": 0.0929287956181919
+  },
+  {
+    "file": "01_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.6748502000118606,
+    "png_encoding_seconds": 0.05051249999087304,
+    "stages": {
+      "prepare": 0.1271822999988217,
+      "layers": 0.3644416999886744,
+      "render": 0.1831186999916099,
+      "total": 0.6747429999813903
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 3.685717821121216,
+    "preview_export_p95_abs_error": 13.0,
+    "fragmented_edge_fraction_before": 0.05796827794561934,
+    "fragmented_edge_fraction_after": 0.06778106207318316
+  },
+  {
+    "file": "01_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.4174724000040442,
+    "png_encoding_seconds": 0.06227300001773983,
+    "stages": {
+      "prepare": 0.1184252000239212,
+      "layers": 0.04545389997656457,
+      "render": 0.253480400016997,
+      "total": 0.41735960001824424
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 5.0418291091918945,
+    "preview_export_p95_abs_error": 15.0,
+    "fragmented_edge_fraction_before": 0.0731637519872814,
+    "fragmented_edge_fraction_after": 0.09144034305894223
+  },
+  {
+    "file": "01_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.2714049000060186,
+    "png_encoding_seconds": 0.04724240000359714,
+    "stages": {
+      "prepare": 0.11730660000466742,
+      "layers": 0.029044700000667945,
+      "render": 0.12490789999719709,
+      "total": 0.27125940000405535
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 8.15964126586914,
+    "preview_export_p95_abs_error": 22.0,
+    "fragmented_edge_fraction_before": 0.08517666170299175,
+    "fragmented_edge_fraction_after": 0.09998829176911368
+  },
+  {
+    "file": "02_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.597696899989387,
+    "png_encoding_seconds": 0.08787590000429191,
+    "stages": {
+      "prepare": 0.1812668000056874,
+      "layers": 0.06334210000932217,
+      "render": 0.35271999999531545,
+      "total": 0.5973292000126094
+    },
+    "faces": [
+      [
+        261,
+        120,
+        219,
+        219
+      ]
+    ],
+    "preview_export_mae_0_255": 2.588547945022583,
+    "preview_export_p95_abs_error": 9.0,
+    "fragmented_edge_fraction_before": 0.06666983689191117,
+    "fragmented_edge_fraction_after": 0.04544898458527037
+  },
+  {
+    "file": "02_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.7775153999973554,
+    "png_encoding_seconds": 0.08813600000576116,
+    "stages": {
+      "prepare": 0.156743200001074,
+      "layers": 0.2970688999921549,
+      "render": 0.32361479999963194,
+      "total": 0.7774270999943838
+    },
+    "faces": [
+      [
+        261,
+        120,
+        219,
+        219
+      ]
+    ],
+    "preview_export_mae_0_255": 3.2678709030151367,
+    "preview_export_p95_abs_error": 15.0,
+    "fragmented_edge_fraction_before": 0.038525064001981996,
+    "fragmented_edge_fraction_after": 0.03130705253904929
+  },
+  {
+    "file": "02_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.652544200012926,
+    "png_encoding_seconds": 0.09474689999478869,
+    "stages": {
+      "prepare": 0.14024050001171418,
+      "layers": 0.053205199976218864,
+      "render": 0.4589962000027299,
+      "total": 0.6524419999914244
+    },
+    "faces": [
+      [
+        261,
+        120,
+        219,
+        219
+      ]
+    ],
+    "preview_export_mae_0_255": 3.404275417327881,
+    "preview_export_p95_abs_error": 13.0,
+    "fragmented_edge_fraction_before": 0.059167802453299126,
+    "fragmented_edge_fraction_after": 0.06013513513513514
+  },
+  {
+    "file": "02_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.4559397000120953,
+    "png_encoding_seconds": 0.08685160000459291,
+    "stages": {
+      "prepare": 0.15464530000463128,
+      "layers": 0.03717789999791421,
+      "render": 0.2640174000116531,
+      "total": 0.4558409000164829
+    },
+    "faces": [
+      [
+        261,
+        120,
+        219,
+        219
+      ]
+    ],
+    "preview_export_mae_0_255": 6.656418800354004,
+    "preview_export_p95_abs_error": 19.0,
+    "fragmented_edge_fraction_before": 0.05777923592884223,
+    "fragmented_edge_fraction_after": 0.051938474504846184
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.5393584000121336,
+    "png_encoding_seconds": 0.06708809998235665,
+    "stages": {
+      "prepare": 0.14866669999901205,
+      "layers": 0.06078229998820461,
+      "render": 0.32961419998900965,
+      "total": 0.5390633999777492
+    },
+    "faces": [
+      [
+        244,
+        200,
+        325,
+        325
+      ]
+    ],
+    "preview_export_mae_0_255": 1.3709429502487183,
+    "preview_export_p95_abs_error": 5.0,
+    "fragmented_edge_fraction_before": 0.06154806491885144,
+    "fragmented_edge_fraction_after": 0.019836639439906652
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.7058987999917008,
+    "png_encoding_seconds": 0.06159279998973943,
+    "stages": {
+      "prepare": 0.15566129999933764,
+      "layers": 0.2338820000004489,
+      "render": 0.31624980000196956,
+      "total": 0.705793300003279
+    },
+    "faces": [
+      [
+        244,
+        200,
+        325,
+        325
+      ]
+    ],
+    "preview_export_mae_0_255": 1.3637274503707886,
+    "preview_export_p95_abs_error": 7.0,
+    "fragmented_edge_fraction_before": 0.015623529411764706,
+    "fragmented_edge_fraction_after": 0.021774632553075667
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.6620262000069488,
+    "png_encoding_seconds": 0.06786259997170419,
+    "stages": {
+      "prepare": 0.12474159998237155,
+      "layers": 0.04991220001829788,
+      "render": 0.48726840000017546,
+      "total": 0.6619224000023678
+    },
+    "faces": [
+      [
+        244,
+        200,
+        325,
+        325
+      ]
+    ],
+    "preview_export_mae_0_255": 1.5697766542434692,
+    "preview_export_p95_abs_error": 8.0,
+    "fragmented_edge_fraction_before": 0.040380827314510835,
+    "fragmented_edge_fraction_after": 0.045539507221750215
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.4364413000002969,
+    "png_encoding_seconds": 0.08773600001586601,
+    "stages": {
+      "prepare": 0.14692870000726543,
+      "layers": 0.03410009999061003,
+      "render": 0.25525950000155717,
+      "total": 0.43628850000095554
+    },
+    "faces": [
+      [
+        244,
+        200,
+        325,
+        325
+      ]
+    ],
+    "preview_export_mae_0_255": 7.456523418426514,
+    "preview_export_p95_abs_error": 22.0,
+    "fragmented_edge_fraction_before": 0.07023603914795624,
+    "fragmented_edge_fraction_after": 0.04041544366674193
+  },
+  {
+    "file": "04_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.5630019000091124,
+    "png_encoding_seconds": 0.059981799975503236,
+    "stages": {
+      "prepare": 0.18606439998256974,
+      "layers": 0.07600200001616031,
+      "render": 0.3008261999930255,
+      "total": 0.5628927999932785
+    },
+    "faces": [
+      [
+        225,
+        236,
+        195,
+        195
+      ]
+    ],
+    "preview_export_mae_0_255": 2.5989437103271484,
+    "preview_export_p95_abs_error": 11.0,
+    "fragmented_edge_fraction_before": 0.05519902358360566,
+    "fragmented_edge_fraction_after": 0.03222468588322247
+  },
+  {
+    "file": "04_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.786190600018017,
+    "png_encoding_seconds": 0.06127800000831485,
+    "stages": {
+      "prepare": 0.19951519998721778,
+      "layers": 0.32561199998599477,
+      "render": 0.26096090002101846,
+      "total": 0.7860881999949925
+    },
+    "faces": [
+      [
+        225,
+        236,
+        195,
+        195
+      ]
+    ],
+    "preview_export_mae_0_255": 2.954413652420044,
+    "preview_export_p95_abs_error": 14.0,
+    "fragmented_edge_fraction_before": 0.029077117572692796,
+    "fragmented_edge_fraction_after": 0.02156395414822381
+  },
+  {
+    "file": "04_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.5963638999965042,
+    "png_encoding_seconds": 0.06704520000494085,
+    "stages": {
+      "prepare": 0.16232810000656173,
+      "layers": 0.06047349999425933,
+      "render": 0.37346299999626353,
+      "total": 0.5962647999986075
+    },
+    "faces": [
+      [
+        225,
+        236,
+        195,
+        195
+      ]
+    ],
+    "preview_export_mae_0_255": 3.675757646560669,
+    "preview_export_p95_abs_error": 15.0,
+    "fragmented_edge_fraction_before": 0.05093141405588485,
+    "fragmented_edge_fraction_after": 0.05611156685808039
+  },
+  {
+    "file": "04_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.39329440001165494,
+    "png_encoding_seconds": 0.06833480001660064,
+    "stages": {
+      "prepare": 0.16014899997389875,
+      "layers": 0.045008900022367015,
+      "render": 0.18803019999177195,
+      "total": 0.39318839999032207
+    },
+    "faces": [
+      [
+        225,
+        236,
+        195,
+        195
+      ]
+    ],
+    "preview_export_mae_0_255": 7.6176252365112305,
+    "preview_export_p95_abs_error": 22.0,
+    "fragmented_edge_fraction_before": 0.03867660764212488,
+    "fragmented_edge_fraction_after": 0.044274703625617806
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.3992394999950193,
+    "png_encoding_seconds": 0.04676650001783855,
+    "stages": {
+      "prepare": 0.12574729998596013,
+      "layers": 0.08494980001705699,
+      "render": 0.18829369999002665,
+      "total": 0.39899099999456666
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 2.150402307510376,
+    "preview_export_p95_abs_error": 5.0,
+    "fragmented_edge_fraction_before": 0.09200401472064236,
+    "fragmented_edge_fraction_after": 0.0403598971722365
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.5860066000022925,
+    "png_encoding_seconds": 0.04944989999057725,
+    "stages": {
+      "prepare": 0.14351029999670573,
+      "layers": 0.25773740001022816,
+      "render": 0.18465709997690283,
+      "total": 0.5859048999845982
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 2.6047422885894775,
+    "preview_export_p95_abs_error": 9.0,
+    "fragmented_edge_fraction_before": 0.015552244365803687,
+    "fragmented_edge_fraction_after": 0.041576171269004036
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.420795400015777,
+    "png_encoding_seconds": 0.05439669999759644,
+    "stages": {
+      "prepare": 0.12249129998963326,
+      "layers": 0.045284400024684146,
+      "render": 0.25290599997970276,
+      "total": 0.42068189999554306
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 3.5763092041015625,
+    "preview_export_p95_abs_error": 12.0,
+    "fragmented_edge_fraction_before": 0.030613425925925926,
+    "fragmented_edge_fraction_after": 0.1128983673715284
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.27315059999818914,
+    "png_encoding_seconds": 0.04323419998399913,
+    "stages": {
+      "prepare": 0.11223759999847971,
+      "layers": 0.02902439999161288,
+      "render": 0.13178580001113005,
+      "total": 0.273048100003507
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 5.208343982696533,
+    "preview_export_p95_abs_error": 18.0,
+    "fragmented_edge_fraction_before": 0.06187797490263955,
+    "fragmented_edge_fraction_after": 0.038124054462934945
+  },
+  {
+    "file": "06_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.5611639999842737,
+    "png_encoding_seconds": 0.0939137999957893,
+    "stages": {
+      "prepare": 0.13407589998678304,
+      "layers": 0.058451500022783875,
+      "render": 0.3685336999769788,
+      "total": 0.5610612999880686
+    },
+    "faces": [
+      [
+        247,
+        181,
+        209,
+        209
+      ]
+    ],
+    "preview_export_mae_0_255": 2.12229585647583,
+    "preview_export_p95_abs_error": 8.0,
+    "fragmented_edge_fraction_before": 0.15228959004721576,
+    "fragmented_edge_fraction_after": 0.0965429529425367
+  },
+  {
+    "file": "06_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.7592871999950148,
+    "png_encoding_seconds": 0.1214412999979686,
+    "stages": {
+      "prepare": 0.12395519998972304,
+      "layers": 0.21278290002373978,
+      "render": 0.42244869997375645,
+      "total": 0.7591870999895036
+    },
+    "faces": [
+      [
+        247,
+        181,
+        209,
+        209
+      ]
+    ],
+    "preview_export_mae_0_255": 2.1813724040985107,
+    "preview_export_p95_abs_error": 10.0,
+    "fragmented_edge_fraction_before": 0.05503258508327299,
+    "fragmented_edge_fraction_after": 0.047956227872545866
+  },
+  {
+    "file": "06_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.7296541000250727,
+    "png_encoding_seconds": 0.09960310001042672,
+    "stages": {
+      "prepare": 0.11491380000370555,
+      "layers": 0.04172809998271987,
+      "render": 0.572897500009276,
+      "total": 0.7295395999972243
+    },
+    "faces": [
+      [
+        247,
+        181,
+        209,
+        209
+      ]
+    ],
+    "preview_export_mae_0_255": 2.748074531555176,
+    "preview_export_p95_abs_error": 12.0,
+    "fragmented_edge_fraction_before": 0.0887279706857442,
+    "fragmented_edge_fraction_after": 0.07957659956525848
+  },
+  {
+    "file": "06_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.4932152999972459,
+    "png_encoding_seconds": 0.08755270001711324,
+    "stages": {
+      "prepare": 0.12871069999528117,
+      "layers": 0.03000850000535138,
+      "render": 0.3343962999933865,
+      "total": 0.49311569999554195
+    },
+    "faces": [
+      [
+        247,
+        181,
+        209,
+        209
+      ]
+    ],
+    "preview_export_mae_0_255": 3.332948923110962,
+    "preview_export_p95_abs_error": 15.0,
+    "fragmented_edge_fraction_before": 0.0866860223973455,
+    "fragmented_edge_fraction_after": 0.06510599819150005
+  },
+  {
+    "file": "07_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.4823257999960333,
+    "png_encoding_seconds": 0.07462719999602996,
+    "stages": {
+      "prepare": 0.1630834999959916,
+      "layers": 0.06962230001226999,
+      "render": 0.24915960000362247,
+      "total": 0.4818655999843031
+    },
+    "faces": [
+      [
+        392,
+        155,
+        61,
+        61
+      ],
+      [
+        566,
+        173,
+        73,
+        73
+      ]
+    ],
+    "preview_export_mae_0_255": 4.556273460388184,
+    "preview_export_p95_abs_error": 16.0,
+    "fragmented_edge_fraction_before": 0.11605142115815545,
+    "fragmented_edge_fraction_after": 0.09690778575372722
+  },
+  {
+    "file": "07_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.7546085999929346,
+    "png_encoding_seconds": 0.06709689999115653,
+    "stages": {
+      "prepare": 0.15902759999153204,
+      "layers": 0.3458657000155654,
+      "render": 0.24961780000012368,
+      "total": 0.754511300008744
+    },
+    "faces": [
+      [
+        392,
+        155,
+        61,
+        61
+      ],
+      [
+        566,
+        173,
+        73,
+        73
+      ]
+    ],
+    "preview_export_mae_0_255": 6.043970108032227,
+    "preview_export_p95_abs_error": 25.0,
+    "fragmented_edge_fraction_before": 0.0803322166387493,
+    "fragmented_edge_fraction_after": 0.08428454022463702
+  },
+  {
+    "file": "07_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.5298259000119288,
+    "png_encoding_seconds": 0.07457369999610819,
+    "stages": {
+      "prepare": 0.14142440000432543,
+      "layers": 0.055737299990141764,
+      "render": 0.3325720000138972,
+      "total": 0.5297339000098873
+    },
+    "faces": [
+      [
+        392,
+        155,
+        61,
+        61
+      ],
+      [
+        566,
+        173,
+        73,
+        73
+      ]
+    ],
+    "preview_export_mae_0_255": 5.334671497344971,
+    "preview_export_p95_abs_error": 19.0,
+    "fragmented_edge_fraction_before": 0.11032904545612149,
+    "fragmented_edge_fraction_after": 0.09984271108886823
+  },
+  {
+    "file": "07_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.35939470000448637,
+    "png_encoding_seconds": 0.06459779999568127,
+    "stages": {
+      "prepare": 0.14204800000879914,
+      "layers": 0.04752590000862256,
+      "render": 0.16971809999085963,
+      "total": 0.3592922000098042
+    },
+    "faces": [
+      [
+        392,
+        155,
+        61,
+        61
+      ],
+      [
+        566,
+        173,
+        73,
+        73
+      ]
+    ],
+    "preview_export_mae_0_255": 8.849093437194824,
+    "preview_export_p95_abs_error": 25.0,
+    "fragmented_edge_fraction_before": 0.10652750481787479,
+    "fragmented_edge_fraction_after": 0.07981858011169048
+  },
+  {
+    "file": "08_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.5285780999984127,
+    "png_encoding_seconds": 0.0653106999816373,
+    "stages": {
+      "prepare": 0.1672577999997884,
+      "layers": 0.071131200005766,
+      "render": 0.28995050000958145,
+      "total": 0.5283396000158973
+    },
+    "faces": [
+      [
+        333,
+        266,
+        208,
+        208
+      ]
+    ],
+    "preview_export_mae_0_255": 2.3570828437805176,
+    "preview_export_p95_abs_error": 9.0,
+    "fragmented_edge_fraction_before": 0.14257897014279533,
+    "fragmented_edge_fraction_after": 0.025479814692256783
+  },
+  {
+    "file": "08_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.8712854000041261,
+    "png_encoding_seconds": 0.0852415999979712,
+    "stages": {
+      "prepare": 0.16865929999039508,
+      "layers": 0.3099463999969885,
+      "render": 0.39258390001486987,
+      "total": 0.8711898000037763
+    },
+    "faces": [
+      [
+        333,
+        266,
+        208,
+        208
+      ]
+    ],
+    "preview_export_mae_0_255": 2.549302101135254,
+    "preview_export_p95_abs_error": 10.0,
+    "fragmented_edge_fraction_before": 0.017763119828733437,
+    "fragmented_edge_fraction_after": 0.016611584623412768
+  },
+  {
+    "file": "08_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.7827087999903597,
+    "png_encoding_seconds": 0.1137371999793686,
+    "stages": {
+      "prepare": 0.22251540000434034,
+      "layers": 0.08872599998721853,
+      "render": 0.47125790000427514,
+      "total": 0.7824995999981184
+    },
+    "faces": [
+      [
+        333,
+        266,
+        208,
+        208
+      ]
+    ],
+    "preview_export_mae_0_255": 3.284623861312866,
+    "preview_export_p95_abs_error": 13.0,
+    "fragmented_edge_fraction_before": 0.04857228734595732,
+    "fragmented_edge_fraction_after": 0.10316925151719487
+  },
+  {
+    "file": "08_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.5387615000072401,
+    "png_encoding_seconds": 0.07321930001489818,
+    "stages": {
+      "prepare": 0.2283754000090994,
+      "layers": 0.047565999993821606,
+      "render": 0.2626620999944862,
+      "total": 0.5386037999996915
+    },
+    "faces": [
+      [
+        333,
+        266,
+        208,
+        208
+      ]
+    ],
+    "preview_export_mae_0_255": 3.0163183212280273,
+    "preview_export_p95_abs_error": 13.0,
+    "fragmented_edge_fraction_before": 0.07104622871046229,
+    "fragmented_edge_fraction_after": 0.03744246796865282
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.3770047000143677,
+    "png_encoding_seconds": 0.05311209999490529,
+    "stages": {
+      "prepare": 0.150683099986054,
+      "layers": 0.04999840000527911,
+      "render": 0.17606910000904463,
+      "total": 0.3767509000026621
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 5.242392063140869,
+    "preview_export_p95_abs_error": 16.0,
+    "fragmented_edge_fraction_before": 0.15484800768635404,
+    "fragmented_edge_fraction_after": 0.12758862036312735
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.605775400006678,
+    "png_encoding_seconds": 0.04654919999302365,
+    "stages": {
+      "prepare": 0.13935140002286062,
+      "layers": 0.30325599998468533,
+      "render": 0.16305070000817068,
+      "total": 0.6056583000172395
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 5.851485252380371,
+    "preview_export_p95_abs_error": 23.0,
+    "fragmented_edge_fraction_before": 0.11286139293615073,
+    "fragmented_edge_fraction_after": 0.09650089544014327
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.4081131999846548,
+    "png_encoding_seconds": 0.0530342000129167,
+    "stages": {
+      "prepare": 0.11740429999190383,
+      "layers": 0.04721590000553988,
+      "render": 0.2433817999844905,
+      "total": 0.4080021999834571
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 6.258284091949463,
+    "preview_export_p95_abs_error": 19.0,
+    "fragmented_edge_fraction_before": 0.11044309505200504,
+    "fragmented_edge_fraction_after": 0.11447426633239935
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.3046346000046469,
+    "png_encoding_seconds": 0.046742300008190796,
+    "stages": {
+      "prepare": 0.12053589997231029,
+      "layers": 0.04019920001155697,
+      "render": 0.1437976000015624,
+      "total": 0.30453289998695254
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 8.762818336486816,
+    "preview_export_p95_abs_error": 24.0,
+    "fragmented_edge_fraction_before": 0.11329268878114349,
+    "fragmented_edge_fraction_after": 0.07968462209584128
+  },
+  {
+    "file": "14_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.4083974999957718,
+    "png_encoding_seconds": 0.0683242000231985,
+    "stages": {
+      "prepare": 0.12968389998422936,
+      "layers": 0.06228820001706481,
+      "render": 0.2163206999830436,
+      "total": 0.40829299998586066
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 4.347263336181641,
+    "preview_export_p95_abs_error": 14.0,
+    "fragmented_edge_fraction_before": 0.17192653430770224,
+    "fragmented_edge_fraction_after": 0.11097038779325734
+  },
+  {
+    "file": "14_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.6197988000058103,
+    "png_encoding_seconds": 0.049924699997063726,
+    "stages": {
+      "prepare": 0.1632658000162337,
+      "layers": 0.2855227999971248,
+      "render": 0.17091669997898862,
+      "total": 0.61970549999387
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 4.3858160972595215,
+    "preview_export_p95_abs_error": 17.0,
+    "fragmented_edge_fraction_before": 0.0841196546878137,
+    "fragmented_edge_fraction_after": 0.08621860149355058
+  },
+  {
+    "file": "14_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.4311003000184428,
+    "png_encoding_seconds": 0.052083599992329255,
+    "stages": {
+      "prepare": 0.14900330000091344,
+      "layers": 0.05423609999706969,
+      "render": 0.22776300000259653,
+      "total": 0.43100260000210255
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 5.7376837730407715,
+    "preview_export_p95_abs_error": 17.0,
+    "fragmented_edge_fraction_before": 0.10250394104923562,
+    "fragmented_edge_fraction_after": 0.10043743031134746
+  },
+  {
+    "file": "14_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.27973540002130903,
+    "png_encoding_seconds": 0.040687300002900884,
+    "stages": {
+      "prepare": 0.12173909999546595,
+      "layers": 0.026119600021047518,
+      "render": 0.13177919998997822,
+      "total": 0.2796381000080146
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 7.835364818572998,
+    "preview_export_p95_abs_error": 22.0,
+    "fragmented_edge_fraction_before": 0.10718291054739652,
+    "fragmented_edge_fraction_after": 0.07931452155578485
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "经典卡通",
+    "seconds": 0.38377670000772923,
+    "png_encoding_seconds": 0.04271580002387054,
+    "stages": {
+      "prepare": 0.12501119999797083,
+      "layers": 0.05721030000131577,
+      "render": 0.20136749997618608,
+      "total": 0.38358909997623414
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 1.3839555978775024,
+    "preview_export_p95_abs_error": 5.0,
+    "fragmented_edge_fraction_before": 0.15860517435320584,
+    "fragmented_edge_fraction_after": 0.17728055077452667
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "扁平插画",
+    "seconds": 0.5336830000160262,
+    "png_encoding_seconds": 0.040216099994722754,
+    "stages": {
+      "prepare": 0.12202929999330081,
+      "layers": 0.19595590000972152,
+      "render": 0.2155794000136666,
+      "total": 0.5335648000182118
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 0.937811553478241,
+    "preview_export_p95_abs_error": 4.0,
+    "fragmented_edge_fraction_before": 0.007064868336544637,
+    "fragmented_edge_fraction_after": 0.008559201141226819
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "美式漫画",
+    "seconds": 0.4339101999939885,
+    "png_encoding_seconds": 0.041916799993487075,
+    "stages": {
+      "prepare": 0.1020227000117302,
+      "layers": 0.04568519999156706,
+      "render": 0.2860991999914404,
+      "total": 0.4338071999954991
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 1.727204442024231,
+    "preview_export_p95_abs_error": 8.0,
+    "fragmented_edge_fraction_before": 0.07913988029261805,
+    "fragmented_edge_fraction_after": 0.13683877098511246
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.34988279998651706,
+    "png_encoding_seconds": 0.046976600016932935,
+    "stages": {
+      "prepare": 0.12744719997863285,
+      "layers": 0.040739000018220395,
+      "render": 0.18154819999472238,
+      "total": 0.34973469999386
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 5.364577293395996,
+    "preview_export_p95_abs_error": 19.0,
+    "fragmented_edge_fraction_before": 0.08372258026370248,
+    "fragmented_edge_fraction_after": 0.041893362350380846
+  },
+  {
+    "file": "16_landscape.jpg",
+    "style": "经典卡通",
+    "seconds": 0.3872395999787841,
+    "png_encoding_seconds": 0.04955570001038723,
+    "stages": {
+      "prepare": 0.13240239999140613,
+      "layers": 0.058792199997697026,
+      "render": 0.19593379998696037,
+      "total": 0.38712849997682497
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 2.028449535369873,
+    "preview_export_p95_abs_error": 7.0,
+    "fragmented_edge_fraction_before": 0.18029461056716944,
+    "fragmented_edge_fraction_after": 0.0900297619047619
+  },
+  {
+    "file": "16_landscape.jpg",
+    "style": "扁平插画",
+    "seconds": 0.53334840000025,
+    "png_encoding_seconds": 0.04713149997405708,
+    "stages": {
+      "prepare": 0.11977180000394583,
+      "layers": 0.20877389999805018,
+      "render": 0.2047071999986656,
+      "total": 0.533253200002946
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 1.6170316934585571,
+    "preview_export_p95_abs_error": 7.0,
+    "fragmented_edge_fraction_before": 0.05544432465732327,
+    "fragmented_edge_fraction_after": 0.05188527231711247
+  },
+  {
+    "file": "16_landscape.jpg",
+    "style": "美式漫画",
+    "seconds": 0.4018311999971047,
+    "png_encoding_seconds": 0.0567291000043042,
+    "stages": {
+      "prepare": 0.1125426999933552,
+      "layers": 0.04197240000939928,
+      "render": 0.24722189997555688,
+      "total": 0.4017372999805957
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 2.952845811843872,
+    "preview_export_p95_abs_error": 13.0,
+    "fragmented_edge_fraction_before": 0.11377379619260919,
+    "fragmented_edge_fraction_after": 0.09528846153846154
+  },
+  {
+    "file": "16_landscape.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.2694402000051923,
+    "png_encoding_seconds": 0.03734790001180954,
+    "stages": {
+      "prepare": 0.11140580000937916,
+      "layers": 0.03545170000870712,
+      "render": 0.12249079998582602,
+      "total": 0.2693485000054352
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 3.5880653858184814,
+    "preview_export_p95_abs_error": 15.0,
+    "fragmented_edge_fraction_before": 0.11580613022329016,
+    "fragmented_edge_fraction_after": 0.059934562760261746
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "经典卡通",
+    "seconds": 0.5726162999926601,
+    "png_encoding_seconds": 0.10506070000701584,
+    "stages": {
+      "prepare": 0.19510189999709837,
+      "layers": 0.07778290001442656,
+      "render": 0.2993257999769412,
+      "total": 0.5722108999907505
+    },
+    "faces": [
+      [
+        732,
+        300,
+        70,
+        70
+      ],
+      [
+        183,
+        294,
+        77,
+        77
+      ]
+    ],
+    "preview_export_mae_0_255": 4.14012336730957,
+    "preview_export_p95_abs_error": 13.0,
+    "fragmented_edge_fraction_before": 0.10550246059482206,
+    "fragmented_edge_fraction_after": 0.06150079216477027
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "扁平插画",
+    "seconds": 1.0631720999954268,
+    "png_encoding_seconds": 0.12732800000230782,
+    "stages": {
+      "prepare": 0.24373560000094585,
+      "layers": 0.46088440000312403,
+      "render": 0.35844530002214015,
+      "total": 1.063065499998629
+    },
+    "faces": [
+      [
+        732,
+        300,
+        70,
+        70
+      ],
+      [
+        183,
+        294,
+        77,
+        77
+      ]
+    ],
+    "preview_export_mae_0_255": 4.289124965667725,
+    "preview_export_p95_abs_error": 15.0,
+    "fragmented_edge_fraction_before": 0.05294745265404108,
+    "fragmented_edge_fraction_after": 0.044465546426654554
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "美式漫画",
+    "seconds": 0.9088976999919396,
+    "png_encoding_seconds": 0.1385821999865584,
+    "stages": {
+      "prepare": 0.31517109999549575,
+      "layers": 0.09854669999913312,
+      "render": 0.49505229998612776,
+      "total": 0.9087702999822795
+    },
+    "faces": [
+      [
+        732,
+        300,
+        70,
+        70
+      ],
+      [
+        183,
+        294,
+        77,
+        77
+      ]
+    ],
+    "preview_export_mae_0_255": 5.035000801086426,
+    "preview_export_p95_abs_error": 16.0,
+    "fragmented_edge_fraction_before": 0.08606326056035943,
+    "fragmented_edge_fraction_after": 0.08894324598610424
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.5217052000225522,
+    "png_encoding_seconds": 0.07413349999114871,
+    "stages": {
+      "prepare": 0.2215106000076048,
+      "layers": 0.05613899999298155,
+      "render": 0.24395440000807866,
+      "total": 0.5216041000094265
+    },
+    "faces": [
+      [
+        732,
+        300,
+        70,
+        70
+      ],
+      [
+        183,
+        294,
+        77,
+        77
+      ]
+    ],
+    "preview_export_mae_0_255": 7.992115497589111,
+    "preview_export_p95_abs_error": 23.0,
+    "fragmented_edge_fraction_before": 0.07402910732352712,
+    "fragmented_edge_fraction_after": 0.06162759484609878
+  },
+  {
+    "file": "18_architecture.jpg",
+    "style": "经典卡通",
+    "seconds": 0.3638768999953754,
+    "png_encoding_seconds": 0.05348619999131188,
+    "stages": {
+      "prepare": 0.13221099998918362,
+      "layers": 0.049836200021672994,
+      "render": 0.1813996999990195,
+      "total": 0.36344720001216047
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 2.5204670429229736,
+    "preview_export_p95_abs_error": 9.0,
+    "fragmented_edge_fraction_before": 0.10763269573774525,
+    "fragmented_edge_fraction_after": 0.0517889948385968
+  },
+  {
+    "file": "18_architecture.jpg",
+    "style": "扁平插画",
+    "seconds": 0.529146100016078,
+    "png_encoding_seconds": 0.04398580000270158,
+    "stages": {
+      "prepare": 0.12488449999364093,
+      "layers": 0.2119335999886971,
+      "render": 0.19220630000927486,
+      "total": 0.529025099996943
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 2.4722273349761963,
+    "preview_export_p95_abs_error": 10.0,
+    "fragmented_edge_fraction_before": 0.040439340988517224,
+    "fragmented_edge_fraction_after": 0.033090597558363674
+  },
+  {
+    "file": "18_architecture.jpg",
+    "style": "美式漫画",
+    "seconds": 0.440955700003542,
+    "png_encoding_seconds": 0.05009480001172051,
+    "stages": {
+      "prepare": 0.13243290001992136,
+      "layers": 0.04714270000113174,
+      "render": 0.2612793000007514,
+      "total": 0.44085500002256595
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 3.4943912029266357,
+    "preview_export_p95_abs_error": 13.0,
+    "fragmented_edge_fraction_before": 0.08593448940269749,
+    "fragmented_edge_fraction_after": 0.10321748741250153
+  },
+  {
+    "file": "18_architecture.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.26921289999154396,
+    "png_encoding_seconds": 0.0558475999860093,
+    "stages": {
+      "prepare": 0.1254884999943897,
+      "layers": 0.027705500018782914,
+      "render": 0.1158708999864757,
+      "total": 0.2690652000019327
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 5.315706729888916,
+    "preview_export_p95_abs_error": 19.0,
+    "fragmented_edge_fraction_before": 0.06261601847240458,
+    "fragmented_edge_fraction_after": 0.04153334974157027
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "经典卡通",
+    "seconds": 0.4540436999814119,
+    "png_encoding_seconds": 0.05320400002528913,
+    "stages": {
+      "prepare": 0.15800320002017543,
+      "layers": 0.06713720000698231,
+      "render": 0.22870439998223446,
+      "total": 0.4538450000109151
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 1.9474551677703857,
+    "preview_export_p95_abs_error": 6.0,
+    "fragmented_edge_fraction_before": 0.11084933443279538,
+    "fragmented_edge_fraction_after": 0.01594746716697936
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "扁平插画",
+    "seconds": 0.6989256000088062,
+    "png_encoding_seconds": 0.061952499992912635,
+    "stages": {
+      "prepare": 0.16486809999332763,
+      "layers": 0.2582041000132449,
+      "render": 0.2757497999991756,
+      "total": 0.6988223000080325
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 2.1656110286712646,
+    "preview_export_p95_abs_error": 9.0,
+    "fragmented_edge_fraction_before": 0.008533625616534878,
+    "fragmented_edge_fraction_after": 0.012024486226497596
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "美式漫画",
+    "seconds": 0.5503141000226606,
+    "png_encoding_seconds": 0.06759650001185946,
+    "stages": {
+      "prepare": 0.16038340001250617,
+      "layers": 0.0590152999793645,
+      "render": 0.3308021000120789,
+      "total": 0.5502011000062339
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 3.6395537853240967,
+    "preview_export_p95_abs_error": 13.0,
+    "fragmented_edge_fraction_before": 0.049237627273187784,
+    "fragmented_edge_fraction_after": 0.11100892615634297
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.32262530000298284,
+    "png_encoding_seconds": 0.05281480000121519,
+    "stages": {
+      "prepare": 0.13226300000678748,
+      "layers": 0.03574629998183809,
+      "render": 0.15448739999555983,
+      "total": 0.3224968999857083
+    },
+    "faces": [],
+    "preview_export_mae_0_255": 4.654079914093018,
+    "preview_export_p95_abs_error": 15.0,
+    "fragmented_edge_fraction_before": 0.053874844591794445,
+    "fragmented_edge_fraction_after": 0.029207565238209242
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.6453504000091925,
+    "png_encoding_seconds": 0.088710899988655,
+    "stages": {
+      "prepare": 0.18391459999838844,
+      "layers": 0.07149510001181625,
+      "render": 0.3896035999932792,
+      "total": 0.6450134000042453
+    },
+    "faces": [
+      [
+        231,
+        186,
+        225,
+        225
+      ]
+    ],
+    "preview_export_mae_0_255": 1.4634584188461304,
+    "preview_export_p95_abs_error": 5.0,
+    "fragmented_edge_fraction_before": 0.09466363894408175,
+    "fragmented_edge_fraction_after": 0.05399296835760924
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.8548935000144411,
+    "png_encoding_seconds": 0.09361740000895225,
+    "stages": {
+      "prepare": 0.2064212000113912,
+      "layers": 0.24859619999187998,
+      "render": 0.39977280001039617,
+      "total": 0.8547904000151902
+    },
+    "faces": [
+      [
+        231,
+        186,
+        225,
+        225
+      ]
+    ],
+    "preview_export_mae_0_255": 1.3616489171981812,
+    "preview_export_p95_abs_error": 7.0,
+    "fragmented_edge_fraction_before": 0.03958861651169344,
+    "fragmented_edge_fraction_after": 0.039848749272833044
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.7857815000170376,
+    "png_encoding_seconds": 0.10487099998863414,
+    "stages": {
+      "prepare": 0.14940560000832193,
+      "layers": 0.05467559999669902,
+      "render": 0.5816019999911077,
+      "total": 0.785683499998413
+    },
+    "faces": [
+      [
+        231,
+        186,
+        225,
+        225
+      ]
+    ],
+    "preview_export_mae_0_255": 2.4419004917144775,
+    "preview_export_p95_abs_error": 9.0,
+    "fragmented_edge_fraction_before": 0.06712962962962964,
+    "fragmented_edge_fraction_after": 0.06549014201020267
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.5169943000073545,
+    "png_encoding_seconds": 0.15335519998916425,
+    "stages": {
+      "prepare": 0.159023399988655,
+      "layers": 0.03818200001842342,
+      "render": 0.319495099975029,
+      "total": 0.5167007999843918
+    },
+    "faces": [
+      [
+        231,
+        186,
+        225,
+        225
+      ]
+    ],
+    "preview_export_mae_0_255": 6.158796787261963,
+    "preview_export_p95_abs_error": 20.0,
+    "fragmented_edge_fraction_before": 0.052766552688840535,
+    "fragmented_edge_fraction_after": 0.029117379435850774
+  },
+  {
+    "file": "22_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.4536828999989666,
+    "png_encoding_seconds": 0.04151460001594387,
+    "stages": {
+      "prepare": 0.2470333999954164,
+      "layers": 0.11728940001921728,
+      "render": 0.08899379998911172,
+      "total": 0.4533168000052683
+    },
+    "faces": [
+      [
+        362,
+        169,
+        265,
+        265
+      ]
+    ],
+    "preview_export_mae_0_255": 0.0,
+    "preview_export_p95_abs_error": 0.0,
+    "fragmented_edge_fraction_before": 0.10356885734855498,
+    "fragmented_edge_fraction_after": 0.14867109634551495
+  },
+  {
+    "file": "22_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.7159531000070274,
+    "png_encoding_seconds": 0.03256400002283044,
+    "stages": {
+      "prepare": 0.24464250000892207,
+      "layers": 0.38881589999073185,
+      "render": 0.08237429999280721,
+      "total": 0.7158330999955069
+    },
+    "faces": [
+      [
+        362,
+        169,
+        265,
+        265
+      ]
+    ],
+    "preview_export_mae_0_255": 0.0,
+    "preview_export_p95_abs_error": 0.0,
+    "fragmented_edge_fraction_before": 0.07108327840035157,
+    "fragmented_edge_fraction_after": 0.05256622516556291
+  },
+  {
+    "file": "22_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.43616209999891,
+    "png_encoding_seconds": 0.04631040000822395,
+    "stages": {
+      "prepare": 0.1955803999735508,
+      "layers": 0.10587900000973605,
+      "render": 0.1343856000166852,
+      "total": 0.4358451000007335
+    },
+    "faces": [
+      [
+        362,
+        169,
+        265,
+        265
+      ]
+    ],
+    "preview_export_mae_0_255": 0.0,
+    "preview_export_p95_abs_error": 0.0,
+    "fragmented_edge_fraction_before": 0.10646662387676509,
+    "fragmented_edge_fraction_after": 0.05649628105712929
+  },
+  {
+    "file": "22_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.3505616999755148,
+    "png_encoding_seconds": 0.04301090000080876,
+    "stages": {
+      "prepare": 0.16678579998551868,
+      "layers": 0.05984550001448952,
+      "render": 0.12382259999867529,
+      "total": 0.3504541000002064
+    },
+    "faces": [
+      [
+        362,
+        169,
+        265,
+        265
+      ]
+    ],
+    "preview_export_mae_0_255": 0.0,
+    "preview_export_p95_abs_error": 0.0,
+    "fragmented_edge_fraction_before": 0.05870008394291881,
+    "fragmented_edge_fraction_after": 0.03504460222100856
+  },
+  {
+    "file": "26_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.4748920999991242,
+    "png_encoding_seconds": 0.056897200003731996,
+    "stages": {
+      "prepare": 0.15257710000150837,
+      "layers": 0.0738683000090532,
+      "render": 0.2482356999826152,
+      "total": 0.47468129999469966
+    },
+    "faces": [
+      [
+        217,
+        120,
+        244,
+        244
+      ]
+    ],
+    "preview_export_mae_0_255": 1.4853352308273315,
+    "preview_export_p95_abs_error": 5.0,
+    "fragmented_edge_fraction_before": 0.08154304531911558,
+    "fragmented_edge_fraction_after": 0.03617181612660136
+  },
+  {
+    "file": "26_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.7004598999919835,
+    "png_encoding_seconds": 0.05845790001330897,
+    "stages": {
+      "prepare": 0.15447780000977218,
+      "layers": 0.2808403999952134,
+      "render": 0.2650298999797087,
+      "total": 0.7003484999877401
+    },
+    "faces": [
+      [
+        217,
+        120,
+        244,
+        244
+      ]
+    ],
+    "preview_export_mae_0_255": 1.3645154237747192,
+    "preview_export_p95_abs_error": 6.0,
+    "fragmented_edge_fraction_before": 0.020918367346938777,
+    "fragmented_edge_fraction_after": 0.020762229806598406
+  },
+  {
+    "file": "26_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.6283991999807768,
+    "png_encoding_seconds": 0.14915369998198003,
+    "stages": {
+      "prepare": 0.12939470002311282,
+      "layers": 0.06089079999946989,
+      "render": 0.4380042999982834,
+      "total": 0.6282903000246733
+    },
+    "faces": [
+      [
+        217,
+        120,
+        244,
+        244
+      ]
+    ],
+    "preview_export_mae_0_255": 2.304903984069824,
+    "preview_export_p95_abs_error": 9.0,
+    "fragmented_edge_fraction_before": 0.06917363045496751,
+    "fragmented_edge_fraction_after": 0.04980702076824113
+  },
+  {
+    "file": "26_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.5877704999875277,
+    "png_encoding_seconds": 2.211868999991566,
+    "stages": {
+      "prepare": 0.2521996999857947,
+      "layers": 0.05287010001484305,
+      "render": 0.2824673999857623,
+      "total": 0.5875377999909688
+    },
+    "faces": [
+      [
+        217,
+        120,
+        244,
+        244
+      ]
+    ],
+    "preview_export_mae_0_255": 6.50720739364624,
+    "preview_export_p95_abs_error": 19.0,
+    "fragmented_edge_fraction_before": 0.07385153635533921,
+    "fragmented_edge_fraction_after": 0.011663479923518164
+  },
+  {
+    "file": "27_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.5336043999996036,
+    "png_encoding_seconds": 0.13615350000327453,
+    "stages": {
+      "prepare": 0.17129729999578558,
+      "layers": 0.06987809998099692,
+      "render": 0.2921275999979116,
+      "total": 0.5333032999769785
+    },
+    "faces": [
+      [
+        162,
+        105,
+        297,
+        297
+      ]
+    ],
+    "preview_export_mae_0_255": 1.6760560274124146,
+    "preview_export_p95_abs_error": 6.0,
+    "fragmented_edge_fraction_before": 0.07562136435748282,
+    "fragmented_edge_fraction_after": 0.03386939571150097
+  },
+  {
+    "file": "27_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.7522573000169359,
+    "png_encoding_seconds": 0.19985930001712404,
+    "stages": {
+      "prepare": 0.17321090001496486,
+      "layers": 0.30837879999307916,
+      "render": 0.27048579999245703,
+      "total": 0.752075700002024
+    },
+    "faces": [
+      [
+        162,
+        105,
+        297,
+        297
+      ]
+    ],
+    "preview_export_mae_0_255": 1.4639275074005127,
+    "preview_export_p95_abs_error": 6.0,
+    "fragmented_edge_fraction_before": 0.030282972033758068,
+    "fragmented_edge_fraction_after": 0.027551020408163266
+  },
+  {
+    "file": "27_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.6933023000019602,
+    "png_encoding_seconds": 0.11744829997769557,
+    "stages": {
+      "prepare": 0.19366719998652115,
+      "layers": 0.05528410000260919,
+      "render": 0.44423760002246127,
+      "total": 0.6931890000123531
+    },
+    "faces": [
+      [
+        162,
+        105,
+        297,
+        297
+      ]
+    ],
+    "preview_export_mae_0_255": 2.217787504196167,
+    "preview_export_p95_abs_error": 9.0,
+    "fragmented_edge_fraction_before": 0.06782729805013928,
+    "fragmented_edge_fraction_after": 0.05680473372781065
+  },
+  {
+    "file": "27_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.44622360001085326,
+    "png_encoding_seconds": 0.09634250000817701,
+    "stages": {
+      "prepare": 0.1615663999982644,
+      "layers": 0.049889400019310415,
+      "render": 0.2346471999771893,
+      "total": 0.446103199996287
+    },
+    "faces": [
+      [
+        162,
+        105,
+        297,
+        297
+      ]
+    ],
+    "preview_export_mae_0_255": 7.343883037567139,
+    "preview_export_p95_abs_error": 21.0,
+    "fragmented_edge_fraction_before": 0.08318860715526225,
+    "fragmented_edge_fraction_after": 0.04045362220717671
+  },
+  {
+    "file": "28_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.628057699999772,
+    "png_encoding_seconds": 0.1180406000057701,
+    "stages": {
+      "prepare": 0.21681069998885505,
+      "layers": 0.09706420000293292,
+      "render": 0.31380170001648366,
+      "total": 0.627676900010556
+    },
+    "faces": [
+      [
+        225,
+        153,
+        281,
+        281
+      ]
+    ],
+    "preview_export_mae_0_255": 2.0193240642547607,
+    "preview_export_p95_abs_error": 7.0,
+    "fragmented_edge_fraction_before": 0.07376745335475102,
+    "fragmented_edge_fraction_after": 0.03558282208588957
+  },
+  {
+    "file": "28_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.894530699995812,
+    "png_encoding_seconds": 0.08603279999806546,
+    "stages": {
+      "prepare": 0.20913530001416802,
+      "layers": 0.3508868000062648,
+      "render": 0.33437769999727607,
+      "total": 0.8944004999939352
+    },
+    "faces": [
+      [
+        225,
+        153,
+        281,
+        281
+      ]
+    ],
+    "preview_export_mae_0_255": 1.3818542957305908,
+    "preview_export_p95_abs_error": 5.0,
+    "fragmented_edge_fraction_before": 0.0303941744498971,
+    "fragmented_edge_fraction_after": 0.011778563015312132
+  },
+  {
+    "file": "28_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.6249179000151344,
+    "png_encoding_seconds": 0.09189780001179315,
+    "stages": {
+      "prepare": 0.1455808999889996,
+      "layers": 0.06808739999542013,
+      "render": 0.4111417999956757,
+      "total": 0.6248103999823797
+    },
+    "faces": [
+      [
+        225,
+        153,
+        281,
+        281
+      ]
+    ],
+    "preview_export_mae_0_255": 3.157137870788574,
+    "preview_export_p95_abs_error": 12.0,
+    "fragmented_edge_fraction_before": 0.06741172274402568,
+    "fragmented_edge_fraction_after": 0.08322483725588382
+  },
+  {
+    "file": "28_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.43072159998700954,
+    "png_encoding_seconds": 0.07511559998965822,
+    "stages": {
+      "prepare": 0.18256869999459013,
+      "layers": 0.0530453999817837,
+      "render": 0.19499489999725483,
+      "total": 0.430609299975913
+    },
+    "faces": [
+      [
+        225,
+        153,
+        281,
+        281
+      ]
+    ],
+    "preview_export_mae_0_255": 7.113026142120361,
+    "preview_export_p95_abs_error": 19.0,
+    "fragmented_edge_fraction_before": 0.13289884899763701,
+    "fragmented_edge_fraction_after": 0.024413687043444827
+  },
+  {
+    "file": "29_portrait.jpg",
+    "style": "经典卡通",
+    "seconds": 0.7622872999927495,
+    "png_encoding_seconds": 0.07221479999134317,
+    "stages": {
+      "prepare": 0.2104168999940157,
+      "layers": 0.2028928000072483,
+      "render": 0.3486533999966923,
+      "total": 0.7619634000002407
+    },
+    "faces": [
+      [
+        242,
+        78,
+        192,
+        192
+      ]
+    ],
+    "preview_export_mae_0_255": 1.5917686223983765,
+    "preview_export_p95_abs_error": 5.0,
+    "fragmented_edge_fraction_before": 0.07686533553520493,
+    "fragmented_edge_fraction_after": 0.024612579762989972
+  },
+  {
+    "file": "29_portrait.jpg",
+    "style": "扁平插画",
+    "seconds": 0.5877887000096962,
+    "png_encoding_seconds": 0.05912590000662021,
+    "stages": {
+      "prepare": 0.14060690000769682,
+      "layers": 0.21543959999689832,
+      "render": 0.23162549998960458,
+      "total": 0.5876721999957226
+    },
+    "faces": [
+      [
+        242,
+        78,
+        192,
+        192
+      ]
+    ],
+    "preview_export_mae_0_255": 1.4180480241775513,
+    "preview_export_p95_abs_error": 6.0,
+    "fragmented_edge_fraction_before": 0.023264267539076698,
+    "fragmented_edge_fraction_after": 0.014018691588785047
+  },
+  {
+    "file": "29_portrait.jpg",
+    "style": "美式漫画",
+    "seconds": 0.49979739999980666,
+    "png_encoding_seconds": 0.07090050002443604,
+    "stages": {
+      "prepare": 0.11988330000895076,
+      "layers": 0.04617719998350367,
+      "render": 0.3336328000004869,
+      "total": 0.49969339999370277
+    },
+    "faces": [
+      [
+        242,
+        78,
+        192,
+        192
+      ]
+    ],
+    "preview_export_mae_0_255": 2.6250059604644775,
+    "preview_export_p95_abs_error": 10.0,
+    "fragmented_edge_fraction_before": 0.032679738562091505,
+    "fragmented_edge_fraction_after": 0.07285171102661597
+  },
+  {
+    "file": "29_portrait.jpg",
+    "style": "铅笔素描",
+    "seconds": 0.33913020000909455,
+    "png_encoding_seconds": 0.05932059997576289,
+    "stages": {
+      "prepare": 0.13298729999223724,
+      "layers": 0.0403750000114087,
+      "render": 0.16566369999782182,
+      "total": 0.33902620000299066
+    },
+    "faces": [
+      [
+        242,
+        78,
+        192,
+        192
+      ]
+    ],
+    "preview_export_mae_0_255": 4.913640022277832,
+    "preview_export_p95_abs_error": 16.0,
+    "fragmented_edge_fraction_before": 0.05020518641403999,
+    "fragmented_edge_fraction_after": 0.041187384044526903
+  }
+]

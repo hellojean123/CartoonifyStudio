@@ -1,0 +1,946 @@
+[
+  {
+    "version": "v1",
+    "style": "经典卡通",
+    "width": 640,
+    "height": 480,
+    "runs": [
+      0.06488059999537654,
+      0.04340019999654032,
+      0.053950600005919114
+    ],
+    "median_seconds": 0.053950600005919114,
+    "p95_seconds": 0.0637875999964308,
+    "rss_peak_mib": 60.96484375,
+    "rss_increase_mib": 16.93359375,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.19318200001725927,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "经典卡通",
+    "width": 640,
+    "height": 480,
+    "runs": [
+      0.15995190001558512,
+      0.23362770001403987,
+      0.18332720000762492
+    ],
+    "median_seconds": 0.18332720000762492,
+    "p95_seconds": 0.22859765001339838,
+    "rss_peak_mib": 69.78125,
+    "rss_increase_mib": 24.8671875,
+    "cached_parameter_runs": [
+      0.029342399997403845,
+      0.025227499980246648,
+      0.034863000008044764
+    ],
+    "cached_parameter_median": 0.029342399997403845,
+    "cached_preview_runs": [
+      0.02425389998825267,
+      0.0188147000153549,
+      0.0199840999848675
+    ],
+    "cached_preview_median": 0.0199840999848675,
+    "png_encoding_seconds": 0.00872959999833256,
+    "encoded_bytes": 129901,
+    "decode_reference_seconds": 0.22645170000032522,
+    "stages": {
+      "prepare": 0.12732639999012463,
+      "layers": 0.05577180002001114,
+      "render": 0.047486199997365475,
+      "total": 0.2305851000128314
+    }
+  },
+  {
+    "version": "v1",
+    "style": "扁平插画",
+    "width": 640,
+    "height": 480,
+    "runs": [
+      0.14662490002228878,
+      0.13873489998513833,
+      0.12784169998485595
+    ],
+    "median_seconds": 0.13873489998513833,
+    "p95_seconds": 0.14583590001857374,
+    "rss_peak_mib": 60.9453125,
+    "rss_increase_mib": 14.68359375,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.11079529998824,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "扁平插画",
+    "width": 640,
+    "height": 480,
+    "runs": [
+      0.21515539998654276,
+      0.2095330999873113,
+      0.20733239999390207
+    ],
+    "median_seconds": 0.2095330999873113,
+    "p95_seconds": 0.21459316998661962,
+    "rss_peak_mib": 78.21875,
+    "rss_increase_mib": 26.15234375,
+    "cached_parameter_runs": [
+      0.02081190000171773,
+      0.019621600018581375,
+      0.024904000019887462
+    ],
+    "cached_parameter_median": 0.02081190000171773,
+    "cached_preview_runs": [
+      0.019473399996059015,
+      0.01777790000778623,
+      0.017499899986432865
+    ],
+    "cached_preview_median": 0.01777790000778623,
+    "png_encoding_seconds": 0.006058799976017326,
+    "encoded_bytes": 15965,
+    "decode_reference_seconds": 0.12964759999886155,
+    "stages": {
+      "prepare": 0.07111930000246502,
+      "layers": 0.1294705000182148,
+      "render": 0.01849180000135675,
+      "total": 0.21908180002355948
+    }
+  },
+  {
+    "version": "v1",
+    "style": "美式漫画",
+    "width": 640,
+    "height": 480,
+    "runs": [
+      0.11730959999840707,
+      0.06920359999639913,
+      0.05236279999371618
+    ],
+    "median_seconds": 0.06920359999639913,
+    "p95_seconds": 0.11249899999820627,
+    "rss_peak_mib": 73.8046875,
+    "rss_increase_mib": 29.52734375,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.12738920000265352,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "美式漫画",
+    "width": 640,
+    "height": 480,
+    "runs": [
+      0.14611210001748987,
+      0.18560850000358187,
+      0.14489249998587184
+    ],
+    "median_seconds": 0.14611210001748987,
+    "p95_seconds": 0.18165886000497267,
+    "rss_peak_mib": 72.6484375,
+    "rss_increase_mib": 27.5546875,
+    "cached_parameter_runs": [
+      0.03930299999774434,
+      0.040460600022925064,
+      0.04543360002571717
+    ],
+    "cached_parameter_median": 0.040460600022925064,
+    "cached_preview_runs": [
+      0.03872489999048412,
+      0.048595800006296486,
+      0.03497349997633137
+    ],
+    "cached_preview_median": 0.03872489999048412,
+    "png_encoding_seconds": 0.011906600004294887,
+    "encoded_bytes": 255966,
+    "decode_reference_seconds": 0.14418489998206496,
+    "stages": {
+      "prepare": 0.08131519999005832,
+      "layers": 0.0244925000006333,
+      "render": 0.03520690000732429,
+      "total": 0.1410147999995388
+    }
+  },
+  {
+    "version": "v1",
+    "style": "铅笔素描",
+    "width": 640,
+    "height": 480,
+    "runs": [
+      0.02793429998564534,
+      0.027389599999878556,
+      0.029659399995580316
+    ],
+    "median_seconds": 0.02793429998564534,
+    "p95_seconds": 0.029486889994586818,
+    "rss_peak_mib": 52.41796875,
+    "rss_increase_mib": 8.40625,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.18039160000625998,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "铅笔素描",
+    "width": 640,
+    "height": 480,
+    "runs": [
+      0.1665027999843005,
+      0.14162919999216683,
+      0.11918760000844486
+    ],
+    "median_seconds": 0.14162919999216683,
+    "p95_seconds": 0.16401543998508714,
+    "rss_peak_mib": 68.5625,
+    "rss_increase_mib": 23.8984375,
+    "cached_parameter_runs": [
+      0.035218700009863824,
+      0.040596500009996817,
+      0.032288100017467514
+    ],
+    "cached_parameter_median": 0.035218700009863824,
+    "cached_preview_runs": [
+      0.029450599977280945,
+      0.03559669997775927,
+      0.04546929997741245
+    ],
+    "cached_preview_median": 0.03559669997775927,
+    "png_encoding_seconds": 0.012487800006056204,
+    "encoded_bytes": 326056,
+    "decode_reference_seconds": 0.13387089999741875,
+    "stages": {
+      "prepare": 0.06733630000962876,
+      "layers": 0.013724799995543435,
+      "render": 0.028847400011727586,
+      "total": 0.10990889999084175
+    }
+  },
+  {
+    "version": "v1",
+    "style": "经典卡通",
+    "width": 1280,
+    "height": 720,
+    "runs": [
+      0.11268930000369437,
+      0.11217159999068826,
+      0.19921710001653992
+    ],
+    "median_seconds": 0.11268930000369437,
+    "p95_seconds": 0.19056432001525536,
+    "rss_peak_mib": 117.20703125,
+    "rss_increase_mib": 71.421875,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.20703570000478067,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "经典卡通",
+    "width": 1280,
+    "height": 720,
+    "runs": [
+      0.3321011000080034,
+      0.5502967000065837,
+      0.3103720999788493
+    ],
+    "median_seconds": 0.3321011000080034,
+    "p95_seconds": 0.5284771400067256,
+    "rss_peak_mib": 111.0703125,
+    "rss_increase_mib": 63.80078125,
+    "cached_parameter_runs": [
+      0.236579399992479,
+      0.20184410002548248,
+      0.19020810001529753
+    ],
+    "cached_parameter_median": 0.20184410002548248,
+    "cached_preview_runs": [
+      0.11031039999215864,
+      0.1593886000046041,
+      0.15989769998122938
+    ],
+    "cached_preview_median": 0.1593886000046041,
+    "png_encoding_seconds": 0.11573000001953915,
+    "encoded_bytes": 450644,
+    "decode_reference_seconds": 0.1188669000111986,
+    "stages": {
+      "prepare": 0.10169899999164045,
+      "layers": 0.043460599990794435,
+      "render": 0.16344210001989268,
+      "total": 0.30860210000537336
+    }
+  },
+  {
+    "version": "v1",
+    "style": "扁平插画",
+    "width": 1280,
+    "height": 720,
+    "runs": [
+      0.4576367999834474,
+      0.35508429998299107,
+      0.3663197999994736
+    ],
+    "median_seconds": 0.3663197999994736,
+    "p95_seconds": 0.44850509998505,
+    "rss_peak_mib": 73.6875,
+    "rss_increase_mib": 25.58203125,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.21953669999493286,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "扁平插画",
+    "width": 1280,
+    "height": 720,
+    "runs": [
+      0.396806699980516,
+      0.4411491999926511,
+      0.4053774999920279
+    ],
+    "median_seconds": 0.4053774999920279,
+    "p95_seconds": 0.4375720299925888,
+    "rss_peak_mib": 116.0234375,
+    "rss_increase_mib": 61.59375,
+    "cached_parameter_runs": [
+      0.19180970001616515,
+      0.34450639999704435,
+      0.5476777000003494
+    ],
+    "cached_parameter_median": 0.34450639999704435,
+    "cached_preview_runs": [
+      0.12147089999052696,
+      0.13661749998573214,
+      0.13102209998760372
+    ],
+    "cached_preview_median": 0.13102209998760372,
+    "png_encoding_seconds": 0.09296030001132749,
+    "encoded_bytes": 469510,
+    "decode_reference_seconds": 0.1298102000146173,
+    "stages": {
+      "prepare": 0.09518010000465438,
+      "layers": 0.14483909998671152,
+      "render": 0.19932260000496171,
+      "total": 0.43934209999861196
+    }
+  },
+  {
+    "version": "v1",
+    "style": "美式漫画",
+    "width": 1280,
+    "height": 720,
+    "runs": [
+      0.14012679998995736,
+      0.1440901999885682,
+      0.1556187999958638
+    ],
+    "median_seconds": 0.1440901999885682,
+    "p95_seconds": 0.15446593999513425,
+    "rss_peak_mib": 124.2109375,
+    "rss_increase_mib": 78.20703125,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.15238230000250041,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "美式漫画",
+    "width": 1280,
+    "height": 720,
+    "runs": [
+      0.33575860000564717,
+      0.347724899998866,
+      0.34988789999624714
+    ],
+    "median_seconds": 0.347724899998866,
+    "p95_seconds": 0.34967159999650904,
+    "rss_peak_mib": 113.734375,
+    "rss_increase_mib": 66.25390625,
+    "cached_parameter_runs": [
+      0.2198152999917511,
+      0.21732080000219867,
+      0.26502580000669695
+    ],
+    "cached_parameter_median": 0.2198152999917511,
+    "cached_preview_runs": [
+      0.20155050000175834,
+      0.22002419998170808,
+      0.26300399997853674
+    ],
+    "cached_preview_median": 0.22002419998170808,
+    "png_encoding_seconds": 0.11872219998622313,
+    "encoded_bytes": 685736,
+    "decode_reference_seconds": 0.10105399999883957,
+    "stages": {
+      "prepare": 0.08229160000337288,
+      "layers": 0.036594899982446805,
+      "render": 0.25183010002365336,
+      "total": 0.37071680001099594
+    }
+  },
+  {
+    "version": "v1",
+    "style": "铅笔素描",
+    "width": 1280,
+    "height": 720,
+    "runs": [
+      0.05720059998566285,
+      0.05869820000953041,
+      0.06027919999905862
+    ],
+    "median_seconds": 0.05869820000953041,
+    "p95_seconds": 0.0601211000001058,
+    "rss_peak_mib": 65.59765625,
+    "rss_increase_mib": 19.75,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.10159249999560416,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "铅笔素描",
+    "width": 1280,
+    "height": 720,
+    "runs": [
+      0.20807709998916835,
+      0.22018350000143982,
+      0.22381520000635646
+    ],
+    "median_seconds": 0.22018350000143982,
+    "p95_seconds": 0.2234520300058648,
+    "rss_peak_mib": 86.46875,
+    "rss_increase_mib": 39.7109375,
+    "cached_parameter_runs": [
+      0.11703969998052344,
+      0.11644549999618903,
+      0.11304240001481958
+    ],
+    "cached_parameter_median": 0.11644549999618903,
+    "cached_preview_runs": [
+      0.07178850000491366,
+      0.07296119999955408,
+      0.06905570000526495
+    ],
+    "cached_preview_median": 0.07178850000491366,
+    "png_encoding_seconds": 0.03409649999230169,
+    "encoded_bytes": 858954,
+    "decode_reference_seconds": 0.1023474000103306,
+    "stages": {
+      "prepare": 0.08670760001405142,
+      "layers": 0.027224199991906062,
+      "render": 0.11508899999898858,
+      "total": 0.22902120000799187
+    }
+  },
+  {
+    "version": "v1",
+    "style": "经典卡通",
+    "width": 1920,
+    "height": 1080,
+    "runs": [
+      0.1444208000029903,
+      0.15362870000535622,
+      0.1617745000112336
+    ],
+    "median_seconds": 0.15362870000535622,
+    "p95_seconds": 0.16095992001064588,
+    "rss_peak_mib": 130.94921875,
+    "rss_increase_mib": 81.3125,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.10309550000238232,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "经典卡通",
+    "width": 1920,
+    "height": 1080,
+    "runs": [
+      0.46056409997981973,
+      0.47319639998022467,
+      0.45621800000662915
+    ],
+    "median_seconds": 0.46056409997981973,
+    "p95_seconds": 0.4719331699801842,
+    "rss_peak_mib": 117.05859375,
+    "rss_increase_mib": 66.51171875,
+    "cached_parameter_runs": [
+      0.6303277999977581,
+      0.9243839000118896,
+      0.9425047000113409
+    ],
+    "cached_parameter_median": 0.9243839000118896,
+    "cached_preview_runs": [
+      0.13638850001734681,
+      0.1365434000035748,
+      0.12996260001091287
+    ],
+    "cached_preview_median": 0.13638850001734681,
+    "png_encoding_seconds": 0.20084470001165755,
+    "encoded_bytes": 857072,
+    "decode_reference_seconds": 0.10227050000685267,
+    "stages": {
+      "prepare": 0.09946940001100302,
+      "layers": 0.04584330000216141,
+      "render": 0.3111919999937527,
+      "total": 0.45650490000844
+    }
+  },
+  {
+    "version": "v1",
+    "style": "扁平插画",
+    "width": 1920,
+    "height": 1080,
+    "runs": [
+      0.42828880000161007,
+      0.4230144999746699,
+      0.5109120999986771
+    ],
+    "median_seconds": 0.42828880000161007,
+    "p95_seconds": 0.5026497699989705,
+    "rss_peak_mib": 97.3515625,
+    "rss_increase_mib": 45.421875,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.09998970001470298,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "扁平插画",
+    "width": 1920,
+    "height": 1080,
+    "runs": [
+      0.587537399987923,
+      0.5863823000108823,
+      0.5735072999959812
+    ],
+    "median_seconds": 0.5863823000108823,
+    "p95_seconds": 0.5874218899902189,
+    "rss_peak_mib": 124.2734375,
+    "rss_increase_mib": 66.7890625,
+    "cached_parameter_runs": [
+      0.923367400013376,
+      0.93868009999278,
+      0.9399080000002868
+    ],
+    "cached_parameter_median": 0.93868009999278,
+    "cached_preview_runs": [
+      0.1584978000028059,
+      0.15758359999745153,
+      0.14113080000970513
+    ],
+    "cached_preview_median": 0.15758359999745153,
+    "png_encoding_seconds": 0.20022030000109226,
+    "encoded_bytes": 987346,
+    "decode_reference_seconds": 0.10640520000015385,
+    "stages": {
+      "prepare": 0.2985153000045102,
+      "layers": 0.44307979999575764,
+      "render": 0.918336900009308,
+      "total": 1.659932900016429
+    }
+  },
+  {
+    "version": "v1",
+    "style": "美式漫画",
+    "width": 1920,
+    "height": 1080,
+    "runs": [
+      0.18319819998578168,
+      0.18049209998571314,
+      0.1810025000013411
+    ],
+    "median_seconds": 0.1810025000013411,
+    "p95_seconds": 0.18297862998733763,
+    "rss_peak_mib": 164.0625,
+    "rss_increase_mib": 114.171875,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.09855120000429451,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "美式漫画",
+    "width": 1920,
+    "height": 1080,
+    "runs": [
+      0.5785340000002179,
+      0.5613472000113688,
+      0.5678884999942966
+    ],
+    "median_seconds": 0.5678884999942966,
+    "p95_seconds": 0.5774694499996258,
+    "rss_peak_mib": 120.1171875,
+    "rss_increase_mib": 69.87890625,
+    "cached_parameter_runs": [
+      1.3610615999787115,
+      1.392872600001283,
+      1.3402579000103287
+    ],
+    "cached_parameter_median": 1.3610615999787115,
+    "cached_preview_runs": [
+      0.27080659999046475,
+      0.26492739998502657,
+      0.25919080001767725
+    ],
+    "cached_preview_median": 0.26492739998502657,
+    "png_encoding_seconds": 0.2220411000016611,
+    "encoded_bytes": 1289577,
+    "decode_reference_seconds": 0.09769240001332946,
+    "stages": {
+      "prepare": 0.09398269999655895,
+      "layers": 0.04115699999965727,
+      "render": 1.1874524000159,
+      "total": 1.3225930000189692
+    }
+  },
+  {
+    "version": "v1",
+    "style": "铅笔素描",
+    "width": 1920,
+    "height": 1080,
+    "runs": [
+      0.08763279998674989,
+      0.0898993999871891,
+      0.0891115999838803
+    ],
+    "median_seconds": 0.0891115999838803,
+    "p95_seconds": 0.08982061998685822,
+    "rss_peak_mib": 90.5859375,
+    "rss_increase_mib": 40.6875,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.09790360002079979,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "铅笔素描",
+    "width": 1920,
+    "height": 1080,
+    "runs": [
+      0.37400460001663305,
+      0.3685096999979578,
+      0.37072550001903437
+    ],
+    "median_seconds": 0.37072550001903437,
+    "p95_seconds": 0.3736766900168732,
+    "rss_peak_mib": 95.9140625,
+    "rss_increase_mib": 45.8515625,
+    "cached_parameter_runs": [
+      0.2638862000021618,
+      0.28785930000594817,
+      0.6839581999811344
+    ],
+    "cached_parameter_median": 0.28785930000594817,
+    "cached_preview_runs": [
+      0.2347011000092607,
+      0.2388152000203263,
+      0.23026750001008622
+    ],
+    "cached_preview_median": 0.2347011000092607,
+    "png_encoding_seconds": 0.24190930000622757,
+    "encoded_bytes": 1725349,
+    "decode_reference_seconds": 0.10263780000968836,
+    "stages": {
+      "prepare": 0.08307009999407455,
+      "layers": 0.023758499999530613,
+      "render": 0.26369369999156334,
+      "total": 0.3705226999882143
+    }
+  },
+  {
+    "version": "v1",
+    "style": "经典卡通",
+    "width": 3840,
+    "height": 2160,
+    "runs": [
+      0.24223050000728108,
+      0.24657679998199455,
+      0.2420531999960076
+    ],
+    "median_seconds": 0.24223050000728108,
+    "p95_seconds": 0.2461421699845232,
+    "rss_peak_mib": 262.33203125,
+    "rss_increase_mib": 194.68359375,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.10177379997912794,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "经典卡通",
+    "width": 3840,
+    "height": 2160,
+    "runs": [
+      1.2529996999946889,
+      3.664287699997658,
+      3.911323000007542
+    ],
+    "median_seconds": 3.664287699997658,
+    "p95_seconds": 3.8866194700065533,
+    "rss_peak_mib": 153.71484375,
+    "rss_increase_mib": 85.3046875,
+    "cached_parameter_runs": [
+      3.4575879000185523,
+      3.276333000016166,
+      3.2224392000061926
+    ],
+    "cached_parameter_median": 3.276333000016166,
+    "cached_preview_runs": [
+      0.24222650000592694,
+      0.24200430000200868,
+      0.22373549998155795
+    ],
+    "cached_preview_median": 0.24200430000200868,
+    "png_encoding_seconds": 0.6631165000144392,
+    "encoded_bytes": 2447350,
+    "decode_reference_seconds": 0.09886470000492409,
+    "stages": {
+      "prepare": 0.4413472999876831,
+      "layers": 0.16458770001190715,
+      "render": 3.268259600008605,
+      "total": 3.874195200012764
+    }
+  },
+  {
+    "version": "v1",
+    "style": "扁平插画",
+    "width": 3840,
+    "height": 2160,
+    "runs": [
+      0.5192907000018749,
+      0.526578300021356,
+      0.5377475999994203
+    ],
+    "median_seconds": 0.526578300021356,
+    "p95_seconds": 0.5366306700016139,
+    "rss_peak_mib": 277.4765625,
+    "rss_increase_mib": 207.546875,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.09833959999377839,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "扁平插画",
+    "width": 3840,
+    "height": 2160,
+    "runs": [
+      1.8812405999924522,
+      4.071427899994887,
+      4.185875299997861
+    ],
+    "median_seconds": 4.071427899994887,
+    "p95_seconds": 4.174430559997563,
+    "rss_peak_mib": 161.3359375,
+    "rss_increase_mib": 85.33203125,
+    "cached_parameter_runs": [
+      3.4812582999875303,
+      3.384655300003942,
+      3.483685900020646
+    ],
+    "cached_parameter_median": 3.4812582999875303,
+    "cached_preview_runs": [
+      0.23894519999157637,
+      0.26221759998588823,
+      0.23498280000058003
+    ],
+    "cached_preview_median": 0.23894519999157637,
+    "png_encoding_seconds": 0.8148553999781143,
+    "encoded_bytes": 3415476,
+    "decode_reference_seconds": 0.09615860000485554,
+    "stages": {
+      "prepare": 0.4681492999952752,
+      "layers": 0.43098340000142343,
+      "render": 3.280281199986348,
+      "total": 4.179414699989138
+    }
+  },
+  {
+    "version": "v1",
+    "style": "美式漫画",
+    "width": 3840,
+    "height": 2160,
+    "runs": [
+      0.28192869998747483,
+      0.28748120000818744,
+      0.28641650002100505
+    ],
+    "median_seconds": 0.28641650002100505,
+    "p95_seconds": 0.2873747300094692,
+    "rss_peak_mib": 275.05078125,
+    "rss_increase_mib": 206.453125,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.09991509999963455,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "美式漫画",
+    "width": 3840,
+    "height": 2160,
+    "runs": [
+      4.522271199995885,
+      6.040456899994751,
+      5.986920299998019
+    ],
+    "median_seconds": 5.986920299998019,
+    "p95_seconds": 6.035103239995078,
+    "rss_peak_mib": 160.12109375,
+    "rss_increase_mib": 91.6484375,
+    "cached_parameter_runs": [
+      5.578136299998732,
+      5.482843999983743,
+      4.604941099998541
+    ],
+    "cached_parameter_median": 5.482843999983743,
+    "cached_preview_runs": [
+      0.10968240001238883,
+      0.11990710001555271,
+      0.14126480001141317
+    ],
+    "cached_preview_median": 0.11990710001555271,
+    "png_encoding_seconds": 0.2382258000143338,
+    "encoded_bytes": 3620761,
+    "decode_reference_seconds": 0.10375619999831542,
+    "stages": {
+      "prepare": 0.42884209999465384,
+      "layers": 0.13766259999829344,
+      "render": 5.615137799992226,
+      "total": 6.1816431999905035
+    }
+  },
+  {
+    "version": "v1",
+    "style": "铅笔素描",
+    "width": 3840,
+    "height": 2160,
+    "runs": [
+      0.21601609999197535,
+      0.20442590001039207,
+      0.2078134999901522
+    ],
+    "median_seconds": 0.2078134999901522,
+    "p95_seconds": 0.21519583999179304,
+    "rss_peak_mib": 278.9765625,
+    "rss_increase_mib": 210.98046875,
+    "cached_parameter_runs": [],
+    "cached_parameter_median": null,
+    "cached_preview_runs": [],
+    "cached_preview_median": null,
+    "png_encoding_seconds": null,
+    "encoded_bytes": null,
+    "decode_reference_seconds": 0.10685300000477582,
+    "stages": {}
+  },
+  {
+    "version": "v2",
+    "style": "铅笔素描",
+    "width": 3840,
+    "height": 2160,
+    "runs": [
+      1.2954833999974653,
+      1.302281900017988,
+      1.2896787000063341
+    ],
+    "median_seconds": 1.2954833999974653,
+    "p95_seconds": 1.3016020500159358,
+    "rss_peak_mib": 130.984375,
+    "rss_increase_mib": 63.078125,
+    "cached_parameter_runs": [
+      1.3049563000095077,
+      1.405562200001441,
+      1.2860487000143621
+    ],
+    "cached_parameter_median": 1.3049563000095077,
+    "cached_preview_runs": [
+      0.10234899999340996,
+      0.11110880001797341,
+      0.09953050001058728
+    ],
+    "cached_preview_median": 0.10234899999340996,
+    "png_encoding_seconds": 0.28480059999856167,
+    "encoded_bytes": 5259271,
+    "decode_reference_seconds": 0.12301020001177676,
+    "stages": {
+      "prepare": 0.11356789999990724,
+      "layers": 0.025583299982827157,
+      "render": 1.1837645999912638,
+      "total": 1.3229165999800898
+    }
+  }
+]
