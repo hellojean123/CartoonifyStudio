@@ -1,0 +1,506 @@
+[
+  {
+    "file": "01_portrait.jpg",
+    "algorithm_seconds": 0.6024075000023004,
+    "export_seconds": 1.593628600006923,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 193,
+      "isolated_beads": 75,
+      "small_regions": 119
+    },
+    "after": {
+      "regions": 72,
+      "isolated_beads": 8,
+      "small_regions": 13
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 72,
+    "height": 48,
+    "total_beads": 3456,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 263
+  },
+  {
+    "file": "02_portrait.jpg",
+    "algorithm_seconds": 0.4596395999833476,
+    "export_seconds": 1.6952529000118375,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 253,
+      "isolated_beads": 115,
+      "small_regions": 165
+    },
+    "after": {
+      "regions": 69,
+      "isolated_beads": 1,
+      "small_regions": 2
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 58,
+    "height": 72,
+    "total_beads": 4176,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 35
+  },
+  {
+    "file": "03_portrait.jpg",
+    "algorithm_seconds": 0.2804545999970287,
+    "export_seconds": 1.7792812999978196,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 151,
+      "isolated_beads": 81,
+      "small_regions": 107
+    },
+    "after": {
+      "regions": 47,
+      "isolated_beads": 5,
+      "small_regions": 6
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 58,
+    "height": 72,
+    "total_beads": 4176,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 72
+  },
+  {
+    "file": "04_portrait.jpg",
+    "algorithm_seconds": 0.42866080001113005,
+    "export_seconds": 2.050641199981328,
+    "pdf_pages": 10,
+    "before": {
+      "regions": 339,
+      "isolated_beads": 162,
+      "small_regions": 238
+    },
+    "after": {
+      "regions": 85,
+      "isolated_beads": 0,
+      "small_regions": 1
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 72,
+    "height": 69,
+    "total_beads": 4968,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 22
+  },
+  {
+    "file": "05_portrait.jpg",
+    "algorithm_seconds": 0.3368161999969743,
+    "export_seconds": 1.4562726999865845,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 252,
+      "isolated_beads": 101,
+      "small_regions": 165
+    },
+    "after": {
+      "regions": 87,
+      "isolated_beads": 5,
+      "small_regions": 13
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 72,
+    "height": 48,
+    "total_beads": 3456,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 118
+  },
+  {
+    "file": "06_portrait.jpg",
+    "algorithm_seconds": 0.2775019999826327,
+    "export_seconds": 1.3987958999932744,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 158,
+      "isolated_beads": 81,
+      "small_regions": 117
+    },
+    "after": {
+      "regions": 40,
+      "isolated_beads": 2,
+      "small_regions": 2
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 48,
+    "height": 72,
+    "total_beads": 3456,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 18
+  },
+  {
+    "file": "07_portrait.jpg",
+    "algorithm_seconds": 0.3765183000068646,
+    "export_seconds": 1.8672498999803793,
+    "pdf_pages": 10,
+    "before": {
+      "regions": 321,
+      "isolated_beads": 125,
+      "small_regions": 218
+    },
+    "after": {
+      "regions": 87,
+      "isolated_beads": 0,
+      "small_regions": 0
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 72,
+    "height": 62,
+    "total_beads": 4464,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 0
+  },
+  {
+    "file": "08_portrait.jpg",
+    "algorithm_seconds": 0.5140345999971032,
+    "export_seconds": 1.896559899993008,
+    "pdf_pages": 10,
+    "before": {
+      "regions": 357,
+      "isolated_beads": 225,
+      "small_regions": 313
+    },
+    "after": {
+      "regions": 45,
+      "isolated_beads": 0,
+      "small_regions": 0
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 66,
+    "height": 72,
+    "total_beads": 4752,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 30
+  },
+  {
+    "file": "13_portrait.jpg",
+    "algorithm_seconds": 0.35911340001621284,
+    "export_seconds": 1.1706854000221938,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 250,
+      "isolated_beads": 116,
+      "small_regions": 172
+    },
+    "after": {
+      "regions": 62,
+      "isolated_beads": 0,
+      "small_regions": 0
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 72,
+    "height": 40,
+    "total_beads": 2880,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 0
+  },
+  {
+    "file": "14_portrait.jpg",
+    "algorithm_seconds": 0.3714534000027925,
+    "export_seconds": 1.284739199996693,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 251,
+      "isolated_beads": 121,
+      "small_regions": 194
+    },
+    "after": {
+      "regions": 45,
+      "isolated_beads": 0,
+      "small_regions": 0
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 72,
+    "height": 40,
+    "total_beads": 2880,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 0
+  },
+  {
+    "file": "15_landscape.jpg",
+    "algorithm_seconds": 0.3578181999910157,
+    "export_seconds": 1.541216900019208,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 38,
+      "isolated_beads": 7,
+      "small_regions": 22
+    },
+    "after": {
+      "regions": 14,
+      "isolated_beads": 0,
+      "small_regions": 0
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 72,
+    "height": 54,
+    "total_beads": 3888,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 0
+  },
+  {
+    "file": "16_landscape.jpg",
+    "algorithm_seconds": 0.27974430000176653,
+    "export_seconds": 1.7487531999940984,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 76,
+      "isolated_beads": 31,
+      "small_regions": 47
+    },
+    "after": {
+      "regions": 22,
+      "isolated_beads": 0,
+      "small_regions": 0
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 72,
+    "height": 49,
+    "total_beads": 3528,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 0
+  },
+  {
+    "file": "17_architecture.jpg",
+    "algorithm_seconds": 0.6311897000123281,
+    "export_seconds": 1.9918608000152744,
+    "pdf_pages": 10,
+    "before": {
+      "regions": 265,
+      "isolated_beads": 95,
+      "small_regions": 165
+    },
+    "after": {
+      "regions": 85,
+      "isolated_beads": 0,
+      "small_regions": 0
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 71,
+    "height": 72,
+    "total_beads": 5112,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 0
+  },
+  {
+    "file": "18_architecture.jpg",
+    "algorithm_seconds": 0.3091318999940995,
+    "export_seconds": 1.1384038999967743,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 220,
+      "isolated_beads": 98,
+      "small_regions": 143
+    },
+    "after": {
+      "regions": 66,
+      "isolated_beads": 0,
+      "small_regions": 0
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 72,
+    "height": 41,
+    "total_beads": 2952,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 0
+  },
+  {
+    "file": "19_animal.jpg",
+    "algorithm_seconds": 0.30155109998304397,
+    "export_seconds": 1.843472100008512,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 191,
+      "isolated_beads": 99,
+      "small_regions": 132
+    },
+    "after": {
+      "regions": 47,
+      "isolated_beads": 0,
+      "small_regions": 0
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 72,
+    "height": 54,
+    "total_beads": 3888,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 0
+  },
+  {
+    "file": "23_portrait.jpg",
+    "algorithm_seconds": 0.26279690000228584,
+    "export_seconds": 1.5316202999965753,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 96,
+      "isolated_beads": 48,
+      "small_regions": 69
+    },
+    "after": {
+      "regions": 25,
+      "isolated_beads": 1,
+      "small_regions": 2
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 51,
+    "height": 72,
+    "total_beads": 3672,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 50
+  },
+  {
+    "file": "22_portrait.jpg",
+    "algorithm_seconds": 0.35191510000731796,
+    "export_seconds": 2.0905065999832004,
+    "pdf_pages": 10,
+    "before": {
+      "regions": 153,
+      "isolated_beads": 76,
+      "small_regions": 119
+    },
+    "after": {
+      "regions": 32,
+      "isolated_beads": 1,
+      "small_regions": 2
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 70,
+    "height": 72,
+    "total_beads": 5040,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 46
+  },
+  {
+    "file": "26_portrait.jpg",
+    "algorithm_seconds": 0.2429202999919653,
+    "export_seconds": 1.5691879999940284,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 91,
+      "isolated_beads": 51,
+      "small_regions": 65
+    },
+    "after": {
+      "regions": 23,
+      "isolated_beads": 0,
+      "small_regions": 0
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 52,
+    "height": 72,
+    "total_beads": 3744,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 52
+  },
+  {
+    "file": "27_portrait.jpg",
+    "algorithm_seconds": 0.24863469999399967,
+    "export_seconds": 1.4356419000250753,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 143,
+      "isolated_beads": 88,
+      "small_regions": 117
+    },
+    "after": {
+      "regions": 23,
+      "isolated_beads": 0,
+      "small_regions": 1
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 48,
+    "height": 72,
+    "total_beads": 3456,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 43
+  },
+  {
+    "file": "28_portrait.jpg",
+    "algorithm_seconds": 0.30999129998963326,
+    "export_seconds": 1.6922977000067476,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 130,
+      "isolated_beads": 68,
+      "small_regions": 97
+    },
+    "after": {
+      "regions": 29,
+      "isolated_beads": 0,
+      "small_regions": 0
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 55,
+    "height": 72,
+    "total_beads": 3960,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 22
+  },
+  {
+    "file": "29_portrait.jpg",
+    "algorithm_seconds": 0.32268309997743927,
+    "export_seconds": 1.4502801000198815,
+    "pdf_pages": 7,
+    "before": {
+      "regions": 97,
+      "isolated_beads": 52,
+      "small_regions": 61
+    },
+    "after": {
+      "regions": 30,
+      "isolated_beads": 0,
+      "small_regions": 0
+    },
+    "requested_colors": 10,
+    "used_colors": 10,
+    "width": 48,
+    "height": 72,
+    "total_beads": 3456,
+    "custom_palette": false,
+    "min_region": 5,
+    "protected_feature_cells": 0
+  }
+]

@@ -8,6 +8,8 @@ os.environ.setdefault('GRADIO_ANALYTICS_ENABLED','False')
 os.environ.setdefault('GRADIO_TEMP_DIR',str(Path(__file__).resolve().parent/'outputs'/'ui_temp'))
 import gradio as gr
 from cartoonify.core import STYLES,PRESETS,Params,process,resize,CACHE
+from cartoonify.beads import PRESETS as BEAD_PRESETS
+from cartoonify.bead_service import create_export as bead_export
 from cartoonify.service import ROOT,load_cached,job,cancel_job,export_one,batch_export
 
 def make_params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes):
@@ -52,54 +54,61 @@ def manual_box(left,top,width,height):
     if left+width>100 or top+height>100: raise gr.Error('保护框超出图片边界，请缩小宽度或高度')
     return json.dumps([[left/100,top/100,width/100,height/100]])
 
+def bead_generate(path,grid,colors,smooth,min_region,cohesion,pitch,preserve,mode,custom,session):
+    try:return bead_export(path,grid,colors,smooth,min_region,cohesion,pitch,preserve,mode,custom,session)
+    except InterruptedError:return gr.skip(),gr.skip(),None,None,'拼豆生成已取消'
+    except Exception as exc:raise gr.Error(str(exc)) from exc
+
+
 def build_app():
     with gr.Blocks(theme=gr.themes.Soft(primary_hue='violet'),title='Cartoonify Studio',css='.gradio-container{max-width:1480px!important} footer{display:none!important}') as demo:
         session=gr.State(lambda:uuid.uuid4().hex)
-        gr.Markdown('# 🎨 Cartoonify Studio\n纯 CPU · 人像保护 · 分层轮廓 · 风格适配高清导出')
-        with gr.Row():
-            with gr.Column(scale=1):
-                source=gr.File(label='拖拽 JPG / PNG / WebP',file_types=['.jpg','.jpeg','.png','.webp'],type='filepath')
-                style=gr.Dropdown(STYLES,value=STYLES[0],label='风格与预设')
-                outline=gr.Slider(0,1,.5,step=.05,label='整体轮廓强度')
-                smooth=gr.Slider(1,10,6,step=1,label='区域平滑')
-                colors=gr.Slider(4,48,16,step=1,label='调色板颜色数',visible=False)
-                contrast=gr.Slider(.6,1.8,1.03,step=.01,label='对比度')
-                colored=gr.Checkbox(label='彩色铅笔',visible=False)
-                protect=gr.Checkbox(value=True,label='保护人像（自动检测 + 手动区域）')
-                face_strength=gr.Slider(0,1,.75,step=.05,label='人像保护力度')
-                with gr.Accordion('轮廓分层与手动保护',open=False):
-                    outer=gr.Slider(0,1,.8,step=.05,label='主要边缘 / 粗线')
-                    inner=gr.Slider(0,1,.5,step=.05,label='内部纹理 / 细线')
-                    gr.Markdown('自动检测漏掉侧脸时，可按图片百分比添加一个保护框。')
+        gr.Markdown('# 🎨 Cartoonify Studio\n纯 CPU · 人像保护 · 分层轮廓 · 高清导出 · 拼豆图纸')
+        source=gr.File(label='上传原照片 · JPG / PNG / WebP',file_types=['.jpg','.jpeg','.png','.webp'],type='filepath')
+        with gr.Tab('照片卡通化'):
+            with gr.Row():
+                with gr.Column(scale=1):
+                    style=gr.Dropdown(STYLES,value=STYLES[0],label='风格与预设')
+                    outline=gr.Slider(0,1,.5,step=.05,label='整体轮廓强度')
+                    smooth=gr.Slider(1,10,6,step=1,label='区域平滑')
+                    colors=gr.Slider(4,48,16,step=1,label='调色板颜色数',visible=False)
+                    contrast=gr.Slider(.6,1.8,1.03,step=.01,label='对比度')
+                    colored=gr.Checkbox(label='彩色铅笔',visible=False)
+                    protect=gr.Checkbox(value=True,label='保护人像（自动检测 + 手动区域）')
+                    face_strength=gr.Slider(0,1,.75,step=.05,label='人像保护力度')
+                    with gr.Accordion('轮廓分层与手动保护',open=False):
+                        outer=gr.Slider(0,1,.8,step=.05,label='主要边缘 / 粗线')
+                        inner=gr.Slider(0,1,.5,step=.05,label='内部纹理 / 细线')
+                        gr.Markdown('自动检测漏掉侧脸时，可按图片百分比添加一个保护框。')
+                        with gr.Row():
+                            left=gr.Slider(0,95,25,step=1,label='左侧位置 %')
+                            top=gr.Slider(0,95,15,step=1,label='顶部位置 %')
+                        with gr.Row():
+                            box_width=gr.Slider(1,100,40,step=1,label='保护宽度 %')
+                            box_height=gr.Slider(1,100,55,step=1,label='保护高度 %')
+                        add_box=gr.Button('应用手动保护框')
+                        clear_box=gr.Button('清除手动保护框')
+                        boxes=gr.Textbox(value='',visible=False)
+                    with gr.Group(visible=False) as comic_group:
+                        spacing=gr.Slider(4,18,7,step=.5,label='网点间距（1000 边长参考像素）')
+                        angle=gr.Slider(0,90,15,step=1,label='网点角度')
+                        opacity=gr.Slider(0,.65,.28,step=.01,label='网点浓度')
+                    with gr.Group(visible=False) as pencil_group:
+                        shade=gr.Slider(0,.8,.48,step=.02,label='石墨明暗')
+                        paper=gr.Slider(0,.4,.08,step=.01,label='纸张颗粒')
+                    reset=gr.Button('恢复当前风格默认参数')
+                    preview_btn=gr.Button('重新预览',variant='primary')
+                    quality=gr.Radio(['标准','精细'],value='精细',label='经典卡通细节恢复',info='精细增加少量原图细节；其他风格固定采用保留色块或明暗的原尺寸渲染。')
+                    fmt=gr.Radio(['PNG','JPG'],value='PNG',label='导出格式')
+                    export_btn=gr.Button('处理原始尺寸并导出')
+                    stop=gr.Button('取消当前任务')
+                with gr.Column(scale=3):
                     with gr.Row():
-                        left=gr.Slider(0,95,25,step=1,label='左侧位置 %')
-                        top=gr.Slider(0,95,15,step=1,label='顶部位置 %')
-                    with gr.Row():
-                        box_width=gr.Slider(1,100,40,step=1,label='保护宽度 %')
-                        box_height=gr.Slider(1,100,55,step=1,label='保护高度 %')
-                    add_box=gr.Button('应用手动保护框')
-                    clear_box=gr.Button('清除手动保护框')
-                    boxes=gr.Textbox(value='',visible=False)
-                with gr.Group(visible=False) as comic_group:
-                    spacing=gr.Slider(4,18,7,step=.5,label='网点间距（1000 边长参考像素）')
-                    angle=gr.Slider(0,90,15,step=1,label='网点角度')
-                    opacity=gr.Slider(0,.65,.28,step=.01,label='网点浓度')
-                with gr.Group(visible=False) as pencil_group:
-                    shade=gr.Slider(0,.8,.48,step=.02,label='石墨明暗')
-                    paper=gr.Slider(0,.4,.08,step=.01,label='纸张颗粒')
-                reset=gr.Button('恢复当前风格默认参数')
-                preview_btn=gr.Button('重新预览',variant='primary')
-                quality=gr.Radio(['标准','精细'],value='精细',label='经典卡通细节恢复',info='精细增加少量原图细节；其他风格固定采用保留色块或明暗的原尺寸渲染。')
-                fmt=gr.Radio(['PNG','JPG'],value='PNG',label='导出格式')
-                export_btn=gr.Button('处理原始尺寸并导出')
-                stop=gr.Button('取消当前任务')
-            with gr.Column(scale=3):
-                with gr.Row():
-                    before=gr.Image(label='原图预览',interactive=False)
-                    after=gr.Image(label='效果预览',interactive=False)
-                status=gr.Textbox(label='状态与耗时',interactive=False)
-                download=gr.File(label='下载原尺寸结果')
-                gr.Markdown('松开滑块后自动预览：先草稿，再更新统一色板的最终预览。图片在本机处理。')
+                        before=gr.Image(label='原图预览',interactive=False)
+                        after=gr.Image(label='效果预览',interactive=False)
+                    status=gr.Textbox(label='状态与耗时',interactive=False)
+                    download=gr.File(label='下载原尺寸结果')
+                    gr.Markdown('松开滑块后自动预览：先草稿，再更新统一色板的最终预览。图片在本机处理。')
         params=[outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes]
         outputs=[before,after,download,status]
         triggers=[preview_btn.click,source.change]+[s.release for s in [outline,smooth,colors,contrast,face_strength,outer,inner,spacing,angle,opacity,shade,paper]]+[colored.change,protect.change,boxes.submit]
@@ -111,6 +120,36 @@ def build_app():
         add_box.click(manual_box,[left,top,box_width,box_height],boxes,queue=False,api_name=False).then(preview,[source,style,*params,session],outputs,concurrency_id='cpu',concurrency_limit=1,api_name=False)
         clear_box.click(lambda:'',None,boxes,queue=False,api_name=False).then(preview,[source,style,*params,session],outputs,concurrency_id='cpu',concurrency_limit=1,api_name=False)
         export_event=export_btn.click(export,[source,style,*params,fmt,quality,session],outputs,concurrency_id='cpu',concurrency_limit=1,api_name='export')
+        with gr.Tab('拼豆图纸'):
+            bead_session=gr.State(lambda:uuid.uuid4().hex)
+            gr.Markdown('## 把照片变成更好拼的图纸\n使用上方原图；每格一粒豆。优先减少孤立杂色与碎块，默认不做抖动。')
+            with gr.Row():
+                with gr.Column(scale=1):
+                    bead_preset=gr.Dropdown(list(BEAD_PRESETS),value='轻松拼（推荐）',label='拼装难度预设')
+                    bead_grid=gr.Slider(16,160,72,step=1,label='最长边格数',info='保持原图比例；格数越多，细节与工作量越大。')
+                    bead_colors=gr.Slider(2,32,10,step=1,label='最多使用几种颜色')
+                    bead_smooth=gr.Slider(0,4,3,step=1,label='先平滑照片',info='减少毛发、纹理带来的零碎颜色。')
+                    bead_min=gr.Slider(0,12,5,step=1,label='合并小于几粒的色块',info='按上下左右相连计算；调高更好拼，但可能合并眼睛等细节。')
+                    bead_cohesion=gr.Slider(0,4,2.5,step=.5,label='相邻颜色聚合力度')
+                    bead_pitch=gr.Radio([5.,2.6],value=5.,label='PDF 每格间距（毫米）',info='按实际大小 100% 打印，每页最多 29×29 格；格距不等于熨烫后尺寸。')
+                    bead_preserve=gr.Checkbox(value=True,label='保留眼睛和嘴部小细节',info='会有意保留少量小色块；关闭后以易拼为优先。')
+                    bead_mode=gr.Radio(['自动精简颜色','使用实体色卡 CSV'],value='自动精简颜色',label='配色方式')
+                    bead_custom=gr.File(label='实体色卡 CSV：code,r,g,b，可加 name',file_types=['.csv'],type='filepath',visible=False)
+                    gr.Markdown('自动颜色只用于设计参考，不对应品牌色号。导入实体色卡后，程序只从该色卡选色；B01 等仍是图纸内编号。')
+                    bead_go=gr.Button('生成 / 更新拼豆图纸',variant='primary')
+                    bead_stop=gr.Button('取消拼豆生成')
+                with gr.Column(scale=3):
+                    bead_preview=gr.Image(label='拼豆配色预览（放大像素，不增加新颜色）',interactive=False)
+                    bead_status=gr.Textbox(label='格数、用量与碎色块变化',interactive=False)
+                    bead_legend=gr.HTML(label='颜色与净用量')
+                    with gr.Row():
+                        bead_pdf=gr.File(label='可打印 A4 图纸 PDF')
+                        bead_zip=gr.File(label='完整图纸包：PDF / PNG / SVG / 色号用量 / 网格 CSV')
+            bead_preset.change(lambda name:BEAD_PRESETS[name],bead_preset,[bead_grid,bead_colors,bead_smooth,bead_min,bead_cohesion],queue=False,api_name=False)
+            bead_mode.change(lambda mode:gr.update(visible=mode=='使用实体色卡 CSV'),bead_mode,bead_custom,queue=False,api_name=False)
+            bead_go.click(bead_generate,[source,bead_grid,bead_colors,bead_smooth,bead_min,bead_cohesion,bead_pitch,bead_preserve,bead_mode,bead_custom,bead_session],
+                          [bead_preview,bead_legend,bead_pdf,bead_zip,bead_status],concurrency_id='cpu',concurrency_limit=1,api_name='beads')
+            bead_stop.click(cancel_job,bead_session,bead_status,queue=False,api_name='beads_cancel')
         with gr.Tab('批量处理'):
             files=gr.File(file_count='multiple',file_types=['.jpg','.jpeg','.png','.webp'],label='多选照片')
             go=gr.Button('批量生成原尺寸 ZIP')

@@ -4,26 +4,26 @@
     {
       "style": "经典卡通",
       "preview_stages": 2,
-      "status": "1.74 秒 · 最终预览 800×1000 · 保护区域 1 · 缓存命中 0",
-      "http_end_to_end_seconds": 10.857439100014744
+      "status": "1.64 秒 · 最终预览 800×1000 · 保护区域 1 · 缓存命中 0",
+      "http_end_to_end_seconds": 10.761350100015989
     },
     {
       "style": "扁平插画",
       "preview_stages": 2,
-      "status": "1.46 秒 · 最终预览 800×1000 · 保护区域 1 · 缓存命中 2",
-      "http_end_to_end_seconds": 10.093756100017345
+      "status": "1.43 秒 · 最终预览 800×1000 · 保护区域 1 · 缓存命中 2",
+      "http_end_to_end_seconds": 9.189722799987067
     },
     {
       "style": "美式漫画",
       "preview_stages": 2,
-      "status": "1.00 秒 · 最终预览 800×1000 · 保护区域 1 · 缓存命中 4",
-      "http_end_to_end_seconds": 11.93624290000298
+      "status": "0.80 秒 · 最终预览 800×1000 · 保护区域 1 · 缓存命中 4",
+      "http_end_to_end_seconds": 9.946406800008845
     },
     {
       "style": "铅笔素描",
       "preview_stages": 2,
-      "status": "0.90 秒 · 最终预览 800×1000 · 保护区域 1 · 缓存命中 6",
-      "http_end_to_end_seconds": 11.998451899999054
+      "status": "0.86 秒 · 最终预览 800×1000 · 保护区域 1 · 缓存命中 6",
+      "http_end_to_end_seconds": 10.160894199972972
     }
   ],
   "full_resolution_jpg": [
