@@ -1,0 +1,8 @@
+Source: https://commons.wikimedia.org/wiki/File:Misty_morning_landscape_with_trees_and_mountain_near_Eiras,_O_Rosal,_O_Baixo_Mi%C3%B1o,_Galicia,_Spain,_March_2020_-_Flickr_-_sergei.gussev.jpg
+Author: Sergei Gussev
+License: CC BY 4.0
+License URL: https://creativecommons.org/licenses/by/4.0
+Changes: resized, palette quantized, spatial regions simplified, converted to bead charts.
+Photo-derived pattern illustrations follow the source license above.
+Title: File:Misty morning landscape with trees and mountain near Eiras, O Rosal, O Baixo Miño, Galicia, Spain, March 2020 - Flickr - sergei.gussev.jpg
+Photo derivatives retain the source license obligations.

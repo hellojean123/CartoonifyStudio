@@ -1,0 +1,8 @@
+Source: https://commons.wikimedia.org/wiki/File:Arben_Vitia_-_portrait_2023.jpg
+Author: Ministria e Shëndetësisë e Republikës së Kosovës / Ministry of Health of the Republic of Kosovo
+License: Public domain
+License URL: 
+Changes: resized, palette quantized, spatial regions simplified, converted to bead charts.
+Photo-derived pattern illustrations follow the source license above.
+Title: File:Arben Vitia - portrait 2023.jpg
+Photo derivatives retain the source license obligations.

@@ -1,0 +1,8 @@
+Source: https://commons.wikimedia.org/wiki/File:Portrait_of_a_participant,_Wikiconference_India_2026_in_Kochi.jpg
+Author: JyotiPN
+License: CC BY-SA 4.0
+License URL: https://creativecommons.org/licenses/by-sa/4.0
+Changes: resized, palette quantized, spatial regions simplified, converted to bead charts.
+Photo-derived pattern illustrations follow the source license above.
+Title: File:Portrait of a participant, Wikiconference India 2026 in Kochi.jpg
+Photo derivatives retain the source license obligations.

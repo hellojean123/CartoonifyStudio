@@ -110,3 +110,29 @@ Start-Process .\outputs\blind_review.html
 ## v3 核验与限制
 
 本轮以人像结构、素描明暗、独立风格和高清一致性为先，改动及实际检查见 optimization_v3.md。新版改善不等于每张照片都胜过旧版：深皱纹、强硬光仍可能形成较重色块；扁平插画会有意舍弃发丝细节；素描仍属传统滤镜，笔触不等同人工绘制。网页盲评没有预置或虚构的偏好分数。
+
+## 照片转拼豆图纸
+
+上方上传原照片，再切换“拼豆图纸”页，点击“生成 / 更新拼豆图纸”。算法独立于卡通四风格，直接从原照片生成网格，避免卡通碎线再次被量化成杂色。
+
+- 轻松拼：最长边 72 格、最多 10 色、小于 5 粒的色块优先合并；均衡：96 格 / 16 色 / 3 粒；保留细节：128 格 / 24 色 / 1 粒。
+- 网格保持照片比例，最长边可调 16～160 格；每格一粒豆，所有格子都计入用量，白色也不是空白。
+- 使用浮点 CIELab 量化、无抖动、相邻颜色聚合与四连通小区域合并，减少孤立杂色。调整“相邻颜色聚合力度”和“合并小于几粒的色块”可控制简洁程度。
+- 默认保留眼睛与嘴部的少量暗色细节。这样可能保留少量单粒；关闭该选项可进一步减少碎块。检测失败、非常小的脸仍可能损失五官；可提高格数、用色，降低小块阈值，或先裁剪主体再上传。
+- 下载包包含 preview.png、编号 chart.png、矢量 chart.svg、A4 分页 pattern.pdf、colors.csv 用量清单、grid.csv 网格和 pattern.json。同一份网格驱动所有文件，编号 01 对应清单 B01，行列从左上角 1 开始。
+- PDF 每页最多 29×29 格，支持 5mm / 2.6mm 格距；按“实际大小 / 100%”打印，用图内 50mm 标尺检查，不启用适应纸张。格距不是熨烫后的成品尺寸。2.6mm 小格的编号较小，可放大阅读。
+- 颜色数量是净用量，购买时自行预留余量。自动调色 A01 等只是设计参考，B01 等是本图内编号，都不代表任何品牌的实体豆色号。
+
+要使用自己的实体豆，选择“使用实体色卡 CSV”，上传 UTF-8 CSV，列为 `code,r,g,b`，可增加 `name`。最多 256 条色卡颜色，最终使用不超过滑块指定数量，只使用导入色卡的 RGB；不会编造品牌色号。示例 `palettes/example.csv` 全部是 EXAMPLE 颜色，不是实际品牌色卡。屏幕颜色与实物受光照影响，仍应核对实体色卡。含非 ASCII 色号的完整信息保存在 CSV / JSON 中；PDF 用本地编号对应，便于跨系统打印。
+
+```powershell
+Set-Location D:\CartoonifyStudio
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe app.py
+.\.venv\Scripts\python.exe evaluate_beads.py
+.\.venv\Scripts\python.exe benchmark_beads.py
+.\.venv\Scripts\python.exe smoke_beads.py
+Start-Process .\outputs\beads\gallery.html
+```
+
+21 张真实样片均已生成拼豆图纸与对比，见 `outputs/beads/gallery.html`；算法与实测报告见 `beads_report.md`。原照片作者、许可在画廊及示例包 SOURCE.txt 中保留，改编结果继续遵守原照片授权。

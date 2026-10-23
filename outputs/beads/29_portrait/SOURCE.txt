@@ -1,0 +1,8 @@
+Source: https://commons.wikimedia.org/wiki/File:Grant_Shapps_Official_Cabinet_Portrait_August_2023.jpg
+Author: Alice Hodgson / No 10 Downing Street
+License: OGL 3
+License URL: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3
+Changes: resized, palette quantized, spatial regions simplified, converted to bead charts.
+Photo-derived pattern illustrations follow the source license above.
+Title: File:Grant Shapps Official Cabinet Portrait August 2023.jpg
+Photo derivatives retain the source license obligations.

@@ -1,0 +1,8 @@
+Source: https://commons.wikimedia.org/wiki/File:Portrait_of_a_young_boy_in_Kerala,_India.jpg
+Author: Keerikkadanjose
+License: CC0
+License URL: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+Changes: resized, palette quantized, spatial regions simplified, converted to bead charts.
+Photo-derived pattern illustrations follow the source license above.
+Title: File:Portrait of a young boy in Kerala, India.jpg
+Photo derivatives retain the source license obligations.

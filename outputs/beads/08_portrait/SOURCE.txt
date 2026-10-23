@@ -1,0 +1,8 @@
+Source: https://commons.wikimedia.org/wiki/File:Ferdinand_%22Bongbong%22_Marcos_Jr._2023_SONA_Portrait.jpg
+Author: Congress of the Philippines
+License: Public domain
+License URL: 
+Changes: resized, palette quantized, spatial regions simplified, converted to bead charts.
+Photo-derived pattern illustrations follow the source license above.
+Title: File:Ferdinand "Bongbong" Marcos Jr. 2023 SONA Portrait.jpg
+Photo derivatives retain the source license obligations.

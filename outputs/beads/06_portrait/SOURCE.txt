@@ -1,0 +1,8 @@
+Source: https://commons.wikimedia.org/wiki/File:Official_portrait_2023_Chandni_Mistry.jpg
+Author: Justine Desmond / Brighton & Hove City Council
+License: OGL 3
+License URL: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3
+Changes: resized, palette quantized, spatial regions simplified, converted to bead charts.
+Photo-derived pattern illustrations follow the source license above.
+Title: File:Official portrait 2023 Chandni Mistry.jpg
+Photo derivatives retain the source license obligations.
