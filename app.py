@@ -1,4 +1,4 @@
-"""Cartoonify Studio v2: staged previews and one shared CPU resource queue."""
+"""Cartoonify Studio v3: staged previews and one shared CPU resource queue."""
 import time
 import uuid
 import os
@@ -46,7 +46,7 @@ def batch(paths,style,*values,progress=gr.Progress()):
 def defaults(style):
     index=STYLES.index(style);a,b,c,d=PRESETS[index]
     return (a,b,gr.update(value=c,minimum=4,maximum=12 if index==2 else 48,visible=index in (1,2),label='明度分级' if index==2 else '调色板颜色数'),d,
-            gr.update(value=False,visible=index==3),True,.75,.8,.5,7,15,.28,.3,.12,'',gr.update(visible=index==2),gr.update(visible=index==3))
+            gr.update(value=False,visible=index==3),True,.75,.8,.5,7,15,.28,.48,.08,'',gr.update(visible=index==2),gr.update(visible=index==3))
 
 def manual_box(left,top,width,height):
     if left+width>100 or top+height>100: raise gr.Error('保护框超出图片边界，请缩小宽度或高度')
@@ -55,7 +55,7 @@ def manual_box(left,top,width,height):
 def build_app():
     with gr.Blocks(theme=gr.themes.Soft(primary_hue='violet'),title='Cartoonify Studio',css='.gradio-container{max-width:1480px!important} footer{display:none!important}') as demo:
         session=gr.State(lambda:uuid.uuid4().hex)
-        gr.Markdown('# 🎨 Cartoonify Studio\n纯 CPU · 人像保护 · 分层轮廓 · 原图引导高清导出')
+        gr.Markdown('# 🎨 Cartoonify Studio\n纯 CPU · 人像保护 · 分层轮廓 · 风格适配高清导出')
         with gr.Row():
             with gr.Column(scale=1):
                 source=gr.File(label='拖拽 JPG / PNG / WebP',file_types=['.jpg','.jpeg','.png','.webp'],type='filepath')
@@ -85,11 +85,11 @@ def build_app():
                     angle=gr.Slider(0,90,15,step=1,label='网点角度')
                     opacity=gr.Slider(0,.65,.28,step=.01,label='网点浓度')
                 with gr.Group(visible=False) as pencil_group:
-                    shade=gr.Slider(0,.8,.3,step=.02,label='阴影排线')
-                    paper=gr.Slider(0,.4,.12,step=.01,label='纸张颗粒')
+                    shade=gr.Slider(0,.8,.48,step=.02,label='石墨明暗')
+                    paper=gr.Slider(0,.4,.08,step=.01,label='纸张颗粒')
                 reset=gr.Button('恢复当前风格默认参数')
                 preview_btn=gr.Button('重新预览',variant='primary')
-                quality=gr.Radio(['标准','精细'],value='精细',label='导出质量',info='精细档使用原图引导重建与原尺寸细线。')
+                quality=gr.Radio(['标准','精细'],value='精细',label='经典卡通细节恢复',info='精细增加少量原图细节；其他风格固定采用保留色块或明暗的原尺寸渲染。')
                 fmt=gr.Radio(['PNG','JPG'],value='PNG',label='导出格式')
                 export_btn=gr.Button('处理原始尺寸并导出')
                 stop=gr.Button('取消当前任务')
@@ -104,6 +104,7 @@ def build_app():
         outputs=[before,after,download,status]
         triggers=[preview_btn.click,source.change]+[s.release for s in [outline,smooth,colors,contrast,face_strength,outer,inner,spacing,angle,opacity,shade,paper]]+[colored.change,protect.change,boxes.submit]
         preview_event=gr.on(triggers=triggers,fn=preview,inputs=[source,style,*params,session],outputs=outputs,trigger_mode='always_last',concurrency_id='cpu',concurrency_limit=1,api_name='preview')
+        style.change(lambda selected:gr.update(visible=selected==STYLES[0]),style,quality,queue=False,api_name=False)
         style_event=style.change(defaults,style,[*params,comic_group,pencil_group],queue=False,api_name='style_defaults')
         style_event.then(preview,[source,style,*params,session],outputs,concurrency_id='cpu',concurrency_limit=1,trigger_mode='always_last',api_name=False)
         reset.click(defaults,style,[*params,comic_group,pencil_group],queue=False,api_name=False)

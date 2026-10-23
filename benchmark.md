@@ -1,3 +1,5 @@
+当前版本 v3 实测见 [benchmark_v3.md](benchmark_v3.md)；以下保留历史 v2 数据。
+
 # CPU 性能对照实测（v2）
 
 Python 3.12.10，OpenCV 4.12.0，Windows-11-10.0.26200-SP0，Intel64 Family 6 Model 186 Stepping 2, GenuineIntel，逻辑 CPU 12，OpenCV 线程 2，OpenCL 关闭。

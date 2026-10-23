@@ -1,0 +1,10 @@
+{
+  "name": "face_detection_yunet_2023mar.onnx",
+  "source": "https://media.githubusercontent.com/media/opencv/opencv_zoo/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/face_detection_yunet/face_detection_yunet_2023mar.onnx",
+  "upstream_commit": "48b10fa505aeb51fbd127fc60a5c660040e823b7",
+  "license": "MIT",
+  "license_url": "https://raw.githubusercontent.com/opencv/opencv_zoo/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/face_detection_yunet/LICENSE",
+  "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+  "downloaded_utc": "2026-10-23T05:44:27.134139+00:00",
+  "purpose": "Pretrained CPU-only face detection; no training, no face recognition"
+}
