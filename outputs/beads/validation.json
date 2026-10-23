@@ -1,8 +1,8 @@
 {
-  "tests_passed": 79,
+  "tests_passed": 83,
   "sample_patterns_verified": 21,
-  "isolated_beads_before": 1915,
-  "isolated_beads_after": 23,
+  "isolated_beads_before": 5887,
+  "isolated_beads_after": 407,
   "http_status": 200,
   "custom_palette_verified": true,
   "inflight_cancellation_verified": true
