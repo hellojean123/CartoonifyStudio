@@ -1,0 +1,1451 @@
+[
+  {
+    "file": "01_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 193,
+        "isolated_beads": 75,
+        "small_regions": 119
+      },
+      "after": {
+        "regions": 72,
+        "isolated_beads": 8,
+        "small_regions": 13
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 48,
+      "total_beads": 3456,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 263
+    },
+    "same_budget": {
+      "before": {
+        "regions": 293,
+        "isolated_beads": 132,
+        "small_regions": 212
+      },
+      "after": {
+        "regions": 134,
+        "isolated_beads": 39,
+        "small_regions": 60
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 48,
+      "total_beads": 3456,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 484,
+      "detected_faces": 1,
+      "face_grid_cells": 2606
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 977,
+        "isolated_beads": 512,
+        "small_regions": 639
+      },
+      "after": {
+        "regions": 432,
+        "isolated_beads": 146,
+        "small_regions": 185
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 96,
+      "height": 64,
+      "total_beads": 6144,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 821,
+      "detected_faces": 1,
+      "face_grid_cells": 4629
+    },
+    "feature_deltaE76_before": 7.69221830368042,
+    "feature_deltaE76_after_same_budget": 5.96636962890625
+  },
+  {
+    "file": "02_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 253,
+        "isolated_beads": 115,
+        "small_regions": 165
+      },
+      "after": {
+        "regions": 69,
+        "isolated_beads": 1,
+        "small_regions": 2
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 58,
+      "height": 72,
+      "total_beads": 4176,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 35
+    },
+    "same_budget": {
+      "before": {
+        "regions": 301,
+        "isolated_beads": 140,
+        "small_regions": 203
+      },
+      "after": {
+        "regions": 88,
+        "isolated_beads": 5,
+        "small_regions": 7
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 58,
+      "height": 72,
+      "total_beads": 4176,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 39,
+      "detected_faces": 1,
+      "face_grid_cells": 226
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 710,
+        "isolated_beads": 361,
+        "small_regions": 463
+      },
+      "after": {
+        "regions": 219,
+        "isolated_beads": 7,
+        "small_regions": 9
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 77,
+      "height": 96,
+      "total_beads": 7392,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 70,
+      "detected_faces": 1,
+      "face_grid_cells": 396
+    },
+    "feature_deltaE76_before": 12.128460884094238,
+    "feature_deltaE76_after_same_budget": 8.623101234436035
+  },
+  {
+    "file": "03_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 151,
+        "isolated_beads": 81,
+        "small_regions": 107
+      },
+      "after": {
+        "regions": 47,
+        "isolated_beads": 5,
+        "small_regions": 6
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 58,
+      "height": 72,
+      "total_beads": 4176,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 72
+    },
+    "same_budget": {
+      "before": {
+        "regions": 152,
+        "isolated_beads": 84,
+        "small_regions": 114
+      },
+      "after": {
+        "regions": 46,
+        "isolated_beads": 6,
+        "small_regions": 11
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 58,
+      "height": 72,
+      "total_beads": 4176,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 85,
+      "detected_faces": 1,
+      "face_grid_cells": 489
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 509,
+        "isolated_beads": 280,
+        "small_regions": 345
+      },
+      "after": {
+        "regions": 149,
+        "isolated_beads": 13,
+        "small_regions": 23
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 77,
+      "height": 96,
+      "total_beads": 7392,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 144,
+      "detected_faces": 1,
+      "face_grid_cells": 860
+    },
+    "feature_deltaE76_before": 12.818404197692871,
+    "feature_deltaE76_after_same_budget": 6.749480247497559
+  },
+  {
+    "file": "04_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 339,
+        "isolated_beads": 162,
+        "small_regions": 238
+      },
+      "after": {
+        "regions": 85,
+        "isolated_beads": 0,
+        "small_regions": 1
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 69,
+      "total_beads": 4968,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 22
+    },
+    "same_budget": {
+      "before": {
+        "regions": 305,
+        "isolated_beads": 142,
+        "small_regions": 215
+      },
+      "after": {
+        "regions": 78,
+        "isolated_beads": 3,
+        "small_regions": 10
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 69,
+      "total_beads": 4968,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 34,
+      "detected_faces": 1,
+      "face_grid_cells": 177
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 695,
+        "isolated_beads": 350,
+        "small_regions": 430
+      },
+      "after": {
+        "regions": 223,
+        "isolated_beads": 15,
+        "small_regions": 21
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 96,
+      "height": 92,
+      "total_beads": 8832,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 54,
+      "detected_faces": 1,
+      "face_grid_cells": 311
+    },
+    "feature_deltaE76_before": 11.542037963867188,
+    "feature_deltaE76_after_same_budget": 6.858086109161377
+  },
+  {
+    "file": "05_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 252,
+        "isolated_beads": 101,
+        "small_regions": 165
+      },
+      "after": {
+        "regions": 87,
+        "isolated_beads": 5,
+        "small_regions": 13
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 48,
+      "total_beads": 3456,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 118
+    },
+    "same_budget": {
+      "before": {
+        "regions": 298,
+        "isolated_beads": 133,
+        "small_regions": 200
+      },
+      "after": {
+        "regions": 143,
+        "isolated_beads": 30,
+        "small_regions": 49
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 48,
+      "total_beads": 3456,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 236,
+      "detected_faces": 1,
+      "face_grid_cells": 1377
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 647,
+        "isolated_beads": 296,
+        "small_regions": 387
+      },
+      "after": {
+        "regions": 314,
+        "isolated_beads": 63,
+        "small_regions": 84
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 96,
+      "height": 64,
+      "total_beads": 6144,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 375,
+      "detected_faces": 1,
+      "face_grid_cells": 2449
+    },
+    "feature_deltaE76_before": 8.904622077941895,
+    "feature_deltaE76_after_same_budget": 6.240258693695068
+  },
+  {
+    "file": "06_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 158,
+        "isolated_beads": 81,
+        "small_regions": 117
+      },
+      "after": {
+        "regions": 40,
+        "isolated_beads": 2,
+        "small_regions": 2
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 48,
+      "height": 72,
+      "total_beads": 3456,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 18
+    },
+    "same_budget": {
+      "before": {
+        "regions": 159,
+        "isolated_beads": 76,
+        "small_regions": 120
+      },
+      "after": {
+        "regions": 48,
+        "isolated_beads": 9,
+        "small_regions": 13
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 48,
+      "height": 72,
+      "total_beads": 3456,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 36,
+      "detected_faces": 1,
+      "face_grid_cells": 214
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 442,
+        "isolated_beads": 246,
+        "small_regions": 308
+      },
+      "after": {
+        "regions": 149,
+        "isolated_beads": 20,
+        "small_regions": 29
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 64,
+      "height": 96,
+      "total_beads": 6144,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 64,
+      "detected_faces": 1,
+      "face_grid_cells": 380
+    },
+    "feature_deltaE76_before": 11.684272766113281,
+    "feature_deltaE76_after_same_budget": 6.750523090362549
+  },
+  {
+    "file": "07_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 321,
+        "isolated_beads": 125,
+        "small_regions": 218
+      },
+      "after": {
+        "regions": 87,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 62,
+      "total_beads": 4464,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0
+    },
+    "same_budget": {
+      "before": {
+        "regions": 321,
+        "isolated_beads": 125,
+        "small_regions": 218
+      },
+      "after": {
+        "regions": 87,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 62,
+      "total_beads": 4464,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 859,
+        "isolated_beads": 385,
+        "small_regions": 517
+      },
+      "after": {
+        "regions": 266,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 96,
+      "height": 82,
+      "total_beads": 7872,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "feature_deltaE76_before": null,
+    "feature_deltaE76_after_same_budget": null
+  },
+  {
+    "file": "08_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 357,
+        "isolated_beads": 225,
+        "small_regions": 313
+      },
+      "after": {
+        "regions": 45,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 66,
+      "height": 72,
+      "total_beads": 4752,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 30
+    },
+    "same_budget": {
+      "before": {
+        "regions": 264,
+        "isolated_beads": 167,
+        "small_regions": 225
+      },
+      "after": {
+        "regions": 43,
+        "isolated_beads": 5,
+        "small_regions": 9
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 66,
+      "height": 72,
+      "total_beads": 4752,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 44,
+      "detected_faces": 1,
+      "face_grid_cells": 240
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 1012,
+        "isolated_beads": 644,
+        "small_regions": 799
+      },
+      "after": {
+        "regions": 216,
+        "isolated_beads": 19,
+        "small_regions": 24
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 88,
+      "height": 96,
+      "total_beads": 8448,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 74,
+      "detected_faces": 1,
+      "face_grid_cells": 428
+    },
+    "feature_deltaE76_before": 10.154805183410645,
+    "feature_deltaE76_after_same_budget": 5.4777302742004395
+  },
+  {
+    "file": "13_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 250,
+        "isolated_beads": 116,
+        "small_regions": 172
+      },
+      "after": {
+        "regions": 62,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 40,
+      "total_beads": 2880,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0
+    },
+    "same_budget": {
+      "before": {
+        "regions": 250,
+        "isolated_beads": 116,
+        "small_regions": 172
+      },
+      "after": {
+        "regions": 62,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 40,
+      "total_beads": 2880,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 766,
+        "isolated_beads": 399,
+        "small_regions": 517
+      },
+      "after": {
+        "regions": 197,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 96,
+      "height": 54,
+      "total_beads": 5184,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "feature_deltaE76_before": null,
+    "feature_deltaE76_after_same_budget": null
+  },
+  {
+    "file": "14_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 251,
+        "isolated_beads": 121,
+        "small_regions": 194
+      },
+      "after": {
+        "regions": 45,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 40,
+      "total_beads": 2880,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0
+    },
+    "same_budget": {
+      "before": {
+        "regions": 251,
+        "isolated_beads": 121,
+        "small_regions": 194
+      },
+      "after": {
+        "regions": 45,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 40,
+      "total_beads": 2880,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 555,
+        "isolated_beads": 302,
+        "small_regions": 379
+      },
+      "after": {
+        "regions": 152,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 96,
+      "height": 54,
+      "total_beads": 5184,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "feature_deltaE76_before": null,
+    "feature_deltaE76_after_same_budget": null
+  },
+  {
+    "file": "15_landscape.jpg",
+    "before": {
+      "before": {
+        "regions": 38,
+        "isolated_beads": 7,
+        "small_regions": 22
+      },
+      "after": {
+        "regions": 14,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 54,
+      "total_beads": 3888,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0
+    },
+    "same_budget": {
+      "before": {
+        "regions": 38,
+        "isolated_beads": 7,
+        "small_regions": 22
+      },
+      "after": {
+        "regions": 14,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 54,
+      "total_beads": 3888,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 143,
+        "isolated_beads": 48,
+        "small_regions": 80
+      },
+      "after": {
+        "regions": 46,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 96,
+      "height": 72,
+      "total_beads": 6912,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "feature_deltaE76_before": null,
+    "feature_deltaE76_after_same_budget": null
+  },
+  {
+    "file": "16_landscape.jpg",
+    "before": {
+      "before": {
+        "regions": 76,
+        "isolated_beads": 31,
+        "small_regions": 47
+      },
+      "after": {
+        "regions": 22,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 49,
+      "total_beads": 3528,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0
+    },
+    "same_budget": {
+      "before": {
+        "regions": 76,
+        "isolated_beads": 31,
+        "small_regions": 47
+      },
+      "after": {
+        "regions": 22,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 49,
+      "total_beads": 3528,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 244,
+        "isolated_beads": 111,
+        "small_regions": 154
+      },
+      "after": {
+        "regions": 65,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 96,
+      "height": 65,
+      "total_beads": 6240,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "feature_deltaE76_before": null,
+    "feature_deltaE76_after_same_budget": null
+  },
+  {
+    "file": "17_architecture.jpg",
+    "before": {
+      "before": {
+        "regions": 265,
+        "isolated_beads": 95,
+        "small_regions": 165
+      },
+      "after": {
+        "regions": 85,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 71,
+      "height": 72,
+      "total_beads": 5112,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0
+    },
+    "same_budget": {
+      "before": {
+        "regions": 265,
+        "isolated_beads": 95,
+        "small_regions": 165
+      },
+      "after": {
+        "regions": 85,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 71,
+      "height": 72,
+      "total_beads": 5112,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 588,
+        "isolated_beads": 184,
+        "small_regions": 268
+      },
+      "after": {
+        "regions": 242,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 94,
+      "height": 96,
+      "total_beads": 9024,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "feature_deltaE76_before": null,
+    "feature_deltaE76_after_same_budget": null
+  },
+  {
+    "file": "18_architecture.jpg",
+    "before": {
+      "before": {
+        "regions": 220,
+        "isolated_beads": 98,
+        "small_regions": 143
+      },
+      "after": {
+        "regions": 66,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 41,
+      "total_beads": 2952,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0
+    },
+    "same_budget": {
+      "before": {
+        "regions": 220,
+        "isolated_beads": 98,
+        "small_regions": 143
+      },
+      "after": {
+        "regions": 66,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 41,
+      "total_beads": 2952,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 583,
+        "isolated_beads": 278,
+        "small_regions": 378
+      },
+      "after": {
+        "regions": 154,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 96,
+      "height": 55,
+      "total_beads": 5280,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "feature_deltaE76_before": null,
+    "feature_deltaE76_after_same_budget": null
+  },
+  {
+    "file": "19_animal.jpg",
+    "before": {
+      "before": {
+        "regions": 191,
+        "isolated_beads": 99,
+        "small_regions": 132
+      },
+      "after": {
+        "regions": 47,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 54,
+      "total_beads": 3888,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0
+    },
+    "same_budget": {
+      "before": {
+        "regions": 191,
+        "isolated_beads": 99,
+        "small_regions": 132
+      },
+      "after": {
+        "regions": 47,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 72,
+      "height": 54,
+      "total_beads": 3888,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 479,
+        "isolated_beads": 263,
+        "small_regions": 326
+      },
+      "after": {
+        "regions": 108,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 96,
+      "height": 72,
+      "total_beads": 6912,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 0,
+      "detected_faces": 0,
+      "face_grid_cells": 0
+    },
+    "feature_deltaE76_before": null,
+    "feature_deltaE76_after_same_budget": null
+  },
+  {
+    "file": "23_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 96,
+        "isolated_beads": 48,
+        "small_regions": 69
+      },
+      "after": {
+        "regions": 25,
+        "isolated_beads": 1,
+        "small_regions": 2
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 51,
+      "height": 72,
+      "total_beads": 3672,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 50
+    },
+    "same_budget": {
+      "before": {
+        "regions": 127,
+        "isolated_beads": 70,
+        "small_regions": 104
+      },
+      "after": {
+        "regions": 36,
+        "isolated_beads": 10,
+        "small_regions": 17
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 51,
+      "height": 72,
+      "total_beads": 3672,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 46,
+      "detected_faces": 1,
+      "face_grid_cells": 244
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 296,
+        "isolated_beads": 180,
+        "small_regions": 211
+      },
+      "after": {
+        "regions": 106,
+        "isolated_beads": 25,
+        "small_regions": 29
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 69,
+      "height": 96,
+      "total_beads": 6624,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 72,
+      "detected_faces": 1,
+      "face_grid_cells": 443
+    },
+    "feature_deltaE76_before": 11.041328430175781,
+    "feature_deltaE76_after_same_budget": 6.1547980308532715
+  },
+  {
+    "file": "22_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 153,
+        "isolated_beads": 76,
+        "small_regions": 119
+      },
+      "after": {
+        "regions": 32,
+        "isolated_beads": 1,
+        "small_regions": 2
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 70,
+      "height": 72,
+      "total_beads": 5040,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 46
+    },
+    "same_budget": {
+      "before": {
+        "regions": 150,
+        "isolated_beads": 64,
+        "small_regions": 107
+      },
+      "after": {
+        "regions": 39,
+        "isolated_beads": 2,
+        "small_regions": 5
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 70,
+      "height": 72,
+      "total_beads": 5040,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 59,
+      "detected_faces": 1,
+      "face_grid_cells": 344
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 414,
+        "isolated_beads": 223,
+        "small_regions": 283
+      },
+      "after": {
+        "regions": 133,
+        "isolated_beads": 22,
+        "small_regions": 24
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 94,
+      "height": 96,
+      "total_beads": 9024,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 100,
+      "detected_faces": 1,
+      "face_grid_cells": 614
+    },
+    "feature_deltaE76_before": 11.083144187927246,
+    "feature_deltaE76_after_same_budget": 6.986886501312256
+  },
+  {
+    "file": "26_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 91,
+        "isolated_beads": 51,
+        "small_regions": 65
+      },
+      "after": {
+        "regions": 23,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 52,
+      "height": 72,
+      "total_beads": 3744,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 52
+    },
+    "same_budget": {
+      "before": {
+        "regions": 116,
+        "isolated_beads": 59,
+        "small_regions": 90
+      },
+      "after": {
+        "regions": 39,
+        "isolated_beads": 5,
+        "small_regions": 11
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 52,
+      "height": 72,
+      "total_beads": 3744,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 49,
+      "detected_faces": 1,
+      "face_grid_cells": 264
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 315,
+        "isolated_beads": 181,
+        "small_regions": 231
+      },
+      "after": {
+        "regions": 100,
+        "isolated_beads": 26,
+        "small_regions": 31
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 69,
+      "height": 96,
+      "total_beads": 6624,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 83,
+      "detected_faces": 1,
+      "face_grid_cells": 464
+    },
+    "feature_deltaE76_before": 11.270986557006836,
+    "feature_deltaE76_after_same_budget": 5.904740333557129
+  },
+  {
+    "file": "27_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 143,
+        "isolated_beads": 88,
+        "small_regions": 117
+      },
+      "after": {
+        "regions": 23,
+        "isolated_beads": 0,
+        "small_regions": 1
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 48,
+      "height": 72,
+      "total_beads": 3456,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 43
+    },
+    "same_budget": {
+      "before": {
+        "regions": 165,
+        "isolated_beads": 96,
+        "small_regions": 131
+      },
+      "after": {
+        "regions": 50,
+        "isolated_beads": 13,
+        "small_regions": 19
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 48,
+      "height": 72,
+      "total_beads": 3456,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 72,
+      "detected_faces": 1,
+      "face_grid_cells": 380
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 381,
+        "isolated_beads": 262,
+        "small_regions": 298
+      },
+      "after": {
+        "regions": 114,
+        "isolated_beads": 32,
+        "small_regions": 38
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 64,
+      "height": 96,
+      "total_beads": 6144,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 120,
+      "detected_faces": 1,
+      "face_grid_cells": 685
+    },
+    "feature_deltaE76_before": 10.579598426818848,
+    "feature_deltaE76_after_same_budget": 6.502226829528809
+  },
+  {
+    "file": "28_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 130,
+        "isolated_beads": 68,
+        "small_regions": 97
+      },
+      "after": {
+        "regions": 29,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 55,
+      "height": 72,
+      "total_beads": 3960,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 22
+    },
+    "same_budget": {
+      "before": {
+        "regions": 117,
+        "isolated_beads": 59,
+        "small_regions": 86
+      },
+      "after": {
+        "regions": 37,
+        "isolated_beads": 4,
+        "small_regions": 12
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 55,
+      "height": 72,
+      "total_beads": 3960,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 55,
+      "detected_faces": 1,
+      "face_grid_cells": 319
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 356,
+        "isolated_beads": 221,
+        "small_regions": 269
+      },
+      "after": {
+        "regions": 90,
+        "isolated_beads": 13,
+        "small_regions": 19
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 73,
+      "height": 96,
+      "total_beads": 7008,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 96,
+      "detected_faces": 1,
+      "face_grid_cells": 569
+    },
+    "feature_deltaE76_before": 7.368642330169678,
+    "feature_deltaE76_after_same_budget": 4.800443172454834
+  },
+  {
+    "file": "29_portrait.jpg",
+    "before": {
+      "before": {
+        "regions": 97,
+        "isolated_beads": 52,
+        "small_regions": 61
+      },
+      "after": {
+        "regions": 30,
+        "isolated_beads": 0,
+        "small_regions": 0
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 48,
+      "height": 72,
+      "total_beads": 3456,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 0
+    },
+    "same_budget": {
+      "before": {
+        "regions": 98,
+        "isolated_beads": 54,
+        "small_regions": 63
+      },
+      "after": {
+        "regions": 35,
+        "isolated_beads": 4,
+        "small_regions": 5
+      },
+      "requested_colors": 10,
+      "used_colors": 10,
+      "width": 48,
+      "height": 72,
+      "total_beads": 3456,
+      "custom_palette": false,
+      "min_region": 5,
+      "protected_feature_cells": 22,
+      "detected_faces": 1,
+      "face_grid_cells": 140
+    },
+    "portrait_preset": {
+      "before": {
+        "regions": 298,
+        "isolated_beads": 161,
+        "small_regions": 196
+      },
+      "after": {
+        "regions": 76,
+        "isolated_beads": 6,
+        "small_regions": 8
+      },
+      "requested_colors": 18,
+      "used_colors": 18,
+      "width": 64,
+      "height": 96,
+      "total_beads": 6144,
+      "custom_palette": false,
+      "min_region": 3,
+      "protected_feature_cells": 32,
+      "detected_faces": 1,
+      "face_grid_cells": 261
+    },
+    "feature_deltaE76_before": 6.689742088317871,
+    "feature_deltaE76_after_same_budget": 4.918060779571533
+  }
+]

@@ -23,7 +23,7 @@ def worker(grid,colors):
 
 def main():
     rows=[]
-    for grid,colors in ((72,10),(96,16),(160,32)):
+    for grid,colors in ((72,10),(96,18),(160,32)):
         r=subprocess.run([sys.executable,__file__,'--worker',str(grid),str(colors)],capture_output=True,text=True,encoding='utf-8',check=True)
         row=json.loads(r.stdout.strip().splitlines()[-1]);rows.append(row);print(grid,row['algorithm_median'],row['export_median'],row['peak_rss_mib'],flush=True)
     (ROOT/'outputs/beads/benchmark.json').write_text(json.dumps(rows,indent=2),encoding='utf-8')

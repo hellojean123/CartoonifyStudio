@@ -16,7 +16,7 @@ from PIL import Image, ImageDraw, ImageFont
 from .core import MAX_PIXELS, resize
 
 _CLUSTER_LOCK=threading.Lock()
-PRESETS={'轻松拼（推荐）':(72,10,3,5,2.5),'均衡':(96,16,2,3,1.5),'保留细节':(128,24,1,1,.5)}
+PRESETS={'人像清晰（推荐）':(96,18,1,3,1.5),'轻松拼':(72,10,3,5,2.5),'均衡':(96,16,2,3,1.5),'保留细节':(128,24,1,1,.5)}
 
 @dataclass(frozen=True)
 class BeadParams:
@@ -71,12 +71,13 @@ def _nearest(lab,centers):
     distance=((lab[...,None,:]-centers)**2).sum(axis=-1)
     return np.argmin(distance,axis=-1).astype(np.uint8),distance
 
-def _spatial_labels(lab,centers,cohesion,cancel):
+def _spatial_labels(lab,centers,cohesion,cancel,importance=None):
     labels,data=_nearest(lab,centers)
     if not cohesion:return labels
     # Red-black ICM avoids synchronous label swapping on checkerboard noise.
     yy,xx=np.indices(labels.shape)
     penalty=cohesion*190.
+    if importance is not None:penalty=penalty*(1-.90*importance[...,None])
     for _ in range(4):
         _cancel(cancel)
         for parity in (0,1):
@@ -115,25 +116,43 @@ def cleanup_regions(labels,centers,min_region,cancel=None,protected=None):
         if not changed:break
     return result
 
-def _feature_cells(work,labels,centers):
-    """Preserve dark eye/lip cells only, rather than every texture within a face."""
+def portrait_maps(work,shape):
+    """Locate faces before smoothing; retain eyes, brows, nose, lips and highlights."""
     from .core import face_mask
-    _,_,landmarks=face_mask(work,details=True)
-    h,w=labels.shape;scale=np.array([w/work.shape[1],h/work.shape[0]])
-    protected=np.zeros((h,w),bool);light=centers[labels,0]
+    mask,boxes,landmarks=face_mask(work,details=True)
+    from pathlib import Path
+    landmarks=[(box,points) for box,points in landmarks if box[2]*shape[0]/work.shape[1]>=6]
+    if landmarks:
+        boxes=[tuple(map(int,box)) for box,_ in landmarks]
+        mask=np.zeros(work.shape[:2],np.float32)
+        for x,y,bw,bh in boxes:
+            cv2.ellipse(mask,(x+bw//2,y+bh//2),(max(1,round(bw*.54)),max(1,round(bh*.57))),0,0,360,1.,-1)
+        mask=cv2.GaussianBlur(mask,(0,0),max(1,min(mask.shape)*.012))
+    elif (Path(__file__).resolve().parents[1]/'models/face_detection_yunet_2023mar.onnx').exists():
+        # A negative model result must not turn architectural Haar false positives into faces.
+        return np.zeros(shape[::-1],np.float32),np.zeros(shape[::-1],np.float32),[]
+    features=np.zeros(mask.shape,np.float32)
     for box,points in landmarks:
-        bw=box[2]*scale[0];bh=box[3]*scale[1]
-        if bw<6:continue
-        for index in (0,1,3,4):
-            px,py=points[index]*scale
-            rx=max(1,round(bw*.12));ry=max(1,round(bh*.065))
-            x0=max(0,round(px)-rx);x1=min(w,round(px)+rx+1)
-            y0=max(0,round(py)-ry);y1=min(h,round(py)+ry+1)
-            patch=light[y0:y1,x0:x1]
-            if patch.size and patch.max()-patch.min()>3:
-                cutoff=float(np.percentile(patch,35))
-                protected[y0:y1,x0:x1]|=patch<=cutoff
-    return protected
+        bw,bh=box[2:4]
+        if bw*shape[0]/work.shape[1]<6:continue
+        zones=[(points[0],.14,.085),(points[1],.14,.085),
+               (points[2],.10,.13),((points[3]+points[4])/2,.23,.085)]
+        for (px,py),rx,ry in zones:
+            cv2.ellipse(features,(round(px),round(py)),(max(1,round(bw*rx)),max(1,round(bh*ry))),0,0,360,1.,-1)
+    # Model-free fallback keeps approximate facial zones when only Haar succeeds.
+    if not landmarks:
+        for x,y,bw,bh in boxes:
+            for cx,cy,rx,ry in ((.3,.4,.16,.10),(.7,.4,.16,.10),(.5,.61,.12,.17),(.5,.78,.23,.10)):
+                cv2.ellipse(features,(round(x+bw*cx),round(y+bh*cy)),(max(1,round(bw*rx)),max(1,round(bh*ry))),0,0,360,1.,-1)
+    return cv2.resize(mask,shape),cv2.resize(features,shape),boxes
+
+def feature_cells(lab,features):
+    # Both dark structures and light eye/nose highlights matter, not just dark cells.
+    light=lab[...,0]
+    contrast=cv2.dilate(light,np.ones((3,3),np.uint8))-cv2.erode(light,np.ones((3,3),np.uint8))
+    chroma=np.linalg.norm(lab[...,1:]-cv2.blur(lab[...,1:],(3,3)),axis=2)
+    return (features>.3)&((contrast>12)|(chroma>6))
+
 
 def region_metrics(labels,threshold=5):
     single=small=regions=0
@@ -149,12 +168,23 @@ def make_pattern(image,params=None,custom_palette=None,cancel=None):
     h,w=im.shape[:2]
     if h*w>MAX_PIXELS or max(h,w)>20000:raise ValueError('照片超过处理上限')
     _cancel(cancel);shape=(max(1,round(w*p.grid/max(h,w))),max(1,round(h*p.grid/max(h,w))))
-    work=resize(im,1000)
+    source=resize(im,1000)
+    face,features,face_boxes=portrait_maps(source,shape) if p.preserve_features else (np.zeros(shape[::-1],np.float32),np.zeros(shape[::-1],np.float32),[])
+    work=source
     if p.smooth:work=cv2.bilateralFilter(work,7,45+p.smooth*15,6+p.smooth*4)
     cells=cv2.resize(work,shape,interpolation=cv2.INTER_AREA)
     if p.smooth:cells=cv2.bilateralFilter(cells,5,35+p.smooth*13,.7+p.smooth*.4)
+    if p.preserve_features and face.max()>0:
+        detail=cv2.resize(cv2.bilateralFilter(source,5,30,5),shape,interpolation=cv2.INTER_AREA)
+        weight=np.clip(face*.75+features*.25,0,1)[...,None]
+        cells=np.clip(cells*(1-weight)+detail*weight,0,255).round().astype(np.uint8)
     lab=cv2.cvtColor(cells.astype(np.float32)/255,cv2.COLOR_RGB2LAB)
     points=lab.reshape(-1,3);sample=points[np.linspace(0,len(points)-1,min(6000,len(points)),dtype=int)]
+    if p.preserve_features:
+        # Give a small face a say in the palette even with a large colorful background.
+        for region,quota in ((face>.4,2500),(features>.3,2000)):
+            selected=points[region.ravel()]
+            if len(selected):sample=np.concatenate([sample,selected[np.linspace(0,len(selected)-1,min(quota,max(len(selected),quota//2)),dtype=int)]])
     k=min(p.colors,len(np.unique(sample,axis=0)))
     if k==1:centers=sample.mean(axis=0,keepdims=True)
     else:
@@ -174,8 +204,9 @@ def make_pattern(image,params=None,custom_palette=None,cancel=None):
         palette=rgb[chosen];codes=[codes_all[i] for i in chosen];names=[names_all[i] for i in chosen]
     centers=cv2.cvtColor(palette[None,:,:].astype(np.float32)/255,cv2.COLOR_RGB2LAB)[0]
     raw,_=_nearest(lab,centers)
-    labels=_spatial_labels(lab,centers,p.cohesion,cancel)
-    protected=_feature_cells(work,raw,centers) if p.preserve_features else np.zeros(raw.shape,bool)
+    importance=np.clip(face*.65+features*.5,0,1)
+    labels=_spatial_labels(lab,centers,p.cohesion,cancel,importance)
+    protected=feature_cells(lab,features) if p.preserve_features else np.zeros(raw.shape,bool)
     labels[protected]=raw[protected]
     labels=cleanup_regions(labels,centers,p.min_region,cancel,protected)
     # Compact and order by usage, so B01 always denotes the most-used actual color.
@@ -185,7 +216,7 @@ def make_pattern(image,params=None,custom_palette=None,cancel=None):
     metrics={'before':region_metrics(raw,p.min_region),'after':region_metrics(result,p.min_region),
              'requested_colors':p.colors,'used_colors':len(used),'width':shape[0],'height':shape[1],
              'total_beads':int(result.size),'custom_palette':custom_palette is not None,'min_region':p.min_region,
-             'protected_feature_cells':int(protected.sum())}
+             'protected_feature_cells':int(protected.sum()),'detected_faces':len(face_boxes),'face_grid_cells':int(np.sum(face>.4))}
     return BeadPattern(result,palette[used],[codes[i] for i in used],[names[i] for i in used],metrics,p.pitch_mm)
 
 def color_rows(pattern):
