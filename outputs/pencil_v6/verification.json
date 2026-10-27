@@ -1,0 +1,211 @@
+{
+  "tests": 102,
+  "test_seconds": 151.556,
+  "samples": 21,
+  "http": {
+    "preview": {
+      "stages": 2,
+      "status": "7.96 秒 · 最终预览 1000×666 · 保护区域 1 · 动漫脸部细化 0 · 缓存命中 0",
+      "end_to_end_seconds": 23.13374700001441
+    },
+    "http_status": 200,
+    "exports": [
+      {
+        "format": "PNG",
+        "colored": false,
+        "size": [
+          1280,
+          853
+        ],
+        "end_to_end_seconds": 15.758354599936865
+      },
+      {
+        "format": "JPG",
+        "colored": true,
+        "size": [
+          1280,
+          853
+        ],
+        "end_to_end_seconds": 13.426641599973664
+      }
+    ],
+    "batch_png_count": 2,
+    "cancel_response": "没有正在运行的任务。"
+  },
+  "preview_export_mean_mae": 3.0862742910788827,
+  "preview_export_max_mae": 4.33026512455516,
+  "other_styles_unchanged": 63,
+  "benchmark": [
+    {
+      "shape": [
+        640,
+        457,
+        3
+      ],
+      "uncached_seconds": [
+        0.8116368999471888,
+        0.6989624999696389,
+        0.8344168000621721
+      ],
+      "median_seconds": 0.8116368999471888,
+      "stages": [
+        {
+          "prepare": 0.1739726000232622,
+          "layers": 0.24881259992253035,
+          "render": 0.3869210999691859,
+          "total": 0.8097065999172628
+        },
+        {
+          "prepare": 0.17825939995236695,
+          "layers": 0.24348009994719177,
+          "render": 0.2753217000281438,
+          "total": 0.6970613999292254
+        },
+        {
+          "prepare": 0.16753759991843253,
+          "layers": 0.24242870009038597,
+          "render": 0.4226659999694675,
+          "total": 0.8326325999805704
+        }
+      ],
+      "cached_parameter_preview_seconds": 0.12571789999492466,
+      "cache_before": {
+        "bytes": 21467528,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "cache_after": {
+        "bytes": 21467528,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 3,
+        "misses": 4
+      },
+      "peak_process_rss_mib": 103.8203125,
+      "rss_sampling_ms": 10,
+      "opencv_threads": 2,
+      "opencl": false
+    },
+    {
+      "shape": [
+        1080,
+        771,
+        3
+      ],
+      "uncached_seconds": [
+        1.7662277999334037,
+        3.6405926999868825,
+        6.222229399951175
+      ],
+      "median_seconds": 3.6405926999868825,
+      "stages": [
+        {
+          "prepare": 0.3016060000518337,
+          "layers": 0.6513282998930663,
+          "render": 0.8107865999918431,
+          "total": 1.763721099938266
+        },
+        {
+          "prepare": 0.2245234000729397,
+          "layers": 0.5284994000103325,
+          "render": 2.8832172999391332,
+          "total": 3.6362406000262126
+        },
+        {
+          "prepare": 0.8454921999946237,
+          "layers": 2.0990751000354066,
+          "render": 3.263377199997194,
+          "total": 6.207945200032555
+        }
+      ],
+      "cached_parameter_preview_seconds": 0.30454590008594096,
+      "cache_before": {
+        "bytes": 47666464,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "cache_after": {
+        "bytes": 47666464,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 3,
+        "misses": 4
+      },
+      "peak_process_rss_mib": 157.08203125,
+      "rss_sampling_ms": 10,
+      "opencv_threads": 2,
+      "opencl": false
+    },
+    {
+      "shape": [
+        3840,
+        2743,
+        3
+      ],
+      "uncached_seconds": [
+        19.023806800018065,
+        26.02043000003323,
+        25.11925289989449
+      ],
+      "median_seconds": 25.11925289989449,
+      "stages": [
+        {
+          "prepare": 0.3062085999408737,
+          "layers": 0.5624650000827387,
+          "render": 18.14380620000884,
+          "total": 19.012480599922128
+        },
+        {
+          "prepare": 1.0191047000698745,
+          "layers": 2.0126456998987123,
+          "render": 22.97358680004254,
+          "total": 26.005337900016457
+        },
+        {
+          "prepare": 1.0244579000864178,
+          "layers": 2.0245402000145987,
+          "render": 22.055152599932626,
+          "total": 25.10415120003745
+        }
+      ],
+      "cached_parameter_preview_seconds": 0.47761719999834895,
+      "cache_before": {
+        "bytes": 47673088,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "cache_after": {
+        "bytes": 47673088,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 3,
+        "misses": 4
+      },
+      "peak_process_rss_mib": 187.83203125,
+      "rss_sampling_ms": 10,
+      "opencv_threads": 2,
+      "opencl": false
+    }
+  ],
+  "baseline_commit": "664a749ca0a39b89aa233279e72aaac552b460a5",
+  "post_guard_validation": {
+    "all_21_face_boxes_unchanged": true,
+    "native_pixel_identical_samples": [
+      "03_portrait",
+      "05_portrait",
+      "29_portrait"
+    ],
+    "all_21_native_dimensions_and_sha256_verified": true,
+    "final_source_sha256": {
+      "cartoonify/strokes.py": "d815e6c4fb3ac40af7eb965288fc9d8b2a95b47dbd44d5be8833c779353d4965",
+      "cartoonify/pencil.py": "8f3ca70e58a5663956bc84d0b391e8480eedcc51359c7e5a86035da6ee96ee26",
+      "cartoonify/core.py": "29f8a56e07dc2c912718630bf86bdcbd8e2709f11d55d782a34d46d9fcf0cd6d"
+    }
+  }
+}

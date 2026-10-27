@@ -17,7 +17,8 @@ def main():
     extras+='<p><a href="beads/gallery.html">拼豆图纸：更少碎块、可打印 PDF 与颜色用量</a> · <a href="../beads_report.md">拼豆实测报告</a></p>'
     extras+='<p><a href="beads_face_v2/gallery.html">拼豆人像：旧版 / 同预算改进 / 人像清晰预设</a></p>'
     extras='<p><a href="v4_review/gallery.html">历史 v4：原图 / 旧版 / v4 及五官局部</a> · <a href="../benchmark_v4.md">v4 历史 CPU 实测</a></p>'+extras
-    extras+='<p><a href="pencil_v5/gallery.html">铅笔素描 v5：21 张新旧与 OpenCV 对照</a> · <a href="../pencil_v5_report.md">素描 CPU 实测与局限</a></p>'
+    extras+='<p><a href="pencil_v5/gallery.html">历史素描 v5：21 张新旧与 OpenCV 对照</a> · <a href="../pencil_v5_report.md">素描 CPU 实测与局限</a></p>'
+    extras+='<p><a href="pencil_v6/gallery.html">当前素描 v6：变宽笔触与新旧对照</a> · <a href="pencil_v6/brush_sheet.png">单笔样张</a> · <a href="../pencil_v6_report.md">CPU 实测与局限</a></p>'
     document=document.replace('</html>',extras+'</html>')
     (root/'outputs'/'gallery.html').write_text(document,encoding='utf-8')
 

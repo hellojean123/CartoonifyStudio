@@ -1,0 +1,973 @@
+[
+  {
+    "file": "01_portrait.jpg",
+    "shape": [
+      853,
+      1280,
+      3
+    ],
+    "seconds": 2.068175800028257,
+    "stages": {
+      "prepare": 0.31758680008351803,
+      "layers": 0.6110639999387786,
+      "render": 1.1381487000035122,
+      "total": 2.0667997000273317
+    },
+    "faces": [
+      [
+        84,
+        2,
+        794,
+        724
+      ]
+    ],
+    "brush": {
+      "stroke_count": 78194,
+      "width_reference_quantiles": [
+        0.20006080716848373,
+        0.32502612471580505,
+        0.5431346774101257
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 3.993108108108108,
+    "opencv_seconds_1000": 0.13280240003950894,
+    "sha256": "fc88b3ac2e43c9cf4222d74207533cb5d3ee1d689184d9b5193f4cfdc2eab66b",
+    "native_crop_xywh": [
+      6,
+      0,
+      1220,
+      853
+    ]
+  },
+  {
+    "file": "02_portrait.jpg",
+    "shape": [
+      1600,
+      1280,
+      3
+    ],
+    "seconds": 11.534832699922845,
+    "stages": {
+      "prepare": 1.15514270006679,
+      "layers": 2.725548099959269,
+      "render": 7.650925199966878,
+      "total": 11.531616699998267
+    },
+    "faces": [
+      [
+        272,
+        106,
+        180,
+        238
+      ]
+    ],
+    "brush": {
+      "stroke_count": 70300,
+      "width_reference_quantiles": [
+        0.2540547698736191,
+        0.3986392319202423,
+        0.6352838993072509
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 2.95670125,
+    "opencv_seconds_1000": 0.530087299994193,
+    "sha256": "c44ea3b222a68d6a0bfc4cd43cb30448b4700b96929b4f6c0ecf45113974865e",
+    "native_crop_xywh": [
+      406,
+      141,
+      346,
+      439
+    ]
+  },
+  {
+    "file": "03_portrait.jpg",
+    "shape": [
+      1600,
+      1280,
+      3
+    ],
+    "seconds": 12.438755000010133,
+    "stages": {
+      "prepare": 0.9363396000117064,
+      "layers": 2.3501682999776676,
+      "render": 9.14922929997556,
+      "total": 12.435737499967217
+    },
+    "faces": [
+      [
+        246,
+        188,
+        247,
+        381
+      ]
+    ],
+    "brush": {
+      "stroke_count": 88417,
+      "width_reference_quantiles": [
+        0.2446551501750946,
+        0.3931436538696289,
+        0.6452358245849611
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 2.54469625,
+    "opencv_seconds_1000": 0.5059552999446169,
+    "sha256": "40498e5de887c384a664d5dd6558c15cdf9b3939b9f0bd8b98aa7806206a2809",
+    "native_crop_xywh": [
+      354,
+      261,
+      475,
+      690
+    ]
+  },
+  {
+    "file": "04_portrait.jpg",
+    "shape": [
+      1228,
+      1280,
+      3
+    ],
+    "seconds": 9.568859299994074,
+    "stages": {
+      "prepare": 1.3388499999418855,
+      "layers": 2.5200376000721008,
+      "render": 5.705192899913527,
+      "total": 9.564081399934366
+    },
+    "faces": [
+      [
+        237,
+        228,
+        159,
+        208
+      ],
+      [
+        705,
+        397,
+        72,
+        72
+      ]
+    ],
+    "brush": {
+      "stroke_count": 77762,
+      "width_reference_quantiles": [
+        0.25386192500591276,
+        0.3990018665790558,
+        0.6345983743667605
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 4.160217935349322,
+    "opencv_seconds_1000": 0.5860406999709085,
+    "sha256": "e251a11c6bd1ab871d69ba2afc6829a22c1806c2a82573238e76d07a06294e0e",
+    "native_crop_xywh": [
+      283,
+      272,
+      244,
+      306
+    ]
+  },
+  {
+    "file": "05_portrait.jpg",
+    "shape": [
+      853,
+      1280,
+      3
+    ],
+    "seconds": 6.861858899937943,
+    "stages": {
+      "prepare": 0.96650779992342,
+      "layers": 2.1006165000144392,
+      "render": 3.7913537999847904,
+      "total": 6.858478899928741
+    },
+    "faces": [
+      [
+        308,
+        124,
+        499,
+        596
+      ]
+    ],
+    "brush": {
+      "stroke_count": 60265,
+      "width_reference_quantiles": [
+        0.2176571696996689,
+        0.35820040106773376,
+        0.5926052093505858
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 3.26578978978979,
+    "opencv_seconds_1000": 0.46906109992414713,
+    "sha256": "dd41a856773c7ff3f185e0fbe69c083aad6dce33956099beba97125d27031c05",
+    "native_crop_xywh": [
+      330,
+      95,
+      767,
+      758
+    ]
+  },
+  {
+    "file": "06_portrait.jpg",
+    "shape": [
+      1920,
+      1280,
+      3
+    ],
+    "seconds": 7.285067099961452,
+    "stages": {
+      "prepare": 0.9336028000107035,
+      "layers": 1.938973999931477,
+      "render": 4.408939499990083,
+      "total": 7.2815168999368325
+    },
+    "faces": [
+      [
+        259,
+        169,
+        173,
+        236
+      ],
+      [
+        53,
+        544,
+        183,
+        183
+      ],
+      [
+        386,
+        426,
+        136,
+        136
+      ]
+    ],
+    "brush": {
+      "stroke_count": 30506,
+      "width_reference_quantiles": [
+        0.24313494563102722,
+        0.38841623067855835,
+        0.6173112988471985
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 1.2751334332833584,
+    "opencv_seconds_1000": 0.44835239998064935,
+    "sha256": "0a2bae4a20fe3f9b9e58068763c095ba618f9e2530b355d7b980ad668e6b8e06",
+    "native_crop_xywh": [
+      464,
+      291,
+      398,
+      519
+    ]
+  },
+  {
+    "file": "07_portrait.jpg",
+    "shape": [
+      1094,
+      1280,
+      3
+    ],
+    "seconds": 7.852961600059643,
+    "stages": {
+      "prepare": 1.2010955999139696,
+      "layers": 2.5620480000507087,
+      "render": 4.087287200032733,
+      "total": 7.850431500002742
+    },
+    "faces": [
+      [
+        399,
+        152,
+        47,
+        65
+      ],
+      [
+        579,
+        177,
+        53,
+        67
+      ],
+      [
+        754,
+        155,
+        57,
+        76
+      ]
+    ],
+    "brush": {
+      "stroke_count": 57482,
+      "width_reference_quantiles": [
+        0.2596339613199234,
+        0.4023885875940323,
+        0.6364430606365205
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 4.282770760233918,
+    "opencv_seconds_1000": 0.5095000999281183,
+    "sha256": "c92e4f3946a9bc539d685dbad76fd92488c40c903de117fd06335867878ac21f",
+    "native_crop_xywh": [
+      958,
+      191,
+      87,
+      111
+    ]
+  },
+  {
+    "file": "08_portrait.jpg",
+    "shape": [
+      1396,
+      1280,
+      3
+    ],
+    "seconds": 6.634417399996892,
+    "stages": {
+      "prepare": 1.3344643000746146,
+      "layers": 2.534042499959469,
+      "render": 2.763614899944514,
+      "total": 6.632122499984689
+    },
+    "faces": [
+      [
+        347,
+        261,
+        188,
+        243
+      ]
+    ],
+    "brush": {
+      "stroke_count": 27655,
+      "width_reference_quantiles": [
+        0.24463363587856293,
+        0.3862244784832001,
+        0.605044710636139
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 1.769825517993457,
+    "opencv_seconds_1000": 0.6307929999893531,
+    "sha256": "c48a369346cf4fa02e4f2f8365ac14939ddf4cad6067a08302f021c2cb129de9",
+    "native_crop_xywh": [
+      458,
+      338,
+      314,
+      391
+    ]
+  },
+  {
+    "file": "13_portrait.jpg",
+    "shape": [
+      719,
+      1280,
+      3
+    ],
+    "seconds": 5.531612899969332,
+    "stages": {
+      "prepare": 0.9578805000055581,
+      "layers": 1.823356399894692,
+      "render": 2.7472065000329167,
+      "total": 5.5284439999377355
+    },
+    "faces": [
+      [
+        633,
+        214,
+        27,
+        31
+      ],
+      [
+        471,
+        236,
+        19,
+        22
+      ],
+      [
+        560,
+        194,
+        15,
+        17
+      ],
+      [
+        370,
+        230,
+        15,
+        21
+      ],
+      [
+        71,
+        267,
+        17,
+        22
+      ],
+      [
+        403,
+        247,
+        18,
+        21
+      ],
+      [
+        518,
+        226,
+        16,
+        21
+      ],
+      [
+        371,
+        300,
+        19,
+        24
+      ],
+      [
+        507,
+        191,
+        15,
+        19
+      ],
+      [
+        596,
+        207,
+        17,
+        22
+      ],
+      [
+        431,
+        195,
+        18,
+        21
+      ],
+      [
+        653,
+        197,
+        20,
+        24
+      ]
+    ],
+    "brush": {
+      "stroke_count": 39037,
+      "width_reference_quantiles": [
+        0.25779616832733154,
+        0.39844557642936707,
+        0.6158760786056519
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 4.33026512455516,
+    "opencv_seconds_1000": 0.4000143999001011,
+    "sha256": "4493bdebec15ff46a9a30130900302335f8efc8d4589ee8fdeece1368ac16c37",
+    "native_crop_xywh": [
+      806,
+      270,
+      43,
+      48
+    ]
+  },
+  {
+    "file": "14_portrait.jpg",
+    "shape": [
+      719,
+      1280,
+      3
+    ],
+    "seconds": 5.646123999962583,
+    "stages": {
+      "prepare": 1.3719830999616534,
+      "layers": 1.611806600005366,
+      "render": 2.6602746000280604,
+      "total": 5.644064899999648
+    },
+    "faces": [
+      [
+        173,
+        221,
+        23,
+        30
+      ],
+      [
+        822,
+        173,
+        15,
+        18
+      ],
+      [
+        793,
+        194,
+        17,
+        21
+      ],
+      [
+        712,
+        195,
+        14,
+        18
+      ],
+      [
+        759,
+        168,
+        13,
+        15
+      ],
+      [
+        667,
+        167,
+        14,
+        17
+      ]
+    ],
+    "brush": {
+      "stroke_count": 39488,
+      "width_reference_quantiles": [
+        0.2583953708410263,
+        0.39932428300380707,
+        0.6172953844070436
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 3.9705462633451956,
+    "opencv_seconds_1000": 0.3337124000536278,
+    "sha256": "defa6f0c241ecb1e46b199fd5c5548a7a382320ccdbbe5c52a6015b656c93814",
+    "native_crop_xywh": [
+      218,
+      280,
+      35,
+      44
+    ]
+  },
+  {
+    "file": "15_landscape.jpg",
+    "shape": [
+      960,
+      1280,
+      3
+    ],
+    "seconds": 8.812829299946316,
+    "stages": {
+      "prepare": 0.8869738000212237,
+      "layers": 1.6738217000383884,
+      "render": 6.248775299987756,
+      "total": 8.809571100049652
+    },
+    "faces": [],
+    "brush": {
+      "stroke_count": 86642,
+      "width_reference_quantiles": [
+        0.26197860538959505,
+        0.4107460230588913,
+        0.6682198822498325
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 2.870556,
+    "opencv_seconds_1000": 0.5731149000348523,
+    "sha256": "158044be84bd12f7597ddadc02bf63e01a3d5a1ad397e62a01cd2681db8aae90",
+    "native_crop_xywh": [
+      440,
+      280,
+      400,
+      400
+    ]
+  },
+  {
+    "file": "16_landscape.jpg",
+    "shape": [
+      863,
+      1280,
+      3
+    ],
+    "seconds": 4.5652154999552295,
+    "stages": {
+      "prepare": 0.8436494000488892,
+      "layers": 1.344892599969171,
+      "render": 2.3740960999857634,
+      "total": 4.562639100011438
+    },
+    "faces": [],
+    "brush": {
+      "stroke_count": 36447,
+      "width_reference_quantiles": [
+        0.26044971346855167,
+        0.40724992752075195,
+        0.6520033240318299
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 2.160919881305638,
+    "opencv_seconds_1000": 0.40807080001104623,
+    "sha256": "78023b9ab50819a396f8439ddaba6fb48252977f8bcf68959267eba5dd986fec",
+    "native_crop_xywh": [
+      440,
+      231,
+      400,
+      400
+    ]
+  },
+  {
+    "file": "17_architecture.jpg",
+    "shape": [
+      1303,
+      1280,
+      3
+    ],
+    "seconds": 9.084775700001046,
+    "stages": {
+      "prepare": 1.4224754000315443,
+      "layers": 2.70263439998962,
+      "render": 4.958075599977747,
+      "total": 9.083185800001957
+    },
+    "faces": [
+      [
+        197,
+        308,
+        53,
+        58
+      ],
+      [
+        729,
+        297,
+        77,
+        77
+      ]
+    ],
+    "brush": {
+      "stroke_count": 64883,
+      "width_reference_quantiles": [
+        0.2576275229454041,
+        0.40021172165870667,
+        0.6257521152496338
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 4.033618126272913,
+    "opencv_seconds_1000": 0.6062652000691742,
+    "sha256": "547e5c3658ac2c71ee9acddfcc18930ae1bb6cd2965d8329c02154d41f1bb93e",
+    "native_crop_xywh": [
+      940,
+      377,
+      120,
+      120
+    ]
+  },
+  {
+    "file": "18_architecture.jpg",
+    "shape": [
+      737,
+      1280,
+      3
+    ],
+    "seconds": 6.143218299956061,
+    "stages": {
+      "prepare": 1.1241849999642,
+      "layers": 1.3614813999738544,
+      "render": 3.653992100036703,
+      "total": 6.139659199980088
+    },
+    "faces": [],
+    "brush": {
+      "stroke_count": 57610,
+      "width_reference_quantiles": [
+        0.2607055872678757,
+        0.406453400850296,
+        0.6456644415855407
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 4.027789930555556,
+    "opencv_seconds_1000": 0.3969289999222383,
+    "sha256": "293505f8c5ba277c1b42f8de9f196125ec5196c733d515ee96e24efdb36b130f",
+    "native_crop_xywh": [
+      440,
+      168,
+      400,
+      400
+    ]
+  },
+  {
+    "file": "19_animal.jpg",
+    "shape": [
+      960,
+      1280,
+      3
+    ],
+    "seconds": 7.600817999918945,
+    "stages": {
+      "prepare": 1.0075268000364304,
+      "layers": 1.5806853000540286,
+      "render": 5.008261299924925,
+      "total": 7.596474000019953
+    },
+    "faces": [],
+    "brush": {
+      "stroke_count": 77976,
+      "width_reference_quantiles": [
+        0.26169025897979736,
+        0.4069465696811676,
+        0.6477554142475128
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 3.84804,
+    "opencv_seconds_1000": 0.5306715000187978,
+    "sha256": "3a0380389ac8f4d842d21f0735c4ab6e86cfee6c4182c718163b2e4655707905",
+    "native_crop_xywh": [
+      440,
+      280,
+      400,
+      400
+    ]
+  },
+  {
+    "file": "23_portrait.jpg",
+    "shape": [
+      1792,
+      1280,
+      3
+    ],
+    "seconds": 9.466563699999824,
+    "stages": {
+      "prepare": 0.8861925000092015,
+      "layers": 2.029103200067766,
+      "render": 6.547493499936536,
+      "total": 9.46279040002264
+    },
+    "faces": [
+      [
+        245,
+        179,
+        190,
+        250
+      ]
+    ],
+    "brush": {
+      "stroke_count": 57150,
+      "width_reference_quantiles": [
+        0.24997226148843765,
+        0.39261239767074585,
+        0.6186289489269257
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 1.9753991596638656,
+    "opencv_seconds_1000": 0.5214017000980675,
+    "sha256": "f4c7d8d57b38c75ad8d9afc559e776d737eda60908d4e3eb6e63c6316c8f850f",
+    "native_crop_xywh": [
+      405,
+      287,
+      409,
+      516
+    ]
+  },
+  {
+    "file": "22_portrait.jpg",
+    "shape": [
+      981,
+      960,
+      3
+    ],
+    "seconds": 7.195643399958499,
+    "stages": {
+      "prepare": 0.997825299971737,
+      "layers": 2.8717769000213593,
+      "render": 3.3228668000083417,
+      "total": 7.192469500005245
+    },
+    "faces": [
+      [
+        377,
+        173,
+        226,
+        282
+      ],
+      [
+        370,
+        465,
+        193,
+        193
+      ]
+    ],
+    "brush": {
+      "stroke_count": 75535,
+      "width_reference_quantiles": [
+        0.23847219049930574,
+        0.381656676530838,
+        0.6140472769737246
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 0.0,
+    "opencv_seconds_1000": 0.6446087000658736,
+    "sha256": "2ba23bd5f19b515f241ce62230746a87bc67556691b15e87f9d9ae53f47bf1fb",
+    "native_crop_xywh": [
+      354,
+      150,
+      272,
+      328
+    ]
+  },
+  {
+    "file": "26_portrait.jpg",
+    "shape": [
+      1328,
+      960,
+      3
+    ],
+    "seconds": 7.435001999954693,
+    "stages": {
+      "prepare": 0.8512409999966621,
+      "layers": 2.106162099982612,
+      "render": 4.474589099991135,
+      "total": 7.431992599973455
+    },
+    "faces": [
+      [
+        257,
+        116,
+        188,
+        266
+      ]
+    ],
+    "brush": {
+      "stroke_count": 63041,
+      "width_reference_quantiles": [
+        0.2512034773826599,
+        0.3933967649936676,
+        0.6233243346214294
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 3.534271092669433,
+    "opencv_seconds_1000": 0.5290730999549851,
+    "sha256": "77ee0fb9457ad7f45a44ff2c6ba01b1aef02e9261fb52536548f53e952fff018",
+    "native_crop_xywh": [
+      316,
+      129,
+      300,
+      403
+    ]
+  },
+  {
+    "file": "27_portrait.jpg",
+    "shape": [
+      1439,
+      960,
+      3
+    ],
+    "seconds": 7.7765447000274435,
+    "stages": {
+      "prepare": 0.8594379000132903,
+      "layers": 1.9475211999379098,
+      "render": 4.966163799981587,
+      "total": 7.773123599938117
+    },
+    "faces": [
+      [
+        199,
+        104,
+        234,
+        319
+      ]
+    ],
+    "brush": {
+      "stroke_count": 66487,
+      "width_reference_quantiles": [
+        0.24444431066513062,
+        0.3905639052391052,
+        0.6297155976295471
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 3.2256206896551722,
+    "opencv_seconds_1000": 0.48853860003873706,
+    "sha256": "2269aa353668a4427331f0fe219d2e48641ddc4c19c9e6f0c02dac0a9d65c494",
+    "native_crop_xywh": [
+      252,
+      116,
+      405,
+      527
+    ]
+  },
+  {
+    "file": "28_portrait.jpg",
+    "shape": [
+      1260,
+      960,
+      3
+    ],
+    "seconds": 7.741964799934067,
+    "stages": {
+      "prepare": 1.006522599956952,
+      "layers": 2.2635854000691324,
+      "render": 4.469654000014998,
+      "total": 7.73976250004489
+    },
+    "faces": [
+      [
+        272,
+        144,
+        207,
+        298
+      ]
+    ],
+    "brush": {
+      "stroke_count": 66794,
+      "width_reference_quantiles": [
+        0.24894581437110902,
+        0.3922162503004074,
+        0.6159036815166474
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 3.8779540682414697,
+    "opencv_seconds_1000": 0.5297710999147967,
+    "sha256": "997d435e34f34722b61a20657478a6c50c284e55b5749623d015e2aa50a1b26e",
+    "native_crop_xywh": [
+      317,
+      155,
+      313,
+      427
+    ]
+  },
+  {
+    "file": "29_portrait.jpg",
+    "shape": [
+      1439,
+      960,
+      3
+    ],
+    "seconds": 6.5831535999896005,
+    "stages": {
+      "prepare": 0.9011628000298515,
+      "layers": 1.961392299970612,
+      "render": 3.7156980000436306,
+      "total": 6.578253800049424
+    },
+    "faces": [
+      [
+        269,
+        77,
+        147,
+        192
+      ]
+    ],
+    "brush": {
+      "stroke_count": 47406,
+      "width_reference_quantiles": [
+        0.25718554854393005,
+        0.39748242497444153,
+        0.6175435185432434
+      ],
+      "native_rasterization": true
+    },
+    "preview_export_mae": 2.708536731634183,
+    "opencv_seconds_1000": 0.4594574000220746,
+    "sha256": "67f8637d01ef269f03355d491a9513667c9ebc239f5c8e5db2543125da908e19",
+    "native_crop_xywh": [
+      366,
+      90,
+      254,
+      318
+    ]
+  }
+]

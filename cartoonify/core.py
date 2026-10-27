@@ -104,10 +104,18 @@ def face_mask(image,manual='',details=False):
                 _,faces=net.detect(cv2.cvtColor(detection,cv2.COLOR_RGB2BGR))
                 if faces is not None:
                     for face in faces:
-                        box=(face[:4]*[w/dw,h/dh,w/dw,h/dh]).round().astype(int)
-                        x,y,bw,bh=box
-                        landmarks.append((box,face[4:14].reshape(5,2)*[w/dw,h/dh]))
-                    break
+                        # Tiny/flat inputs can produce invalid DNN coordinates.
+                        # Reject them before integer conversion or drawing.
+                        if not np.isfinite(face[:15]).all():continue
+                        scaled=face[:4]*[w/dw,h/dh,w/dw,h/dh]
+                        if np.max(np.abs(scaled))>4*max(h,w):continue
+                        x,y,bw,bh=map(int,np.round(scaled))
+                        if bw<=0 or bh<=0 or x+bw<=0 or y+bh<=0 or x>=w or y>=h:continue
+                        box=np.array([x,y,bw,bh],dtype=np.int32)
+                        points=face[4:14].reshape(5,2)*[w/dw,h/dh]
+                        if np.max(np.abs(points))>4*max(h,w):continue
+                        landmarks.append((box,points))
+                    if landmarks:break
     boxes=[(round(x*ratio),round(y*ratio),round(bw*ratio),round(bh*ratio)) for x,y,bw,bh in found]
     # Prefer model boxes/landmarks; avoid a second shifted ellipse on the same face.
     model_boxes=[tuple(map(int,box)) for box,_ in landmarks]
@@ -277,9 +285,19 @@ def sample_region(low,target_shape,bounds):
     mx,my=np.meshgrid(xs,ys)
     return cv2.remap(low,mx,my,cv2.INTER_LINEAR,borderMode=cv2.BORDER_REPLICATE)
 
-def render(image,prepared,layers,style,p,quality='精细',output_limit=None,tile_size=512,cancel=None):
+def render(image,prepared,layers,style,p,quality='精细',output_limit=None,tile_size=512,cancel=None,drawing_cache=None):
     target=resize(image,output_limit) if output_limit else image
     h,w=target.shape[:2];scale=max(h,w)/ANALYSIS_SIZE;result=np.empty((h,w,3),np.uint8)
+    stroke_image=None
+    if style==STYLES[3] and h*w<=1_500_000:
+        from .strokes import rasterize
+        # A bounded native-resolution field accelerates parameter changes.
+        # Larger exports keep tiled rasterization and never allocate a full
+        # extra 16-megapixel float image. This cache uses the existing budget.
+        plan=layers['stroke_plan']
+        factory=lambda:rasterize(plan,(h,w),cancel=cancel)
+        stroke_image=drawing_cache.compute(('graphite-v6',plan['signature'],h,w),factory) if drawing_cache is not None else factory()
+
     # All structure is computed once at the canonical analysis scale. Never restore
     # photographic pores/texture into a drawing at export time.
     for y in range(0,h,tile_size):
@@ -301,7 +319,7 @@ def render(image,prepared,layers,style,p,quality='精细',output_limit=None,tile
                 outer*=1-suppression*p.face_strength*.55
             if style==STYLES[3]:
                 # Pencil contours have pressure, not opaque pen outlines.
-                ink=np.clip(p.outline*(p.outer*outer*1.5+p.inner*inner*1.9),0,2.2)
+                ink=np.clip(p.outline*(p.outer*outer*1.2+p.inner*inner*1.6),0,2.2)
             elif style==STYLES[2]:
                 ink=np.clip(p.outline*(p.outer*outer*1.25+p.inner*inner*.9),0,.96)
             else: ink=np.clip(p.outline*(p.outer*outer*.88+p.inner*inner*.72),0,.9)
@@ -319,11 +337,12 @@ def render(image,prepared,layers,style,p,quality='精细',output_limit=None,tile
             if style==STYLES[3]:
                 from .pencil import paper_grain
                 density=np.clip(take(layers['density']),0,1)
-                strokes=np.clip(take(layers['strokes']),0,1)
+                from .strokes import rasterize
+                strokes=stroke_image[y:y1,x:x1] if stroke_image is not None else rasterize(layers['stroke_plan'],(h,w),(y,y1,x,x1),cancel)
                 grain=paper_grain(xx,yy)
                 # Broad graphite mass plus finite strokes keeps soft shadows
                 # without restoring the photographic texture.
-                graphite=density*p.pencil_shade*2.5*(.34+strokes*3.0)
+                graphite=p.pencil_shade*(density*.90+strokes*1.5)
                 graphite*=np.clip(1+grain*p.paper*.55,.5,1.5)
                 pigment=take(layers['pigment']) if p.colored else np.ones((*density.shape,3),np.float32)
                 absorption=graphite[...,None]*pigment+ink[...,None]
@@ -344,9 +363,14 @@ def process(image,style,params=None,preview=False,quality='精细',cache=CACHE,p
     digest=fingerprint(im);prekey=('prepare-v4',digest,p.smooth,p.contrast,p.protect,p.face_strength,p.face_boxes)
     prepared=cache.compute(prekey,lambda:_prepare(im,p,cache,digest)) if cache is not None else _prepare(im,p)
     prepared_at=time.perf_counter()
-    key=('layers-pencil-v5',prekey,style,p.colors if style in STYLES[1:3] else None)
+    key=('layers-pencil-v6',prekey,style,p.colors if style in STYLES[1:3] else None)
     layers=cache.compute(key,lambda:_layers(prepared,style,p)) if cache is not None else _layers(prepared,style,p)
     layers_at=time.perf_counter()
-    result=render(im,prepared,layers,style,p,quality,preview_limit if preview else None,tile_size,cancel)
+    result=render(im,prepared,layers,style,p,quality,preview_limit if preview else None,tile_size,cancel,cache)
     if diagnostics is not None: diagnostics.update({'faces':prepared['boxes'],'anime_refined_faces':layers.get('anime_faces',0),'analysis_size':prepared['guide'].shape[:2],'cache':cache.stats() if cache else {},'stages':{'prepare':prepared_at-started,'layers':layers_at-prepared_at,'render':time.perf_counter()-layers_at,'total':time.perf_counter()-started}})
+    if diagnostics is not None and style==STYLES[3]:
+        plan=layers['stroke_plan']
+        diagnostics['pencil_brush']={'stroke_count':len(plan['width']),
+            'width_reference_quantiles':np.percentile(plan['width'],[10,50,90]).tolist() if len(plan['width']) else [0,0,0],
+            'native_rasterization':True}
     return result

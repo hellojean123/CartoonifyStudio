@@ -44,49 +44,14 @@ def _contours(gray, smooth):
     edges=cv2.Canny(np.round(shape*255).astype(np.uint8),35,90,L2gradient=True)
     n,labels,stats,_=cv2.connectedComponentsWithStats(edges,8)
     keep=stats[:,cv2.CC_STAT_AREA]>=max(5,round(max(gray.shape)*.012));keep[0]=False
-    outer=np.clip(_blur(keep[labels].astype(np.float32),.55)*2.0,0,1)
+    outer=np.clip(_blur(keep[labels].astype(np.float32),.35)*1.65,0,1)
     return outer,inner,theta,coherence
 
 
-def graphite_strokes(tone, theta, coherence):
-    """Short, tapered, jittered strokes; dark regions get a second hatch layer.
-
-    The seed and canonical coordinates are fixed. Tone controls density, not
-    local image variance: smooth cheeks and dark clothing retain their shade.
-    """
-    h,w=tone.shape;scale=max(h,w)/1000
-    spacing=max(2.4,3.8*scale)
-    rng=np.random.default_rng(843)
-    yy,xx=np.mgrid[0:h:spacing,0:w:spacing]
-    xx=np.clip(xx.ravel()+rng.uniform(-spacing*.45,spacing*.45,xx.size),0,w-1)
-    yy=np.clip(yy.ravel()+rng.uniform(-spacing*.45,spacing*.45,yy.size),0,h-1)
-    ix=xx.astype(int);iy=yy.astype(int)
-    # Smooth the doubled-angle field to respect its pi-periodicity.
-    vx=_blur(np.cos(2*theta)*coherence,14)
-    vy=_blur(np.sin(2*theta)*coherence,14)
-    field=.5*np.arctan2(vy,vx)
-    reliability=_blur(coherence,8)
-    angle=np.where(reliability[iy,ix]>.62,field[iy,ix],-.65)
-    angle+=rng.uniform(-.16,.16,len(xx))
-    density=np.clip((.96-tone[iy,ix])/.90,0,1)
-    strokes=np.zeros((h,w),np.uint8)
-    for cross in (False,True):
-        chance=np.clip((density-.50)*1.2,0,.55) if cross else .13+density*.66
-        selected=np.flatnonzero(rng.random(len(xx))<chance)
-        lengths=rng.uniform(max(3.,7*scale),max(5.,16*scale),len(selected))
-        strengths=rng.integers(85,205,len(selected))
-        a=angle[selected]+(1.10 if cross else 0.)
-        delta=np.stack((np.cos(a)*lengths,np.sin(a)*lengths),axis=-1)
-        centers=np.stack((xx[selected],yy[selected]),axis=-1)
-        points=np.round(centers[:,None,:]+delta[:,None,:]*np.array([-.5,-.22,.22,.5])[None,:,None]).astype(np.int32)
-        # Quantized pressure groups let OpenCV draw many paths per call instead
-        # of running per-stroke trigonometry and Python drawing loops.
-        bins=strengths//16
-        for level in np.unique(bins):
-            group=points[bins==level]
-            for j,pressure in enumerate((.52,1.,.65)):
-                cv2.polylines(strokes,list(group[:,j:j+2,:]),False,int((level*16+8)*pressure),1,cv2.LINE_AA)
-    return _blur(strokes.astype(np.float32)/255,.62)
+def graphite_strokes(tone,theta,coherence):
+    """Compatibility helper: rasterize the continuous-pressure brush at analysis size."""
+    from .strokes import make_plan,rasterize
+    return rasterize(make_plan(tone,theta,coherence),tone.shape)
 
 
 def pencil_layers(prepared,p):
@@ -123,14 +88,15 @@ def pencil_layers(prepared,p):
             zone=_blur(zone,max(1.,bw*.06))*face*p.face_strength
             density+=np.maximum(form-density,0)*zone
     density*=1-p.face_strength*(1-focus)*.72 if p.protect else 1.
-    strokes=graphite_strokes(tone,theta,coherence)
+    from .strokes import make_plan
+    plan=make_plan(tone,theta,coherence,density,prepared['skin'] if p.protect else None)
     # Optical absorption describes pigments, rather than tinting the paper.
     color=_blur(rgb.astype(np.float32)/255,3)
     absorption=1-color
     absorption/=(np.max(absorption,axis=2,keepdims=True)+.05)
     absorption=.22+.78*absorption
     return {'base':np.full_like(rgb,255),'coarse':outer,'internal':inner,
-            'tone':tone,'density':density,'strokes':strokes,
+            'tone':tone,'density':density,'stroke_plan':plan,
             'pigment':absorption.astype(np.float32),'anime_faces':0}
 
 
