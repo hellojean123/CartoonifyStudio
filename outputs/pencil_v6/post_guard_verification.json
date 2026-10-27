@@ -1,0 +1,14 @@
+{
+  "all_21_face_boxes_unchanged": true,
+  "native_pixel_identical_samples": [
+    "03_portrait",
+    "05_portrait",
+    "29_portrait"
+  ],
+  "all_21_native_dimensions_and_sha256_verified": true,
+  "final_source_sha256": {
+    "cartoonify/strokes.py": "d815e6c4fb3ac40af7eb965288fc9d8b2a95b47dbd44d5be8833c779353d4965",
+    "cartoonify/pencil.py": "8f3ca70e58a5663956bc84d0b391e8480eedcc51359c7e5a86035da6ee96ee26",
+    "cartoonify/core.py": "29f8a56e07dc2c912718630bf86bdcbd8e2709f11d55d782a34d46d9fcf0cd6d"
+  }
+}
