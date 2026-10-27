@@ -1,0 +1,157 @@
+{
+  "tests": 96,
+  "test_seconds": 129.955,
+  "http": {
+    "preview": {
+      "stages": 2,
+      "status": "4.79 秒 · 最终预览 1000×666 · 保护区域 1 · 动漫脸部细化 0 · 缓存命中 0",
+      "end_to_end_seconds": 20.566170700010844
+    },
+    "http_status": 200,
+    "exports": [
+      {
+        "format": "PNG",
+        "colored": false,
+        "size": [
+          1280,
+          853
+        ],
+        "end_to_end_seconds": 13.105761800077744
+      },
+      {
+        "format": "JPG",
+        "colored": true,
+        "size": [
+          1280,
+          853
+        ],
+        "end_to_end_seconds": 12.976457600016147
+      }
+    ],
+    "batch_png_count": 2,
+    "cancel_response": "没有正在运行的任务。"
+  },
+  "samples": 21,
+  "monochrome_outputs": 21,
+  "colored_outputs": 21,
+  "preview_export_mean_mae": 1.6991621641452184,
+  "preview_export_max_mae": 2.500768768768769,
+  "other_style_files_unchanged": 63,
+  "baseline_commit": "0a2cb624facc1dd3bca249c1ec9df421d8c71544",
+  "benchmark": [
+    {
+      "shape": [
+        640,
+        457,
+        3
+      ],
+      "uncached_seconds": [
+        0.5281832000473514,
+        0.5017574999947101,
+        0.5746284000342712
+      ],
+      "median_seconds": 0.5281832000473514,
+      "stages": [
+        {
+          "prepare": 0.1832488999934867,
+          "layers": 0.3047050000168383,
+          "render": 0.038890500087291,
+          "total": 0.5268446000991389
+        },
+        {
+          "prepare": 0.17523159994743764,
+          "layers": 0.2846059000585228,
+          "render": 0.040042600012384355,
+          "total": 0.4998803000198677
+        },
+        {
+          "prepare": 0.1845547000411898,
+          "layers": 0.3400408000452444,
+          "render": 0.048847800004296005,
+          "total": 0.5734434000914916
+        }
+      ],
+      "cached_parameter_preview_seconds": 0.040808499907143414,
+      "peak_process_rss_mib": 103.43359375,
+      "rss_sampling_ms": 10,
+      "opencv_threads": 2,
+      "opencl": false
+    },
+    {
+      "shape": [
+        1080,
+        771,
+        3
+      ],
+      "uncached_seconds": [
+        1.1826896000420675,
+        1.1402259999886155,
+        2.9842707000207156
+      ],
+      "median_seconds": 1.1826896000420675,
+      "stages": [
+        {
+          "prepare": 0.34205600002314895,
+          "layers": 0.6823877999559045,
+          "render": 0.1548866000957787,
+          "total": 1.179330600076355
+        },
+        {
+          "prepare": 0.3392618999350816,
+          "layers": 0.6630539000034332,
+          "render": 0.1359324000077322,
+          "total": 1.13824839994777
+        },
+        {
+          "prepare": 0.39888660004362464,
+          "layers": 2.2422624999890104,
+          "render": 0.3396133000496775,
+          "total": 2.980762700084597
+        }
+      ],
+      "cached_parameter_preview_seconds": 0.3511617999756709,
+      "peak_process_rss_mib": 156.45703125,
+      "rss_sampling_ms": 10,
+      "opencv_threads": 2,
+      "opencl": false
+    },
+    {
+      "shape": [
+        3840,
+        2743,
+        3
+      ],
+      "uncached_seconds": [
+        5.094925399986096,
+        9.385828399914317,
+        7.4431821999605745
+      ],
+      "median_seconds": 7.4431821999605745,
+      "stages": [
+        {
+          "prepare": 0.3378202000167221,
+          "layers": 1.0537858000025153,
+          "render": 3.690280699986033,
+          "total": 5.081887700012885
+        },
+        {
+          "prepare": 1.3337447999510914,
+          "layers": 3.0258169000735506,
+          "render": 5.013660699944012,
+          "total": 9.373223099973984
+        },
+        {
+          "prepare": 0.988002699916251,
+          "layers": 2.3437680000206456,
+          "render": 4.1003442000364885,
+          "total": 7.432115599978715
+        }
+      ],
+      "cached_parameter_preview_seconds": 0.5285180999198928,
+      "peak_process_rss_mib": 185.95703125,
+      "rss_sampling_ms": 10,
+      "opencv_threads": 2,
+      "opencl": false
+    }
+  ]
+}

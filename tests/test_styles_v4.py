@@ -5,7 +5,8 @@ from dataclasses import replace
 import cv2,numpy as np
 from cartoonify.core import process,STYLES,Params
 from cartoonify.anime import session
-from cartoonify.npr import flow_lines,coherent_strokes
+from cartoonify.npr import flow_lines
+from cartoonify.pencil import graphite_strokes
 
 def test_bundled_anime_integrity_and_cpu():
     root=Path(__file__).resolve().parents[1]/'models'
@@ -32,7 +33,7 @@ def test_black_flat_field_does_not_become_false_ink():
 def test_flow_strokes_are_repeatable_and_not_global_screen_lines():
     im=np.zeros((96,128,3),np.uint8);cv2.circle(im,(64,48),30,(200,170,140),-1)
     _,_,tone,theta=flow_lines(im)
-    a=coherent_strokes(tone,theta);b=coherent_strokes(tone,theta)
+    a=graphite_strokes(tone,theta,np.ones_like(tone));b=graphite_strokes(tone,theta,np.ones_like(tone))
     assert np.array_equal(a,b) and np.isfinite(a).all()
     assert np.std(a)>.01
     assert not np.allclose(a,np.roll(a,4,axis=1))

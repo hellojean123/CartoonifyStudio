@@ -1,4 +1,4 @@
-"""Structure-aware CPU line drawing and graphite strokes.
+"""Structure-aware CPU line drawing and region smoothing.
 
 Separable structure-tensor flow filtering inspired by Kyprianidis & Doellner
 (TPCG 2008); this is a NumPy/OpenCV implementation, not their source code.
@@ -33,23 +33,6 @@ def flow_lines(rgb, smooth=6):
     keep=stats[:,cv2.CC_STAT_AREA]>=max(3,round(max(gray.shape)*.006));keep[0]=False
     coarse=np.clip(cv2.GaussianBlur(keep[labels].astype(np.float32),(0,0),.48)*2.4,0,1)
     return coarse,fine,gray,theta
-
-def coherent_strokes(tone,theta):
-    """Deterministic line-integral noise follows local tangents, not a screen grid."""
-    yy,xx=np.mgrid[:tone.shape[0],:tone.shape[1]].astype(np.float32)
-    noise=np.random.default_rng(48).uniform(-1,1,tone.shape).astype(np.float32)
-    noise=cv2.GaussianBlur(noise,(0,0),.4)
-    tx=-np.sin(theta);ty=np.cos(theta);strokes=np.zeros_like(tone);total=0.
-    for step in range(-7,8):
-        weight=np.exp(-step*step/32)
-        strokes+=cv2.remap(noise,xx+tx*step,yy+ty*step,cv2.INTER_LINEAR,borderMode=cv2.BORDER_REFLECT)*weight
-        total+=weight
-    local=cv2.GaussianBlur(tone,(0,0),9)
-    variance=np.maximum(cv2.GaussianBlur(tone*tone,(0,0),9)-local*local,0)
-    support=np.clip((np.sqrt(variance)-.008)*10,0,1)
-    density=np.clip((.85-tone)/.85,0,1)**.85
-    # Uniform photographic backgrounds become blank paper, not graphite noise.
-    return np.clip((strokes/total+.07)*4,0,1)*density*support
 
 def region_smooth(rgb,smooth=6,radius=None):
     """Soft-minimum four-sector Kuwahara; bounded analysis images only."""

@@ -1,0 +1,30 @@
+{
+  "preview": {
+    "stages": 2,
+    "status": "4.79 秒 · 最终预览 1000×666 · 保护区域 1 · 动漫脸部细化 0 · 缓存命中 0",
+    "end_to_end_seconds": 20.566170700010844
+  },
+  "http_status": 200,
+  "exports": [
+    {
+      "format": "PNG",
+      "colored": false,
+      "size": [
+        1280,
+        853
+      ],
+      "end_to_end_seconds": 13.105761800077744
+    },
+    {
+      "format": "JPG",
+      "colored": true,
+      "size": [
+        1280,
+        853
+      ],
+      "end_to_end_seconds": 12.976457600016147
+    }
+  ],
+  "batch_png_count": 2,
+  "cancel_response": "没有正在运行的任务。"
+}

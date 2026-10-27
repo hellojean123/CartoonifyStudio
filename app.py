@@ -65,12 +65,12 @@ def bead_generate(path,grid,colors,smooth,min_region,cohesion,pitch,preserve,mod
 def build_app():
     with gr.Blocks(theme=gr.themes.Soft(primary_hue='violet'),title='Cartoonify Studio',css='.gradio-container{max-width:1480px!important} footer{display:none!important}') as demo:
         session=gr.State(lambda:uuid.uuid4().hex)
-        gr.Markdown('# 🎨 Cartoonify Studio\n纯 CPU · 动漫人像 · 线条素描 · 高清导出 · 拼豆图纸')
+        gr.Markdown('# 🎨 Cartoonify Studio\n纯 CPU · 动漫人像 · 铅笔素描 · 高清导出 · 拼豆图纸')
         source=gr.File(label='上传原照片 · JPG / PNG / WebP',file_types=['.jpg','.jpeg','.png','.webp'],type='filepath')
         with gr.Tab('照片卡通化'):
             with gr.Row():
                 with gr.Column(scale=1):
-                    style=gr.Dropdown([('动漫人像（CPU 模型）',STYLES[0]),('扁平插画',STYLES[1]),('美式漫画',STYLES[2]),('线条铅笔素描',STYLES[3])],value=STYLES[0],label='风格与预设')
+                    style=gr.Dropdown([('动漫人像（CPU 模型）',STYLES[0]),('扁平插画',STYLES[1]),('美式漫画',STYLES[2]),('铅笔素描（明暗与笔触）',STYLES[3])],value=STYLES[0],label='风格与预设')
                     outline=gr.Slider(0,1,.35,step=.05,label='整体轮廓强度')
                     smooth=gr.Slider(1,10,5,step=1,label='区域平滑')
                     colors=gr.Slider(4,48,16,step=1,label='调色板颜色数',visible=False)
@@ -96,7 +96,7 @@ def build_app():
                         angle=gr.Slider(0,90,15,step=1,label='网点角度')
                         opacity=gr.Slider(0,.65,.28,step=.01,label='网点浓度')
                     with gr.Group(visible=False) as pencil_group:
-                        shade=gr.Slider(0,.8,.48,step=.02,label='铅笔排线浓度')
+                        shade=gr.Slider(0,.8,.48,step=.02,label='铅笔明暗与排线浓度',info='设为 0 只保留结构线；调高增加阴影和石墨笔触。')
                         paper=gr.Slider(0,.4,.08,step=.01,label='纸张颗粒')
                     reset=gr.Button('恢复当前风格默认参数')
                     preview_btn=gr.Button('重新预览',variant='primary')
