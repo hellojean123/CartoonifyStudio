@@ -1,5 +1,6 @@
-"""Cartoonify Studio v3: staged previews and one shared CPU resource queue."""
+"""Cartoonify Studio v4: staged previews and one shared CPU resource queue."""
 import time
+from dataclasses import replace
 import uuid
 import os
 import json
@@ -21,12 +22,13 @@ def preview(path,style,*values):
     try:
         with job(session) as token:
             image=load_cached(path)
-            rough=process(resize(image,480),style,p,preview=True,quality='标准',cancel=token.is_set)
+            rough_params=replace(p,protect=False) if style==STYLES[0] else p
+            rough=process(resize(image,480),style,rough_params,preview=True,quality='标准',cancel=token.is_set)
             yield resize(image,1000),rough,None,f'{time.perf_counter()-start:.2f} 秒 · 快速草稿，正在细化（草稿色板可能不同）'
             if token.is_set(): yield gr.skip(),gr.skip(),None,'已取消';return
             info={}
             result=process(image,style,p,preview=True,quality='标准',cancel=token.is_set,diagnostics=info)
-            yield resize(image,1000),result,None,f'{time.perf_counter()-start:.2f} 秒 · 最终预览 {result.shape[1]}×{result.shape[0]} · 保护区域 {len(info["faces"])} · 缓存命中 {info["cache"].get("hits",0)}'
+            yield resize(image,1000),result,None,f'{time.perf_counter()-start:.2f} 秒 · 最终预览 {result.shape[1]}×{result.shape[0]} · 保护区域 {len(info["faces"])} · 动漫脸部细化 {info.get("anime_refined_faces",0)} · 缓存命中 {info["cache"].get("hits",0)}'
     except InterruptedError: yield gr.skip(),gr.skip(),None,'处理已取消'
     except Exception as exc: raise gr.Error(str(exc)) from exc
 
@@ -63,16 +65,16 @@ def bead_generate(path,grid,colors,smooth,min_region,cohesion,pitch,preserve,mod
 def build_app():
     with gr.Blocks(theme=gr.themes.Soft(primary_hue='violet'),title='Cartoonify Studio',css='.gradio-container{max-width:1480px!important} footer{display:none!important}') as demo:
         session=gr.State(lambda:uuid.uuid4().hex)
-        gr.Markdown('# 🎨 Cartoonify Studio\n纯 CPU · 人像保护 · 分层轮廓 · 高清导出 · 拼豆图纸')
+        gr.Markdown('# 🎨 Cartoonify Studio\n纯 CPU · 动漫人像 · 线条素描 · 高清导出 · 拼豆图纸')
         source=gr.File(label='上传原照片 · JPG / PNG / WebP',file_types=['.jpg','.jpeg','.png','.webp'],type='filepath')
         with gr.Tab('照片卡通化'):
             with gr.Row():
                 with gr.Column(scale=1):
-                    style=gr.Dropdown(STYLES,value=STYLES[0],label='风格与预设')
-                    outline=gr.Slider(0,1,.5,step=.05,label='整体轮廓强度')
-                    smooth=gr.Slider(1,10,6,step=1,label='区域平滑')
+                    style=gr.Dropdown([('动漫人像（CPU 模型）',STYLES[0]),('扁平插画',STYLES[1]),('美式漫画',STYLES[2]),('线条铅笔素描',STYLES[3])],value=STYLES[0],label='风格与预设')
+                    outline=gr.Slider(0,1,.35,step=.05,label='整体轮廓强度')
+                    smooth=gr.Slider(1,10,5,step=1,label='区域平滑')
                     colors=gr.Slider(4,48,16,step=1,label='调色板颜色数',visible=False)
-                    contrast=gr.Slider(.6,1.8,1.03,step=.01,label='对比度')
+                    contrast=gr.Slider(.6,1.8,1.,step=.01,label='对比度')
                     colored=gr.Checkbox(label='彩色铅笔',visible=False)
                     protect=gr.Checkbox(value=True,label='保护人像（自动检测 + 手动区域）')
                     face_strength=gr.Slider(0,1,.75,step=.05,label='人像保护力度')
@@ -94,11 +96,11 @@ def build_app():
                         angle=gr.Slider(0,90,15,step=1,label='网点角度')
                         opacity=gr.Slider(0,.65,.28,step=.01,label='网点浓度')
                     with gr.Group(visible=False) as pencil_group:
-                        shade=gr.Slider(0,.8,.48,step=.02,label='石墨明暗')
+                        shade=gr.Slider(0,.8,.48,step=.02,label='铅笔排线浓度')
                         paper=gr.Slider(0,.4,.08,step=.01,label='纸张颗粒')
                     reset=gr.Button('恢复当前风格默认参数')
                     preview_btn=gr.Button('重新预览',variant='primary')
-                    quality=gr.Radio(['标准','精细'],value='精细',label='经典卡通细节恢复',info='精细增加少量原图细节；其他风格固定采用保留色块或明暗的原尺寸渲染。')
+                    quality=gr.Radio(['标准','精细'],value='精细',label='动漫高清插值',info='两档共用同一张动漫结构图；精细使用双三次插值。不会恢复原照片纹理或凭空增加细节。')
                     fmt=gr.Radio(['PNG','JPG'],value='PNG',label='导出格式')
                     export_btn=gr.Button('处理原始尺寸并导出')
                     stop=gr.Button('取消当前任务')
@@ -108,7 +110,7 @@ def build_app():
                         after=gr.Image(label='效果预览',interactive=False)
                     status=gr.Textbox(label='状态与耗时',interactive=False)
                     download=gr.File(label='下载原尺寸结果')
-                    gr.Markdown('松开滑块后自动预览：先草稿，再更新统一色板的最终预览。图片在本机处理。')
+                    gr.Markdown('松开滑块后自动预览：先草稿，再更新统一色板的最终预览。图片和动漫模型均在本机 CPU 处理，不上传照片。动漫由预训练模型重绘，人物特征可能变化；输出尺寸不等于新增真实细节。')
         params=[outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes]
         outputs=[before,after,download,status]
         triggers=[preview_btn.click,source.change]+[s.release for s in [outline,smooth,colors,contrast,face_strength,outer,inner,spacing,angle,opacity,shade,paper]]+[colored.change,protect.change,boxes.submit]

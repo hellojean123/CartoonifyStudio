@@ -1,0 +1,10 @@
+{
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "torch_installed": false,
+  "onnx_development_package_installed": false,
+  "pixel_max_difference_from_saved_result": 0,
+  "source": "samples/23_portrait.jpg",
+  "output": "outputs/1_\u7ecf\u5178\u5361\u901a/23_portrait.png"
+}

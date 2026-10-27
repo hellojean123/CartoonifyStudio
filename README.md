@@ -1,115 +1,113 @@
-# Cartoonify Studio v3
+# Cartoonify Studio v4
 
-Windows 11 / Python 3.12 / 纯 CPU 照片卡通化。OpenCV、NumPy、Pillow、Gradio、pytest；无 CUDA、无训练、无付费 API。算法与界面独立，处理不上传照片，界面统计默认关闭。
+Windows 11 / Python 3.12 / 纯 CPU 照片风格化与拼豆图纸。无 CUDA、无训练、无付费 API；图片留在本机，启动后处理不联网。四种风格分别采用人像动漫模型、区域插画、印刷漫画和线条素描路线。
 
-![原图与四种风格对比](outputs/03_portrait_comparison.jpg)
+![原图与四种风格](outputs/03_portrait_comparison.jpg)
+
+## 本次重做
+
+旧版“经典卡通”的硬量化容易产生脏色块，素描使用连续灰度底图而缺少线条。本版将前者替换为 **FacePaint v2 预训练动漫人像模型的本地 CPU 推理**；素描改为**白纸、顺结构线稿和铅笔排线**。插画改善区域平滑，漫画加强结构线、阴影和印刷色。没有训练模型或调用外部绘图服务。
+
+查看 [原图 / 已发布旧版 / 本版及五官局部](outputs/v4_review/gallery.html)、[实际核验与局限](style_redesign_report.md)、[CPU 时间和内存](benchmark_v4.md)。模型会重绘眉眼、脸形等特征，不能保证身份完全一致；多人远景小脸、遮挡和极端光照仍可能失真。不要把原尺寸文件理解为原尺寸神经网络生成细节。
 
 ## 安装和启动（Windows PowerShell）
 
-本机项目位于 `D:\CartoonifyStudio`，有独立 Python 3.12.10 `runtime` 和 `.venv`。双击 `start.bat`，或运行：
+本机项目在 `D:\CartoonifyStudio`。已有环境更新依赖后启动，或双击 `start.bat`：
 
 ```powershell
 Set-Location D:\CartoonifyStudio
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe app.py
 ```
 
-全新机器先安装官方 Python 3.12，再运行：
+新机器安装官方 Python 3.12，再克隆和创建独立环境：
 
 ```powershell
+Set-Location D:\
+git clone https://github.com/hellojean123/CartoonifyStudio.git
 Set-Location D:\CartoonifyStudio
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe app.py
 ```
 
-无需激活环境或修改 PowerShell 执行策略。浏览器默认打开本机地址 http://127.0.0.1:7860 ，端口占用时以控制台显示为准。关闭控制台停止服务。`requirements-lock.txt` 记录本机实际依赖版本，迁移后须重建虚拟环境。
+无需激活环境或修改执行策略。默认地址 http://127.0.0.1:7860 ，若占用，以控制台地址为准；关闭控制台停止。仓库已附动漫 ONNX 权重与人脸定位模型，运行时不下载。正常使用只需 ONNX Runtime CPU，**不需要 PyTorch、TensorFlow、GPU 或模型转换依赖**。`requirements-lock.txt` 是运行依赖快照；迁移时重建 `.venv`。
 
-## 操作流程
+## 使用
 
-1. 拖入 JPG / PNG / WebP，或在内置测试照片页选择文件。
-2. 选择经典卡通、扁平插画、美式漫画或铅笔素描，切换风格载入合理预设。
-3. 松开滑块自动预览，先显示 480 边长草稿，再显示最长边 1000 的最终预览。草稿是临时近似，色板可能不同；最终预览和导出使用同一张分析图确定色板与主体轮廓。
-4. 可分别调整整体轮廓、主要粗线、内部细线。人像保护默认打开，减少皮肤细纹和五官过黑。
-5. 自动检测漏掉侧脸时，展开轮廓与手动保护选项，按图片百分比设置左、上、宽、高，点击应用；手动框与自动检测区域叠加。可清除手动框。保护框是羽化区域，并非精确皮肤分割。
-6. 插画显示“调色板颜色数”4～48；漫画显示“明度分级”4～12，并提供网点间距、角度、浓度；素描提供彩铅、石墨明暗和纸张颗粒。无效的风格参数隐藏。
-7. 经典卡通可选择标准或精细细节恢复（其他风格隐藏此选项）；选择 PNG 或 JPG，点击原始尺寸导出，再下载文件。预览不会不断写入导出文件。
-8. 批量页使用当前参数逐张处理并打包 ZIP，显示进度；失败图片保留原因，已成功图片仍可下载。点击取消，在图块或图片边界停止，保留有效的部分 ZIP。
+1. 拖入 JPG、PNG、WebP，或从内置照片画廊选择样片。
+2. 选择“动漫人像（CPU 模型）”“扁平插画”“美式漫画”“线条铅笔素描”；切换会加载预设。
+3. 松开滑块自动预览，先显示 480 草稿，再显示最长边 1000 的最终预览。动漫草稿跳过脸部局部细化以加快显示，结构/颜色可能不同，最终预览和导出复用同一份分析结果。
+4. 调整整体轮廓、主要边缘和内部细线。人像保护减弱脸颊纹理，保留眼鼻嘴区域；手动保护框在“轮廓分层与手动保护”中设置。自动保护还会对可靠定位的中小脸做局部动漫细化；手动框只影响平滑和附加线条，两者均不能保证动漫模型保持身份。
+5. 插画调色板 4～48 色；漫画明度 4～12 级，另有网点间距、角度、浓度；素描可调排线浓度、纸张颗粒、彩铅。线条不够时先增加整体轮廓和内部细线，排线控制阴影笔触。
+6. 动漫“标准 / 精细”共用相同结构，分别使用线性 / 双三次高清插值，不混回原照片纹理。其他风格隐藏该项并采用相同结构渲染。选择 PNG / JPG 后点击原尺寸导出。
+7. 批量页复用当前风格与参数，每张处理后打包 ZIP；单张失败记录原因，成功结果仍可下载。取消在阶段、图块或图片边界生效；正在进行的一次 CPU 模型推理不能在算子中途打断。
 
-“恢复当前风格默认参数”恢复风格值并清除手动框；下一次预览采用恢复值。自动预览仅在松开滑块时触发，同一事件只保留最新待处理请求。取消针对当前正在处理的任务，不等同关闭程序或删除已导出文件。
+重置会恢复预设并清除手动框，下次预览采用恢复值。自动预览只在松开滑块时触发，并只保留最新待处理请求。预览、导出、批量、拼豆共用 CPU 资源队列和应用锁。
 
-## 高清、尺度与内存
+## 四种算法与高清限制
 
-- 两种导出档位均保持输入原始尺寸，不再将 1400 的整幅完成图简单放大作为精细结果。
-- 标准：复用统一分析层，在最终尺寸重绘轮廓、抗锯齿网点、石墨笔触与纸纹。
-- 精细：经典卡通仅用 20% 原图引导恢复，控制照片细纹回流；插画、漫画、素描与标准使用相同结构重建，保留色块/分级/明暗，不再混回连续照片纹理。两档都保持原尺寸，按带重叠边界的 512 图块渲染。
-- 网点间距以最长边 1000 为参考，随输出尺寸缩放；预览与导出色板一致。经典卡通精细模式少量增加细节，所以与标准预览不要求逐像素相同。
-- 分析图最长边 1000，属于传统多尺度抽象；不能恢复原图中不存在的细节，也不等同生成式重绘。
-- 输入上限 1600 万像素、40 MB、单边 20000；超过时明确拒绝。透明度白底、EXIF 方向纠正、ICC 转为 sRGB，导出附 sRGB 配置。
-- 解码缓存上限 64 MiB，中间层缓存上限 112 MiB；缓存按内容和影响阶段的参数区分，只调轮廓/网点可复用区域与色板。缓存跨任务复用，退出程序释放。
-- 预览、导出和批处理共享 CPU 队列，另有应用资源锁；OpenCV 线程 2，OpenCL 关闭。输入和最终输出仍需驻留内存，缓存上限不等于进程总内存上限。
-
-## 四种处理路线
-
-| 风格 | 实际流程 |
+| 风格 | 独立处理路线 |
 |---|---|
-| 经典卡通 | 双边滤波、自适应阈值、颜色层次、粗细轮廓融合 |
-| 扁平插画 | Mean Shift 区域平滑、Lab 采样 K-Means、32³ 色彩查找表、局部空间投票、相邻孤立色块合并、轻微线条；不混回连续照片渐变 |
-| 美式漫画 | 明度分级、独立粗细轮廓、大面积阴影与中间调网点、可调角度/间距/浓度、边缘抗锯齿 |
-| 铅笔素描 | XDoG 风格软阈值线条、主要轮廓、连续石墨明暗、局部梯度调制的不规则细笔触、确定性纸张颗粒、可选彩铅 |
+| 动漫人像 | 作者 FacePaint v2 预训练权重 → ONNX Runtime CPU 重绘 → 可靠定位的中小人脸单独细化 → 生成图上的轻量轮廓增强；不对照片做全局硬色块量化 |
+| 扁平插画 | 双边 + 四区域软权重 Kuwahara → Lab 采样 K-Means → 32³ LUT → 空间投票、小孤岛合并、五官区域标签保留 → 少量主线 |
+| 美式漫画 | 区域平滑 → 饱和度增强、明度分级 → 顺结构粗线与浓阴影 → 可调抗锯齿半调网点 |
+| 线条素描 | 结构张量方向场 → 法线 DoG 与切线平滑 → 长轮廓与局部线稿 → 沿结构的确定性噪声积分笔触 → 白纸与浅颗粒；可选彩铅 |
 
-人像检测优先使用随项目分发的 YuNet 2023 预训练小模型（约 227 KiB，MIT），指定 OpenCV CPU 后端；无需训练、无需联网，不含人脸识别。传统 Haar 级联补充检测，模型缺失时自动回退。模型来源、上游提交和 SHA256 见 models/metadata.json，许可见 models/LICENSE-YuNet.txt。检测五点用于眼鼻嘴保护，皮肤使用框内宽松色彩约束；并非精确语义分割，对小脸、遮挡和强逆光仍可能失败。主要/内部轮廓按不同空间尺度提取，并不是语义意义上的精确外轮廓。
+动漫全图推理最长边 **640**；可靠定位且分析图中至少 50 像素的中小脸，另取带上下文的区域按 512 细化（最多 3 张脸）。传统分析最长边 **1000**。全图动漫模型擅长单人人像，远处小脸和非人像可能偏暗、过度抽象；不会凭空恢复看不清的五官。高清导出按原尺寸分块采样统一绘画结构，网点与纸纹使用统一坐标，避免分块接缝。高分辨率导出不等于逐像素重新运行动漫模型，也不是超分辨率；线条/笔触仍受分析尺度限制。
 
-## 测试和评估命令
+输入上限 1600 万像素 / 40 MB / 单边 20000；超过时拒绝。EXIF 方向自动纠正、透明区域铺白、ICC 转 sRGB；导出附 sRGB。解码缓存 64 MiB、中间缓存 112 MiB，模型与输入/结果内存另计。ONNX Runtime 2 线程且只启用 CPUExecutionProvider；OpenCV 2 线程、OpenCL 关闭。改变轮廓和网点可复用中间结果。
+
+## 模型来源
+
+动漫使用 [Bryan Lee 的 animegan2-pytorch](https://github.com/bryandlee/animegan2-pytorch) 中作者提供的 **face_paint_512_v2**，固定提交、原权重 SHA256、转换版本、ONNX 校验和、与原模型数值误差均见 `models/anime_metadata.json`。附固定版本仓库的 MIT 许可 `models/LICENSE-FacePaint.txt`。没有使用原 AnimeGAN 的 Paprika / Hayao 等转换权重，也未将其他仓库的许可套用到这里。
+
+人脸定位使用 OpenCV 官方 YuNet 2023 小模型（MIT），CPU 后端，Haar 级联补充；不做人脸识别。来源和 SHA256 在 `models/metadata.json`、`models/LICENSE-YuNet.txt`。五点和肤色门限只是粗区域，可能漏检或误检，不能视为精确语义分割。
+
+`convert_anime_model.py` 提供从固定上游源码与权重重建 ONNX 的开发工具；**仅开发转换**需要另外安装纯 CPU PyTorch 和 ONNX，正常运行不用安装：
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install torch==2.9.0 --index-url https://download.pytorch.org/whl/cpu
+.\.venv\Scripts\python.exe -m pip install onnx==1.19.1
+.\.venv\Scripts\python.exe convert_anime_model.py
+```
+
+## 实际测试与画廊
 
 ```powershell
 Set-Location D:\CartoonifyStudio
-.\.venv\Scripts\python.exe -m pytest -q --junitxml=outputs/pytest.xml
+.\.venv\Scripts\python.exe -m pytest -q --junitxml=outputs/pytest_v4.xml
 .\.venv\Scripts\python.exe smoke_test.py
-.\.venv\Scripts\python.exe evaluate_v3.py
-.\.venv\Scripts\python.exe benchmark_v3.py
-.\.venv\Scripts\python.exe validate_delivery.py
+.\.venv\Scripts\python.exe evaluate_styles_v4.py
+.\.venv\Scripts\python.exe refresh_detail_crops_v4.py
+.\.venv\Scripts\python.exe benchmark_styles_v4.py
+.\.venv\Scripts\python.exe benchmark_anime_arena.py
+.\.venv\Scripts\python.exe report_benchmark_v4.py
+.\.venv\Scripts\python.exe verify_runtime_cpu.py
+.\.venv\Scripts\python.exe verify_styles_v4.py
+Start-Process .\outputs\v4_review\gallery.html
 Start-Process .\outputs\gallery.html
-Start-Process .\outputs\blind_review.html
 ```
 
-`evaluate_v3.py` 处理 21 张正式样本的四种风格，生成 84 张 PNG、21 张五联对比、28 张 v2/v3 新旧对照及 28 张原尺寸局部图（outputs/v3_review/gallery.html），并对真实高清参考生成 4 张原尺寸效果。需要 Git 和保留的初始提交读取 v2 基线；缺失时明确失败。`blind_review.html` 可选择 A/B/相当，评分仅保存在浏览器，可导出 JSON；映射答案另存 `blind_key.json`，程序不伪造用户评分。
+评估处理全部 21 张正式照片（16 张人物）×4 风格，保存 84 张原尺寸 PNG、21 张五联对比、8 张代表照片×4 风格的新旧对比和局部，并生成真实 3840×2880 导出。旧版基线固定为 `0b46ac10b7dd8174afe8502b769ee8f9bba409dd`，比较脚本需要含该历史提交的 Git 仓库；不依赖本地备份。`outputs/timings_v4.json` 记录各图耗时及预览差异，`outputs/benchmark_v4.json` 为独立进程实测。
 
-`benchmark_v3.py` 对 640×480、1920×1080、3840×2160 四风格使用与历史 v2 相同真实高分辨率输入，独立进程预热后测量 3 次、记录中位数/P95 和 RSS；另测缓存调参和量化。只有 3 次的 P95 是描述性数字，不是长期服务尾延迟。
+测试覆盖异常文件、透明/灰度、EXIF、极端参数、1×1、风格差异、CPU 模型与权重校验、白纸线稿、确定性笔触、缓存、图块接缝、PNG/JPG、批量和取消，以及原有拼豆功能。数值测试不等于审美评审，实际新旧图和五官局部更重要。素描仍是程序化绘画，不等同人工素描；插画有意牺牲渐变，漫画缩图可能有网点摩尔纹。
 
-`outputs/timings_v3.json` 有全部照片处理分阶段耗时、人像框和预览/导出差异；timings.json 与 benchmark.md 保留为历史 v2 数据，当前性能见 benchmark_v3.md。指标是诊断工具，低碎线不自动等于艺术效果更好；人工盲评仍有必要。
+`benchmark.md`、`benchmark_v3.md`、`optimization_v3.md` 及 v2/v3 画廊保留为**历史报告**。当前结果和性能只看 v4；旧评估脚本在当前代码上运行会调用当前算法，不能据此冒称重新测得了旧版。
 
-## 照片与许可
+## 照片授权、目录与迁移
 
-21 张正式样本（16 张人物）及完整来源/作者/许可/下载日期见 `samples/metadata.json`、`samples/ATTRIBUTION.md`。真实 3840×2880 评估图单独位于 `samples/high_resolution`，包括原始分辨率、官方缩略图地址和署名；它来自更高分辨率原图，而非低清图放大。
+正式照片的来源、作者、许可和下载日期见 `samples/metadata.json` 与 `samples/ATTRIBUTION.md`；真实高清参考单列于 `samples/high_resolution`。仅接受可修改再分发的 CC0 / 公有领域 / CC BY / CC BY-SA / OGL 等已核实来源，排除 NC、ND 和不明来源。再分发、改编继续保留署名及适用的相同方式共享条款；人物仅为演示，不表示背书。失败候选不计入正式样本。
 
-接受 CC0、公有领域、CC BY、CC BY-SA、英国 OGL 3；排除 NC/ND 和无法核实作者的图片。再分发时保留来源和署名，CC BY-SA 改编结果遵守对应版本相同许可。人物仅供技术演示，不表示背书。初始失败和拒绝候选均有记录，候选存档不计入正式评估。
+- `cartoonify/core.py`：独立处理管线、保护区域和分块渲染。
+- `cartoonify/anime.py`、`cartoonify/npr.py`：CPU 动漫推理、结构线稿与铅笔笔触。
+- `cartoonify/service.py`、`cache.py`：导出、取消、资源锁和有上限的缓存。
+- `models/`：本地权重、来源校验、许可；`tests/`：回归测试。
+- `outputs/1_经典卡通/`：动漫结果；沿用内部键与目录名以保持 API 兼容。
+- `outputs/2_扁平插画/`、`3_美式漫画/`、`4_铅笔素描/`：其他三风格结果。
+- `outputs/v4_review/gallery.html`：本轮新旧核验；`outputs/exports/`：用户导出文件。
 
-```powershell
-.\.venv\Scripts\python.exe download_samples.py
-.\.venv\Scripts\python.exe fetch_highres.py
-```
-
-已有完整元数据时，下载脚本刷新已核实的样本；首次搜索仍需内容复核，不能仅凭标题认定是真实人物摄影。
-
-## 文件与评估基线
-
-- `cartoonify/core.py`：算法、保护区域、分层与分块渲染。
-- `cartoonify/cache.py`：按字节限制的只读缓存。
-- `cartoonify/service.py`：资源锁、取消、解码和导出，独立于 Gradio。
-- `app.py`：WebUI；`tests/`：回归与故障测试。
-- `outputs/gallery.html`：全量结果；`outputs/upgrade_comparisons`：新旧对照与原生高清裁剪。
-- `benchmark.md`、`upgrade_report.md`、`test_report.md`：真实性能、七项升级与交付验证。
-- `benchmarks/legacy_v1.py`：供新旧对照的最小旧版算法参考，不依赖整套本地备份。
-
-导出文件在 `outputs/exports`，可自行清理历史生成文件。迁移或从 GitHub 克隆后重建 `.venv`；仓库包含算法参考、正式样本、授权记录及效果，不包含虚拟环境、Python 安装包、缓存、拒绝候选和整套本地备份。不要覆盖其他项目目录。
-
-## 已知限制
-
-脸部保护是粗区域，不是语义分割；非常复杂背景仍可能出现线条；插画仍会牺牲部分色彩渐变；网点缩小时可能有摩尔纹；排线是程序化纹理，不能等同手绘笔触。精细高清比旧版单纯放大承担更多工作，可能更慢。具体时间、内存和预览误差以本机报告为准。
-
-## v3 核验与限制
-
-本轮以人像结构、素描明暗、独立风格和高清一致性为先，改动及实际检查见 optimization_v3.md。新版改善不等于每张照片都胜过旧版：深皱纹、强硬光仍可能形成较重色块；扁平插画会有意舍弃发丝细节；素描仍属传统滤镜，笔触不等同人工绘制。网页盲评没有预置或虚构的偏好分数。
+仓库不包含虚拟环境、Python 安装包、缓存和整套备份。克隆/迁移后重建 `.venv`，勿复制旧环境或覆盖其他项目目录。原有拼豆功能与照片四风格独立，说明如下。
 
 ## 照片转拼豆图纸
 

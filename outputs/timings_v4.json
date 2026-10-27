@@ -1,0 +1,2395 @@
+[
+  {
+    "file": "01_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 19.625216000014916,
+    "faces": [
+      [
+        84,
+        2,
+        794,
+        724
+      ]
+    ],
+    "anime_refined_faces": 0,
+    "stages": {
+      "prepare": 1.1129382000071928,
+      "layers": 18.089695900096558,
+      "render": 0.4221329999854788,
+      "total": 19.62476850009989
+    },
+    "preview_export_mae": 0.2869039039039039,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "01_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 1.9364599999971688,
+    "faces": [
+      [
+        84,
+        2,
+        794,
+        724
+      ]
+    ],
+    "stages": {
+      "prepare": 0.5648990999907255,
+      "layers": 1.102030499954708,
+      "render": 0.26903259998653084,
+      "total": 1.9359630999388173
+    },
+    "preview_export_mae": 1.4167002002002003,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "01_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 1.9700383000308648,
+    "faces": [
+      [
+        84,
+        2,
+        794,
+        724
+      ]
+    ],
+    "stages": {
+      "prepare": 0.5481034000404179,
+      "layers": 1.1099970999639481,
+      "render": 0.31148779997602105,
+      "total": 1.9695885999826714
+    },
+    "preview_export_mae": 2.500257757757758,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "01_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 1.0375586999580264,
+    "faces": [
+      [
+        84,
+        2,
+        794,
+        724
+      ]
+    ],
+    "stages": {
+      "prepare": 0.3681914999615401,
+      "layers": 0.5012431000359356,
+      "render": 0.16799729992635548,
+      "total": 1.037432299926877
+    },
+    "preview_export_mae": 7.151623123123123,
+    "paper_fraction": 0.33170061547479485,
+    "dark_line_fraction": 0.10974226992966002
+  },
+  {
+    "file": "02_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 26.52877570001874,
+    "faces": [
+      [
+        272,
+        106,
+        180,
+        238
+      ]
+    ],
+    "anime_refined_faces": 1,
+    "stages": {
+      "prepare": 1.5130496000638232,
+      "layers": 24.28593229991384,
+      "render": 0.7289508000249043,
+      "total": 26.52793370001018
+    },
+    "preview_export_mae": 0.49536708333333335,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "02_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 1.7272165999747813,
+    "faces": [
+      [
+        272,
+        106,
+        180,
+        238
+      ]
+    ],
+    "stages": {
+      "prepare": 0.49201749998610467,
+      "layers": 0.9961636000080034,
+      "render": 0.2387692000484094,
+      "total": 1.7269506000448018
+    },
+    "preview_export_mae": 0.6816183333333333,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "02_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 4.71363230003044,
+    "faces": [
+      [
+        272,
+        106,
+        180,
+        238
+      ]
+    ],
+    "stages": {
+      "prepare": 0.709442300023511,
+      "layers": 1.6199941999511793,
+      "render": 2.3839697000803426,
+      "total": 4.7134074999485165
+    },
+    "preview_export_mae": 1.7710995833333334,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "02_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 7.678092599962838,
+    "faces": [
+      [
+        272,
+        106,
+        180,
+        238
+      ]
+    ],
+    "stages": {
+      "prepare": 2.025369100039825,
+      "layers": 3.057122500031255,
+      "render": 2.5946085000177845,
+      "total": 7.677100900094956
+    },
+    "preview_export_mae": 7.2775675,
+    "paper_fraction": 0.33717626953125,
+    "dark_line_fraction": 0.131962890625
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 28.552219499950297,
+    "faces": [
+      [
+        246,
+        188,
+        247,
+        381
+      ]
+    ],
+    "anime_refined_faces": 1,
+    "stages": {
+      "prepare": 1.4475791999138892,
+      "layers": 26.536012800061144,
+      "render": 0.567375099984929,
+      "total": 28.550967799965292
+    },
+    "preview_export_mae": 0.22496458333333333,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 7.809065700042993,
+    "faces": [
+      [
+        246,
+        188,
+        247,
+        381
+      ]
+    ],
+    "stages": {
+      "prepare": 2.3076856000116095,
+      "layers": 4.427482199971564,
+      "render": 1.0733011000556871,
+      "total": 7.808469699928537
+    },
+    "preview_export_mae": 0.35520125,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 10.570194900035858,
+    "faces": [
+      [
+        246,
+        188,
+        247,
+        381
+      ]
+    ],
+    "stages": {
+      "prepare": 2.1997526000486687,
+      "layers": 5.166016099974513,
+      "render": 3.2037545000202954,
+      "total": 10.569524000049569
+    },
+    "preview_export_mae": 0.5172875,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 8.929084500065073,
+    "faces": [
+      [
+        246,
+        188,
+        247,
+        381
+      ]
+    ],
+    "stages": {
+      "prepare": 3.152842100011185,
+      "layers": 4.107109799981117,
+      "render": 1.6684125000610948,
+      "total": 8.92836530006025
+    },
+    "preview_export_mae": 3.32068125,
+    "paper_fraction": 0.6279013671875,
+    "dark_line_fraction": 0.03406298828125
+  },
+  {
+    "file": "04_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 29.408021499984898,
+    "faces": [
+      [
+        237,
+        228,
+        159,
+        208
+      ],
+      [
+        705,
+        397,
+        72,
+        72
+      ]
+    ],
+    "anime_refined_faces": 1,
+    "stages": {
+      "prepare": 1.689748700009659,
+      "layers": 27.263750800048,
+      "render": 0.4533985999878496,
+      "total": 29.40689870005008
+    },
+    "preview_export_mae": 0.5484111922141119,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "04_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 9.802741499966942,
+    "faces": [
+      [
+        237,
+        228,
+        159,
+        208
+      ],
+      [
+        705,
+        397,
+        72,
+        72
+      ]
+    ],
+    "stages": {
+      "prepare": 4.1229231000179425,
+      "layers": 4.732215599971823,
+      "render": 0.9469687000382692,
+      "total": 9.802108399919234
+    },
+    "preview_export_mae": 0.727809871393813,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "04_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 8.199064899934456,
+    "faces": [
+      [
+        237,
+        228,
+        159,
+        208
+      ],
+      [
+        705,
+        397,
+        72,
+        72
+      ]
+    ],
+    "stages": {
+      "prepare": 2.8190682000713423,
+      "layers": 3.5051790999714285,
+      "render": 1.8742445999523625,
+      "total": 8.19849310000427
+    },
+    "preview_export_mae": 2.5332954466458117,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "04_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 6.748912399983965,
+    "faces": [
+      [
+        237,
+        228,
+        159,
+        208
+      ],
+      [
+        705,
+        397,
+        72,
+        72
+      ]
+    ],
+    "stages": {
+      "prepare": 2.3874361000489444,
+      "layers": 3.2527877999236807,
+      "render": 1.1080672000534832,
+      "total": 6.748292300035246
+    },
+    "preview_export_mae": 6.216597497393118,
+    "paper_fraction": 0.43711573697068407,
+    "dark_line_fraction": 0.1506031148208469
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 11.553806100040674,
+    "faces": [
+      [
+        308,
+        124,
+        499,
+        596
+      ]
+    ],
+    "anime_refined_faces": 0,
+    "stages": {
+      "prepare": 1.1307513000210747,
+      "layers": 10.133667699992657,
+      "render": 0.2883729999884963,
+      "total": 11.552792700007558
+    },
+    "preview_export_mae": 0.20075825825825827,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 2.881362700019963,
+    "faces": [
+      [
+        308,
+        124,
+        499,
+        596
+      ]
+    ],
+    "stages": {
+      "prepare": 1.5902138999663293,
+      "layers": 0.9813337000086904,
+      "render": 0.3092249999754131,
+      "total": 2.8807731999550015
+    },
+    "preview_export_mae": 0.6002957957957958,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 2.0298101999796927,
+    "faces": [
+      [
+        308,
+        124,
+        499,
+        596
+      ]
+    ],
+    "stages": {
+      "prepare": 0.6217081999639049,
+      "layers": 1.0498252999968827,
+      "render": 0.3580317000159994,
+      "total": 2.0295655999798328
+    },
+    "preview_export_mae": 1.2378318318318318,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 2.0338338000001386,
+    "faces": [
+      [
+        308,
+        124,
+        499,
+        596
+      ]
+    ],
+    "stages": {
+      "prepare": 0.563307199976407,
+      "layers": 1.185950000071898,
+      "render": 0.2843405999010429,
+      "total": 2.033597999950871
+    },
+    "preview_export_mae": 4.484975975975976,
+    "paper_fraction": 0.4992224135404455,
+    "dark_line_fraction": 0.019223512602579134
+  },
+  {
+    "file": "06_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 20.982871999964118,
+    "faces": [
+      [
+        259,
+        169,
+        173,
+        236
+      ],
+      [
+        53,
+        544,
+        183,
+        183
+      ],
+      [
+        386,
+        426,
+        136,
+        136
+      ]
+    ],
+    "anime_refined_faces": 1,
+    "stages": {
+      "prepare": 0.9968071999028325,
+      "layers": 19.22902040008921,
+      "render": 0.7560897999210283,
+      "total": 20.981918299919926
+    },
+    "preview_export_mae": 0.3116606696651674,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "06_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 2.595451399916783,
+    "faces": [
+      [
+        259,
+        169,
+        173,
+        236
+      ],
+      [
+        53,
+        544,
+        183,
+        183
+      ],
+      [
+        386,
+        426,
+        136,
+        136
+      ]
+    ],
+    "stages": {
+      "prepare": 0.562734300037846,
+      "layers": 1.3816692000254989,
+      "render": 0.6507028000196442,
+      "total": 2.595107299974188
+    },
+    "preview_export_mae": 0.5047376311844078,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "06_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 2.988611900014803,
+    "faces": [
+      [
+        259,
+        169,
+        173,
+        236
+      ],
+      [
+        53,
+        544,
+        183,
+        183
+      ],
+      [
+        386,
+        426,
+        136,
+        136
+      ]
+    ],
+    "stages": {
+      "prepare": 0.606630300055258,
+      "layers": 1.0551802999107167,
+      "render": 1.326235800050199,
+      "total": 2.988046700018458
+    },
+    "preview_export_mae": 1.4930279860069966,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "06_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 2.7367885999847203,
+    "faces": [
+      [
+        259,
+        169,
+        173,
+        236
+      ],
+      [
+        53,
+        544,
+        183,
+        183
+      ],
+      [
+        386,
+        426,
+        136,
+        136
+      ]
+    ],
+    "stages": {
+      "prepare": 0.6342507000081241,
+      "layers": 1.1862387000583112,
+      "render": 0.9161169999279082,
+      "total": 2.736606699996628
+    },
+    "preview_export_mae": 3.9633313343328336,
+    "paper_fraction": 0.6804361979166667,
+    "dark_line_fraction": 0.07956624348958333
+  },
+  {
+    "file": "07_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 34.863764700014144,
+    "faces": [
+      [
+        399,
+        152,
+        47,
+        65
+      ],
+      [
+        579,
+        177,
+        53,
+        67
+      ],
+      [
+        754,
+        155,
+        57,
+        76
+      ]
+    ],
+    "anime_refined_faces": 2,
+    "stages": {
+      "prepare": 1.4530439999653026,
+      "layers": 33.03255370003171,
+      "render": 0.37698830000590533,
+      "total": 34.86258660000749
+    },
+    "preview_export_mae": 0.6234518518518518,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "07_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 2.4628004000987858,
+    "faces": [
+      [
+        399,
+        152,
+        47,
+        65
+      ],
+      [
+        579,
+        177,
+        53,
+        67
+      ],
+      [
+        754,
+        155,
+        57,
+        76
+      ]
+    ],
+    "stages": {
+      "prepare": 0.9248925000429153,
+      "layers": 1.393702600034885,
+      "render": 0.1438452999573201,
+      "total": 2.4624406000366434
+    },
+    "preview_export_mae": 0.920679142300195,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "07_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 2.193402100005187,
+    "faces": [
+      [
+        399,
+        152,
+        47,
+        65
+      ],
+      [
+        579,
+        177,
+        53,
+        67
+      ],
+      [
+        754,
+        155,
+        57,
+        76
+      ]
+    ],
+    "stages": {
+      "prepare": 0.573658199980855,
+      "layers": 1.002806399948895,
+      "render": 0.6167178000323474,
+      "total": 2.193183199968189
+    },
+    "preview_export_mae": 3.865610916179337,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "07_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 4.577116500004195,
+    "faces": [
+      [
+        399,
+        152,
+        47,
+        65
+      ],
+      [
+        579,
+        177,
+        53,
+        67
+      ],
+      [
+        754,
+        155,
+        57,
+        76
+      ]
+    ],
+    "stages": {
+      "prepare": 0.8071697000414133,
+      "layers": 2.7440935999620706,
+      "render": 1.0252904000226408,
+      "total": 4.576554500032216
+    },
+    "preview_export_mae": 9.93434619883041,
+    "paper_fraction": 0.28625385626142597,
+    "dark_line_fraction": 0.24405992915904937
+  },
+  {
+    "file": "08_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 26.69681540003512,
+    "faces": [
+      [
+        347,
+        261,
+        188,
+        243
+      ]
+    ],
+    "anime_refined_faces": 1,
+    "stages": {
+      "prepare": 1.6329830000177026,
+      "layers": 24.576740599935874,
+      "render": 0.48616289999336004,
+      "total": 26.695887099951506
+    },
+    "preview_export_mae": 0.47163322428207927,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "08_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 8.89912740001455,
+    "faces": [
+      [
+        347,
+        261,
+        188,
+        243
+      ]
+    ],
+    "stages": {
+      "prepare": 3.8435655999928713,
+      "layers": 4.24076239997521,
+      "render": 0.8142457000212744,
+      "total": 8.898574899998493
+    },
+    "preview_export_mae": 0.5795830607051982,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "08_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 7.304222399950959,
+    "faces": [
+      [
+        347,
+        261,
+        188,
+        243
+      ]
+    ],
+    "stages": {
+      "prepare": 3.025134600000456,
+      "layers": 3.3494909000582993,
+      "render": 0.9286504000192508,
+      "total": 7.303276400081813
+    },
+    "preview_export_mae": 1.6122813522355508,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "08_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 6.721884099999443,
+    "faces": [
+      [
+        347,
+        261,
+        188,
+        243
+      ]
+    ],
+    "stages": {
+      "prepare": 2.1247597000328824,
+      "layers": 3.5380385000025854,
+      "render": 1.0588041000301018,
+      "total": 6.721603299956769
+    },
+    "preview_export_mae": 3.370514721919302,
+    "paper_fraction": 0.6890322797277937,
+    "dark_line_fraction": 0.09322450304441261
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 11.301513699931093,
+    "faces": [
+      [
+        633,
+        214,
+        27,
+        31
+      ],
+      [
+        471,
+        236,
+        19,
+        22
+      ],
+      [
+        560,
+        194,
+        15,
+        17
+      ],
+      [
+        370,
+        230,
+        15,
+        21
+      ],
+      [
+        71,
+        267,
+        17,
+        22
+      ],
+      [
+        403,
+        247,
+        18,
+        21
+      ],
+      [
+        518,
+        226,
+        16,
+        21
+      ],
+      [
+        371,
+        300,
+        19,
+        24
+      ],
+      [
+        507,
+        191,
+        15,
+        19
+      ],
+      [
+        596,
+        207,
+        17,
+        22
+      ],
+      [
+        431,
+        195,
+        18,
+        21
+      ],
+      [
+        653,
+        197,
+        20,
+        24
+      ]
+    ],
+    "anime_refined_faces": 0,
+    "stages": {
+      "prepare": 1.0562113999621943,
+      "layers": 9.971679100068286,
+      "render": 0.2726873999927193,
+      "total": 11.30057860002853
+    },
+    "preview_export_mae": 0.5023938315539739,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 4.531181500060484,
+    "faces": [
+      [
+        633,
+        214,
+        27,
+        31
+      ],
+      [
+        471,
+        236,
+        19,
+        22
+      ],
+      [
+        560,
+        194,
+        15,
+        17
+      ],
+      [
+        370,
+        230,
+        15,
+        21
+      ],
+      [
+        71,
+        267,
+        17,
+        22
+      ],
+      [
+        403,
+        247,
+        18,
+        21
+      ],
+      [
+        518,
+        226,
+        16,
+        21
+      ],
+      [
+        371,
+        300,
+        19,
+        24
+      ],
+      [
+        507,
+        191,
+        15,
+        19
+      ],
+      [
+        596,
+        207,
+        17,
+        22
+      ],
+      [
+        431,
+        195,
+        18,
+        21
+      ],
+      [
+        653,
+        197,
+        20,
+        24
+      ]
+    ],
+    "stages": {
+      "prepare": 1.7013564999215305,
+      "layers": 2.419887399999425,
+      "render": 0.4095645999768749,
+      "total": 4.530809099902399
+    },
+    "preview_export_mae": 0.8535065243179122,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 4.350549199967645,
+    "faces": [
+      [
+        633,
+        214,
+        27,
+        31
+      ],
+      [
+        471,
+        236,
+        19,
+        22
+      ],
+      [
+        560,
+        194,
+        15,
+        17
+      ],
+      [
+        370,
+        230,
+        15,
+        21
+      ],
+      [
+        71,
+        267,
+        17,
+        22
+      ],
+      [
+        403,
+        247,
+        18,
+        21
+      ],
+      [
+        518,
+        226,
+        16,
+        21
+      ],
+      [
+        371,
+        300,
+        19,
+        24
+      ],
+      [
+        507,
+        191,
+        15,
+        19
+      ],
+      [
+        596,
+        207,
+        17,
+        22
+      ],
+      [
+        431,
+        195,
+        18,
+        21
+      ],
+      [
+        653,
+        197,
+        20,
+        24
+      ]
+    ],
+    "stages": {
+      "prepare": 1.766495899995789,
+      "layers": 1.813678600010462,
+      "render": 0.7699728000443429,
+      "total": 4.3501481000566855
+    },
+    "preview_export_mae": 4.484395610913404,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 4.446274599991739,
+    "faces": [
+      [
+        633,
+        214,
+        27,
+        31
+      ],
+      [
+        471,
+        236,
+        19,
+        22
+      ],
+      [
+        560,
+        194,
+        15,
+        17
+      ],
+      [
+        370,
+        230,
+        15,
+        21
+      ],
+      [
+        71,
+        267,
+        17,
+        22
+      ],
+      [
+        403,
+        247,
+        18,
+        21
+      ],
+      [
+        518,
+        226,
+        16,
+        21
+      ],
+      [
+        371,
+        300,
+        19,
+        24
+      ],
+      [
+        507,
+        191,
+        15,
+        19
+      ],
+      [
+        596,
+        207,
+        17,
+        22
+      ],
+      [
+        431,
+        195,
+        18,
+        21
+      ],
+      [
+        653,
+        197,
+        20,
+        24
+      ]
+    ],
+    "stages": {
+      "prepare": 2.0289644999429584,
+      "layers": 1.9025151999667287,
+      "render": 0.5140363000100479,
+      "total": 4.445516699925065
+    },
+    "preview_export_mae": 12.538667259786477,
+    "paper_fraction": 0.1703776947148818,
+    "dark_line_fraction": 0.38344054242002784
+  },
+  {
+    "file": "14_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 10.01974770007655,
+    "faces": [
+      [
+        173,
+        221,
+        23,
+        30
+      ],
+      [
+        822,
+        173,
+        15,
+        18
+      ],
+      [
+        793,
+        194,
+        17,
+        21
+      ],
+      [
+        712,
+        195,
+        14,
+        18
+      ],
+      [
+        759,
+        168,
+        13,
+        15
+      ],
+      [
+        667,
+        167,
+        14,
+        17
+      ]
+    ],
+    "anime_refined_faces": 0,
+    "stages": {
+      "prepare": 1.0760188999120146,
+      "layers": 8.671173200011253,
+      "render": 0.27175289997830987,
+      "total": 10.018945699906908
+    },
+    "preview_export_mae": 0.399491103202847,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "14_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 6.224783999961801,
+    "faces": [
+      [
+        173,
+        221,
+        23,
+        30
+      ],
+      [
+        822,
+        173,
+        15,
+        18
+      ],
+      [
+        793,
+        194,
+        17,
+        21
+      ],
+      [
+        712,
+        195,
+        14,
+        18
+      ],
+      [
+        759,
+        168,
+        13,
+        15
+      ],
+      [
+        667,
+        167,
+        14,
+        17
+      ]
+    ],
+    "stages": {
+      "prepare": 2.076114400057122,
+      "layers": 3.7366785999620333,
+      "render": 0.41136779997032136,
+      "total": 6.224161899997853
+    },
+    "preview_export_mae": 0.6253398576512456,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "14_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 5.369289700058289,
+    "faces": [
+      [
+        173,
+        221,
+        23,
+        30
+      ],
+      [
+        822,
+        173,
+        15,
+        18
+      ],
+      [
+        793,
+        194,
+        17,
+        21
+      ],
+      [
+        712,
+        195,
+        14,
+        18
+      ],
+      [
+        759,
+        168,
+        13,
+        15
+      ],
+      [
+        667,
+        167,
+        14,
+        17
+      ]
+    ],
+    "stages": {
+      "prepare": 2.4756650999188423,
+      "layers": 2.102333700051531,
+      "render": 0.7908551000291482,
+      "total": 5.368854700005613
+    },
+    "preview_export_mae": 3.545217081850534,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "14_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 4.239147499902174,
+    "faces": [
+      [
+        173,
+        221,
+        23,
+        30
+      ],
+      [
+        822,
+        173,
+        15,
+        18
+      ],
+      [
+        793,
+        194,
+        17,
+        21
+      ],
+      [
+        712,
+        195,
+        14,
+        18
+      ],
+      [
+        759,
+        168,
+        13,
+        15
+      ],
+      [
+        667,
+        167,
+        14,
+        17
+      ]
+    ],
+    "stages": {
+      "prepare": 1.628501300001517,
+      "layers": 1.9560065000550821,
+      "render": 0.6541821999708191,
+      "total": 4.238690700032748
+    },
+    "preview_export_mae": 10.614222419928826,
+    "paper_fraction": 0.25296309979137693,
+    "dark_line_fraction": 0.27368523991655075
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 14.347350199939683,
+    "faces": [],
+    "anime_refined_faces": 0,
+    "stages": {
+      "prepare": 0.9978321000235155,
+      "layers": 13.020296399947256,
+      "render": 0.3284809000324458,
+      "total": 14.346610100008547
+    },
+    "preview_export_mae": 0.05435333333333333,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 8.414705700008199,
+    "faces": [],
+    "stages": {
+      "prepare": 1.6521695000119507,
+      "layers": 6.242331799934618,
+      "render": 0.5197790000820532,
+      "total": 8.414281499921344
+    },
+    "preview_export_mae": 0.14705333333333334,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 4.820303099928424,
+    "faces": [],
+    "stages": {
+      "prepare": 1.5833651999710128,
+      "layers": 2.281495100003667,
+      "render": 0.9549559999722987,
+      "total": 4.819817299954593
+    },
+    "preview_export_mae": 0.46051955555555557,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 5.603213099995628,
+    "faces": [],
+    "stages": {
+      "prepare": 1.6961063001072034,
+      "layers": 3.008487999904901,
+      "render": 0.8978366000810638,
+      "total": 5.6024319001007825
+    },
+    "preview_export_mae": 1.9831026666666667,
+    "paper_fraction": 0.70958251953125,
+    "dark_line_fraction": 0.013287760416666667
+  },
+  {
+    "file": "16_landscape.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 13.276161400019191,
+    "faces": [],
+    "anime_refined_faces": 0,
+    "stages": {
+      "prepare": 1.0094035000074655,
+      "layers": 11.978546900092624,
+      "render": 0.2874106999952346,
+      "total": 13.275361800100654
+    },
+    "preview_export_mae": 0.21273639960435212,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "16_landscape.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 6.022335299989209,
+    "faces": [],
+    "stages": {
+      "prepare": 1.964700400014408,
+      "layers": 3.5194450999842957,
+      "render": 0.5377138000912964,
+      "total": 6.021860500099137
+    },
+    "preview_export_mae": 0.3085835806132542,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "16_landscape.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 4.066334499977529,
+    "faces": [],
+    "stages": {
+      "prepare": 1.4114030000055209,
+      "layers": 1.9053320999955758,
+      "render": 0.7489582999842241,
+      "total": 4.065694399992935
+    },
+    "preview_export_mae": 1.7174930761622156,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "16_landscape.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 5.4753122999100015,
+    "faces": [],
+    "stages": {
+      "prepare": 1.9831620999611914,
+      "layers": 2.5311750000109896,
+      "render": 0.9603766000363976,
+      "total": 5.474714599899016
+    },
+    "preview_export_mae": 3.8430281899109793,
+    "paper_fraction": 0.6686205460602549,
+    "dark_line_fraction": 0.057186051564310544
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 29.340787500026636,
+    "faces": [
+      [
+        197,
+        308,
+        53,
+        58
+      ],
+      [
+        729,
+        297,
+        77,
+        77
+      ]
+    ],
+    "anime_refined_faces": 1,
+    "stages": {
+      "prepare": 1.8651989999925718,
+      "layers": 26.992049899999984,
+      "render": 0.48266599990893155,
+      "total": 29.33991579990834
+    },
+    "preview_export_mae": 0.5747797012898845,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 8.383381900028326,
+    "faces": [
+      [
+        197,
+        308,
+        53,
+        58
+      ],
+      [
+        729,
+        297,
+        77,
+        77
+      ]
+    ],
+    "stages": {
+      "prepare": 2.90485249995254,
+      "layers": 4.484355599968694,
+      "render": 0.993577599991113,
+      "total": 8.382786699919961
+    },
+    "preview_export_mae": 1.0164419551934827,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 8.484413499943912,
+    "faces": [
+      [
+        197,
+        308,
+        53,
+        58
+      ],
+      [
+        729,
+        297,
+        77,
+        77
+      ]
+    ],
+    "stages": {
+      "prepare": 3.451260600006208,
+      "layers": 3.309477800037712,
+      "render": 1.7230981999309734,
+      "total": 8.483837299980223
+    },
+    "preview_export_mae": 4.0988557365919895,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 7.968239599955268,
+    "faces": [
+      [
+        197,
+        308,
+        53,
+        58
+      ],
+      [
+        729,
+        297,
+        77,
+        77
+      ]
+    ],
+    "stages": {
+      "prepare": 2.9849433000199497,
+      "layers": 3.174741299939342,
+      "render": 1.8078915000660345,
+      "total": 7.967576799914241
+    },
+    "preview_export_mae": 11.058492871690428,
+    "paper_fraction": 0.21753345644666156,
+    "dark_line_fraction": 0.2901771153108212
+  },
+  {
+    "file": "18_architecture.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 11.694471700000577,
+    "faces": [],
+    "anime_refined_faces": 0,
+    "stages": {
+      "prepare": 1.0420111999846995,
+      "layers": 10.373048799927346,
+      "render": 0.27833730005659163,
+      "total": 11.69339819997549
+    },
+    "preview_export_mae": 0.4605740740740741,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "18_architecture.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 5.21322809997946,
+    "faces": [],
+    "stages": {
+      "prepare": 1.848553100018762,
+      "layers": 2.9852059999248013,
+      "render": 0.37904150004033,
+      "total": 5.212801799993031
+    },
+    "preview_export_mae": 0.6073263888888889,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "18_architecture.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 3.9597217000555247,
+    "faces": [],
+    "stages": {
+      "prepare": 1.5678412999259308,
+      "layers": 1.6831175000406802,
+      "render": 0.7082306999946013,
+      "total": 3.959190599969588
+    },
+    "preview_export_mae": 2.1395092592592593,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "18_architecture.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 4.366770999971777,
+    "faces": [],
+    "stages": {
+      "prepare": 1.4407614000374451,
+      "layers": 2.042632699944079,
+      "render": 0.8827676000073552,
+      "total": 4.366162799997255
+    },
+    "preview_export_mae": 6.8026180555555555,
+    "paper_fraction": 0.430342605156038,
+    "dark_line_fraction": 0.1535500763229308
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 13.062748900032602,
+    "faces": [],
+    "anime_refined_faces": 0,
+    "stages": {
+      "prepare": 1.1312206001020968,
+      "layers": 11.591898199985735,
+      "render": 0.33888569998089224,
+      "total": 13.062005300074816
+    },
+    "preview_export_mae": 0.3959586666666667,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 6.034161699935794,
+    "faces": [],
+    "stages": {
+      "prepare": 1.6040000999346375,
+      "layers": 3.6042618000647053,
+      "render": 0.8252940999809653,
+      "total": 6.033557099988684
+    },
+    "preview_export_mae": 0.43698844444444446,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 5.681866700062528,
+    "faces": [],
+    "stages": {
+      "prepare": 2.001739399973303,
+      "layers": 2.1557259999681264,
+      "render": 1.5239754000212997,
+      "total": 5.681441599968821
+    },
+    "preview_export_mae": 1.6214915555555556,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 5.862444399972446,
+    "faces": [],
+    "stages": {
+      "prepare": 1.8476995000382885,
+      "layers": 3.0745028000092134,
+      "render": 0.9396891999058425,
+      "total": 5.86189259996172
+    },
+    "preview_export_mae": 3.9061386666666666,
+    "paper_fraction": 0.5482185872395834,
+    "dark_line_fraction": 0.026387532552083332
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 23.634290999965742,
+    "faces": [
+      [
+        245,
+        179,
+        190,
+        250
+      ]
+    ],
+    "anime_refined_faces": 1,
+    "stages": {
+      "prepare": 1.1505233000498265,
+      "layers": 21.81261469994206,
+      "render": 0.6702129000332206,
+      "total": 23.633351600030437
+    },
+    "preview_export_mae": 0.13556069094304388,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 4.485244799987413,
+    "faces": [
+      [
+        245,
+        179,
+        190,
+        250
+      ]
+    ],
+    "stages": {
+      "prepare": 1.3381020999513566,
+      "layers": 2.357460100087337,
+      "render": 0.78902519994881,
+      "total": 4.484588399995118
+    },
+    "preview_export_mae": 0.3322436974789916,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 4.678888199967332,
+    "faces": [
+      [
+        245,
+        179,
+        190,
+        250
+      ]
+    ],
+    "stages": {
+      "prepare": 1.2668032000074163,
+      "layers": 1.78830380004365,
+      "render": 1.6231658000033349,
+      "total": 4.678273700061254
+    },
+    "preview_export_mae": 1.0671055088702148,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 4.469064600067213,
+    "faces": [
+      [
+        245,
+        179,
+        190,
+        250
+      ]
+    ],
+    "stages": {
+      "prepare": 1.4190134999807924,
+      "layers": 1.8608224999625236,
+      "render": 1.1883341000648215,
+      "total": 4.468170900014229
+    },
+    "preview_export_mae": 3.0739173669467785,
+    "paper_fraction": 0.6949672154017857,
+    "dark_line_fraction": 0.0332305908203125
+  },
+  {
+    "file": "22_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 24.76755939994473,
+    "faces": [
+      [
+        377,
+        173,
+        226,
+        282
+      ],
+      [
+        370,
+        465,
+        193,
+        193
+      ]
+    ],
+    "anime_refined_faces": 1,
+    "stages": {
+      "prepare": 1.3089149999432266,
+      "layers": 23.224348600022495,
+      "render": 0.23293910000938922,
+      "total": 24.766203499981202
+    },
+    "preview_export_mae": 0.0,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "22_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 5.38794779998716,
+    "faces": [
+      [
+        377,
+        173,
+        226,
+        282
+      ],
+      [
+        370,
+        465,
+        193,
+        193
+      ]
+    ],
+    "stages": {
+      "prepare": 1.647369800019078,
+      "layers": 3.3471465000184253,
+      "render": 0.39287209999747574,
+      "total": 5.387389200041071
+    },
+    "preview_export_mae": 0.0,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "22_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 4.708587300032377,
+    "faces": [
+      [
+        377,
+        173,
+        226,
+        282
+      ],
+      [
+        370,
+        465,
+        193,
+        193
+      ]
+    ],
+    "stages": {
+      "prepare": 1.6210984999779612,
+      "layers": 2.471894400077872,
+      "render": 0.6151468999451026,
+      "total": 4.708140900009312
+    },
+    "preview_export_mae": 0.0,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "22_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 4.334151300019585,
+    "faces": [
+      [
+        377,
+        173,
+        226,
+        282
+      ],
+      [
+        370,
+        465,
+        193,
+        193
+      ]
+    ],
+    "stages": {
+      "prepare": 1.5377064000349492,
+      "layers": 2.2786044999957085,
+      "render": 0.5173305999487638,
+      "total": 4.333643199992366
+    },
+    "preview_export_mae": 0.0,
+    "paper_fraction": 0.6398402990146109,
+    "dark_line_fraction": 0.06031897723411485
+  },
+  {
+    "file": "26_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 23.323147700051777,
+    "faces": [
+      [
+        257,
+        116,
+        188,
+        266
+      ]
+    ],
+    "anime_refined_faces": 1,
+    "stages": {
+      "prepare": 0.9198033000575379,
+      "layers": 22.044133799965493,
+      "render": 0.3584097999846563,
+      "total": 23.32234770001378
+    },
+    "preview_export_mae": 0.14073628400184418,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "26_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 4.251443100045435,
+    "faces": [
+      [
+        257,
+        116,
+        188,
+        266
+      ]
+    ],
+    "stages": {
+      "prepare": 1.314439699985087,
+      "layers": 2.5028353999368846,
+      "render": 0.4336153999902308,
+      "total": 4.2508911999175325
+    },
+    "preview_export_mae": 0.3209100968188105,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "26_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 4.936650900053792,
+    "faces": [
+      [
+        257,
+        116,
+        188,
+        266
+      ]
+    ],
+    "stages": {
+      "prepare": 2.175582400057465,
+      "layers": 1.8318895000265911,
+      "render": 0.9287306999322027,
+      "total": 4.936203300021589
+    },
+    "preview_export_mae": 1.1250115260488704,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "26_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 3.7711638000328094,
+    "faces": [
+      [
+        257,
+        116,
+        188,
+        266
+      ]
+    ],
+    "stages": {
+      "prepare": 1.195775199914351,
+      "layers": 1.8233359000878409,
+      "render": 0.7515260999789461,
+      "total": 3.770638499991037
+    },
+    "preview_export_mae": 3.1695504840940525,
+    "paper_fraction": 0.6687758847891566,
+    "dark_line_fraction": 0.03504878890562249
+  },
+  {
+    "file": "27_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 20.465391400037333,
+    "faces": [
+      [
+        199,
+        104,
+        234,
+        319
+      ]
+    ],
+    "anime_refined_faces": 1,
+    "stages": {
+      "prepare": 0.9007245999528095,
+      "layers": 19.194803800084628,
+      "render": 0.36899819993413985,
+      "total": 20.464527299976908
+    },
+    "preview_export_mae": 0.15746626686656673,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "27_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 3.8411332999821752,
+    "faces": [
+      [
+        199,
+        104,
+        234,
+        319
+      ]
+    ],
+    "stages": {
+      "prepare": 1.182447399944067,
+      "layers": 2.197092300048098,
+      "render": 0.4611629999708384,
+      "total": 3.8407040999736637
+    },
+    "preview_export_mae": 0.41606046976511746,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "27_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 3.6458058999851346,
+    "faces": [
+      [
+        199,
+        104,
+        234,
+        319
+      ]
+    ],
+    "stages": {
+      "prepare": 1.164600000018254,
+      "layers": 1.591556700062938,
+      "render": 0.889100999920629,
+      "total": 3.6452589000109583
+    },
+    "preview_export_mae": 0.8381539230384808,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "27_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 3.309341000043787,
+    "faces": [
+      [
+        199,
+        104,
+        234,
+        319
+      ]
+    ],
+    "stages": {
+      "prepare": 1.138530800002627,
+      "layers": 1.5401035000104457,
+      "render": 0.6301441999385133,
+      "total": 3.308779599959962
+    },
+    "preview_export_mae": 4.053415292353823,
+    "paper_fraction": 0.5370844915450544,
+    "dark_line_fraction": 0.043223737549224
+  },
+  {
+    "file": "28_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 23.12266550003551,
+    "faces": [
+      [
+        272,
+        144,
+        207,
+        298
+      ]
+    ],
+    "anime_refined_faces": 1,
+    "stages": {
+      "prepare": 1.1483553999569267,
+      "layers": 21.62810339999851,
+      "render": 0.345268200035207,
+      "total": 23.121727799996734
+    },
+    "preview_export_mae": 0.1448639545056868,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "28_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 4.693286199937575,
+    "faces": [
+      [
+        272,
+        144,
+        207,
+        298
+      ]
+    ],
+    "stages": {
+      "prepare": 1.5745726999593899,
+      "layers": 2.6026535000419244,
+      "render": 0.5155901999678463,
+      "total": 4.692816899972968
+    },
+    "preview_export_mae": 0.3071347331583552,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "28_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 5.475561799947172,
+    "faces": [
+      [
+        272,
+        144,
+        207,
+        298
+      ]
+    ],
+    "stages": {
+      "prepare": 1.9873219999717548,
+      "layers": 2.6292471999768168,
+      "render": 0.8584309000289068,
+      "total": 5.475001099985093
+    },
+    "preview_export_mae": 1.2569251968503936,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "28_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 5.98310670000501,
+    "faces": [
+      [
+        272,
+        144,
+        207,
+        298
+      ]
+    ],
+    "stages": {
+      "prepare": 2.359030400053598,
+      "layers": 2.633028300013393,
+      "render": 0.9906282000010833,
+      "total": 5.982687600073405
+    },
+    "preview_export_mae": 8.004669291338583,
+    "paper_fraction": 0.5242700066137567,
+    "dark_line_fraction": 0.04062665343915344
+  },
+  {
+    "file": "29_portrait.jpg",
+    "style": "经典卡通",
+    "display": "Anime portrait",
+    "seconds": 20.580854299943894,
+    "faces": [
+      [
+        269,
+        77,
+        147,
+        192
+      ]
+    ],
+    "anime_refined_faces": 1,
+    "stages": {
+      "prepare": 1.0356039999751374,
+      "layers": 19.176238600048237,
+      "render": 0.3682359999511391,
+      "total": 20.58007969998289
+    },
+    "preview_export_mae": 0.19971114442778612,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "29_portrait.jpg",
+    "style": "扁平插画",
+    "display": "Flat illustration",
+    "seconds": 4.803752500098199,
+    "faces": [
+      [
+        269,
+        77,
+        147,
+        192
+      ]
+    ],
+    "stages": {
+      "prepare": 1.5983021999709308,
+      "layers": 2.7196941999718547,
+      "render": 0.4853300000540912,
+      "total": 4.80332730000373
+    },
+    "preview_export_mae": 0.3179505247376312,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "29_portrait.jpg",
+    "style": "美式漫画",
+    "display": "American comic",
+    "seconds": 4.7416323000798,
+    "faces": [
+      [
+        269,
+        77,
+        147,
+        192
+      ]
+    ],
+    "stages": {
+      "prepare": 1.4878343999153003,
+      "layers": 1.985130500048399,
+      "render": 1.2682286000344902,
+      "total": 4.741194300004281
+    },
+    "preview_export_mae": 1.4142118940529735,
+    "paper_fraction": null,
+    "dark_line_fraction": null
+  },
+  {
+    "file": "29_portrait.jpg",
+    "style": "铅笔素描",
+    "display": "Pencil drawing",
+    "seconds": 5.455896599916741,
+    "faces": [
+      [
+        269,
+        77,
+        147,
+        192
+      ]
+    ],
+    "stages": {
+      "prepare": 1.8167787999846041,
+      "layers": 2.7008525000419468,
+      "render": 0.9377041000407189,
+      "total": 5.45533680007793
+    },
+    "preview_export_mae": 3.532454272863568,
+    "paper_fraction": 0.6327694290016215,
+    "dark_line_fraction": 0.04155518878851054
+  }
+]

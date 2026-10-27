@@ -1,0 +1,741 @@
+{
+  "date": "2026-10-27",
+  "tests": 90,
+  "test_seconds": 317.45,
+  "sample_results": 84,
+  "comparison_sheets": 21,
+  "published_old_new_sheets": 32,
+  "native_detail_sheets": 32,
+  "highres_exports": 4,
+  "max_preview_export_mae_by_style": {
+    "经典卡通": 0.6234518518518518,
+    "扁平插画": 1.4167002002002003,
+    "美式漫画": 4.484395610913404,
+    "铅笔素描": 12.538667259786477
+  },
+  "http_smoke": {
+    "http_status": 200,
+    "exports": [
+      {
+        "style": "经典卡通",
+        "preview_stages": 2,
+        "status": "35.79 秒 · 最终预览 800×1000 · 保护区域 1 · 动漫脸部细化 1 · 缓存命中 0",
+        "http_end_to_end_seconds": 53.52600219997112
+      },
+      {
+        "style": "扁平插画",
+        "preview_stages": 2,
+        "status": "4.89 秒 · 最终预览 800×1000 · 保护区域 1 · 动漫脸部细化 0 · 缓存命中 1",
+        "http_end_to_end_seconds": 23.44858630001545
+      },
+      {
+        "style": "美式漫画",
+        "preview_stages": 2,
+        "status": "4.05 秒 · 最终预览 800×1000 · 保护区域 1 · 动漫脸部细化 0 · 缓存命中 3",
+        "http_end_to_end_seconds": 23.176023499923758
+      },
+      {
+        "style": "铅笔素描",
+        "preview_stages": 2,
+        "status": "5.31 秒 · 最终预览 800×1000 · 保护区域 1 · 动漫脸部细化 0 · 缓存命中 5",
+        "http_end_to_end_seconds": 25.617758100037463
+      }
+    ],
+    "full_resolution_jpg": [
+      1280,
+      1600
+    ],
+    "full_png": true,
+    "batch_png_count": 2,
+    "cancel_response": "已请求取消，将在下一个图块或图片边界停止。",
+    "cancelled_batch_status": "成功 4 / 10；失败 0；取消 True"
+  },
+  "model_sha256": "f141828d57fec689a793186da3f167c735c7857f3ffa11e1e3e23cc0abaf2743",
+  "reproduced_model_sha256": "f141828d57fec689a793186da3f167c735c7857f3ffa11e1e3e23cc0abaf2743",
+  "conversion_max_abs_error": 0.0002429485321044922,
+  "broken_gallery_links": [],
+  "runtime_only_cpu_check": {
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "torch_installed": false,
+    "onnx_development_package_installed": false,
+    "pixel_max_difference_from_saved_result": 0,
+    "source": "samples/23_portrait.jpg",
+    "output": "outputs/1_经典卡通/23_portrait.png"
+  },
+  "images": [
+    {
+      "file": "outputs/1_经典卡通/01_portrait.png",
+      "size": [
+        1280,
+        853
+      ],
+      "sha256": "72c3d1fcfd4480d03acb94b0c929faffdfbecc308af688ed159223bd15a2a819"
+    },
+    {
+      "file": "outputs/2_扁平插画/01_portrait.png",
+      "size": [
+        1280,
+        853
+      ],
+      "sha256": "969ec3dff05f5bb3e71f52ba49163eafedd0b27b9670e0d88bb14122d1d08fbb"
+    },
+    {
+      "file": "outputs/3_美式漫画/01_portrait.png",
+      "size": [
+        1280,
+        853
+      ],
+      "sha256": "bcdfd58d53ec42b96b5a936ba156f8b3246797465d0ea57f82933caa0d4dd33b"
+    },
+    {
+      "file": "outputs/4_铅笔素描/01_portrait.png",
+      "size": [
+        1280,
+        853
+      ],
+      "sha256": "2446279167e3692a1e1ad71976658efb2c07635c71390f2be5c07c0321791132"
+    },
+    {
+      "file": "outputs/1_经典卡通/02_portrait.png",
+      "size": [
+        1280,
+        1600
+      ],
+      "sha256": "c97288c195b64ca8f34d151cbae56719ade30abe66e3ad36a986a69d63f49ccd"
+    },
+    {
+      "file": "outputs/2_扁平插画/02_portrait.png",
+      "size": [
+        1280,
+        1600
+      ],
+      "sha256": "5922ecbc3ca554750b691af051d7997086aa3f959f34a875218219b262b794da"
+    },
+    {
+      "file": "outputs/3_美式漫画/02_portrait.png",
+      "size": [
+        1280,
+        1600
+      ],
+      "sha256": "b7b623876f93caa86139e4e6170f4cbd37cf712d4347b3e6cab34f7bafbcee62"
+    },
+    {
+      "file": "outputs/4_铅笔素描/02_portrait.png",
+      "size": [
+        1280,
+        1600
+      ],
+      "sha256": "65df56288a75b139471a5b0621716756ff1b596e1189b03d8af70337939e6fc1"
+    },
+    {
+      "file": "outputs/1_经典卡通/03_portrait.png",
+      "size": [
+        1280,
+        1600
+      ],
+      "sha256": "3094b98b1d39b8a1bf593491dca41a54d9a07135aff13b3e7e189fdfa89a72f3"
+    },
+    {
+      "file": "outputs/2_扁平插画/03_portrait.png",
+      "size": [
+        1280,
+        1600
+      ],
+      "sha256": "777f14a4ce1bfea91f4ddf00720dd740141d12f138d2f57111e847156478aa74"
+    },
+    {
+      "file": "outputs/3_美式漫画/03_portrait.png",
+      "size": [
+        1280,
+        1600
+      ],
+      "sha256": "1667471ff58fd94275d2be8f14ff6a8023a1b2ce90a4a3bd834268f27d7b8717"
+    },
+    {
+      "file": "outputs/4_铅笔素描/03_portrait.png",
+      "size": [
+        1280,
+        1600
+      ],
+      "sha256": "147ed03703caa5a191833dac1dd6e35c96f73a5f31d337905d91bae075461e2e"
+    },
+    {
+      "file": "outputs/1_经典卡通/04_portrait.png",
+      "size": [
+        1280,
+        1228
+      ],
+      "sha256": "b5ffcc8e0cacdd3e642399247f0ca0e5e4709ea9908d4e2743cc48f20e326530"
+    },
+    {
+      "file": "outputs/2_扁平插画/04_portrait.png",
+      "size": [
+        1280,
+        1228
+      ],
+      "sha256": "ab99846ea83f4673eda26a6f184caf4aa5f65853819a893e750e1bb122cd8858"
+    },
+    {
+      "file": "outputs/3_美式漫画/04_portrait.png",
+      "size": [
+        1280,
+        1228
+      ],
+      "sha256": "bca6950151b2aaef4b980ba89a299a96b8c6b5098f041340aa1010c0532e1bc1"
+    },
+    {
+      "file": "outputs/4_铅笔素描/04_portrait.png",
+      "size": [
+        1280,
+        1228
+      ],
+      "sha256": "ae182940f38a5dcd2ac25ceb2c92579185dd724d2386ffda4917cb6451e97ba9"
+    },
+    {
+      "file": "outputs/1_经典卡通/05_portrait.png",
+      "size": [
+        1280,
+        853
+      ],
+      "sha256": "6bef120f6b4edb0c691c7d71d6ed003fd85c431f52b541d1ce613f2f35667ccc"
+    },
+    {
+      "file": "outputs/2_扁平插画/05_portrait.png",
+      "size": [
+        1280,
+        853
+      ],
+      "sha256": "66a464876d3f8330193e46b263f144ce3b8fa66e892e57826b48f9ef087f8997"
+    },
+    {
+      "file": "outputs/3_美式漫画/05_portrait.png",
+      "size": [
+        1280,
+        853
+      ],
+      "sha256": "279438b980b87af8fc3df81b4a1e7f0e6ee4357f41dd5995ec64be81887faa45"
+    },
+    {
+      "file": "outputs/4_铅笔素描/05_portrait.png",
+      "size": [
+        1280,
+        853
+      ],
+      "sha256": "2fa7f5639fd777376e9156b5eac59b50ba3cd6cebb612fabc16497a8fef96211"
+    },
+    {
+      "file": "outputs/1_经典卡通/06_portrait.png",
+      "size": [
+        1280,
+        1920
+      ],
+      "sha256": "5e8945eef7f0081923c50355029fb9c8fe427a95ddca80c312f6d37a1a05143e"
+    },
+    {
+      "file": "outputs/2_扁平插画/06_portrait.png",
+      "size": [
+        1280,
+        1920
+      ],
+      "sha256": "f2ffb31bb4c4e7163223e54218d2b1560af5d88051cc55b1df4454ae0ba4f5ba"
+    },
+    {
+      "file": "outputs/3_美式漫画/06_portrait.png",
+      "size": [
+        1280,
+        1920
+      ],
+      "sha256": "133560f059ee0b10c63b0ce76b9594a8166650a38cb3eecddeee6396e787bfbf"
+    },
+    {
+      "file": "outputs/4_铅笔素描/06_portrait.png",
+      "size": [
+        1280,
+        1920
+      ],
+      "sha256": "b4f2edd2b87166f3f67ccdf0e03eec00ed3cb6035d3696afff6847949b7fdf07"
+    },
+    {
+      "file": "outputs/1_经典卡通/07_portrait.png",
+      "size": [
+        1280,
+        1094
+      ],
+      "sha256": "aad25cfd733880642d5e24b643afa1682910a81f4127bdd98f3e7fb5f0ab6dc1"
+    },
+    {
+      "file": "outputs/2_扁平插画/07_portrait.png",
+      "size": [
+        1280,
+        1094
+      ],
+      "sha256": "399b53ef1d4a566ebb16ba562a3621e3cedac27600300b586f2153ec6fea6dbc"
+    },
+    {
+      "file": "outputs/3_美式漫画/07_portrait.png",
+      "size": [
+        1280,
+        1094
+      ],
+      "sha256": "7c1ad850dea9e1d9454ee05993aca1809d2a8071da165b1c5f0cf61c082fecf2"
+    },
+    {
+      "file": "outputs/4_铅笔素描/07_portrait.png",
+      "size": [
+        1280,
+        1094
+      ],
+      "sha256": "e93880f8a9958d0a4272ea08607ed6339671283462b9ae431e214ec4b09ae364"
+    },
+    {
+      "file": "outputs/1_经典卡通/08_portrait.png",
+      "size": [
+        1280,
+        1396
+      ],
+      "sha256": "3c624a14b978f8dfb913b596b2c95aee3fab31ff523d74083830090112118751"
+    },
+    {
+      "file": "outputs/2_扁平插画/08_portrait.png",
+      "size": [
+        1280,
+        1396
+      ],
+      "sha256": "902c3f2304327208e49d8d47bcc7992766eb740a2ed2f5c26c3130daec54910a"
+    },
+    {
+      "file": "outputs/3_美式漫画/08_portrait.png",
+      "size": [
+        1280,
+        1396
+      ],
+      "sha256": "8134a8db22fd47bb4dd8aa0925d38bafc4803c4fc1fba60455fd5482b0f74123"
+    },
+    {
+      "file": "outputs/4_铅笔素描/08_portrait.png",
+      "size": [
+        1280,
+        1396
+      ],
+      "sha256": "9bebb1ce100f603623becc88f34f57d6c06db7399b0f5af4da33bfe7190ed09e"
+    },
+    {
+      "file": "outputs/1_经典卡通/13_portrait.png",
+      "size": [
+        1280,
+        719
+      ],
+      "sha256": "390773fde8b250c3bddf54843cf7ee664570c40ee74a37094b97abec0577cd14"
+    },
+    {
+      "file": "outputs/2_扁平插画/13_portrait.png",
+      "size": [
+        1280,
+        719
+      ],
+      "sha256": "fb9cea1185760d03875bee50e639df0a00f3f71859ab929846fd190ff0414ab4"
+    },
+    {
+      "file": "outputs/3_美式漫画/13_portrait.png",
+      "size": [
+        1280,
+        719
+      ],
+      "sha256": "7a3073b3f5c473acf9cc42f60f373f8a223669ed7f5a8eb0230ca690136b8b78"
+    },
+    {
+      "file": "outputs/4_铅笔素描/13_portrait.png",
+      "size": [
+        1280,
+        719
+      ],
+      "sha256": "0a11452af7ff0e03233dd6c4b37d60df43d7350e0f61edbfcf860fde68057cfd"
+    },
+    {
+      "file": "outputs/1_经典卡通/14_portrait.png",
+      "size": [
+        1280,
+        719
+      ],
+      "sha256": "3a383922fe10639d08fe021921b7be2456f726a7852b327ba934e2dca94137ac"
+    },
+    {
+      "file": "outputs/2_扁平插画/14_portrait.png",
+      "size": [
+        1280,
+        719
+      ],
+      "sha256": "683062a597d4aed4faadfc3a31f8015d6d31bdf4fd298f1dfb5cfb2a10d25c0d"
+    },
+    {
+      "file": "outputs/3_美式漫画/14_portrait.png",
+      "size": [
+        1280,
+        719
+      ],
+      "sha256": "f6d1c7c29854edb6429964e26b69cb7d971c9bd9a0492798833d34bcf9f5c4ae"
+    },
+    {
+      "file": "outputs/4_铅笔素描/14_portrait.png",
+      "size": [
+        1280,
+        719
+      ],
+      "sha256": "895e52a9a4ffdfe16b62b955848f154d07196f8fbdf9762b951ce763bf415db8"
+    },
+    {
+      "file": "outputs/1_经典卡通/15_landscape.png",
+      "size": [
+        1280,
+        960
+      ],
+      "sha256": "a5c271bfffdd64664792b5162aba7981bf0dc6e2a6089fd5f564c20ed29fe0ce"
+    },
+    {
+      "file": "outputs/2_扁平插画/15_landscape.png",
+      "size": [
+        1280,
+        960
+      ],
+      "sha256": "082441353eb530dd385f6f92c6019877f5568a6861148b297ad25f6d1f803552"
+    },
+    {
+      "file": "outputs/3_美式漫画/15_landscape.png",
+      "size": [
+        1280,
+        960
+      ],
+      "sha256": "8fc421b99fa16e6055d24945765e97974c85d612a0c2bdf89e1f945fbef380d4"
+    },
+    {
+      "file": "outputs/4_铅笔素描/15_landscape.png",
+      "size": [
+        1280,
+        960
+      ],
+      "sha256": "93723fca7fec64e248fd99f852324bbdfe3c4fea68edc0be9b9a68254dd814c7"
+    },
+    {
+      "file": "outputs/1_经典卡通/16_landscape.png",
+      "size": [
+        1280,
+        863
+      ],
+      "sha256": "d1224402379b60c2196c1ff564de9ab61a5f55c038aaed8cb09b248940e1673e"
+    },
+    {
+      "file": "outputs/2_扁平插画/16_landscape.png",
+      "size": [
+        1280,
+        863
+      ],
+      "sha256": "29a81e79ecf866f29799792d40dcca2c063924d86289aac492743fed47d4e5d4"
+    },
+    {
+      "file": "outputs/3_美式漫画/16_landscape.png",
+      "size": [
+        1280,
+        863
+      ],
+      "sha256": "e430574f06de9bb8e280d82fffce898d6038e298a030a5e16b24bfef2477803d"
+    },
+    {
+      "file": "outputs/4_铅笔素描/16_landscape.png",
+      "size": [
+        1280,
+        863
+      ],
+      "sha256": "d17fe02075eb04b5117656cb18fd1bec2758aee961d3d295a9834c72ccca83ed"
+    },
+    {
+      "file": "outputs/1_经典卡通/17_architecture.png",
+      "size": [
+        1280,
+        1303
+      ],
+      "sha256": "d6c77ee2b4d37ba538d6d2f955dacb1a82127bacb94c5b990477bc32164e8886"
+    },
+    {
+      "file": "outputs/2_扁平插画/17_architecture.png",
+      "size": [
+        1280,
+        1303
+      ],
+      "sha256": "c2e03159dedab7ec349e7e8a10c8867ba459bf6267a4718f3740147dd6dbefa1"
+    },
+    {
+      "file": "outputs/3_美式漫画/17_architecture.png",
+      "size": [
+        1280,
+        1303
+      ],
+      "sha256": "e3f689c93985cfc390130fb69a9091e26b8c1a7902d228e21ed9aa73f1d2ef2b"
+    },
+    {
+      "file": "outputs/4_铅笔素描/17_architecture.png",
+      "size": [
+        1280,
+        1303
+      ],
+      "sha256": "0ab0483c3d039209a31c6af1950d9240408b8490a52b43410c17fe0035738bb0"
+    },
+    {
+      "file": "outputs/1_经典卡通/18_architecture.png",
+      "size": [
+        1280,
+        737
+      ],
+      "sha256": "76d0d69f8dbb036f30e2e47c80828a37b252db926bf655175c2af17ff3c97a4c"
+    },
+    {
+      "file": "outputs/2_扁平插画/18_architecture.png",
+      "size": [
+        1280,
+        737
+      ],
+      "sha256": "6e24bf65131213a8104adc590bb842deeb9d3f52d4887ae268eeffd50dae8841"
+    },
+    {
+      "file": "outputs/3_美式漫画/18_architecture.png",
+      "size": [
+        1280,
+        737
+      ],
+      "sha256": "bfadf9e48e3c26cfd81a36bdd474f69030241691c51645be6ae4fa490c884b74"
+    },
+    {
+      "file": "outputs/4_铅笔素描/18_architecture.png",
+      "size": [
+        1280,
+        737
+      ],
+      "sha256": "dce79d7af1115d747accb441219adf3bac35c7a2f92ccef4d93f9c34efae4edb"
+    },
+    {
+      "file": "outputs/1_经典卡通/19_animal.png",
+      "size": [
+        1280,
+        960
+      ],
+      "sha256": "39982d5d83960f64276d474167091e8bd5864b881d60fb6a38993063dba1d54d"
+    },
+    {
+      "file": "outputs/2_扁平插画/19_animal.png",
+      "size": [
+        1280,
+        960
+      ],
+      "sha256": "ae57d58de341ab30f8288626adda9df2d216065001dff017a6b23953794f6a25"
+    },
+    {
+      "file": "outputs/3_美式漫画/19_animal.png",
+      "size": [
+        1280,
+        960
+      ],
+      "sha256": "28d6d85608e9523e40886a00c8729e3c9686702c3434da17d74c3dc96425c923"
+    },
+    {
+      "file": "outputs/4_铅笔素描/19_animal.png",
+      "size": [
+        1280,
+        960
+      ],
+      "sha256": "643cd117dac4f195d86b1bd8b89be048da8b4ad728e0fec5be33f4075ad36c70"
+    },
+    {
+      "file": "outputs/1_经典卡通/23_portrait.png",
+      "size": [
+        1280,
+        1792
+      ],
+      "sha256": "ccf609db4ef23852a466b2b71060d2764514fefe008c0ee66cd03baac2e9aaf5"
+    },
+    {
+      "file": "outputs/2_扁平插画/23_portrait.png",
+      "size": [
+        1280,
+        1792
+      ],
+      "sha256": "291fc56f1226deb52a26495642bf69a39de65a240e7ba3e3505cba30e94d8334"
+    },
+    {
+      "file": "outputs/3_美式漫画/23_portrait.png",
+      "size": [
+        1280,
+        1792
+      ],
+      "sha256": "134c9f897d4a010e0a210b6256751d4b0ba53a3273e1d1e411340b47d0b7f351"
+    },
+    {
+      "file": "outputs/4_铅笔素描/23_portrait.png",
+      "size": [
+        1280,
+        1792
+      ],
+      "sha256": "4aff7fd9f4c15cea87f022ecfa63150d0708dd4d3f1c254eafc77c31534c6c7f"
+    },
+    {
+      "file": "outputs/1_经典卡通/22_portrait.png",
+      "size": [
+        960,
+        981
+      ],
+      "sha256": "f0e6faaffa281906d4f7f3b746c0579d75ccbaf064eaaea8c61eaa241e22d046"
+    },
+    {
+      "file": "outputs/2_扁平插画/22_portrait.png",
+      "size": [
+        960,
+        981
+      ],
+      "sha256": "d09eb11786226c383c30c9b7617ad1733c3f5fa8a15548b2941222f97ecac016"
+    },
+    {
+      "file": "outputs/3_美式漫画/22_portrait.png",
+      "size": [
+        960,
+        981
+      ],
+      "sha256": "c61c3a533f4342a1d55a8102bb56bf6b4a4022d2ee0368fa573b91ccc82a7fbe"
+    },
+    {
+      "file": "outputs/4_铅笔素描/22_portrait.png",
+      "size": [
+        960,
+        981
+      ],
+      "sha256": "224e8d4630dc0f5aa04f71c2f8ca96df24b62ddfb2537880f549fee7f05765b3"
+    },
+    {
+      "file": "outputs/1_经典卡通/26_portrait.png",
+      "size": [
+        960,
+        1328
+      ],
+      "sha256": "98dad34c178a1637c44b78cfb72ad8ca61687eef9a14cf90664621faede8a3a0"
+    },
+    {
+      "file": "outputs/2_扁平插画/26_portrait.png",
+      "size": [
+        960,
+        1328
+      ],
+      "sha256": "e7ed0237fb04fc46d490cd5e8912f98252f33953dd4b70b122b61f4ad2fbb8b9"
+    },
+    {
+      "file": "outputs/3_美式漫画/26_portrait.png",
+      "size": [
+        960,
+        1328
+      ],
+      "sha256": "9c128fe7583b8321e3099d0a9fda8ab08e11985b61bff6041cf27f4371c1823d"
+    },
+    {
+      "file": "outputs/4_铅笔素描/26_portrait.png",
+      "size": [
+        960,
+        1328
+      ],
+      "sha256": "3a910476a72c65861bd2ff7e7a8ef2002487bc92cce93f039e5b08c5d0856a2b"
+    },
+    {
+      "file": "outputs/1_经典卡通/27_portrait.png",
+      "size": [
+        960,
+        1439
+      ],
+      "sha256": "4263b86730cbbf8d71f7ae4308d5a50b4363c991f302bd0ba38663b123affd0d"
+    },
+    {
+      "file": "outputs/2_扁平插画/27_portrait.png",
+      "size": [
+        960,
+        1439
+      ],
+      "sha256": "5a31a0136e2a7fb7df1f4b6cf5f3dc9aa1573d51b85498c7a050f23bcd84a897"
+    },
+    {
+      "file": "outputs/3_美式漫画/27_portrait.png",
+      "size": [
+        960,
+        1439
+      ],
+      "sha256": "3fa842ab9ce28fd395e6a0b180c49493eab34ef4ab192c967eab951d35a2f354"
+    },
+    {
+      "file": "outputs/4_铅笔素描/27_portrait.png",
+      "size": [
+        960,
+        1439
+      ],
+      "sha256": "45d47e8f912cc65ef1ebbf60ab97b99ae3ec77e4b275de9eaa93519d1b7d2d46"
+    },
+    {
+      "file": "outputs/1_经典卡通/28_portrait.png",
+      "size": [
+        960,
+        1260
+      ],
+      "sha256": "110d7fd494762431441a469139d6405038b190d1ca7b6775a7bfb0116321f07a"
+    },
+    {
+      "file": "outputs/2_扁平插画/28_portrait.png",
+      "size": [
+        960,
+        1260
+      ],
+      "sha256": "d502c3a9a02851ceafe4c3ab647646bdaa4ea43cf1df41d020bea49505fa5eda"
+    },
+    {
+      "file": "outputs/3_美式漫画/28_portrait.png",
+      "size": [
+        960,
+        1260
+      ],
+      "sha256": "47ceb0bb79a69089c5263744b918dbf213f1737528f790fb3a56165d7dc0589f"
+    },
+    {
+      "file": "outputs/4_铅笔素描/28_portrait.png",
+      "size": [
+        960,
+        1260
+      ],
+      "sha256": "3e5439220905182f4020789940085b63c6f4d315a91b3367b803b66a1e6bbedc"
+    },
+    {
+      "file": "outputs/1_经典卡通/29_portrait.png",
+      "size": [
+        960,
+        1439
+      ],
+      "sha256": "1732c2ee5d50e53051b413749227af2c63c1f5c19b2f93a022a0d782b577ede8"
+    },
+    {
+      "file": "outputs/2_扁平插画/29_portrait.png",
+      "size": [
+        960,
+        1439
+      ],
+      "sha256": "d16b1681608dfd4feaaba7157ad9c916c975754660439327daee1ba64226d72f"
+    },
+    {
+      "file": "outputs/3_美式漫画/29_portrait.png",
+      "size": [
+        960,
+        1439
+      ],
+      "sha256": "249870221aafdf1fdc6739b89a4ff354e84b7f22c28d3d79f624fb9fe79024df"
+    },
+    {
+      "file": "outputs/4_铅笔素描/29_portrait.png",
+      "size": [
+        960,
+        1439
+      ],
+      "sha256": "f6fc35b595cdef2605225a02b373d665156d3fa901a86533ffa5e78c288b10c4"
+    }
+  ]
+}
