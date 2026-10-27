@@ -1,0 +1,33 @@
+{
+  "name": "FacePaint v2",
+  "author": "Bryan Lee",
+  "license": "MIT (pinned repository LICENSE)",
+  "commit": "25d7b017267208dfaf34026aa3425e518372aa2f",
+  "files": {
+    "model.py": {
+      "url": "https://raw.githubusercontent.com/bryandlee/animegan2-pytorch/25d7b017267208dfaf34026aa3425e518372aa2f/model.py",
+      "sha256": "2047cdb37764e7fc3b8e2e4b1b93bced06ee86e705e34995ca5747cdf0d0bceb",
+      "bytes": 3705
+    },
+    "LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/bryandlee/animegan2-pytorch/25d7b017267208dfaf34026aa3425e518372aa2f/LICENSE",
+      "sha256": "0722b5505349ac7ccc5a446da532e81f0962a07a671c6cc1f2f38a4a09c80c45",
+      "bytes": 1066
+    },
+    "face_paint_512_v2.pt": {
+      "url": "https://raw.githubusercontent.com/bryandlee/animegan2-pytorch/25d7b017267208dfaf34026aa3425e518372aa2f/weights/face_paint_512_v2.pt",
+      "sha256": "06b88a204eb230889444ad868ee5608f4fce5d4ff7b7738acaa4209c2b8fdca7",
+      "bytes": 8601086
+    }
+  },
+  "torch": "2.9.0+cpu",
+  "cuda": null,
+  "onnxruntime": "1.23.2",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "max_abs_error": 0.0002429485321044922,
+  "onnx_sha256": "f141828d57fec689a793186da3f167c735c7857f3ffa11e1e3e23cc0abaf2743",
+  "model_limit": 640,
+  "conversion": "PyTorch CPU weights_only=True -> ONNX opset 17; conversion tool is development-only"
+}

@@ -4,26 +4,26 @@
     {
       "style": "经典卡通",
       "preview_stages": 2,
-      "status": "1.64 秒 · 最终预览 800×1000 · 保护区域 1 · 缓存命中 0",
-      "http_end_to_end_seconds": 10.761350100015989
+      "status": "35.79 秒 · 最终预览 800×1000 · 保护区域 1 · 动漫脸部细化 1 · 缓存命中 0",
+      "http_end_to_end_seconds": 53.52600219997112
     },
     {
       "style": "扁平插画",
       "preview_stages": 2,
-      "status": "1.43 秒 · 最终预览 800×1000 · 保护区域 1 · 缓存命中 2",
-      "http_end_to_end_seconds": 9.189722799987067
+      "status": "4.89 秒 · 最终预览 800×1000 · 保护区域 1 · 动漫脸部细化 0 · 缓存命中 1",
+      "http_end_to_end_seconds": 23.44858630001545
     },
     {
       "style": "美式漫画",
       "preview_stages": 2,
-      "status": "0.80 秒 · 最终预览 800×1000 · 保护区域 1 · 缓存命中 4",
-      "http_end_to_end_seconds": 9.946406800008845
+      "status": "4.05 秒 · 最终预览 800×1000 · 保护区域 1 · 动漫脸部细化 0 · 缓存命中 3",
+      "http_end_to_end_seconds": 23.176023499923758
     },
     {
       "style": "铅笔素描",
       "preview_stages": 2,
-      "status": "0.86 秒 · 最终预览 800×1000 · 保护区域 1 · 缓存命中 6",
-      "http_end_to_end_seconds": 10.160894199972972
+      "status": "5.31 秒 · 最终预览 800×1000 · 保护区域 1 · 动漫脸部细化 0 · 缓存命中 5",
+      "http_end_to_end_seconds": 25.617758100037463
     }
   ],
   "full_resolution_jpg": [

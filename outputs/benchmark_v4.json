@@ -1,0 +1,188 @@
+{
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "opencv": "4.12.0",
+  "threads": 2,
+  "rows": [
+    {
+      "style": "经典卡通",
+      "width": 640,
+      "height": 480,
+      "cold_seconds": 17.247540300013497,
+      "warm_no_image_cache_runs": [
+        13.678540900000371,
+        13.775180600001477,
+        13.351605799980462
+      ],
+      "median_seconds": 13.678540900000371,
+      "cached_preview_seconds": 0.11247319995891303,
+      "rss_peak_mib": 482.8203125,
+      "rss_increase_mib": 440.30078125
+    },
+    {
+      "style": "扁平插画",
+      "width": 640,
+      "height": 480,
+      "cold_seconds": 2.222813200089149,
+      "warm_no_image_cache_runs": [
+        2.0833659999771044,
+        2.3197522999253124,
+        2.1806231000227854
+      ],
+      "median_seconds": 2.1806231000227854,
+      "cached_preview_seconds": 0.10836120008025318,
+      "rss_peak_mib": 113.91015625,
+      "rss_increase_mib": 70.27734375
+    },
+    {
+      "style": "美式漫画",
+      "width": 640,
+      "height": 480,
+      "cold_seconds": 1.5247899000532925,
+      "warm_no_image_cache_runs": [
+        2.041610899963416,
+        2.0298457000171766,
+        2.0511568000074476
+      ],
+      "median_seconds": 2.041610899963416,
+      "cached_preview_seconds": 0.20019929995760322,
+      "rss_peak_mib": 106.578125,
+      "rss_increase_mib": 63.4921875
+    },
+    {
+      "style": "铅笔素描",
+      "width": 640,
+      "height": 480,
+      "cold_seconds": 1.54560119996313,
+      "warm_no_image_cache_runs": [
+        2.0242247000569478,
+        2.163280999986455,
+        2.437247399939224
+      ],
+      "median_seconds": 2.163280999986455,
+      "cached_preview_seconds": 0.1972801999654621,
+      "rss_peak_mib": 109.22265625,
+      "rss_increase_mib": 66.94921875
+    },
+    {
+      "style": "经典卡通",
+      "width": 1920,
+      "height": 1080,
+      "cold_seconds": 18.302918200031854,
+      "warm_no_image_cache_runs": [
+        12.57234840001911,
+        12.243972700089216,
+        12.017102100071497
+      ],
+      "median_seconds": 12.243972700089216,
+      "cached_preview_seconds": 0.2715135000180453,
+      "rss_peak_mib": 401.03515625,
+      "rss_increase_mib": 353.26953125
+    },
+    {
+      "style": "扁平插画",
+      "width": 1920,
+      "height": 1080,
+      "cold_seconds": 16.346592199988663,
+      "warm_no_image_cache_runs": [
+        6.463537900010124,
+        4.025336200022139,
+        4.185366000048816
+      ],
+      "median_seconds": 4.185366000048816,
+      "cached_preview_seconds": 0.2563863000832498,
+      "rss_peak_mib": 149.97265625,
+      "rss_increase_mib": 102.3359375
+    },
+    {
+      "style": "美式漫画",
+      "width": 1920,
+      "height": 1080,
+      "cold_seconds": 3.4637582000577822,
+      "warm_no_image_cache_runs": [
+        3.7093391999369487,
+        3.740911800065078,
+        3.7866703000618145
+      ],
+      "median_seconds": 3.740911800065078,
+      "cached_preview_seconds": 0.4247808000072837,
+      "rss_peak_mib": 141.11328125,
+      "rss_increase_mib": 93.35546875
+    },
+    {
+      "style": "铅笔素描",
+      "width": 1920,
+      "height": 1080,
+      "cold_seconds": 3.226699599996209,
+      "warm_no_image_cache_runs": [
+        4.1572024000342935,
+        3.3597885000053793,
+        4.135143699939363
+      ],
+      "median_seconds": 4.135143699939363,
+      "cached_preview_seconds": 0.3415720999473706,
+      "rss_peak_mib": 114.0078125,
+      "rss_increase_mib": 66.328125
+    },
+    {
+      "style": "经典卡通",
+      "width": 3840,
+      "height": 2160,
+      "cold_seconds": 15.3575449999189,
+      "warm_no_image_cache_runs": [
+        12.432991200010292,
+        15.020484299981035,
+        13.66456070006825
+      ],
+      "median_seconds": 13.66456070006825,
+      "cached_preview_seconds": 0.3197601999854669,
+      "rss_peak_mib": 418.984375,
+      "rss_increase_mib": 353.99609375
+    },
+    {
+      "style": "扁平插画",
+      "width": 3840,
+      "height": 2160,
+      "cold_seconds": 6.18947169999592,
+      "warm_no_image_cache_runs": [
+        7.583613299997523,
+        6.65861520008184,
+        4.856816799961962
+      ],
+      "median_seconds": 6.65861520008184,
+      "cached_preview_seconds": 0.31628040003124624,
+      "rss_peak_mib": 166.57421875,
+      "rss_increase_mib": 101.578125
+    },
+    {
+      "style": "美式漫画",
+      "width": 3840,
+      "height": 2160,
+      "cold_seconds": 5.989439100027084,
+      "warm_no_image_cache_runs": [
+        6.381503600045107,
+        7.37272220000159,
+        7.601004699943587
+      ],
+      "median_seconds": 7.37272220000159,
+      "cached_preview_seconds": 0.5403611001092941,
+      "rss_peak_mib": 162.51171875,
+      "rss_increase_mib": 97.76953125
+    },
+    {
+      "style": "铅笔素描",
+      "width": 3840,
+      "height": 2160,
+      "cold_seconds": 6.6156499000499025,
+      "warm_no_image_cache_runs": [
+        6.4743695999495685,
+        7.741761700017378,
+        9.075715999933891
+      ],
+      "median_seconds": 7.741761700017378,
+      "cached_preview_seconds": 0.7943804999813437,
+      "rss_peak_mib": 146.2109375,
+      "rss_increase_mib": 81.2109375
+    }
+  ]
+}

@@ -1,0 +1,970 @@
+[
+  {
+    "file": "01_portrait.jpg",
+    "style": "经典卡通",
+    "original_size": [
+      1280,
+      853
+    ],
+    "crop_original_pixels": [
+      356,
+      206,
+      520,
+      520
+    ],
+    "faces_analysis_coordinates": [
+      [
+        84,
+        2,
+        794,
+        724
+      ]
+    ],
+    "sheet": "outputs/v4_review/01_portrait_1_crop.png"
+  },
+  {
+    "file": "01_portrait.jpg",
+    "style": "扁平插画",
+    "original_size": [
+      1280,
+      853
+    ],
+    "crop_original_pixels": [
+      356,
+      206,
+      520,
+      520
+    ],
+    "faces_analysis_coordinates": [
+      [
+        84,
+        2,
+        794,
+        724
+      ]
+    ],
+    "sheet": "outputs/v4_review/01_portrait_2_crop.png"
+  },
+  {
+    "file": "01_portrait.jpg",
+    "style": "美式漫画",
+    "original_size": [
+      1280,
+      853
+    ],
+    "crop_original_pixels": [
+      356,
+      206,
+      520,
+      520
+    ],
+    "faces_analysis_coordinates": [
+      [
+        84,
+        2,
+        794,
+        724
+      ]
+    ],
+    "sheet": "outputs/v4_review/01_portrait_3_crop.png"
+  },
+  {
+    "file": "01_portrait.jpg",
+    "style": "铅笔素描",
+    "original_size": [
+      1280,
+      853
+    ],
+    "crop_original_pixels": [
+      356,
+      206,
+      520,
+      520
+    ],
+    "faces_analysis_coordinates": [
+      [
+        84,
+        2,
+        794,
+        724
+      ]
+    ],
+    "sheet": "outputs/v4_review/01_portrait_4_crop.png"
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "经典卡通",
+    "original_size": [
+      1280,
+      1600
+    ],
+    "crop_original_pixels": [
+      331,
+      346,
+      520,
+      520
+    ],
+    "faces_analysis_coordinates": [
+      [
+        246,
+        188,
+        247,
+        381
+      ]
+    ],
+    "sheet": "outputs/v4_review/03_portrait_1_crop.png"
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "扁平插画",
+    "original_size": [
+      1280,
+      1600
+    ],
+    "crop_original_pixels": [
+      331,
+      346,
+      520,
+      520
+    ],
+    "faces_analysis_coordinates": [
+      [
+        246,
+        188,
+        247,
+        381
+      ]
+    ],
+    "sheet": "outputs/v4_review/03_portrait_2_crop.png"
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "美式漫画",
+    "original_size": [
+      1280,
+      1600
+    ],
+    "crop_original_pixels": [
+      331,
+      346,
+      520,
+      520
+    ],
+    "faces_analysis_coordinates": [
+      [
+        246,
+        188,
+        247,
+        381
+      ]
+    ],
+    "sheet": "outputs/v4_review/03_portrait_3_crop.png"
+  },
+  {
+    "file": "03_portrait.jpg",
+    "style": "铅笔素描",
+    "original_size": [
+      1280,
+      1600
+    ],
+    "crop_original_pixels": [
+      331,
+      346,
+      520,
+      520
+    ],
+    "faces_analysis_coordinates": [
+      [
+        246,
+        188,
+        247,
+        381
+      ]
+    ],
+    "sheet": "outputs/v4_review/03_portrait_4_crop.png"
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "经典卡通",
+    "original_size": [
+      1280,
+      853
+    ],
+    "crop_original_pixels": [
+      453,
+      280,
+      520,
+      520
+    ],
+    "faces_analysis_coordinates": [
+      [
+        308,
+        124,
+        499,
+        596
+      ]
+    ],
+    "sheet": "outputs/v4_review/05_portrait_1_crop.png"
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "扁平插画",
+    "original_size": [
+      1280,
+      853
+    ],
+    "crop_original_pixels": [
+      453,
+      280,
+      520,
+      520
+    ],
+    "faces_analysis_coordinates": [
+      [
+        308,
+        124,
+        499,
+        596
+      ]
+    ],
+    "sheet": "outputs/v4_review/05_portrait_2_crop.png"
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "美式漫画",
+    "original_size": [
+      1280,
+      853
+    ],
+    "crop_original_pixels": [
+      453,
+      280,
+      520,
+      520
+    ],
+    "faces_analysis_coordinates": [
+      [
+        308,
+        124,
+        499,
+        596
+      ]
+    ],
+    "sheet": "outputs/v4_review/05_portrait_3_crop.png"
+  },
+  {
+    "file": "05_portrait.jpg",
+    "style": "铅笔素描",
+    "original_size": [
+      1280,
+      853
+    ],
+    "crop_original_pixels": [
+      453,
+      280,
+      520,
+      520
+    ],
+    "faces_analysis_coordinates": [
+      [
+        308,
+        124,
+        499,
+        596
+      ]
+    ],
+    "sheet": "outputs/v4_review/05_portrait_4_crop.png"
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "经典卡通",
+    "original_size": [
+      1280,
+      719
+    ],
+    "crop_original_pixels": [
+      807,
+      274,
+      40,
+      40
+    ],
+    "faces_analysis_coordinates": [
+      [
+        633,
+        214,
+        27,
+        31
+      ],
+      [
+        471,
+        236,
+        19,
+        22
+      ],
+      [
+        560,
+        194,
+        15,
+        17
+      ],
+      [
+        370,
+        230,
+        15,
+        21
+      ],
+      [
+        71,
+        267,
+        17,
+        22
+      ],
+      [
+        403,
+        247,
+        18,
+        21
+      ],
+      [
+        518,
+        226,
+        16,
+        21
+      ],
+      [
+        371,
+        300,
+        19,
+        24
+      ],
+      [
+        507,
+        191,
+        15,
+        19
+      ],
+      [
+        596,
+        207,
+        17,
+        22
+      ],
+      [
+        431,
+        195,
+        18,
+        21
+      ],
+      [
+        653,
+        197,
+        20,
+        24
+      ]
+    ],
+    "sheet": "outputs/v4_review/13_portrait_1_crop.png"
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "扁平插画",
+    "original_size": [
+      1280,
+      719
+    ],
+    "crop_original_pixels": [
+      807,
+      274,
+      40,
+      40
+    ],
+    "faces_analysis_coordinates": [
+      [
+        633,
+        214,
+        27,
+        31
+      ],
+      [
+        471,
+        236,
+        19,
+        22
+      ],
+      [
+        560,
+        194,
+        15,
+        17
+      ],
+      [
+        370,
+        230,
+        15,
+        21
+      ],
+      [
+        71,
+        267,
+        17,
+        22
+      ],
+      [
+        403,
+        247,
+        18,
+        21
+      ],
+      [
+        518,
+        226,
+        16,
+        21
+      ],
+      [
+        371,
+        300,
+        19,
+        24
+      ],
+      [
+        507,
+        191,
+        15,
+        19
+      ],
+      [
+        596,
+        207,
+        17,
+        22
+      ],
+      [
+        431,
+        195,
+        18,
+        21
+      ],
+      [
+        653,
+        197,
+        20,
+        24
+      ]
+    ],
+    "sheet": "outputs/v4_review/13_portrait_2_crop.png"
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "美式漫画",
+    "original_size": [
+      1280,
+      719
+    ],
+    "crop_original_pixels": [
+      807,
+      274,
+      40,
+      40
+    ],
+    "faces_analysis_coordinates": [
+      [
+        633,
+        214,
+        27,
+        31
+      ],
+      [
+        471,
+        236,
+        19,
+        22
+      ],
+      [
+        560,
+        194,
+        15,
+        17
+      ],
+      [
+        370,
+        230,
+        15,
+        21
+      ],
+      [
+        71,
+        267,
+        17,
+        22
+      ],
+      [
+        403,
+        247,
+        18,
+        21
+      ],
+      [
+        518,
+        226,
+        16,
+        21
+      ],
+      [
+        371,
+        300,
+        19,
+        24
+      ],
+      [
+        507,
+        191,
+        15,
+        19
+      ],
+      [
+        596,
+        207,
+        17,
+        22
+      ],
+      [
+        431,
+        195,
+        18,
+        21
+      ],
+      [
+        653,
+        197,
+        20,
+        24
+      ]
+    ],
+    "sheet": "outputs/v4_review/13_portrait_3_crop.png"
+  },
+  {
+    "file": "13_portrait.jpg",
+    "style": "铅笔素描",
+    "original_size": [
+      1280,
+      719
+    ],
+    "crop_original_pixels": [
+      807,
+      274,
+      40,
+      40
+    ],
+    "faces_analysis_coordinates": [
+      [
+        633,
+        214,
+        27,
+        31
+      ],
+      [
+        471,
+        236,
+        19,
+        22
+      ],
+      [
+        560,
+        194,
+        15,
+        17
+      ],
+      [
+        370,
+        230,
+        15,
+        21
+      ],
+      [
+        71,
+        267,
+        17,
+        22
+      ],
+      [
+        403,
+        247,
+        18,
+        21
+      ],
+      [
+        518,
+        226,
+        16,
+        21
+      ],
+      [
+        371,
+        300,
+        19,
+        24
+      ],
+      [
+        507,
+        191,
+        15,
+        19
+      ],
+      [
+        596,
+        207,
+        17,
+        22
+      ],
+      [
+        431,
+        195,
+        18,
+        21
+      ],
+      [
+        653,
+        197,
+        20,
+        24
+      ]
+    ],
+    "sheet": "outputs/v4_review/13_portrait_4_crop.png"
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "经典卡通",
+    "original_size": [
+      1280,
+      960
+    ],
+    "crop_original_pixels": [
+      430,
+      270,
+      420,
+      420
+    ],
+    "faces_analysis_coordinates": [],
+    "sheet": "outputs/v4_review/15_landscape_1_crop.png"
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "扁平插画",
+    "original_size": [
+      1280,
+      960
+    ],
+    "crop_original_pixels": [
+      430,
+      270,
+      420,
+      420
+    ],
+    "faces_analysis_coordinates": [],
+    "sheet": "outputs/v4_review/15_landscape_2_crop.png"
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "美式漫画",
+    "original_size": [
+      1280,
+      960
+    ],
+    "crop_original_pixels": [
+      430,
+      270,
+      420,
+      420
+    ],
+    "faces_analysis_coordinates": [],
+    "sheet": "outputs/v4_review/15_landscape_3_crop.png"
+  },
+  {
+    "file": "15_landscape.jpg",
+    "style": "铅笔素描",
+    "original_size": [
+      1280,
+      960
+    ],
+    "crop_original_pixels": [
+      430,
+      270,
+      420,
+      420
+    ],
+    "faces_analysis_coordinates": [],
+    "sheet": "outputs/v4_review/15_landscape_4_crop.png"
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "经典卡通",
+    "original_size": [
+      1280,
+      1303
+    ],
+    "crop_original_pixels": [
+      950,
+      387,
+      100,
+      100
+    ],
+    "faces_analysis_coordinates": [
+      [
+        197,
+        308,
+        53,
+        58
+      ],
+      [
+        729,
+        297,
+        77,
+        77
+      ]
+    ],
+    "sheet": "outputs/v4_review/17_architecture_1_crop.png"
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "扁平插画",
+    "original_size": [
+      1280,
+      1303
+    ],
+    "crop_original_pixels": [
+      950,
+      387,
+      100,
+      100
+    ],
+    "faces_analysis_coordinates": [
+      [
+        197,
+        308,
+        53,
+        58
+      ],
+      [
+        729,
+        297,
+        77,
+        77
+      ]
+    ],
+    "sheet": "outputs/v4_review/17_architecture_2_crop.png"
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "美式漫画",
+    "original_size": [
+      1280,
+      1303
+    ],
+    "crop_original_pixels": [
+      950,
+      387,
+      100,
+      100
+    ],
+    "faces_analysis_coordinates": [
+      [
+        197,
+        308,
+        53,
+        58
+      ],
+      [
+        729,
+        297,
+        77,
+        77
+      ]
+    ],
+    "sheet": "outputs/v4_review/17_architecture_3_crop.png"
+  },
+  {
+    "file": "17_architecture.jpg",
+    "style": "铅笔素描",
+    "original_size": [
+      1280,
+      1303
+    ],
+    "crop_original_pixels": [
+      950,
+      387,
+      100,
+      100
+    ],
+    "faces_analysis_coordinates": [
+      [
+        197,
+        308,
+        53,
+        58
+      ],
+      [
+        729,
+        297,
+        77,
+        77
+      ]
+    ],
+    "sheet": "outputs/v4_review/17_architecture_4_crop.png"
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "经典卡通",
+    "original_size": [
+      1280,
+      960
+    ],
+    "crop_original_pixels": [
+      430,
+      270,
+      420,
+      420
+    ],
+    "faces_analysis_coordinates": [],
+    "sheet": "outputs/v4_review/19_animal_1_crop.png"
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "扁平插画",
+    "original_size": [
+      1280,
+      960
+    ],
+    "crop_original_pixels": [
+      430,
+      270,
+      420,
+      420
+    ],
+    "faces_analysis_coordinates": [],
+    "sheet": "outputs/v4_review/19_animal_2_crop.png"
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "美式漫画",
+    "original_size": [
+      1280,
+      960
+    ],
+    "crop_original_pixels": [
+      430,
+      270,
+      420,
+      420
+    ],
+    "faces_analysis_coordinates": [],
+    "sheet": "outputs/v4_review/19_animal_3_crop.png"
+  },
+  {
+    "file": "19_animal.jpg",
+    "style": "铅笔素描",
+    "original_size": [
+      1280,
+      960
+    ],
+    "crop_original_pixels": [
+      430,
+      270,
+      420,
+      420
+    ],
+    "faces_analysis_coordinates": [],
+    "sheet": "outputs/v4_review/19_animal_4_crop.png"
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "经典卡通",
+    "original_size": [
+      1280,
+      1792
+    ],
+    "crop_original_pixels": [
+      385,
+      321,
+      448,
+      448
+    ],
+    "faces_analysis_coordinates": [
+      [
+        245,
+        179,
+        190,
+        250
+      ]
+    ],
+    "sheet": "outputs/v4_review/23_portrait_1_crop.png"
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "扁平插画",
+    "original_size": [
+      1280,
+      1792
+    ],
+    "crop_original_pixels": [
+      385,
+      321,
+      448,
+      448
+    ],
+    "faces_analysis_coordinates": [
+      [
+        245,
+        179,
+        190,
+        250
+      ]
+    ],
+    "sheet": "outputs/v4_review/23_portrait_2_crop.png"
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "美式漫画",
+    "original_size": [
+      1280,
+      1792
+    ],
+    "crop_original_pixels": [
+      385,
+      321,
+      448,
+      448
+    ],
+    "faces_analysis_coordinates": [
+      [
+        245,
+        179,
+        190,
+        250
+      ]
+    ],
+    "sheet": "outputs/v4_review/23_portrait_3_crop.png"
+  },
+  {
+    "file": "23_portrait.jpg",
+    "style": "铅笔素描",
+    "original_size": [
+      1280,
+      1792
+    ],
+    "crop_original_pixels": [
+      385,
+      321,
+      448,
+      448
+    ],
+    "faces_analysis_coordinates": [
+      [
+        245,
+        179,
+        190,
+        250
+      ]
+    ],
+    "sheet": "outputs/v4_review/23_portrait_4_crop.png"
+  }
+]
