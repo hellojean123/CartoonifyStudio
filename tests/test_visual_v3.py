@@ -4,12 +4,14 @@ import cv2
 import numpy as np
 from cartoonify.core import Params,STYLES,process,portrait_regions,merge_small_regions
 
-def test_pencil_uniform_tones_remain_blank_paper():
+def test_pencil_bright_paper_and_smooth_dark_tonal_mass():
     im=np.full((160,240,3),225,np.uint8);im[:,120:]=45
     p=Params(outline=0,paper=0,pencil_shade=.5,protect=False)
     out=process(im,STYLES[3],p,cache=None)
     assert out[:,20:80].mean()>250
-    assert out[:,160:220].mean()>250  # A flat dark background must not become noisy graphite.
+    # A uniform dark surface needs graphite tone; blanking it destroyed form shadows.
+    assert out[:,160:220].mean()<200
+    assert out[:,160:220].std()>1
 
 def test_features_not_suppressed_as_cheeks():
     im=np.full((200,200,3),(170,120,90),np.uint8)

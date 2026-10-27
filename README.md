@@ -1,14 +1,16 @@
-# Cartoonify Studio v4
+# Cartoonify Studio
 
-Windows 11 / Python 3.12 / 纯 CPU 照片风格化与拼豆图纸。无 CUDA、无训练、无付费 API；图片留在本机，启动后处理不联网。四种风格分别采用人像动漫模型、区域插画、印刷漫画和线条素描路线。
+Windows 11 / Python 3.12 / 纯 CPU 照片风格化与拼豆图纸。无 CUDA、无训练、无付费 API；图片留在本机，启动后处理不联网。四种风格分别采用人像动漫模型、区域插画、印刷漫画和分层铅笔素描路线。
 
 ![原图与四种风格](outputs/03_portrait_comparison.jpg)
 
-## 本次重做
+## 当前版本
 
-旧版“经典卡通”的硬量化容易产生脏色块，素描使用连续灰度底图而缺少线条。本版将前者替换为 **FacePaint v2 预训练动漫人像模型的本地 CPU 推理**；素描改为**白纸、顺结构线稿和铅笔排线**。插画改善区域平滑，漫画加强结构线、阴影和印刷色。没有训练模型或调用外部绘图服务。
+本轮重做铅笔素描：分别生成**结构线、明暗层和有限长度笔触**，移除卷曲噪声纹理，并为浅肤色人像保留柔和阴影；彩铅由有色笔触形成，亮部保留白纸。另三种风格和拼豆算法沿用已验证版本。
 
-查看 [原图 / 已发布旧版 / 本版及五官局部](outputs/v4_review/gallery.html)、[实际核验与局限](style_redesign_report.md)、[CPU 时间和内存](benchmark_v4.md)。模型会重绘眉眼、脸形等特征，不能保证身份完全一致；多人远景小脸、遮挡和极端光照仍可能失真。不要把原尺寸文件理解为原尺寸神经网络生成细节。
+查看 [21 张素描新旧 / OpenCV 对照及原像素局部](outputs/pencil_v5/gallery.html)、[素描改进与真实 CPU 性能](pencil_v5_report.md)。当前完整测试 96 项通过，网页预览、原尺寸 PNG/JPG 和批量 ZIP 已实际验证。
+
+动漫仍使用本地 CPU FacePaint v2 预训练模型，会重绘眉眼、脸形等特征；多人远景、遮挡和极端光照可能失真。其 [v4 重做核验](outputs/v4_review/gallery.html)、[局限](style_redesign_report.md) 和 [历史性能](benchmark_v4.md) 保留供查阅。原尺寸文件不代表新增了原尺寸模型细节或笔画。
 
 ## 安装和启动（Windows PowerShell）
 
@@ -36,7 +38,7 @@ py -3.12 -m venv .venv
 ## 使用
 
 1. 拖入 JPG、PNG、WebP，或从内置照片画廊选择样片。
-2. 选择“动漫人像（CPU 模型）”“扁平插画”“美式漫画”“线条铅笔素描”；切换会加载预设。
+2. 选择“动漫人像（CPU 模型）”“扁平插画”“美式漫画”“铅笔素描（明暗与笔触）”；切换会加载预设。
 3. 松开滑块自动预览，先显示 480 草稿，再显示最长边 1000 的最终预览。动漫草稿跳过脸部局部细化以加快显示，结构/颜色可能不同，最终预览和导出复用同一份分析结果。
 4. 调整整体轮廓、主要边缘和内部细线。人像保护减弱脸颊纹理，保留眼鼻嘴区域；手动保护框在“轮廓分层与手动保护”中设置。自动保护还会对可靠定位的中小脸做局部动漫细化；手动框只影响平滑和附加线条，两者均不能保证动漫模型保持身份。
 5. 插画调色板 4～48 色；漫画明度 4～12 级，另有网点间距、角度、浓度；素描可调排线浓度、纸张颗粒、彩铅。线条不够时先增加整体轮廓和内部细线，排线控制阴影笔触。
@@ -52,7 +54,7 @@ py -3.12 -m venv .venv
 | 动漫人像 | 作者 FacePaint v2 预训练权重 → ONNX Runtime CPU 重绘 → 可靠定位的中小人脸单独细化 → 生成图上的轻量轮廓增强；不对照片做全局硬色块量化 |
 | 扁平插画 | 双边 + 四区域软权重 Kuwahara → Lab 采样 K-Means → 32³ LUT → 空间投票、小孤岛合并、五官区域标签保留 → 少量主线 |
 | 美式漫画 | 区域平滑 → 饱和度增强、明度分级 → 顺结构粗线与浓阴影 → 可调抗锯齿半调网点 |
-| 线条素描 | 结构张量方向场 → 法线 DoG 与切线平滑 → 长轮廓与局部线稿 → 沿结构的确定性噪声积分笔触 → 白纸与浅颗粒；可选彩铅 |
+| 铅笔素描 | 多尺度选择性轮廓 → 流向连续线条 → 按人脸亮部自适应明暗 → 有限长度、变压力短笔触与暗部交叉排线 → 纸纹调制石墨附着；可选彩色颜料吸收 |
 
 动漫全图推理最长边 **640**；可靠定位且分析图中至少 50 像素的中小脸，另取带上下文的区域按 512 细化（最多 3 张脸）。传统分析最长边 **1000**。全图动漫模型擅长单人人像，远处小脸和非人像可能偏暗、过度抽象；不会凭空恢复看不清的五官。高清导出按原尺寸分块采样统一绘画结构，网点与纸纹使用统一坐标，避免分块接缝。高分辨率导出不等于逐像素重新运行动漫模型，也不是超分辨率；线条/笔触仍受分析尺度限制。
 
@@ -76,36 +78,33 @@ py -3.12 -m venv .venv
 
 ```powershell
 Set-Location D:\CartoonifyStudio
-.\.venv\Scripts\python.exe -m pytest -q --junitxml=outputs/pytest_v4.xml
-.\.venv\Scripts\python.exe smoke_test.py
-.\.venv\Scripts\python.exe evaluate_styles_v4.py
-.\.venv\Scripts\python.exe refresh_detail_crops_v4.py
-.\.venv\Scripts\python.exe benchmark_styles_v4.py
-.\.venv\Scripts\python.exe benchmark_anime_arena.py
-.\.venv\Scripts\python.exe report_benchmark_v4.py
-.\.venv\Scripts\python.exe verify_runtime_cpu.py
-.\.venv\Scripts\python.exe verify_styles_v4.py
-Start-Process .\outputs\v4_review\gallery.html
+.\.venv\Scripts\python.exe -m pytest -q --junitxml=outputs/pencil_v5/pytest.xml
+.\.venv\Scripts\python.exe smoke_pencil_v5.py
+.\.venv\Scripts\python.exe evaluate_pencil_v5.py
+.\.venv\Scripts\python.exe build_gallery.py
+Start-Process .\outputs\pencil_v5\gallery.html
 Start-Process .\outputs\gallery.html
 ```
 
-评估处理全部 21 张正式照片（16 张人物）×4 风格，保存 84 张原尺寸 PNG、21 张五联对比、8 张代表照片×4 风格的新旧对比和局部，并生成真实 3840×2880 导出。旧版基线固定为 `0b46ac10b7dd8174afe8502b769ee8f9bba409dd`，比较脚本需要含该历史提交的 Git 仓库；不依赖本地备份。`outputs/timings_v4.json` 记录各图耗时及预览差异，`outputs/benchmark_v4.json` 为独立进程实测。
+当前完整回归测试 **96 项通过**，覆盖全部四风格、异常文件、透明/灰度、EXIF、极端参数、1×1、CPU 权重校验、缓存、高清接缝、导出、批量、取消与拼豆。新增平滑阴影、浅肤色面部层次、有限笔触、彩铅、缓存复用和高清一致性检查。程序正确性不等于审美评审，请查看原图、新旧结果和原始像素局部。
 
-测试覆盖异常文件、透明/灰度、EXIF、极端参数、1×1、风格差异、CPU 模型与权重校验、白纸线稿、确定性笔触、缓存、图块接缝、PNG/JPG、批量和取消，以及原有拼豆功能。数值测试不等于审美评审，实际新旧图和五官局部更重要。素描仍是程序化绘画，不等同人工素描；插画有意牺牲渐变，漫画缩图可能有网点摩尔纹。
+`outputs/pencil_v5/` 保存全部 21 张授权照片的原尺寸素描和彩铅，以及新旧、OpenCV 对照和裁剪坐标。`outputs/4_铅笔素描/` 和全部五联图已更新；其他三种风格的 63 张输出保持原哈希。真实高清结果为 `outputs/highres_4.png`（3840×2880）。计时、RSS 内存和网页实测见 `pencil_v5_report.md` 及该目录的原始 JSON。
 
-`benchmark.md`、`benchmark_v3.md`、`optimization_v3.md` 及 v2/v3 画廊保留为**历史报告**。当前结果和性能只看 v4；旧评估脚本在当前代码上运行会调用当前算法，不能据此冒称重新测得了旧版。
+新旧对照需要完整 Git 历史中的 `0a2cb624facc1dd3bca249c1ec9df421d8c71544` 提交，应用运行不需要历史。比较使用已发布的图像，不依赖本地备份。
+
+`benchmark.md`、`benchmark_v3.md`、`benchmark_v4.md`、各轮重做报告和 v2/v3/v4 画廊为历史记录。当前素描只看 v5；其他三种风格沿用 v4。旧评估脚本在当前代码上运行会调用当前算法，不能据此冒称重新测得旧版。
 
 ## 照片授权、目录与迁移
 
 正式照片的来源、作者、许可和下载日期见 `samples/metadata.json` 与 `samples/ATTRIBUTION.md`；真实高清参考单列于 `samples/high_resolution`。仅接受可修改再分发的 CC0 / 公有领域 / CC BY / CC BY-SA / OGL 等已核实来源，排除 NC、ND 和不明来源。再分发、改编继续保留署名及适用的相同方式共享条款；人物仅为演示，不表示背书。失败候选不计入正式样本。
 
 - `cartoonify/core.py`：独立处理管线、保护区域和分块渲染。
-- `cartoonify/anime.py`、`cartoonify/npr.py`：CPU 动漫推理、结构线稿与铅笔笔触。
+- `cartoonify/anime.py`、`cartoonify/npr.py`、`cartoonify/pencil.py`：CPU 动漫、区域处理与独立铅笔明暗/笔触。
 - `cartoonify/service.py`、`cache.py`：导出、取消、资源锁和有上限的缓存。
 - `models/`：本地权重、来源校验、许可；`tests/`：回归测试。
 - `outputs/1_经典卡通/`：动漫结果；沿用内部键与目录名以保持 API 兼容。
 - `outputs/2_扁平插画/`、`3_美式漫画/`、`4_铅笔素描/`：其他三风格结果。
-- `outputs/v4_review/gallery.html`：本轮新旧核验；`outputs/exports/`：用户导出文件。
+- `outputs/pencil_v5/gallery.html`：当前素描核验；`outputs/v4_review/gallery.html`：历史 v4 核验；`outputs/exports/`：用户导出文件。
 
 仓库不包含虚拟环境、Python 安装包、缓存和整套备份。克隆/迁移后重建 `.venv`，勿复制旧环境或覆盖其他项目目录。原有拼豆功能与照片四风格独立，说明如下。
 
@@ -136,3 +135,22 @@ Start-Process .\outputs\beads\gallery.html
 21 张真实样片均已生成拼豆图纸与对比，见 `outputs/beads/gallery.html`；算法与实测报告见 `beads_report.md`。原照片作者、许可在画廊及示例包 SOURCE.txt 中保留，改编结果继续遵守原照片授权。
 
 面部细节专项：`bead_face_report.md`；原图 / 旧版 / 同格数同颜色新算法 / 新人像预设对照见 `outputs/beads_face_v2/gallery.html`。低层 `BeadParams()` 保持旧的 72 格/10 色默认，UI 和正式样例使用人像清晰预设。
+
+
+## 铅笔素描 v5：结构、明暗与笔触
+
+素描现在分别生成结构线、柔和明暗层及有限长度的铅笔排线，移除了旧版沿随机噪声形成的卷曲纹理。暗部可保留铺调子，亮部留白；彩铅通过有色颜料吸收形成笔触，不再把纸底染成浅色照片。
+
+- 选择“铅笔素描（明暗与笔触）”；“铅笔明暗与排线浓度”设为 0 时只保留结构线。默认 0.48，喜欢较轻效果可从 0.25 开始。
+- 人像保护会减少皮肤细线和背景细节，不负责精确抠图；小脸、侧脸或遮挡仍可能漏检，可添加手动区域。
+- 预览与导出使用相同的最长边 1000 像素结构及笔触布局，高清使用抗锯齿与双三次重采样。原尺寸导出不意味着新增了原尺寸笔画细节。
+- 查看 [全部 21 张素描新旧与 OpenCV 对照](outputs/pencil_v5/gallery.html)、[改进与真实性能报告](pencil_v5_report.md)。其他三种风格与拼豆算法未改动。
+- 重建素描结果与 CPU 性能数据（会更新 `outputs/4_铅笔素描/` 和总对比图）：
+
+```powershell
+Set-Location D:\CartoonifyStudio
+.\.venv\Scripts\python.exe evaluate_pencil_v5.py
+.\.venv\Scripts\python.exe -m pytest -q
+```
+
+实现为本项目原创传统图像处理代码，借鉴 Sketch + Tone 分层及流向线条思想，并非论文的精确复现；不需要 GPU、新模型、外部纸纹素材或付费 API。

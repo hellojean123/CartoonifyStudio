@@ -223,7 +223,10 @@ def _prepare(image,p,cache=None,digest=None):
     return {'guide':guide,'blur':blur,'mask':mask,'skin':skin,'features':features,'boxes':boxes,'landmarks':landmarks}
 
 def _layers(prepared,style,p):
-    from .npr import flow_lines,coherent_strokes,region_smooth
+    from .npr import flow_lines,region_smooth
+    if style==STYLES[3]:
+        from .pencil import pencil_layers
+        return pencil_layers(prepared,p)
     blur=prepared['blur'];mask=prepared['mask'];gray=cv2.cvtColor(blur,cv2.COLOR_RGB2GRAY)
     coarse,internal,tone,theta=flow_lines(blur,p.smooth)
     strokes=np.zeros_like(tone);anime_info={}
@@ -256,14 +259,6 @@ def _layers(prepared,style,p):
         broad=cv2.GaussianBlur(tone,(0,0),3.5)
         shadow=np.clip((.23-broad)/.13,0,1)*(1-mask*.65)
         base=np.clip(base.astype(np.float32)*(1-shadow[...,None]*.62),0,255).astype(np.uint8)
-    else:
-        local=cv2.GaussianBlur(tone,(0,0),3.5)
-        # A dark uniform field is blank paper, not a divide-by-zero black fill.
-        dodge=np.clip((local-tone)/(local+.02),0,1)
-        internal=np.clip(internal*1.1+dodge*1.4,0,1)
-        base=np.full(blur.shape,255,np.uint8)
-        if p.colored: base=np.clip(235+blur.astype(np.float32)*20/255,0,255).astype(np.uint8)
-        strokes=coherent_strokes(tone,theta)
     return {'base':base,'coarse':coarse,'internal':internal,'tone':tone,'strokes':strokes,'anime_faces':anime_info.get('refined_faces',0)}
 
 
@@ -295,15 +290,18 @@ def render(image,prepared,layers,style,p,quality='精细',output_limit=None,tile
             xs=(np.arange(x,x1,dtype=np.float32)+.5)*(lw/w)-.5
             ys=(np.arange(y,y1,dtype=np.float32)+.5)*(lh/h)-.5
             mx,my=np.meshgrid(xs,ys)
-            def take(layer): return cv2.remap(layer,mx,my,cv2.INTER_LINEAR,borderMode=cv2.BORDER_REPLICATE)
-            interpolation=cv2.INTER_CUBIC if style==STYLES[0] and quality=='精细' and max(h,w)>ANALYSIS_SIZE else cv2.INTER_LINEAR
-            base=cv2.remap(layers['base'],mx,my,interpolation,borderMode=cv2.BORDER_REPLICATE).astype(np.float32)
-            mask=take(prepared['mask']);skin=take(prepared['skin']);features=take(prepared['features'])
-            suppression=skin*(1-features*.92)
-            inner=take(layers['internal'])*(1-suppression*p.face_strength*.90)
-            outer=take(layers['coarse'])*(1-suppression*p.face_strength*.55)
+            def take(layer): return cv2.remap(layer,mx,my,cv2.INTER_CUBIC if style==STYLES[3] else cv2.INTER_LINEAR,borderMode=cv2.BORDER_REPLICATE)
+            inner=take(layers['internal']);outer=take(layers['coarse'])
+            if style!=STYLES[3]:
+                interpolation=cv2.INTER_CUBIC if style==STYLES[0] and quality=='精细' and max(h,w)>ANALYSIS_SIZE else cv2.INTER_LINEAR
+                base=cv2.remap(layers['base'],mx,my,interpolation,borderMode=cv2.BORDER_REPLICATE).astype(np.float32)
+                mask=take(prepared['mask']);skin=take(prepared['skin']);features=take(prepared['features'])
+                suppression=skin*(1-features*.92)
+                inner*=1-suppression*p.face_strength*.90
+                outer*=1-suppression*p.face_strength*.55
             if style==STYLES[3]:
-                ink=np.clip(p.outline*(p.outer*outer*1.2+p.inner*inner*2.6),0,.97)
+                # Pencil contours have pressure, not opaque pen outlines.
+                ink=np.clip(p.outline*(p.outer*outer*1.5+p.inner*inner*1.9),0,2.2)
             elif style==STYLES[2]:
                 ink=np.clip(p.outline*(p.outer*outer*1.25+p.inner*inner*.9),0,.96)
             else: ink=np.clip(p.outline*(p.outer*outer*.88+p.inner*inner*.72),0,.9)
@@ -319,13 +317,19 @@ def render(image,prepared,layers,style,p,quality='精细',output_limit=None,tile
                 midtone=np.clip((tone-.12)/.2,0,1)*np.clip((.86-tone)/.25,0,1)
                 base*=1-dots[...,None]*p.dot_opacity*midtone[...,None]*(1-mask[...,None]*p.face_strength*.65)
             if style==STYLES[3]:
-                graphite=np.clip(take(layers['strokes'])*p.pencil_shade*1.8,0,.85)
-                graphite*=1-suppression*p.face_strength*.65
-                # Paper is faint material; strokes and contours carry the form.
-                grain=np.sin(xx*2.79+yy*1.31)*np.sin(xx*.67-yy*2.13)
-                base-=np.maximum(grain,0)[...,None]*p.paper*16
-                ink=np.maximum(ink,graphite)
-            result[y:y1,x:x1]=np.clip(base*(1-ink[...,None]),0,255).astype(np.uint8)
+                from .pencil import paper_grain
+                density=np.clip(take(layers['density']),0,1)
+                strokes=np.clip(take(layers['strokes']),0,1)
+                grain=paper_grain(xx,yy)
+                # Broad graphite mass plus finite strokes keeps soft shadows
+                # without restoring the photographic texture.
+                graphite=density*p.pencil_shade*2.5*(.34+strokes*3.0)
+                graphite*=np.clip(1+grain*p.paper*.55,.5,1.5)
+                pigment=take(layers['pigment']) if p.colored else np.ones((*density.shape,3),np.float32)
+                absorption=graphite[...,None]*pigment+ink[...,None]
+                result[y:y1,x:x1]=np.clip(255*np.exp(-absorption),0,255).astype(np.uint8)
+            else:
+                result[y:y1,x:x1]=np.clip(base*(1-ink[...,None]),0,255).astype(np.uint8)
     return result
 
 
@@ -340,7 +344,7 @@ def process(image,style,params=None,preview=False,quality='精细',cache=CACHE,p
     digest=fingerprint(im);prekey=('prepare-v4',digest,p.smooth,p.contrast,p.protect,p.face_strength,p.face_boxes)
     prepared=cache.compute(prekey,lambda:_prepare(im,p,cache,digest)) if cache is not None else _prepare(im,p)
     prepared_at=time.perf_counter()
-    key=('layers-v4',prekey,style,p.colors if style in STYLES[1:3] else None,p.colored if style==STYLES[3] else None)
+    key=('layers-pencil-v5',prekey,style,p.colors if style in STYLES[1:3] else None)
     layers=cache.compute(key,lambda:_layers(prepared,style,p)) if cache is not None else _layers(prepared,style,p)
     layers_at=time.perf_counter()
     result=render(im,prepared,layers,style,p,quality,preview_limit if preview else None,tile_size,cancel)
