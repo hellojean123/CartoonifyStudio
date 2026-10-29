@@ -49,7 +49,7 @@ def batch(paths,style,*values,progress=gr.Progress()):
 
 def defaults(style):
     index=STYLES.index(style);a,b,c,d=PRESETS[index]
-    return (a,b,gr.update(value=c,minimum=4,maximum=12 if index==2 else 48,visible=index in (1,2),label='明度分级' if index==2 else '调色板颜色数'),d,
+    return (a,b,gr.update(value=c,minimum=4,maximum=12 if index==2 else 48,visible=index in (1,2),label='明度分级' if index==2 else '区域配色数量（边缘会平滑过渡）'),d,
             gr.update(value=False,visible=index==3),True,.75,.8,.5,7,15,.28,.48,.08,'',gr.update(value='动漫增强',visible=index==0),gr.update(visible=index==2),gr.update(visible=index==3))
 
 def manual_box(left,top,width,height):
@@ -70,7 +70,7 @@ def build_app():
         with gr.Tab('照片卡通化'):
             with gr.Row():
                 with gr.Column(scale=1):
-                    style=gr.Dropdown([('动漫人像（双模型）',STYLES[0]),('扁平插画',STYLES[1]),('美式漫画',STYLES[2]),('铅笔素描（变宽笔触）',STYLES[3])],value=STYLES[0],label='风格与预设')
+                    style=gr.Dropdown([('动漫人像（双模型）',STYLES[0]),('扁平插画（区域配色）',STYLES[1]),('美式漫画',STYLES[2]),('铅笔素描（变宽笔触）',STYLES[3])],value=STYLES[0],label='风格与预设')
                     anime_mode=gr.Radio(['动漫增强','柔和插画'],value='动漫增强',label='动漫表现',info='动漫增强使用独立的 Webtoon 预训练模型；可能改变脸形、年龄感和肤色。柔和插画保留原版模型。')
                     outline=gr.Slider(0,1,.35,step=.05,label='整体轮廓强度')
                     smooth=gr.Slider(1,10,5,step=1,label='区域平滑')

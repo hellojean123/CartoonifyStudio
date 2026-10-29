@@ -1,0 +1,9 @@
+{
+  "shape": [
+    2880,
+    3840,
+    3
+  ],
+  "algorithm_seconds": 9.347652100026608,
+  "source": "samples/high_resolution/reference_4k.jpg"
+}

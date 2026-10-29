@@ -1,0 +1,17 @@
+[
+  {
+    "script": "evaluate_flat_v8.py",
+    "exit_code": 0,
+    "seconds": 377.23757889994886
+  },
+  {
+    "script": "benchmark_flat_v8.py",
+    "exit_code": 0,
+    "seconds": 78.55565500003286
+  },
+  {
+    "script": "smoke_flat_v8.py",
+    "exit_code": 0,
+    "seconds": 112.03488659998402
+  }
+]

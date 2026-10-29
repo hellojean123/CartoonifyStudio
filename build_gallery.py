@@ -20,6 +20,7 @@ def main():
     extras+='<p><a href="pencil_v5/gallery.html">历史素描 v5：21 张新旧与 OpenCV 对照</a> · <a href="../pencil_v5_report.md">素描 CPU 实测与局限</a></p>'
     extras+='<p><a href="pencil_v6/gallery.html">当前素描 v6：变宽笔触与新旧对照</a> · <a href="pencil_v6/brush_sheet.png">单笔样张</a> · <a href="../pencil_v6_report.md">CPU 实测与局限</a></p>'
     extras+='<p><a href="anime_v7/gallery.html">当前动漫 v7：21 张动漫增强新旧对照</a> · <a href="../anime_v7_report.md">模型筛选、CPU 实测与局限</a></p>'
+    extras+='<p><a href="flat_v8/gallery.html">当前扁平插画 v8：同预算和默认配色对照</a> · <a href="../flat_v8_report.md">实测与局限</a></p>'
     document=document.replace('</html>',extras+'</html>')
     (root/'outputs'/'gallery.html').write_text(document,encoding='utf-8')
 
