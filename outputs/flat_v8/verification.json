@@ -1,0 +1,52 @@
+{
+  "tests": {
+    "passed": 116,
+    "seconds": 135.908
+  },
+  "samples": 21,
+  "other_style_pngs_unchanged": 63,
+  "http": {
+    "http_status": 200,
+    "formats": [
+      {
+        "style": "扁平插画",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 24.74598409992177,
+        "format": "PNG",
+        "size": [
+          1280,
+          1600
+        ],
+        "export_status": "0.71 秒 · 精细原尺寸导出 1280×1600"
+      },
+      {
+        "style": "扁平插画",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 18.02906209998764,
+        "format": "JPG",
+        "size": [
+          1280,
+          1600
+        ],
+        "export_status": "0.59 秒 · 精细原尺寸导出 1280×1600"
+      }
+    ],
+    "batch_png_count": 2,
+    "cancel_response": "没有正在运行的任务。"
+  },
+  "native_4k": {
+    "shape": [
+      2880,
+      3840,
+      3
+    ],
+    "algorithm_seconds": 9.347652100026608,
+    "source": "samples/high_resolution/reference_4k.jpg"
+  },
+  "runtime_torch_installed": false,
+  "source_sha256": {
+    "app.py": "fafce03d3f42dd5f1a6622bdd3511b24c30242e48f867d5b3ed8d64a6e17c45c",
+    "cartoonify/core.py": "7162d56eed86b76a5cc3bf5a791ee960e6e53f8973f4c7af75d93bbd94d7442b",
+    "cartoonify/flat.py": "db09dc859db6e485c5eec2373edba7ce632c1731ec83872f4626ce258ff92e15"
+  }
+}

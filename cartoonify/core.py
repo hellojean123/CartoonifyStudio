@@ -17,7 +17,7 @@ cv2.ocl.setUseOpenCL(False)
 MAX_PIXELS=16_000_000
 ANALYSIS_SIZE=1000
 STYLES=['经典卡通','扁平插画','美式漫画','铅笔素描']
-PRESETS=[(.35,5,16,1.),(.30,7,14,1.03),(.85,6,7,1.15),(.90,5,16,1.02)]
+PRESETS=[(.35,5,16,1.),(.18,7,20,1.),(.85,6,7,1.15),(.90,5,16,1.02)]
 CACHE=ByteLRU(112*1024**2)
 _CV_LOCK=threading.RLock()
 
@@ -237,6 +237,9 @@ def _layers(prepared,style,p,cancel=None):
     if style==STYLES[3]:
         from .pencil import pencil_layers
         return pencil_layers(prepared,p)
+    if style==STYLES[1]:
+        from .flat import illustration_layers
+        return illustration_layers(prepared,p,cancel)
     blur=prepared['blur'];mask=prepared['mask'];gray=cv2.cvtColor(blur,cv2.COLOR_RGB2GRAY)
     coarse,internal,tone,theta=flow_lines(blur,p.smooth)
     strokes=np.zeros_like(tone);anime_info={}
@@ -253,17 +256,6 @@ def _layers(prepared,style,p,cancel=None):
         coarse,internal,_,_=flow_lines(base,p.smooth)
         # The network already draws facial lines: accent its drawing, not photo edges.
         coarse*=.45;internal*=.25
-    elif style==STYLES[1]:
-        regions=region_smooth(blur,p.smooth,radius=3+p.smooth*2)
-        centers=fit_palette(regions,p.colors,mask)
-        labels=merge_small_regions(region_cleanup(map_palette(regions,centers),len(centers)),len(centers),max(8,round(gray.size*.00008)))
-        detail_labels=map_palette(blur,centers)
-        labels=np.where(prepared['features']>.25,detail_labels,labels).astype(np.uint8)
-        palette=cv2.cvtColor(np.clip(centers,0,255).astype(np.uint8)[None,:,:],cv2.COLOR_LAB2RGB)[0]
-        base=palette[labels]
-        palette_edges=cv2.Canny(cv2.cvtColor(base,cv2.COLOR_RGB2GRAY),45,100).astype(np.float32)/255
-        coarse=np.minimum(coarse,cv2.dilate(palette_edges,np.ones((3,3),np.uint8)))*.65
-        internal*=.12
     elif style==STYLES[2]:
         comic=region_smooth(blur,p.smooth)
         hsv=cv2.cvtColor(comic,cv2.COLOR_RGB2HSV)
@@ -370,11 +362,11 @@ def process(image,style,params=None,preview=False,quality='精细',cache=CACHE,p
     digest=fingerprint(im);prekey=('prepare-v4',digest,p.smooth,p.contrast,p.protect,p.face_strength,p.face_boxes)
     prepared=cache.compute(prekey,lambda:_prepare(im,p,cache,digest)) if cache is not None else _prepare(im,p)
     prepared_at=time.perf_counter()
-    key=('layers-anime-v7',prekey,style,p.colors if style in STYLES[1:3] else None,p.anime_mode if style==STYLES[0] else None)
+    key=('layers-flat-v8',prekey,style,p.colors if style in STYLES[1:3] else None,p.anime_mode if style==STYLES[0] else None)
     layers=cache.compute(key,lambda:_layers(prepared,style,p,cancel)) if cache is not None else _layers(prepared,style,p,cancel)
     layers_at=time.perf_counter()
     result=render(im,prepared,layers,style,p,quality,preview_limit if preview else None,tile_size,cancel,cache)
-    if diagnostics is not None: diagnostics.update({'faces':prepared['boxes'],'anime_refined_faces':layers.get('anime_faces',0),'anime':layers.get('anime_info',{}),'analysis_size':prepared['guide'].shape[:2],'cache':cache.stats() if cache else {},'stages':{'prepare':prepared_at-started,'layers':layers_at-prepared_at,'render':time.perf_counter()-layers_at,'total':time.perf_counter()-started}})
+    if diagnostics is not None: diagnostics.update({'faces':prepared['boxes'],'anime_refined_faces':layers.get('anime_faces',0),'anime':layers.get('anime_info',{}),'flat':layers.get('flat_info',{}),'analysis_size':prepared['guide'].shape[:2],'cache':cache.stats() if cache else {},'stages':{'prepare':prepared_at-started,'layers':layers_at-prepared_at,'render':time.perf_counter()-layers_at,'total':time.perf_counter()-started}})
     if diagnostics is not None and style==STYLES[3]:
         plan=layers['stroke_plan']
         diagnostics['pencil_brush']={'stroke_count':len(plan['width']),

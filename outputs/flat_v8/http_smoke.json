@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "formats": [
+    {
+      "style": "扁平插画",
+      "preview_stages": 2,
+      "preview_end_to_end_seconds": 24.74598409992177,
+      "format": "PNG",
+      "size": [
+        1280,
+        1600
+      ],
+      "export_status": "0.71 秒 · 精细原尺寸导出 1280×1600"
+    },
+    {
+      "style": "扁平插画",
+      "preview_stages": 2,
+      "preview_end_to_end_seconds": 18.02906209998764,
+      "format": "JPG",
+      "size": [
+        1280,
+        1600
+      ],
+      "export_status": "0.59 秒 · 精细原尺寸导出 1280×1600"
+    }
+  ],
+  "batch_png_count": 2,
+  "cancel_response": "没有正在运行的任务。"
+}
