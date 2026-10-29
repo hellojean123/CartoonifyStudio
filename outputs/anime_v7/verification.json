@@ -1,0 +1,122 @@
+{
+  "samples": 21,
+  "tests": {
+    "passed": 111,
+    "seconds": 127.691,
+    "junit": "outputs/anime_v7/pytest.xml"
+  },
+  "other_style_pngs_unchanged": 63,
+  "http": {
+    "http_status": 200,
+    "modes": [
+      {
+        "mode": "动漫增强",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 33.67729590006638,
+        "format": "PNG",
+        "size": [
+          1280,
+          1600
+        ],
+        "export_status": "0.82 秒 · 精细原尺寸导出 1280×1600"
+      },
+      {
+        "mode": "柔和插画",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 42.45409150002524,
+        "format": "JPG",
+        "size": [
+          1280,
+          1600
+        ],
+        "export_status": "0.73 秒 · 精细原尺寸导出 1280×1600"
+      }
+    ],
+    "batch_png_count": 2,
+    "cancel_response": "没有正在运行的任务。"
+  },
+  "source_sha256": {
+    "app.py": "fccda026848ed8d71c20f909029ec38fed72c820a4776196e262d6ba9ce444bd",
+    "cartoonify/core.py": "5a372aab106b02b56094602490f8cf7b90be6ef0a2bd55bd185674eb8c40ddfd",
+    "cartoonify/anime.py": "48b1a6a411e955a5138dbbee69eb924d367c17e650330e46de6f5154f0c75ee1",
+    "models/webtoon.onnx": "4db28818cdd392614d86f59e31a7f2fb62542a96c6421acc9bc6e868c860a56b"
+  },
+  "runtime_torch_installed": false,
+  "python": "3.12.10",
+  "report_date": "2026-10-29",
+  "native_4k": {
+    "source": "samples/high_resolution/reference_4k.jpg",
+    "shape": [
+      2880,
+      3840,
+      3
+    ],
+    "algorithm_seconds": 5.4893311999039724,
+    "diagnostics": {
+      "faces": [],
+      "anime_refined_faces": 0,
+      "anime": {
+        "refined_faces": 0,
+        "aligned_faces": 0,
+        "contrast_heads": 0,
+        "model": "webtoon",
+        "mode": "动漫增强"
+      },
+      "analysis_size": [
+        750,
+        1000
+      ],
+      "cache": {
+        "bytes": 33750768,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.32363610004540533,
+        "layers": 2.2911941999336705,
+        "render": 2.87433390005026,
+        "total": 5.489164900034666
+      }
+    }
+  },
+  "conversion": {
+    "rebuild_max_abs_error": 5.817413330078125e-05,
+    "bundled_rebuilt_output_error": 0.0,
+    "bundled_sha256": "4db28818cdd392614d86f59e31a7f2fb62542a96c6421acc9bc6e868c860a56b",
+    "rebuilt_sha256": "4db28818cdd392614d86f59e31a7f2fb62542a96c6421acc9bc6e868c860a56b"
+  },
+  "check_steps": [
+    {
+      "step": "pytest",
+      "exit_code": 0,
+      "seconds": 129.71124790003523
+    },
+    {
+      "step": "dataset",
+      "exit_code": 0,
+      "seconds": 229.4872347000055
+    },
+    {
+      "step": "benchmark",
+      "exit_code": 0,
+      "seconds": 138.1314824000001
+    },
+    {
+      "step": "http",
+      "exit_code": 0,
+      "seconds": 162.29259650001768
+    },
+    {
+      "step": "native_4k",
+      "exit_code": 0,
+      "seconds": 7.8877360000042245
+    },
+    {
+      "step": "conversion",
+      "exit_code": 0,
+      "seconds": 23.100236399914138
+    }
+  ]
+}

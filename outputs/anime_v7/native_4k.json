@@ -1,0 +1,37 @@
+{
+  "source": "samples/high_resolution/reference_4k.jpg",
+  "shape": [
+    2880,
+    3840,
+    3
+  ],
+  "algorithm_seconds": 5.4893311999039724,
+  "diagnostics": {
+    "faces": [],
+    "anime_refined_faces": 0,
+    "anime": {
+      "refined_faces": 0,
+      "aligned_faces": 0,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "analysis_size": [
+      750,
+      1000
+    ],
+    "cache": {
+      "bytes": 33750768,
+      "budget": 117440512,
+      "entries": 3,
+      "hits": 0,
+      "misses": 3
+    },
+    "stages": {
+      "prepare": 0.32363610004540533,
+      "layers": 2.2911941999336705,
+      "render": 2.87433390005026,
+      "total": 5.489164900034666
+    }
+  }
+}

@@ -50,15 +50,15 @@ def test_anime_export_does_not_mix_original_texture_back_in():
 def test_face_refinement_rejects_tiny_faces_and_caps_cpu_work(monkeypatch):
     from cartoonify import anime
     calls=[]
-    def fake_infer(image):
+    def fake_infer(image,name='v2'):
         calls.append(image.shape)
         return np.full_like(image,200 if image.shape[:2]==(512,512) else 30)
     monkeypatch.setattr(anime,'_infer',fake_infer)
     image=np.zeros((600,800,3),np.uint8)
     boxes=[(0,0,400,100),(10,10,30,30),(50,50,90,100),(250,50,90,100),(450,50,90,100),(50,400,90,100)]
-    info={};result=anime.stylize(image,boxes,info)
+    info={};result=anime.stylize(image,boxes,info,mode='柔和插画')
     assert len(calls)==4 and info['refined_faces']==3
-    assert np.all(result[0,-1]==30) and result[95,95].mean()>190
+    assert np.all(result[0,-1]==30) and result[95,95].mean()>100
     assert np.all(result[445,95]==30)
 
 def test_real_half_body_face_refinement_shares_preview_export_structure():

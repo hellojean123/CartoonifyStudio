@@ -1,0 +1,87 @@
+[
+  {
+    "shape": [
+      480,
+      343,
+      3
+    ],
+    "mode": "动漫增强",
+    "uncached_seconds": [
+      2.303428399958648,
+      5.351252999971621
+    ],
+    "cached_outline_preview_seconds": 0.04351350001525134,
+    "peak_process_rss_mib": 311.00390625,
+    "rss_sampling_ms": 10,
+    "threads": 2,
+    "opencl": false
+  },
+  {
+    "shape": [
+      1000,
+      714,
+      3
+    ],
+    "mode": "动漫增强",
+    "uncached_seconds": [
+      3.7966369000496343,
+      8.761404899996705
+    ],
+    "cached_outline_preview_seconds": 0.1747855000430718,
+    "peak_process_rss_mib": 369.56640625,
+    "rss_sampling_ms": 10,
+    "threads": 2,
+    "opencl": false
+  },
+  {
+    "shape": [
+      1920,
+      1371,
+      3
+    ],
+    "mode": "动漫增强",
+    "uncached_seconds": [
+      4.093230600003153,
+      10.170158299966715
+    ],
+    "cached_outline_preview_seconds": 0.203270300058648,
+    "peak_process_rss_mib": 380.5625,
+    "rss_sampling_ms": 10,
+    "threads": 2,
+    "opencl": false
+  },
+  {
+    "shape": [
+      3840,
+      2743,
+      3
+    ],
+    "mode": "动漫增强",
+    "uncached_seconds": [
+      6.535284799989313,
+      11.934591500088573
+    ],
+    "cached_outline_preview_seconds": 0.3449763000244275,
+    "peak_process_rss_mib": 427.14453125,
+    "rss_sampling_ms": 10,
+    "threads": 2,
+    "opencl": false
+  },
+  {
+    "shape": [
+      1000,
+      714,
+      3
+    ],
+    "mode": "柔和插画",
+    "uncached_seconds": [
+      11.584403100074269,
+      16.76065660000313
+    ],
+    "cached_outline_preview_seconds": 0.15398890001233667,
+    "peak_process_rss_mib": 494.06640625,
+    "rss_sampling_ms": 10,
+    "threads": 2,
+    "opencl": false
+  }
+]

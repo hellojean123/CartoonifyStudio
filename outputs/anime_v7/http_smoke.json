@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "modes": [
+    {
+      "mode": "动漫增强",
+      "preview_stages": 2,
+      "preview_end_to_end_seconds": 33.67729590006638,
+      "format": "PNG",
+      "size": [
+        1280,
+        1600
+      ],
+      "export_status": "0.82 秒 · 精细原尺寸导出 1280×1600"
+    },
+    {
+      "mode": "柔和插画",
+      "preview_stages": 2,
+      "preview_end_to_end_seconds": 42.45409150002524,
+      "format": "JPG",
+      "size": [
+        1280,
+        1600
+      ],
+      "export_status": "0.73 秒 · 精细原尺寸导出 1280×1600"
+    }
+  ],
+  "batch_png_count": 2,
+  "cancel_response": "没有正在运行的任务。"
+}

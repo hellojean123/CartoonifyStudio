@@ -13,8 +13,8 @@ from cartoonify.beads import PRESETS as BEAD_PRESETS
 from cartoonify.bead_service import create_export as bead_export
 from cartoonify.service import ROOT,load_cached,job,cancel_job,export_one,batch_export
 
-def make_params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes):
-    return Params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes)
+def make_params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes,anime_mode='动漫增强'):
+    return Params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes,anime_mode)
 
 def preview(path,style,*values):
     if not path: yield None,None,None,'请上传或选择测试照片。';return
@@ -50,7 +50,7 @@ def batch(paths,style,*values,progress=gr.Progress()):
 def defaults(style):
     index=STYLES.index(style);a,b,c,d=PRESETS[index]
     return (a,b,gr.update(value=c,minimum=4,maximum=12 if index==2 else 48,visible=index in (1,2),label='明度分级' if index==2 else '调色板颜色数'),d,
-            gr.update(value=False,visible=index==3),True,.75,.8,.5,7,15,.28,.48,.08,'',gr.update(visible=index==2),gr.update(visible=index==3))
+            gr.update(value=False,visible=index==3),True,.75,.8,.5,7,15,.28,.48,.08,'',gr.update(value='动漫增强',visible=index==0),gr.update(visible=index==2),gr.update(visible=index==3))
 
 def manual_box(left,top,width,height):
     if left+width>100 or top+height>100: raise gr.Error('保护框超出图片边界，请缩小宽度或高度')
@@ -70,7 +70,8 @@ def build_app():
         with gr.Tab('照片卡通化'):
             with gr.Row():
                 with gr.Column(scale=1):
-                    style=gr.Dropdown([('动漫人像（CPU 模型）',STYLES[0]),('扁平插画',STYLES[1]),('美式漫画',STYLES[2]),('铅笔素描（变宽笔触）',STYLES[3])],value=STYLES[0],label='风格与预设')
+                    style=gr.Dropdown([('动漫人像（双模型）',STYLES[0]),('扁平插画',STYLES[1]),('美式漫画',STYLES[2]),('铅笔素描（变宽笔触）',STYLES[3])],value=STYLES[0],label='风格与预设')
+                    anime_mode=gr.Radio(['动漫增强','柔和插画'],value='动漫增强',label='动漫表现',info='动漫增强使用独立的 Webtoon 预训练模型；可能改变脸形、年龄感和肤色。柔和插画保留原版模型。')
                     outline=gr.Slider(0,1,.35,step=.05,label='整体轮廓强度')
                     smooth=gr.Slider(1,10,5,step=1,label='区域平滑')
                     colors=gr.Slider(4,48,16,step=1,label='调色板颜色数',visible=False)
@@ -110,10 +111,10 @@ def build_app():
                         after=gr.Image(label='效果预览',interactive=False)
                     status=gr.Textbox(label='状态与耗时',interactive=False)
                     download=gr.File(label='下载原尺寸结果')
-                    gr.Markdown('松开滑块后自动预览：先草稿，再更新统一色板的最终预览。图片和动漫模型均在本机 CPU 处理，不上传照片。动漫由预训练模型重绘，人物特征可能变化；输出尺寸不等于新增真实细节。')
-        params=[outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes]
+                    gr.Markdown('松开滑块后自动预览：先草稿，再更新统一色板的最终预览。图片和动漫模型均在本机 CPU 处理，不上传照片。动漫可选更强的 Webtoon 或柔和插画模型，均为本地预训练模型；人物特征可能变化；输出尺寸不等于新增真实细节。')
+        params=[outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes,anime_mode]
         outputs=[before,after,download,status]
-        triggers=[preview_btn.click,source.change]+[s.release for s in [outline,smooth,colors,contrast,face_strength,outer,inner,spacing,angle,opacity,shade,paper]]+[colored.change,protect.change,boxes.submit]
+        triggers=[preview_btn.click,source.change]+[s.release for s in [outline,smooth,colors,contrast,face_strength,outer,inner,spacing,angle,opacity,shade,paper]]+[colored.change,protect.change,boxes.submit,anime_mode.change]
         preview_event=gr.on(triggers=triggers,fn=preview,inputs=[source,style,*params,session],outputs=outputs,trigger_mode='always_last',concurrency_id='cpu',concurrency_limit=1,api_name='preview')
         style.change(lambda selected:gr.update(visible=selected==STYLES[0]),style,quality,queue=False,api_name=False)
         style_event=style.change(defaults,style,[*params,comic_group,pencil_group],queue=False,api_name='style_defaults')

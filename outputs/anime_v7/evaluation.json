@@ -1,0 +1,548 @@
+[
+  {
+    "file": "01_portrait.jpg",
+    "seconds": 4.553171800100245,
+    "cached_preview_seconds": 0.16480230004526675,
+    "peak_process_rss_mib": 261.2734375,
+    "preview_export_mae": 0.34657257257257257,
+    "shape": [
+      853,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.26444329996593297,
+      "layers": 4.032402400043793,
+      "render": 0.2556867999956012,
+      "total": 4.55253340001218
+    },
+    "sha256": "be20da0782213024fb8e6e64bd1cc8077cc9bf0a2f59590a6df6aa29e74432bd"
+  },
+  {
+    "file": "02_portrait.jpg",
+    "seconds": 11.884583699982613,
+    "cached_preview_seconds": 0.29430000006686896,
+    "peak_process_rss_mib": 364.90625,
+    "preview_export_mae": 0.33051458333333333,
+    "shape": [
+      1600,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 1.1490511000156403,
+      "layers": 10.19921610003803,
+      "render": 0.5358506999909878,
+      "total": 11.884118300047703
+    },
+    "sha256": "bbe42b03ccdf14f73be7447f2404cdbecb404d40cfa7e04daa32c6d980b7841f"
+  },
+  {
+    "file": "03_portrait.jpg",
+    "seconds": 11.724099999992177,
+    "cached_preview_seconds": 0.21842189994640648,
+    "peak_process_rss_mib": 436.17578125,
+    "preview_export_mae": 0.13364583333333332,
+    "shape": [
+      1600,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.9552994000259787,
+      "layers": 10.203330399934202,
+      "render": 0.5647143000969663,
+      "total": 11.723344900063239
+    },
+    "sha256": "b3cf947318cb7c09414e5e616357533181f96ef3f958129bb7f8e99e5710d4bd"
+  },
+  {
+    "file": "04_portrait.jpg",
+    "seconds": 13.268787599983625,
+    "cached_preview_seconds": 0.23452649998944253,
+    "peak_process_rss_mib": 423.0,
+    "preview_export_mae": 0.43292040319777547,
+    "shape": [
+      1228,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 1.2363818000303581,
+      "layers": 11.62816019996535,
+      "render": 0.4036724000470713,
+      "total": 13.26821510004811
+    },
+    "sha256": "a0fbdff7c4c17392f37e4cc78ab64e825b3ed0f9ef718dfd0062bb9c3c776ac1"
+  },
+  {
+    "file": "05_portrait.jpg",
+    "seconds": 9.275383100030012,
+    "cached_preview_seconds": 0.1671978000085801,
+    "peak_process_rss_mib": 376.84375,
+    "preview_export_mae": 0.0973023023023023,
+    "shape": [
+      853,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.9779771000612527,
+      "layers": 8.057219999958761,
+      "render": 0.23971470003016293,
+      "total": 9.274912600056268
+    },
+    "sha256": "ba78d4f73146bc57453c916088404982b32a722789e8fc583ff0915d4afb4d6f"
+  },
+  {
+    "file": "06_portrait.jpg",
+    "seconds": 9.554157300037332,
+    "cached_preview_seconds": 0.2037616999587044,
+    "peak_process_rss_mib": 377.55859375,
+    "preview_export_mae": 0.20993003498250876,
+    "shape": [
+      1920,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.8874043000396341,
+      "layers": 8.036319999955595,
+      "render": 0.6298052000347525,
+      "total": 9.55353010003455
+    },
+    "sha256": "4b4cb3978fbf36eb7ce076d98de8409bc2466e68642063475b83bfd07be88162"
+  },
+  {
+    "file": "07_portrait.jpg",
+    "seconds": 9.360654399963096,
+    "cached_preview_seconds": 0.20201000000815839,
+    "peak_process_rss_mib": 397.1875,
+    "preview_export_mae": 0.581259649122807,
+    "shape": [
+      1094,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 0,
+      "aligned_faces": 0,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 1.1729904999956489,
+      "layers": 7.83998559997417,
+      "render": 0.3471923000179231,
+      "total": 9.360168699990027
+    },
+    "sha256": "be69c5bc719e0043f9def735da711263d283f89ec35a97f26c9c96a69a88dea8"
+  },
+  {
+    "file": "08_portrait.jpg",
+    "seconds": 13.180864900001325,
+    "cached_preview_seconds": 0.283182300045155,
+    "peak_process_rss_mib": 400.4140625,
+    "preview_export_mae": 0.3456175936023264,
+    "shape": [
+      1396,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 1.371186999953352,
+      "layers": 11.382431800011545,
+      "render": 0.4264866999583319,
+      "total": 13.180106099927798
+    },
+    "sha256": "3f0882d8ad07cfc1df25e2e6b8eff4b0d3175b64c7faa447147211e489d8caba"
+  },
+  {
+    "file": "13_portrait.jpg",
+    "seconds": 6.5962430000072345,
+    "cached_preview_seconds": 0.13059369998518378,
+    "peak_process_rss_mib": 291.7421875,
+    "preview_export_mae": 0.6752413997627521,
+    "shape": [
+      719,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 0,
+      "aligned_faces": 0,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.9164215000346303,
+      "layers": 5.4352596999378875,
+      "render": 0.2441166000207886,
+      "total": 6.595798299997114
+    },
+    "sha256": "ff999e200d2435ed4e079ceb456d2c709c312cdd4762c04cbc31559c14afe673"
+  },
+  {
+    "file": "14_portrait.jpg",
+    "seconds": 5.797502200002782,
+    "cached_preview_seconds": 0.14645179989747703,
+    "peak_process_rss_mib": 324.875,
+    "preview_export_mae": 0.497494068801898,
+    "shape": [
+      719,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 0,
+      "aligned_faces": 0,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.8599907000316307,
+      "layers": 4.7123818000545725,
+      "render": 0.22398979996796697,
+      "total": 5.796362900058739
+    },
+    "sha256": "247771175768f6a709b3b487eae6ba833c86a66b4ac081b0cd75df6c474289fc"
+  },
+  {
+    "file": "15_landscape.jpg",
+    "seconds": 8.113091900013387,
+    "cached_preview_seconds": 0.1851712999632582,
+    "peak_process_rss_mib": 338.6015625,
+    "preview_export_mae": 0.066856,
+    "shape": [
+      960,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 0,
+      "aligned_faces": 0,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.8528104999568313,
+      "layers": 6.961841000011191,
+      "render": 0.29790979996323586,
+      "total": 8.112561999936588
+    },
+    "sha256": "ba925825c31ec81e1334509bff7900146f9266b381040c668971b58efc29cbaf"
+  },
+  {
+    "file": "16_landscape.jpg",
+    "seconds": 7.6967843000311404,
+    "cached_preview_seconds": 0.15708619996439666,
+    "peak_process_rss_mib": 328.578125,
+    "preview_export_mae": 0.2170034619188922,
+    "shape": [
+      863,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 0,
+      "aligned_faces": 0,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.8628747999900952,
+      "layers": 6.612040000036359,
+      "render": 0.22097350005060434,
+      "total": 7.695888800080866
+    },
+    "sha256": "69c57328d0adec4dc385bae9568b37d7e87c526abbbed694e2222381b8ad078c"
+  },
+  {
+    "file": "17_architecture.jpg",
+    "seconds": 11.517386500025168,
+    "cached_preview_seconds": 0.3423687000758946,
+    "peak_process_rss_mib": 422.45703125,
+    "preview_export_mae": 0.5435458248472506,
+    "shape": [
+      1303,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 0,
+      "aligned_faces": 0,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 1.6186871000099927,
+      "layers": 9.485124099999666,
+      "render": 0.412789799971506,
+      "total": 11.516601499984972
+    },
+    "sha256": "1e663f825e7766cfc4cc8311025b290f2b3d4e91dc1685dbfa5a77e7ea535696"
+  },
+  {
+    "file": "18_architecture.jpg",
+    "seconds": 7.009062599972822,
+    "cached_preview_seconds": 0.14511019992642105,
+    "peak_process_rss_mib": 298.3203125,
+    "preview_export_mae": 0.4123101851851852,
+    "shape": [
+      737,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 0,
+      "aligned_faces": 0,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.8781528000254184,
+      "layers": 5.8872199999168515,
+      "render": 0.2427918000612408,
+      "total": 7.008165600011125
+    },
+    "sha256": "352baddcb7d37962d9b88014c2dd2619ee0fb4276d9041b026c5d907d6d04e48"
+  },
+  {
+    "file": "19_animal.jpg",
+    "seconds": 7.984016399946995,
+    "cached_preview_seconds": 0.20682069996837527,
+    "peak_process_rss_mib": 396.02734375,
+    "preview_export_mae": 0.1844151111111111,
+    "shape": [
+      960,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 0,
+      "aligned_faces": 0,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.9894874000456184,
+      "layers": 6.695063599967398,
+      "render": 0.2988336000125855,
+      "total": 7.983384900027886
+    },
+    "sha256": "0733a67e5ef67a8019108db768f89009f4635a6432e13011958543bb34b9a9a2"
+  },
+  {
+    "file": "23_portrait.jpg",
+    "seconds": 10.365417600027286,
+    "cached_preview_seconds": 0.19628199993167073,
+    "peak_process_rss_mib": 335.37890625,
+    "preview_export_mae": 0.12765546218487395,
+    "shape": [
+      1792,
+      1280,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.7897960999980569,
+      "layers": 9.012336899992079,
+      "render": 0.5625038000289351,
+      "total": 10.36463740002364
+    },
+    "sha256": "0c8bab6007f35563d823ec686be4c929d7c6a16541cb9d0700a179f057675e7f"
+  },
+  {
+    "file": "22_portrait.jpg",
+    "seconds": 12.146159399999306,
+    "cached_preview_seconds": 0.2405817999970168,
+    "peak_process_rss_mib": 500.06640625,
+    "preview_export_mae": 0.0,
+    "shape": [
+      981,
+      960,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 1.1223131000297144,
+      "layers": 10.82973569992464,
+      "render": 0.19358720001764596,
+      "total": 12.145636799978092
+    },
+    "sha256": "5a0c313d35e56eb439a462ba464888e69e6b8b1535965cdbc9732d9f01aac9a3"
+  },
+  {
+    "file": "26_portrait.jpg",
+    "seconds": 10.2347036000574,
+    "cached_preview_seconds": 0.1767751999432221,
+    "peak_process_rss_mib": 327.11328125,
+    "preview_export_mae": 0.12749608114338404,
+    "shape": [
+      1328,
+      960,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.8243513000197709,
+      "layers": 9.083933399990201,
+      "render": 0.32559859997127205,
+      "total": 10.233884099987336
+    },
+    "sha256": "3e6d973ff231bba07644b10bf94aff41e0f22e747cf1c971013d5826a1d913d5"
+  },
+  {
+    "file": "27_portrait.jpg",
+    "seconds": 8.860627499991097,
+    "cached_preview_seconds": 0.1847455999813974,
+    "peak_process_rss_mib": 372.66796875,
+    "preview_export_mae": 0.1485712143928036,
+    "shape": [
+      1439,
+      960,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.7678740000119433,
+      "layers": 7.7515655000461265,
+      "render": 0.34055929991882294,
+      "total": 8.859999599982984
+    },
+    "sha256": "8155b0223f3cdb233bb4e0a06dfb67e6efc0ebef2c466b2a19c48951f9f67292"
+  },
+  {
+    "file": "28_portrait.jpg",
+    "seconds": 11.366530200000852,
+    "cached_preview_seconds": 0.19712819997221231,
+    "peak_process_rss_mib": 358.359375,
+    "preview_export_mae": 0.13918985126859143,
+    "shape": [
+      1260,
+      960,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 0,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.9909003999782726,
+      "layers": 10.097527500009164,
+      "render": 0.27725269994698465,
+      "total": 11.365681799943559
+    },
+    "sha256": "340236baa657fdfc1074123de9fce70cff32d89f5d03d9b607967a59ff1b94a3"
+  },
+  {
+    "file": "29_portrait.jpg",
+    "seconds": 8.732729699928313,
+    "cached_preview_seconds": 0.18011590000241995,
+    "peak_process_rss_mib": 372.53125,
+    "preview_export_mae": 0.18607796101949026,
+    "shape": [
+      1439,
+      960,
+      3
+    ],
+    "anime": {
+      "refined_faces": 1,
+      "aligned_faces": 1,
+      "contrast_heads": 1,
+      "model": "webtoon",
+      "mode": "动漫增强"
+    },
+    "stages": {
+      "prepare": 0.9201967000262812,
+      "layers": 7.500500399968587,
+      "render": 0.31100420001894236,
+      "total": 8.731704400037415
+    },
+    "sha256": "aa1937dfd76c4f85dab79fbe77cfc7d02454731bb510e5db01035e84e7f42512"
+  }
+]
