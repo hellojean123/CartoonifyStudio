@@ -1,0 +1,47 @@
+{
+  "name": "celeba_distill",
+  "author": "Bryan Lee",
+  "license": "MIT (pinned repository LICENSE)",
+  "commit": "25d7b017267208dfaf34026aa3425e518372aa2f",
+  "files": {
+    "model.py": {
+      "url": "https://raw.githubusercontent.com/bryandlee/animegan2-pytorch/25d7b017267208dfaf34026aa3425e518372aa2f/model.py",
+      "sha256": "2047cdb37764e7fc3b8e2e4b1b93bced06ee86e705e34995ca5747cdf0d0bceb",
+      "bytes": 3705
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/bryandlee/animegan2-pytorch/25d7b017267208dfaf34026aa3425e518372aa2f/LICENSE",
+      "sha256": "0722b5505349ac7ccc5a446da532e81f0962a07a671c6cc1f2f38a4a09c80c45",
+      "bytes": 1066
+    },
+    "celeba_distill.pt": {
+      "url": "https://raw.githubusercontent.com/bryandlee/animegan2-pytorch/25d7b017267208dfaf34026aa3425e518372aa2f/weights/celeba_distill.pt",
+      "sha256": "a3740d98f99efe2ee6c332de2b800f542ddbb2d15e835c07e9bf667c29cef8a7",
+      "bytes": 8603556
+    }
+  },
+  "onnx_sha256": "4db28818cdd392614d86f59e31a7f2fb62542a96c6421acc9bc6e868c860a56b",
+  "torch": "2.9.0+cpu",
+  "cuda": null,
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "shape_errors": [
+    5.817413330078125e-05,
+    8.07642936706543e-06,
+    5.105137825012207e-05
+  ],
+  "mean_errors": [
+    1.0546621524554212e-05,
+    9.190536616188183e-07,
+    8.123198313114699e-06
+  ],
+  "max_abs_error": 5.817413330078125e-05,
+  "download_date": "2026-10-27",
+  "training_size": 256,
+  "global_limit": 512,
+  "head_size": 256,
+  "purpose": "Offline pretrained comic/anime portrait stylization; CPU only, no training",
+  "conversion": "PyTorch 2.9.0+cpu, weights_only=True -> ONNX opset 17, dynamo=False; runtime needs no torch",
+  "onnxruntime": "1.23.2"
+}

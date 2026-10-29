@@ -17,15 +17,23 @@ FILES={
 
 def main():
     parser=argparse.ArgumentParser()
+    parser.add_argument('--model',choices=['v2','webtoon'],default='v2',help='Pretrained model to reconstruct')
     parser.add_argument('--source-cache',type=Path,help='Optional local upstream files; every file is still SHA256 checked')
     parser.add_argument('--output-dir',type=Path,help='Optional conversion destination, defaults to project models/')
     args=parser.parse_args()
+    webtoon=args.model=='webtoon'
+    weight='celeba_distill.pt' if webtoon else 'face_paint_512_v2.pt'
+    filename='webtoon.onnx' if webtoon else 'face_paint_v2.onnx'
+    records=dict(FILES)
+    if webtoon:
+        records.pop('face_paint_512_v2.pt')
+        records[weight]=('weights/'+weight,'a3740d98f99efe2ee6c332de2b800f542ddbb2d15e835c07e9bf667c29cef8a7')
     import torch,onnxruntime as ort
     if torch.version.cuda is not None:raise RuntimeError('Install the CPU-only torch build described in README')
     torch.set_num_threads(2);root=args.output_dir or Path(__file__).resolve().parent/'models';root.mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='cartoonify-convert-') as folder:
         temp=Path(folder);sources={}
-        for local,(remote,digest) in FILES.items():
+        for local,(remote,digest) in records.items():
             url=f'https://raw.githubusercontent.com/bryandlee/animegan2-pytorch/{COMMIT}/{remote}'
             if args.source_cache:data=(args.source_cache/local).read_bytes()
             else:
@@ -34,27 +42,29 @@ def main():
             (temp/local).write_bytes(data);sources[local]={'url':url,'sha256':digest,'bytes':len(data)}
         spec=importlib.util.spec_from_file_location('pinned_facepaint',temp/'model.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
         model=module.Generator().cpu().eval()
-        model.load_state_dict(torch.load(temp/'face_paint_512_v2.pt',map_location='cpu',weights_only=True))
-        dest=temp/'face_paint_v2.onnx'
+        model.load_state_dict(torch.load(temp/weight,map_location='cpu',weights_only=True))
+        dest=temp/filename
         with torch.inference_mode():
             torch.onnx.export(model,torch.zeros(1,3,256,256),str(dest),opset_version=17,input_names=['image'],output_names=['anime'],
                 dynamic_axes={'image':{2:'height',3:'width'},'anime':{2:'height',3:'width'}},dynamo=False)
         options=ort.SessionOptions();options.intra_op_num_threads=2;options.inter_op_num_threads=1
         session=ort.InferenceSession(str(dest),sess_options=options,providers=['CPUExecutionProvider'])
-        errors=[]
+        errors=[];means=[]
         for height,width in ((192,256),(64,100),(256,192)):
             x=np.random.default_rng(12).uniform(-1,1,(1,3,height,width)).astype(np.float32)
             with torch.inference_mode():expected=model(torch.from_numpy(x)).numpy()
-            actual=session.run(None,{'image':x})[0];errors.append(float(np.max(np.abs(actual-expected))))
+            actual=session.run(None,{'image':x})[0];difference=np.abs(actual-expected)
+            errors.append(float(difference.max()));means.append(float(difference.mean()))
         if max(errors)>=.001:raise RuntimeError('ONNX conversion exceeds numerical tolerance: '+str(errors))
-        previous=root/'anime_metadata.json'
+        previous=root/('anime_webtoon_metadata.json' if webtoon else 'anime_metadata.json')
         metadata=json.loads(previous.read_text(encoding='utf-8')) if previous.exists() else {}
-        metadata.update({'name':'FacePaint v2','author':'Bryan Lee','license':'MIT (pinned repository LICENSE)','commit':COMMIT,'files':sources,
-            'torch':torch.__version__,'cuda':None,'onnxruntime':ort.__version__,'providers':session.get_providers(),'max_abs_error':max(errors),
-            'onnx_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'model_limit':640,
+        metadata.update({'name':'Webtoon (celeba_distill)' if webtoon else 'FacePaint v2','author':'Bryan Lee','license':'MIT (pinned repository LICENSE)','commit':COMMIT,'files':sources,
+            'torch':torch.__version__,'cuda':None,'onnxruntime':ort.__version__,'providers':session.get_providers(),'max_abs_error':max(errors),'shape_errors':errors,'mean_errors':means,
+            'onnx_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'model_limit':512 if webtoon else 640,
             'conversion':'PyTorch CPU weights_only=True -> ONNX opset 17; conversion tool is development-only'})
+        if webtoon:metadata.update({'training_size':256,'global_limit':512,'head_size':256})
         # Publish only after all shape and numerical checks pass.
-        (root/'face_paint_v2.onnx').write_bytes(dest.read_bytes())
+        (root/filename).write_bytes(dest.read_bytes())
         (root/'LICENSE-FacePaint.txt').write_bytes((temp/'LICENSE.txt').read_bytes())
         previous.write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         print(json.dumps({'providers':session.get_providers(),'shape_errors':errors,'sha256':metadata['onnx_sha256']}))

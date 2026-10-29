@@ -1,0 +1,110 @@
+[
+  {
+    "sample": "01_portrait",
+    "model": "v2",
+    "size": 512,
+    "seconds": 5.323323999997228
+  },
+  {
+    "sample": "02_portrait",
+    "model": "v2",
+    "size": 512,
+    "seconds": 6.227107299957424
+  },
+  {
+    "sample": "03_portrait",
+    "model": "v2",
+    "size": 512,
+    "seconds": 6.580132899922319
+  },
+  {
+    "sample": "05_portrait",
+    "model": "v2",
+    "size": 512,
+    "seconds": 6.135403100051917
+  },
+  {
+    "sample": "23_portrait",
+    "model": "v2",
+    "size": 512,
+    "seconds": 7.526962299947627
+  },
+  {
+    "sample": "13_portrait",
+    "model": "v2",
+    "size": 512,
+    "seconds": 5.541862799902447
+  },
+  {
+    "sample": "01_portrait",
+    "model": "v1",
+    "size": 512,
+    "seconds": 7.537841300014406
+  },
+  {
+    "sample": "02_portrait",
+    "model": "v1",
+    "size": 512,
+    "seconds": 5.108010600088164
+  },
+  {
+    "sample": "03_portrait",
+    "model": "v1",
+    "size": 512,
+    "seconds": 6.599455499905162
+  },
+  {
+    "sample": "05_portrait",
+    "model": "v1",
+    "size": 512,
+    "seconds": 5.7568851000396535
+  },
+  {
+    "sample": "23_portrait",
+    "model": "v1",
+    "size": 512,
+    "seconds": 5.157915199990384
+  },
+  {
+    "sample": "13_portrait",
+    "model": "v1",
+    "size": 512,
+    "seconds": 6.010515599977225
+  },
+  {
+    "sample": "01_portrait",
+    "model": "webtoon",
+    "size": 256,
+    "seconds": 1.9387420000275597
+  },
+  {
+    "sample": "02_portrait",
+    "model": "webtoon",
+    "size": 256,
+    "seconds": 1.4809223000193015
+  },
+  {
+    "sample": "03_portrait",
+    "model": "webtoon",
+    "size": 256,
+    "seconds": 1.2405164999654517
+  },
+  {
+    "sample": "05_portrait",
+    "model": "webtoon",
+    "size": 256,
+    "seconds": 1.5386530000250787
+  },
+  {
+    "sample": "23_portrait",
+    "model": "webtoon",
+    "size": 256,
+    "seconds": 1.4435605000471696
+  },
+  {
+    "sample": "13_portrait",
+    "model": "webtoon",
+    "size": 256,
+    "seconds": 1.457083799992688
+  }
+]

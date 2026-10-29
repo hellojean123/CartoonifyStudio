@@ -1,0 +1,32 @@
+[
+  {
+    "step": "pytest",
+    "exit_code": 0,
+    "seconds": 129.71124790003523
+  },
+  {
+    "step": "dataset",
+    "exit_code": 0,
+    "seconds": 229.4872347000055
+  },
+  {
+    "step": "benchmark",
+    "exit_code": 0,
+    "seconds": 138.1314824000001
+  },
+  {
+    "step": "http",
+    "exit_code": 0,
+    "seconds": 162.29259650001768
+  },
+  {
+    "step": "native_4k",
+    "exit_code": 0,
+    "seconds": 7.8877360000042245
+  },
+  {
+    "step": "conversion",
+    "exit_code": 0,
+    "seconds": 23.100236399914138
+  }
+]

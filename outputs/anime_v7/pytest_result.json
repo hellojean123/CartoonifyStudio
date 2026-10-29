@@ -1,0 +1,5 @@
+{
+  "passed": 111,
+  "seconds": 127.691,
+  "junit": "outputs/anime_v7/pytest.xml"
+}

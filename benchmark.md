@@ -1,4 +1,6 @@
-当前版本 v3 实测见 [benchmark_v3.md](benchmark_v3.md)；以下保留历史 v2 数据。
+当前动漫 v7 实测见 [anime_v7_report.md](anime_v7_report.md)；当前素描见 [pencil_v6_report.md](pencil_v6_report.md)。以下为历史数据。
+
+历史 v3 实测见 [benchmark_v3.md](benchmark_v3.md)；以下保留历史 v2 数据。
 
 # CPU 性能对照实测（v2）
 
