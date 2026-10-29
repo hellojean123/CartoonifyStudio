@@ -85,8 +85,9 @@ def test_ui_mode_reset_and_shared_queue():
     from app import build_app,defaults
     from dataclasses import fields
     count=len(fields(Params));values=defaults(STYLES[0])
-    assert len(values)==count+2 and values[count-1]['value']=='动漫增强'
-    assert defaults(STYLES[3])[count-1]['visible'] is False
+    index=[f.name for f in fields(Params)].index('anime_mode')
+    assert len(values)==count+2 and values[index]['value']=='动漫增强'
+    assert defaults(STYLES[3])[index]['visible'] is False
     app=build_app()
     assert any(getattr(b,'label',None)=='动漫表现' for b in app.blocks.values())
     assert all(f.concurrency_id=='cpu' for f in app.fns.values() if f.api_name in ('preview','export','batch'))

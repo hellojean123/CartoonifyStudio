@@ -1,0 +1,296 @@
+[
+  {
+    "file": "01_portrait.jpg",
+    "seconds": 0.7840747000882402,
+    "cached_preview_seconds": 0.3022275000112131,
+    "preview_export_mae": 0.8753173173173173,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 11.151731633450567,
+    "sha256": "30f54a221892e297bea57b6e8ed92447a139c9c2467bd2860b68dce91f1e60a1"
+  },
+  {
+    "file": "02_portrait.jpg",
+    "seconds": 2.9165040999650955,
+    "cached_preview_seconds": 0.41823419998399913,
+    "preview_export_mae": 0.7355516666666667,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 3.876734375,
+    "sha256": "2f5532be46252f6416e49018212d7dc81c5ef4bd64044c2d6d89d4f40239d60b"
+  },
+  {
+    "file": "03_portrait.jpg",
+    "seconds": 2.875747899990529,
+    "cached_preview_seconds": 0.4006694999989122,
+    "preview_export_mae": 0.28297833333333333,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 2.35387451171875,
+    "sha256": "25a49471bea255371c3589ef8cb6217adbb8a3ab0765381f7795e70b375f132b"
+  },
+  {
+    "file": "04_portrait.jpg",
+    "seconds": 3.1707935000304133,
+    "cached_preview_seconds": 0.448573200032115,
+    "preview_export_mae": 0.9826628432394856,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 1.777112174267101,
+    "sha256": "4aa39b697250fc45206771e8cc8d6406627473aafe498fc28eaf2a53b0458cc9"
+  },
+  {
+    "file": "05_portrait.jpg",
+    "seconds": 2.1716472998959944,
+    "cached_preview_seconds": 0.34882409998681396,
+    "preview_export_mae": 0.5016286286286287,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 7.383910646248535,
+    "sha256": "f55a8907de3721ffc6c81d1cc30201ed678179df512d9cfbe14f066e374a1dbc"
+  },
+  {
+    "file": "06_portrait.jpg",
+    "seconds": 2.8210033000214025,
+    "cached_preview_seconds": 0.3406787000130862,
+    "preview_export_mae": 0.43372113943028484,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 2.435781928168403,
+    "sha256": "77e963d4bc1959c0515bbc53f40351e74021488f22423bade81548c39e26430e"
+  },
+  {
+    "file": "07_portrait.jpg",
+    "seconds": 2.8051557999569923,
+    "cached_preview_seconds": 0.3790969999972731,
+    "preview_export_mae": 0.965590253411306,
+    "caricature": {
+      "warped_faces": 0,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 0.0,
+    "sha256": "f1c75247e011a85ce50bca88c8e807690fe67037900a753c1e77c32ac6ea22b4"
+  },
+  {
+    "file": "08_portrait.jpg",
+    "seconds": 3.14391370001249,
+    "cached_preview_seconds": 0.45560589991509914,
+    "preview_export_mae": 0.8510428934932752,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 1.9219604375596944,
+    "sha256": "11249ec36b90b7af5354b879a89e7de0aa0c7ef9db632668ff2431bf79c3245f"
+  },
+  {
+    "file": "13_portrait.jpg",
+    "seconds": 1.8115832000039518,
+    "cached_preview_seconds": 0.2907730999868363,
+    "preview_export_mae": 0.9709472123368921,
+    "caricature": {
+      "warped_faces": 0,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 0.0,
+    "sha256": "f6866c0faff6fce07febe099c322cb74a5d76ece3b07f5abc00b1f97038415b2"
+  },
+  {
+    "file": "14_portrait.jpg",
+    "seconds": 1.8631550000282004,
+    "cached_preview_seconds": 0.2688376000151038,
+    "preview_export_mae": 0.7302651245551601,
+    "caricature": {
+      "warped_faces": 0,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 0.0,
+    "sha256": "05f859d029708660c152f00f88551b6ae8dccc4790f3e282e8e1bcdda6422e0c"
+  },
+  {
+    "file": "15_landscape.jpg",
+    "seconds": 2.174940900062211,
+    "cached_preview_seconds": 0.30851369991432875,
+    "preview_export_mae": 0.13585733333333333,
+    "caricature": {
+      "warped_faces": 0,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 0.0,
+    "sha256": "5edd9ac0744e9050fff44dd57711f9507b27cb57df1ff37a863c063cfa044487"
+  },
+  {
+    "file": "16_landscape.jpg",
+    "seconds": 2.0774105000309646,
+    "cached_preview_seconds": 0.3169525000266731,
+    "preview_export_mae": 0.26177794263105836,
+    "caricature": {
+      "warped_faces": 0,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 0.0,
+    "sha256": "cdf14c515b8671b04869a32573f59843a1e06e01454d78dac59f4ef82defbbb4"
+  },
+  {
+    "file": "17_architecture.jpg",
+    "seconds": 3.0935851999092847,
+    "cached_preview_seconds": 0.4901807999704033,
+    "preview_export_mae": 1.0716799049558723,
+    "caricature": {
+      "warped_faces": 0,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 0.0,
+    "sha256": "a91b40f8f9f1199175129f2c6713c35262973af1789f4d98bdc7c25501df3412"
+  },
+  {
+    "file": "18_architecture.jpg",
+    "seconds": 1.8275419001001865,
+    "cached_preview_seconds": 0.29499379999469966,
+    "preview_export_mae": 0.658587962962963,
+    "caricature": {
+      "warped_faces": 0,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 0.0,
+    "sha256": "7e9fa516b63fdbf6f985e4fb70bea4fd903f9ed3b8bf9c0ea3d5b384fe763ddb"
+  },
+  {
+    "file": "19_animal.jpg",
+    "seconds": 2.351925599970855,
+    "cached_preview_seconds": 0.3529557000147179,
+    "preview_export_mae": 0.4109257777777778,
+    "caricature": {
+      "warped_faces": 0,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 0.0,
+    "sha256": "269b4ea1d7636cfa40b9a1bc9dd137af7ba9bb827b00e5f0e0e611da7c41bbd7"
+  },
+  {
+    "file": "23_portrait.jpg",
+    "seconds": 2.7253552000038326,
+    "cached_preview_seconds": 0.3652049000374973,
+    "preview_export_mae": 0.2823253968253968,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 2.984402611142113,
+    "sha256": "91d52ac5226b8423a3878fb374cd012b7e6f1a8efca1c811d3f65c6b14d00dd2"
+  },
+  {
+    "file": "22_portrait.jpg",
+    "seconds": 2.734248400083743,
+    "cached_preview_seconds": 0.42579280002973974,
+    "preview_export_mae": 0.0,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 2.3929585740174426,
+    "sha256": "2b80dc704b3952b077b9061cb64156dc76570c0171c5f3367624d6efbece85ab"
+  },
+  {
+    "file": "26_portrait.jpg",
+    "seconds": 2.540129299974069,
+    "cached_preview_seconds": 0.40698640001937747,
+    "preview_export_mae": 0.26956569847856154,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 2.6413387926706826,
+    "sha256": "37285a392ca8c848b52f9b77dd2dd00297e12a31a8087ecd3aa31cdcd9b244b4"
+  },
+  {
+    "file": "27_portrait.jpg",
+    "seconds": 2.3607439999468625,
+    "cached_preview_seconds": 0.3374750999500975,
+    "preview_export_mae": 0.34216441779110446,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 2.389641485213497,
+    "sha256": "7a50d273c2ff7e8f4cc6be49a4b12c0a359bbfee4ada5a12c7eca8441f5cde60"
+  },
+  {
+    "file": "28_portrait.jpg",
+    "seconds": 2.7464697000104934,
+    "cached_preview_seconds": 0.3604655999224633,
+    "preview_export_mae": 0.275423009623797,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 1.6336083553791887,
+    "sha256": "bf07c66e3ec4c0eec7fad7d1772e9b4846b0546c1fda4aab0955ac5e89f90394"
+  },
+  {
+    "file": "29_portrait.jpg",
+    "seconds": 2.358657500008121,
+    "cached_preview_seconds": 0.3051646000239998,
+    "preview_export_mae": 0.3393888055972014,
+    "caricature": {
+      "warped_faces": 1,
+      "feature": "鼻子",
+      "strength": 0.75,
+      "max_faces": 3
+    },
+    "zero_vs_exaggerated_mae": 1.965143376959308,
+    "sha256": "3f8c8264dd2ed97a3c25be3d6e30350a70a11766a5157e34452918d256ac761e"
+  }
+]
