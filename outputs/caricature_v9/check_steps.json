@@ -1,0 +1,22 @@
+[
+  {
+    "task": "-m",
+    "exit_code": 0,
+    "seconds": 143.021833900013
+  },
+  {
+    "task": "evaluate_caricature_v9.py",
+    "exit_code": 0,
+    "seconds": 209.28390859998763
+  },
+  {
+    "task": "benchmark_caricature_v9.py",
+    "exit_code": 0,
+    "seconds": 39.62733439996373
+  },
+  {
+    "task": "smoke_caricature_v9.py",
+    "exit_code": 0,
+    "seconds": 101.64115699997637
+  }
+]

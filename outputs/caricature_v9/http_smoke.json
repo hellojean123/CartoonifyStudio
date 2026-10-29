@@ -1,0 +1,31 @@
+{
+  "http_status": 200,
+  "formats": [
+    {
+      "style": "美式漫画",
+      "feature": "鼻子",
+      "preview_stages": 2,
+      "preview_end_to_end_seconds": 19.56131490005646,
+      "format": "PNG",
+      "size": [
+        1280,
+        1600
+      ],
+      "export_status": "1.29 秒 · 精细原尺寸导出 1280×1600"
+    },
+    {
+      "style": "美式漫画",
+      "feature": "眼睛",
+      "preview_stages": 2,
+      "preview_end_to_end_seconds": 19.16902980010491,
+      "format": "JPG",
+      "size": [
+        1280,
+        1600
+      ],
+      "export_status": "1.11 秒 · 精细原尺寸导出 1280×1600"
+    }
+  ],
+  "batch_png_count": 2,
+  "cancel_response": "没有正在运行的任务。"
+}

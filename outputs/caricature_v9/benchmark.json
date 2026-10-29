@@ -1,0 +1,58 @@
+[
+  {
+    "shape": [
+      480,
+      343,
+      3
+    ],
+    "uncached_seconds": [
+      0.44764139992184937,
+      0.2798099999781698
+    ],
+    "cached_outline_preview_seconds": 0.023609900032170117,
+    "peak_process_rss_mib": 91.59765625,
+    "rss_sampling_ms": 10
+  },
+  {
+    "shape": [
+      1000,
+      714,
+      3
+    ],
+    "uncached_seconds": [
+      1.082362600020133,
+      1.0294164000079036
+    ],
+    "cached_outline_preview_seconds": 0.3420465000672266,
+    "peak_process_rss_mib": 167.3203125,
+    "rss_sampling_ms": 10
+  },
+  {
+    "shape": [
+      1920,
+      1371,
+      3
+    ],
+    "uncached_seconds": [
+      1.4779794999631122,
+      1.260498599964194
+    ],
+    "cached_outline_preview_seconds": 0.39807700004894286,
+    "peak_process_rss_mib": 177.2109375,
+    "rss_sampling_ms": 10
+  },
+  {
+    "shape": [
+      3840,
+      2743,
+      3
+    ],
+    "uncached_seconds": [
+      2.7061975999968126,
+      8.101463499944657
+    ],
+    "cached_outline_preview_seconds": 0.4864602000452578,
+    "peak_process_rss_mib": 197.35546875,
+    "rss_sampling_ms": 10
+  }
+]

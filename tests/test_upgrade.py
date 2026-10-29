@@ -84,7 +84,7 @@ def test_region_speckle_cleanup():
 
 @pytest.mark.parametrize('style,field,a,b',[(STYLES[2],'colors',4,12),(STYLES[2],'dot_spacing',4,14),(STYLES[2],'dot_angle',0,45),(STYLES[2],'dot_opacity',0,.6),(STYLES[3],'pencil_shade',0,.7),(STYLES[3],'paper',0,.4),(STYLES[0],'outer',0,1),(STYLES[0],'inner',0,1)])
 def test_visible_controls_change_output(style,field,a,b):
-    im=scene();p=Params(protect=False)
+    im=scene();p=Params(protect=False,dot_opacity=.28)
     x=process(im,style,replace(p,**{field:a}));y=process(im,style,replace(p,**{field:b}))
     assert np.abs(x.astype(float)-y.astype(float)).mean()>.05
 

@@ -13,8 +13,8 @@ from cartoonify.beads import PRESETS as BEAD_PRESETS
 from cartoonify.bead_service import create_export as bead_export
 from cartoonify.service import ROOT,load_cached,job,cancel_job,export_one,batch_export
 
-def make_params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes,anime_mode='动漫增强'):
-    return Params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes,anime_mode)
+def make_params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes,anime_mode='动漫增强',caricature_feature='鼻子',caricature_strength=.75):
+    return Params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes,anime_mode,caricature_feature,caricature_strength)
 
 def preview(path,style,*values):
     if not path: yield None,None,None,'请上传或选择测试照片。';return
@@ -28,7 +28,8 @@ def preview(path,style,*values):
             if token.is_set(): yield gr.skip(),gr.skip(),None,'已取消';return
             info={}
             result=process(image,style,p,preview=True,quality='标准',cancel=token.is_set,diagnostics=info)
-            yield resize(image,1000),result,None,f'{time.perf_counter()-start:.2f} 秒 · 最终预览 {result.shape[1]}×{result.shape[0]} · 保护区域 {len(info["faces"])} · 动漫脸部细化 {info.get("anime_refined_faces",0)} · 缓存命中 {info["cache"].get("hits",0)}'
+            missing=' · 未定位清晰人脸，可手动框选整张脸' if style==STYLES[2] and p.caricature_strength>0 and info.get('caricature',{}).get('warped_faces',0)==0 else ''
+            yield resize(image,1000),result,None,f'{time.perf_counter()-start:.2f} 秒 · 最终预览 {result.shape[1]}×{result.shape[0]} · 保护区域 {len(info["faces"])} · 动漫脸部细化 {info.get("anime_refined_faces",0)} · 漫画夸张 {info.get("caricature",{}).get("warped_faces",0)} 张脸 · 缓存命中 {info["cache"].get("hits",0)}{missing}'
     except InterruptedError: yield gr.skip(),gr.skip(),None,'处理已取消'
     except Exception as exc: raise gr.Error(str(exc)) from exc
 
@@ -49,8 +50,8 @@ def batch(paths,style,*values,progress=gr.Progress()):
 
 def defaults(style):
     index=STYLES.index(style);a,b,c,d=PRESETS[index]
-    return (a,b,gr.update(value=c,minimum=4,maximum=12 if index==2 else 48,visible=index in (1,2),label='明度分级' if index==2 else '区域配色数量（边缘会平滑过渡）'),d,
-            gr.update(value=False,visible=index==3),True,.75,.8,.5,7,15,.28,.48,.08,'',gr.update(value='动漫增强',visible=index==0),gr.update(visible=index==2),gr.update(visible=index==3))
+    return (a,b,gr.update(value=c,minimum=4,maximum=12 if index==2 else 48,visible=index in (1,2),label='上色层次' if index==2 else '区域配色数量（边缘会平滑过渡）'),d,
+            gr.update(value=False,visible=index==3),True,.75,.8,.5,7,15,(0 if index==2 else .28),.48,.08,'',gr.update(value='动漫增强',visible=index==0),'鼻子',.75,gr.update(visible=index==2),gr.update(visible=index==3))
 
 def manual_box(left,top,width,height):
     if left+width>100 or top+height>100: raise gr.Error('保护框超出图片边界，请缩小宽度或高度')
@@ -70,7 +71,7 @@ def build_app():
         with gr.Tab('照片卡通化'):
             with gr.Row():
                 with gr.Column(scale=1):
-                    style=gr.Dropdown([('动漫人像（双模型）',STYLES[0]),('扁平插画（区域配色）',STYLES[1]),('美式漫画',STYLES[2]),('铅笔素描（变宽笔触）',STYLES[3])],value=STYLES[0],label='风格与预设')
+                    style=gr.Dropdown([('动漫人像（双模型）',STYLES[0]),('扁平插画（区域配色）',STYLES[1]),('夸张手绘漫画',STYLES[2]),('铅笔素描（变宽笔触）',STYLES[3])],value=STYLES[0],label='风格与预设')
                     anime_mode=gr.Radio(['动漫增强','柔和插画'],value='动漫增强',label='动漫表现',info='动漫增强使用独立的 Webtoon 预训练模型；可能改变脸形、年龄感和肤色。柔和插画保留原版模型。')
                     outline=gr.Slider(0,1,.35,step=.05,label='整体轮廓强度')
                     smooth=gr.Slider(1,10,5,step=1,label='区域平滑')
@@ -93,9 +94,12 @@ def build_app():
                         clear_box=gr.Button('清除手动保护框')
                         boxes=gr.Textbox(value='',visible=False)
                     with gr.Group(visible=False) as comic_group:
-                        spacing=gr.Slider(4,18,7,step=.5,label='网点间距（1000 边长参考像素）')
-                        angle=gr.Slider(0,90,15,step=1,label='网点角度')
-                        opacity=gr.Slider(0,.65,.28,step=.01,label='网点浓度')
+                        caricature_feature=gr.Radio(['鼻子','眼睛','笑容','额头'],value='鼻子',label='重点夸张哪里')
+                        caricature_strength=gr.Slider(0,1,.75,step=.05,label='夸张程度',info='0 保持原五官比例；调高会实际扩大所选特征。自动识别不到时，可用手动框框住整张脸。')
+                        with gr.Accordion('可选网点（浓度大于 0 时生效）',open=False):
+                            spacing=gr.Slider(4,18,7,step=.5,label='网点间距')
+                            angle=gr.Slider(0,90,15,step=1,label='网点角度')
+                            opacity=gr.Slider(0,.65,0,step=.01,label='网点浓度')
                     with gr.Group(visible=False) as pencil_group:
                         shade=gr.Slider(0,.8,.48,step=.02,label='铅笔明暗与排线浓度',info='设为 0 只保留结构线；细笔触连续变宽变淡，暗部以轻笔叠加。')
                         paper=gr.Slider(0,.4,.08,step=.01,label='纸张颗粒')
@@ -112,9 +116,9 @@ def build_app():
                     status=gr.Textbox(label='状态与耗时',interactive=False)
                     download=gr.File(label='下载原尺寸结果')
                     gr.Markdown('松开滑块后自动预览：先草稿，再更新统一色板的最终预览。图片和动漫模型均在本机 CPU 处理，不上传照片。动漫可选更强的 Webtoon 或柔和插画模型，均为本地预训练模型；人物特征可能变化；输出尺寸不等于新增真实细节。')
-        params=[outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes,anime_mode]
+        params=[outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes,anime_mode,caricature_feature,caricature_strength]
         outputs=[before,after,download,status]
-        triggers=[preview_btn.click,source.change]+[s.release for s in [outline,smooth,colors,contrast,face_strength,outer,inner,spacing,angle,opacity,shade,paper]]+[colored.change,protect.change,boxes.submit,anime_mode.change]
+        triggers=[preview_btn.click,source.change]+[s.release for s in [outline,smooth,colors,contrast,face_strength,outer,inner,spacing,angle,opacity,shade,paper,caricature_strength]]+[colored.change,protect.change,boxes.submit,anime_mode.change,caricature_feature.change]
         preview_event=gr.on(triggers=triggers,fn=preview,inputs=[source,style,*params,session],outputs=outputs,trigger_mode='always_last',concurrency_id='cpu',concurrency_limit=1,api_name='preview')
         style.change(lambda selected:gr.update(visible=selected==STYLES[0]),style,quality,queue=False,api_name=False)
         style_event=style.change(defaults,style,[*params,comic_group,pencil_group],queue=False,api_name='style_defaults')

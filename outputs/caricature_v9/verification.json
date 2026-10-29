@@ -1,0 +1,53 @@
+{
+  "tests": {
+    "passed": 125,
+    "seconds": 140.758
+  },
+  "samples": 21,
+  "other_style_pngs_unchanged": 63,
+  "http": {
+    "http_status": 200,
+    "formats": [
+      {
+        "style": "美式漫画",
+        "feature": "鼻子",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 19.56131490005646,
+        "format": "PNG",
+        "size": [
+          1280,
+          1600
+        ],
+        "export_status": "1.29 秒 · 精细原尺寸导出 1280×1600"
+      },
+      {
+        "style": "美式漫画",
+        "feature": "眼睛",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 19.16902980010491,
+        "format": "JPG",
+        "size": [
+          1280,
+          1600
+        ],
+        "export_status": "1.11 秒 · 精细原尺寸导出 1280×1600"
+      }
+    ],
+    "batch_png_count": 2,
+    "cancel_response": "没有正在运行的任务。"
+  },
+  "native_4k": {
+    "shape": [
+      2880,
+      3840,
+      3
+    ],
+    "algorithm_seconds": 9.85135489993263,
+    "source": "samples/high_resolution/reference_4k.jpg"
+  },
+  "source_sha256": {
+    "app.py": "dc09df2b3428ce17cdc96c282ddd4e6ba50b223776f7e1989d384d755670b75a",
+    "cartoonify/core.py": "810111a19cf10f651db2fb32c5093b7c821d6062490808ae002aaa039c2868ea",
+    "cartoonify/caricature.py": "4cc4fce302b422c1767d43cbcd177191da84f600b50d29496bf199d48078193e"
+  }
+}
