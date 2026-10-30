@@ -94,7 +94,7 @@ File:Ferdinand "Bongbong" Marcos Jr. 2023 SONA Portrait.jpg
 
 来源：https://commons.wikimedia.org/wiki/File:Ferdinand_%22Bongbong%22_Marcos_Jr._2023_SONA_Portrait.jpg
 
-许可：Public domain 
+许可：Public domain
 
 修改：缩略图转 JPEG；outputs 中另有卡通、插画、漫画和素描改编。
 
@@ -154,7 +154,7 @@ File:Bank of Minden Louisiana building with street clock, 2020.jpg
 
 来源：https://commons.wikimedia.org/wiki/File:Bank_of_Minden_Louisiana_building_with_street_clock,_2020.jpg
 
-许可：Public domain 
+许可：Public domain
 
 修改：缩略图转 JPEG；outputs 中另有卡通、插画、漫画和素描改编。
 
@@ -166,7 +166,7 @@ File:Library building at the University of Louisiana Monroe 2020.tif
 
 来源：https://commons.wikimedia.org/wiki/File:Library_building_at_the_University_of_Louisiana_Monroe_2020.tif
 
-许可：Public domain 
+许可：Public domain
 
 修改：缩略图转 JPEG；outputs 中另有卡通、插画、漫画和素描改编。
 
@@ -202,7 +202,7 @@ File:Arben Vitia - portrait 2023.jpg
 
 来源：https://commons.wikimedia.org/wiki/File:Arben_Vitia_-_portrait_2023.jpg
 
-许可：Public domain 
+许可：Public domain
 
 修改：缩略图转 JPEG；outputs 中另有卡通、插画、漫画和素描改编。
 
@@ -253,3 +253,129 @@ File:Grant Shapps Official Cabinet Portrait August 2023.jpg
 许可：OGL 3 http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3
 
 修改：缩略图转 JPEG；outputs 中另有卡通、插画、漫画和素描改编。
+
+
+# 新增中国明星公开活动人像（2026-10-30）
+
+以下原图与派生效果保留来源所列许可证；人物不表示对项目背书。
+
+## 30_hu_ge.jpg · 胡歌
+
+作者：中国新闻网
+
+来源：https://commons.wikimedia.org/wiki/File:Hu_Ge_2019.jpg
+
+许可：CC BY 3.0 https://creativecommons.org/licenses/by/3.0
+
+修改：EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.
+
+## 31_zhou_xun.jpg · 周迅
+
+作者：Arielaortizb
+
+来源：https://commons.wikimedia.org/wiki/File:Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg
+
+许可：CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0
+
+修改：EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.
+
+## 32_zhang_ziyi.jpg · 章子怡
+
+作者：Harald Krichel
+
+来源：https://commons.wikimedia.org/wiki/File:Zhang_Ziyi-63357_(cropped).jpg
+
+许可：CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0
+
+修改：EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.
+
+## 33_gong_li.jpg · 巩俐
+
+作者：Georges Biard
+
+来源：https://commons.wikimedia.org/wiki/File:Gong_Li_Cannes_2016.jpg
+
+许可：CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0
+
+修改：EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.
+
+## 34_tang_wei.jpg · 汤唯
+
+作者：Mai Le from San Francisco, CA, USA
+
+来源：https://commons.wikimedia.org/wiki/File:Tang_Wei.jpg
+
+许可：CC BY 2.0 https://creativecommons.org/licenses/by/2.0
+
+修改：EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.
+
+## 35_shu_qi.jpg · 舒淇
+
+作者：Sara Komatsu
+
+来源：https://commons.wikimedia.org/wiki/File:Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_(cropped).jpg
+
+许可：CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0
+
+修改：EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.
+
+## 37_donnie_yen.jpg · 甄子丹
+
+作者：Simon King
+
+来源：https://commons.wikimedia.org/wiki/File:Donnie_Yen_at_MCM_May_2017.jpg
+
+许可：CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0
+
+修改：EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.
+
+## 39_jackie_chan.jpg · 成龙
+
+作者：John Jason Junior
+
+来源：https://commons.wikimedia.org/wiki/File:Jackie_Chan_2024.jpg
+
+许可：CC0 http://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+修改：EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.
+
+## 40_liu_yifei.jpg · 刘亦菲
+
+作者：刘亦菲吧官方
+
+来源：https://commons.wikimedia.org/wiki/File:Liu_Yifei_Portrait1.jpg
+
+许可：CC BY-SA 2.5 https://creativecommons.org/licenses/by-sa/2.5
+
+修改：EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.
+
+## 41_zhou_xun_group.jpg · 周迅、王圣迪
+
+作者：Arielaortizb
+
+来源：https://commons.wikimedia.org/wiki/File:Actresses,_Wang_Shengdi_and_Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg
+
+许可：CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0
+
+修改：EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.
+
+## 36_tony_leung.jpg · 梁朝伟
+
+作者：Siebbi
+
+来源：https://commons.wikimedia.org/wiki/File:Tony_Leung_Chiu_Wai_(Berlin_Film_Festival_2013)_2_(cropped).jpg
+
+许可：CC BY 3.0 https://creativecommons.org/licenses/by/3.0
+
+修改：EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.
+
+## 38_andy_lau.jpg · 刘德华
+
+作者：Original image: Pete Yeung
+derivative work:  deerstop.
+
+来源：https://commons.wikimedia.org/wiki/File:Andy_Lau_(cropped).jpg
+
+许可：CC BY-SA 2.0 https://creativecommons.org/licenses/by-sa/2.0
+
+修改：EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.

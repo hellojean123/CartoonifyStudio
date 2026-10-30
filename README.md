@@ -157,3 +157,14 @@ Set-Location D:\CartoonifyStudio
 插画新版对照与复现：`evaluate_flat_v8.py`、`benchmark_flat_v8.py`、`smoke_flat_v8.py`；改颜色和平滑会重新配色，改轮廓可复用中间结果。
 
 夸张漫画：选择部位并调强度（0 为原比例），默认不加网点；检测不到时框住整张脸。内部目录继续使用 `3_美式漫画`，变形受最长边 1000 分析精度限制。
+
+
+## 新增华语明星测试图库（2026-10-30）
+
+现有33张授权样本，新增12张华语明星公开活动人像；网站“内置测试照片”支持按姓名选择。已生成新增48张四风格结果与12张对照图，并实测PNG/JPG原尺寸导出和批量处理。
+
+- [新增人像效果画廊](outputs/chinese_portraits_v10/gallery.html)
+- [逐张效果检查与真实局限](chinese_portraits_v10_report.md)
+- [照片署名及许可](samples/ATTRIBUTION.md)
+
+历史各版本报告中的21张为当时的样本数量；当前总图库33张，风格结果132张。新增样本沿用现有CPU算法。

@@ -1,0 +1,144 @@
+{
+  "retrieved_api": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3ATony+Leung+Chiu+Wai+%28Berlin+Film+Festival+2013%29+2+%28cropped%29.jpg&prop=imageinfo%7Ccategories%7Crevisions&iiprop=url%7Cextmetadata%7Csize%7Csha1%7Cmime&iiurlwidth=1280&cllimit=500&rvprop=ids%7Ctimestamp",
+  "retrieved_at": "2026-10-30T06:12:07.214475+00:00",
+  "page": {
+    "pageid": 54273247,
+    "ns": 6,
+    "title": "File:Tony Leung Chiu Wai (Berlin Film Festival 2013) 2 (cropped).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 366901,
+        "width": 953,
+        "height": 1423,
+        "thumburl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Tony_Leung_Chiu_Wai_%28Berlin_Film_Festival_2013%29_2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbwidth": 1280,
+        "thumbheight": 1911,
+        "thumbattribs": {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/8/80/Tony_Leung_Chiu_Wai_%28Berlin_Film_Festival_2013%29_2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "decoding": "async",
+          "loading": "lazy",
+          "width": 1280,
+          "height": 1911
+        },
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Tony_Leung_Chiu_Wai_%28Berlin_Film_Festival_2013%29_2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tony_Leung_Chiu_Wai_(Berlin_Film_Festival_2013)_2_(cropped).jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=54273247",
+        "sha1": "4c45ec6f79990b53100d754d3dea18e30728d1d8",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2016-12-19 17:01:38",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Tony Leung Chiu Wai (Berlin Film Festival 2013) 2 (cropped)",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Smiling men in Germany|2013 Berlin Film Festival|Leung Chiu-Wai, Tony|Extracted images|Ipernity images reviewed by trusted users|Photographs by Thore Siebrands",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Hong Kong Actor Tony Leung Chiu Wai at the Berlin Film Festival 2013",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2013-02-07",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.ipernity.com/doc/siebbi/14417891\">ipernity.com</a>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.ipernity.com/home/siebbi\">Siebbi</a>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY 3.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution 3.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by/3.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-3.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        },
+        "mime": "image/jpeg"
+      }
+    ],
+    "categories": [
+      {
+        "ns": 14,
+        "title": "Category:2013 Berlin Film Festival"
+      },
+      {
+        "ns": 14,
+        "title": "Category:CC-BY-3.0"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Extracted images"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Ipernity images reviewed by trusted users"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Leung Chiu-Wai, Tony"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Photographs by Thore Siebrands"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Smiling men in Germany"
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1232264222,
+        "parentid": 1180504041,
+        "timestamp": "2026-06-16T09:20:43Z"
+      }
+    ]
+  }
+}

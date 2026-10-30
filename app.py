@@ -13,6 +13,13 @@ from cartoonify.beads import PRESETS as BEAD_PRESETS
 from cartoonify.bead_service import create_export as bead_export
 from cartoonify.service import ROOT,load_cached,job,cancel_job,export_one,batch_export
 
+def select_sample(filename):
+    records=json.loads((ROOT/'samples/metadata.json').read_text(encoding='utf-8'))['images']
+    allowed={r['filename'] for r in records if r.get('collection')=='chinese_celebrities'}
+    if filename not in allowed:raise gr.Error('请选择图库中的照片')
+    return str(ROOT/'samples'/filename)
+
+
 def make_params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes,anime_mode='动漫增强',caricature_feature='鼻子',caricature_strength=.75):
     return Params(outline,smooth,colors,contrast,colored,protect,face_strength,outer,inner,spacing,angle,opacity,shade,paper,boxes,anime_mode,caricature_feature,caricature_strength)
 
@@ -164,9 +171,15 @@ def build_app():
             batch_event=go.click(batch,[files,style,*params,fmt,quality,session],[zip_out,batch_status],concurrency_id='cpu',concurrency_limit=1,api_name='batch')
         stop.click(cancel_job,session,status,queue=False,api_name='cancel')
         with gr.Tab('内置测试照片'):
+            records=json.loads((ROOT/'samples/metadata.json').read_text(encoding='utf-8'))['images']
+            celebrities=[r for r in records if r.get('collection')=='chinese_celebrities']
+            gr.Markdown(f'### 新增华语明星人像 · {len(celebrities)} 张\n选择姓名即可载入上方原图并生成预览。包含舞台照、侧脸和双人人像；人物仅供效果测试。')
+            named=gr.Dropdown(choices=[(r['person'],r['filename']) for r in celebrities],label='选择明星测试照片',value=None)
+            named.change(select_sample,named,source,queue=False,api_name='select_sample')
             samples=sorted((ROOT/'samples').glob('*.jpg'))
-            gr.Examples([[str(p)] for p in samples],[source],label='点击文件载入')
-            gr.Gallery(value=[str(p) for p in samples],columns=5,label='授权照片画廊')
+            gr.Examples([[str(p)] for p in samples],[source],label='全部测试照片：点击载入')
+            gr.Gallery(value=[(str(ROOT/'samples'/r['filename']),r.get('person',r['filename'])) for r in records],columns=4,label='授权照片画廊')
+            gr.Markdown('照片来源与作者、许可证见项目 samples/ATTRIBUTION.md；完整四风格对照见 outputs/gallery.html。')
         gr.Markdown('输入上限 1600 万像素 / 40 MB；透明区域白底；方向与色彩自动处理。自动人像检测可能漏检侧脸，可添加手动保护框。缓存有内存上限；精细档分块重建，支持取消。')
     return demo
 

@@ -1,0 +1,458 @@
+[
+  {
+    "filename": "30_hu_ge.jpg",
+    "person": "胡歌",
+    "dimensions": [
+      1109,
+      712
+    ],
+    "results": [
+      {
+        "style": "经典卡通",
+        "seconds": 3.316,
+        "faces": 2,
+        "warped_faces": 0,
+        "output": "outputs\\1_经典卡通\\30_hu_ge.png"
+      },
+      {
+        "style": "扁平插画",
+        "seconds": 2.326,
+        "faces": 2,
+        "warped_faces": 0,
+        "output": "outputs\\2_扁平插画\\30_hu_ge.png"
+      },
+      {
+        "style": "美式漫画",
+        "seconds": 0.905,
+        "faces": 2,
+        "warped_faces": 1,
+        "output": "outputs\\3_美式漫画\\30_hu_ge.png"
+      },
+      {
+        "style": "铅笔素描",
+        "seconds": 1.546,
+        "faces": 2,
+        "warped_faces": 0,
+        "output": "outputs\\4_铅笔素描\\30_hu_ge.png"
+      }
+    ]
+  },
+  {
+    "filename": "31_zhou_xun.jpg",
+    "person": "周迅",
+    "dimensions": [
+      1280,
+      1582
+    ],
+    "results": [
+      {
+        "style": "经典卡通",
+        "seconds": 2.915,
+        "faces": 2,
+        "warped_faces": 0,
+        "output": "outputs\\1_经典卡通\\31_zhou_xun.png"
+      },
+      {
+        "style": "扁平插画",
+        "seconds": 2.642,
+        "faces": 2,
+        "warped_faces": 0,
+        "output": "outputs\\2_扁平插画\\31_zhou_xun.png"
+      },
+      {
+        "style": "美式漫画",
+        "seconds": 1.118,
+        "faces": 2,
+        "warped_faces": 1,
+        "output": "outputs\\3_美式漫画\\31_zhou_xun.png"
+      },
+      {
+        "style": "铅笔素描",
+        "seconds": 1.942,
+        "faces": 2,
+        "warped_faces": 0,
+        "output": "outputs\\4_铅笔素描\\31_zhou_xun.png"
+      }
+    ]
+  },
+  {
+    "filename": "32_zhang_ziyi.jpg",
+    "person": "章子怡",
+    "dimensions": [
+      1280,
+      1434
+    ],
+    "results": [
+      {
+        "style": "经典卡通",
+        "seconds": 3.282,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\1_经典卡通\\32_zhang_ziyi.png"
+      },
+      {
+        "style": "扁平插画",
+        "seconds": 2.812,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\2_扁平插画\\32_zhang_ziyi.png"
+      },
+      {
+        "style": "美式漫画",
+        "seconds": 1.118,
+        "faces": 1,
+        "warped_faces": 1,
+        "output": "outputs\\3_美式漫画\\32_zhang_ziyi.png"
+      },
+      {
+        "style": "铅笔素描",
+        "seconds": 2.673,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\4_铅笔素描\\32_zhang_ziyi.png"
+      }
+    ]
+  },
+  {
+    "filename": "33_gong_li.jpg",
+    "person": "巩俐",
+    "dimensions": [
+      507,
+      798
+    ],
+    "results": [
+      {
+        "style": "经典卡通",
+        "seconds": 2.132,
+        "faces": 3,
+        "warped_faces": 0,
+        "output": "outputs\\1_经典卡通\\33_gong_li.png"
+      },
+      {
+        "style": "扁平插画",
+        "seconds": 1.597,
+        "faces": 3,
+        "warped_faces": 0,
+        "output": "outputs\\2_扁平插画\\33_gong_li.png"
+      },
+      {
+        "style": "美式漫画",
+        "seconds": 0.472,
+        "faces": 3,
+        "warped_faces": 1,
+        "output": "outputs\\3_美式漫画\\33_gong_li.png"
+      },
+      {
+        "style": "铅笔素描",
+        "seconds": 0.725,
+        "faces": 3,
+        "warped_faces": 0,
+        "output": "outputs\\4_铅笔素描\\33_gong_li.png"
+      }
+    ]
+  },
+  {
+    "filename": "34_tang_wei.jpg",
+    "person": "汤唯",
+    "dimensions": [
+      1067,
+      1600
+    ],
+    "results": [
+      {
+        "style": "经典卡通",
+        "seconds": 2.92,
+        "faces": 2,
+        "warped_faces": 0,
+        "output": "outputs\\1_经典卡通\\34_tang_wei.png"
+      },
+      {
+        "style": "扁平插画",
+        "seconds": 2.27,
+        "faces": 2,
+        "warped_faces": 0,
+        "output": "outputs\\2_扁平插画\\34_tang_wei.png"
+      },
+      {
+        "style": "美式漫画",
+        "seconds": 0.929,
+        "faces": 2,
+        "warped_faces": 2,
+        "output": "outputs\\3_美式漫画\\34_tang_wei.png"
+      },
+      {
+        "style": "铅笔素描",
+        "seconds": 2.213,
+        "faces": 2,
+        "warped_faces": 0,
+        "output": "outputs\\4_铅笔素描\\34_tang_wei.png"
+      }
+    ]
+  },
+  {
+    "filename": "35_shu_qi.jpg",
+    "person": "舒淇",
+    "dimensions": [
+      1180,
+      1600
+    ],
+    "results": [
+      {
+        "style": "经典卡通",
+        "seconds": 2.793,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\1_经典卡通\\35_shu_qi.png"
+      },
+      {
+        "style": "扁平插画",
+        "seconds": 2.339,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\2_扁平插画\\35_shu_qi.png"
+      },
+      {
+        "style": "美式漫画",
+        "seconds": 1.043,
+        "faces": 1,
+        "warped_faces": 1,
+        "output": "outputs\\3_美式漫画\\35_shu_qi.png"
+      },
+      {
+        "style": "铅笔素描",
+        "seconds": 2.29,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\4_铅笔素描\\35_shu_qi.png"
+      }
+    ]
+  },
+  {
+    "filename": "37_donnie_yen.jpg",
+    "person": "甄子丹",
+    "dimensions": [
+      1067,
+      1600
+    ],
+    "results": [
+      {
+        "style": "经典卡通",
+        "seconds": 2.171,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\1_经典卡通\\37_donnie_yen.png"
+      },
+      {
+        "style": "扁平插画",
+        "seconds": 2.072,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\2_扁平插画\\37_donnie_yen.png"
+      },
+      {
+        "style": "美式漫画",
+        "seconds": 0.908,
+        "faces": 1,
+        "warped_faces": 1,
+        "output": "outputs\\3_美式漫画\\37_donnie_yen.png"
+      },
+      {
+        "style": "铅笔素描",
+        "seconds": 2.536,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\4_铅笔素描\\37_donnie_yen.png"
+      }
+    ]
+  },
+  {
+    "filename": "39_jackie_chan.jpg",
+    "person": "成龙",
+    "dimensions": [
+      888,
+      1184
+    ],
+    "results": [
+      {
+        "style": "经典卡通",
+        "seconds": 3.459,
+        "faces": 4,
+        "warped_faces": 0,
+        "output": "outputs\\1_经典卡通\\39_jackie_chan.png"
+      },
+      {
+        "style": "扁平插画",
+        "seconds": 2.668,
+        "faces": 4,
+        "warped_faces": 0,
+        "output": "outputs\\2_扁平插画\\39_jackie_chan.png"
+      },
+      {
+        "style": "美式漫画",
+        "seconds": 0.967,
+        "faces": 4,
+        "warped_faces": 2,
+        "output": "outputs\\3_美式漫画\\39_jackie_chan.png"
+      },
+      {
+        "style": "铅笔素描",
+        "seconds": 1.678,
+        "faces": 4,
+        "warped_faces": 0,
+        "output": "outputs\\4_铅笔素描\\39_jackie_chan.png"
+      }
+    ]
+  },
+  {
+    "filename": "40_liu_yifei.jpg",
+    "person": "刘亦菲",
+    "dimensions": [
+      1143,
+      1600
+    ],
+    "results": [
+      {
+        "style": "经典卡通",
+        "seconds": 3.082,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\1_经典卡通\\40_liu_yifei.png"
+      },
+      {
+        "style": "扁平插画",
+        "seconds": 2.659,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\2_扁平插画\\40_liu_yifei.png"
+      },
+      {
+        "style": "美式漫画",
+        "seconds": 1.188,
+        "faces": 1,
+        "warped_faces": 1,
+        "output": "outputs\\3_美式漫画\\40_liu_yifei.png"
+      },
+      {
+        "style": "铅笔素描",
+        "seconds": 2.226,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\4_铅笔素描\\40_liu_yifei.png"
+      }
+    ]
+  },
+  {
+    "filename": "41_zhou_xun_group.jpg",
+    "person": "周迅、王圣迪",
+    "dimensions": [
+      1280,
+      1036
+    ],
+    "results": [
+      {
+        "style": "经典卡通",
+        "seconds": 3.704,
+        "faces": 2,
+        "warped_faces": 0,
+        "output": "outputs\\1_经典卡通\\41_zhou_xun_group.png"
+      },
+      {
+        "style": "扁平插画",
+        "seconds": 3.201,
+        "faces": 2,
+        "warped_faces": 0,
+        "output": "outputs\\2_扁平插画\\41_zhou_xun_group.png"
+      },
+      {
+        "style": "美式漫画",
+        "seconds": 1.212,
+        "faces": 2,
+        "warped_faces": 2,
+        "output": "outputs\\3_美式漫画\\41_zhou_xun_group.png"
+      },
+      {
+        "style": "铅笔素描",
+        "seconds": 2.008,
+        "faces": 2,
+        "warped_faces": 0,
+        "output": "outputs\\4_铅笔素描\\41_zhou_xun_group.png"
+      }
+    ]
+  },
+  {
+    "filename": "36_tony_leung.jpg",
+    "person": "梁朝伟",
+    "dimensions": [
+      953,
+      1423
+    ],
+    "results": [
+      {
+        "style": "经典卡通",
+        "seconds": 2.531,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\1_经典卡通\\36_tony_leung.png"
+      },
+      {
+        "style": "扁平插画",
+        "seconds": 2.238,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\2_扁平插画\\36_tony_leung.png"
+      },
+      {
+        "style": "美式漫画",
+        "seconds": 1.018,
+        "faces": 1,
+        "warped_faces": 1,
+        "output": "outputs\\3_美式漫画\\36_tony_leung.png"
+      },
+      {
+        "style": "铅笔素描",
+        "seconds": 2.014,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\4_铅笔素描\\36_tony_leung.png"
+      }
+    ]
+  },
+  {
+    "filename": "38_andy_lau.jpg",
+    "person": "刘德华",
+    "dimensions": [
+      483,
+      500
+    ],
+    "results": [
+      {
+        "style": "经典卡通",
+        "seconds": 3.148,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\1_经典卡通\\38_andy_lau.png"
+      },
+      {
+        "style": "扁平插画",
+        "seconds": 0.97,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\2_扁平插画\\38_andy_lau.png"
+      },
+      {
+        "style": "美式漫画",
+        "seconds": 0.463,
+        "faces": 1,
+        "warped_faces": 1,
+        "output": "outputs\\3_美式漫画\\38_andy_lau.png"
+      },
+      {
+        "style": "铅笔素描",
+        "seconds": 0.633,
+        "faces": 1,
+        "warped_faces": 0,
+        "output": "outputs\\4_铅笔素描\\38_andy_lau.png"
+      }
+    ]
+  }
+]

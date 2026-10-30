@@ -1,0 +1,160 @@
+{
+  "retrieved_api": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3AZhou+Xun+at+2026+Busan+International+Film+Festival.jpg&prop=imageinfo%7Ccategories%7Crevisions&iiprop=url%7Cextmetadata%7Csize%7Csha1%7Cmime&iiurlwidth=1280&cllimit=500&rvprop=ids%7Ctimestamp",
+  "retrieved_at": "2026-10-30T06:02:00.233207+00:00",
+  "page": {
+    "pageid": 201378026,
+    "ns": 6,
+    "title": "File:Zhou Xun at 2026 Busan International Film Festival.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 3588001,
+        "width": 3502,
+        "height": 4329,
+        "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg/1280px-Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbwidth": 1280,
+        "thumbheight": 1582,
+        "responsiveUrls": {
+          "2": "https://upload.wikimedia.org/wikipedia/commons/7/78/Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        },
+        "thumbattribs": {
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg/1280px-Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "decoding": "async",
+          "loading": "lazy",
+          "width": 1280,
+          "height": 1582,
+          "srcset": "https://upload.wikimedia.org/wikipedia/commons/7/78/Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+        },
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=201378026",
+        "sha1": "ff375fa216b045d2c3420eff40bd642713ab485a",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2026-10-09 11:15:57",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Zhou Xun at 2026 Busan International Film Festival",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Personality rights warning|Creative Commons Attribution-Share Alike missing SDC copyright status|Self-published work|Creative Commons Attribution-Share Alike 4.0 missing SDC copyright license|Self-published work missing SDC copyright license|Zhou Xun in 2026|WikiPortraits at 2026 Busan International Film Festival|Uploaded via Campaign:wikiportraits-biff-2026|31st Busan International Film Festival",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Zhou Xun at 31st Busan International Film Festival for First Taste of Loneliness Press Conference",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2026-10-07 18:27:36",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:Arielaortizb\" title=\"User:Arielaortizb\">Arielaortizb</a>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY-SA 4.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution-Share Alike 4.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "personality",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-sa-4.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        },
+        "mime": "image/jpeg"
+      }
+    ],
+    "categories": [
+      {
+        "ns": 14,
+        "title": "Category:31st Busan International Film Festival"
+      },
+      {
+        "ns": 14,
+        "title": "Category:CC-BY-SA-4.0"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Creative Commons Attribution-Share Alike 4.0 missing SDC copyright license"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Creative Commons Attribution-Share Alike missing SDC copyright status"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Personality rights warning"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Self-published work"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Self-published work missing SDC copyright license"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Uploaded via Campaign:wikiportraits-biff-2026"
+      },
+      {
+        "ns": 14,
+        "title": "Category:WikiPortraits at 2026 Busan International Film Festival"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Zhou Xun in 2026"
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1289337399,
+        "parentid": 1287666996,
+        "timestamp": "2026-10-20T03:37:58Z"
+      }
+    ]
+  }
+}

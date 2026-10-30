@@ -1,0 +1,64 @@
+[
+  {
+    "filename": "36_tony_leung.jpg",
+    "category": "portrait",
+    "collection": "chinese_celebrities",
+    "person": "梁朝伟",
+    "title": "File:Tony Leung Chiu-wai 2026.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tony_Leung_Chiu-wai_2026.jpg",
+    "source_revision": {
+      "revid": 1210238921,
+      "parentid": 1203004057,
+      "timestamp": "2026-05-07T22:24:31Z"
+    },
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Tony_Leung_Chiu-wai_2026.jpg/1280px-Tony_Leung_Chiu-wai_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Tony_Leung_Chiu-wai_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "author": "ManoSolo13241324",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "download_date": "2026-10-30T06:02:09.756141+00:00",
+    "verification_date": "2026-10-30",
+    "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+    "description": "Tony Leung Chiu-wai après sa masterclass au cinéma Le Balzac, le 20 janvier 2026.",
+    "original_credit": "Own work",
+    "sha256": "cb12e900ccde0f8122355b6d5048f572ddd5acce025bb643175ff56135bb3248",
+    "download_sha256": "13b77f33d7f4e4baaea055cc63ada7370d7e4bf3daca6085001ae9114b0d2f98",
+    "dimensions": [
+      1205,
+      1600
+    ],
+    "source_evidence": "source_records/36_tony_leung.commons.json",
+    "rejection_reason": "Visual inspection: face too blurry and obstructed."
+  },
+  {
+    "filename": "38_andy_lau.jpg",
+    "category": "portrait",
+    "collection": "chinese_celebrities",
+    "person": "刘德华",
+    "title": "File:Andy Lau in Hangzhou Concert 2024 - 8.17.01.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Andy_Lau_in_Hangzhou_Concert_2024_-_8.17.01.jpg",
+    "source_revision": {
+      "revid": 931172116,
+      "parentid": 919257249,
+      "timestamp": "2024-10-01T17:50:09Z"
+    },
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Andy_Lau_in_Hangzhou_Concert_2024_-_8.17.01.jpg/1280px-Andy_Lau_in_Hangzhou_Concert_2024_-_8.17.01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Andy_Lau_in_Hangzhou_Concert_2024_-_8.17.01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "author": "Huandy618",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "download_date": "2026-10-30T06:02:13.382417+00:00",
+    "verification_date": "2026-10-30",
+    "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+    "description": "​刘德华2024杭州演唱会奥体中心体育馆大门",
+    "original_credit": "Own work",
+    "sha256": "dfe1622dd5beecf43fdd5dc22559d5427f00c4afbd57a4f3674846d5e835d000",
+    "download_sha256": "bac07dfe82babb8846dca643f929985da1d55126f7074b0f872d6d72f7535866",
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "source_evidence": "source_records/38_andy_lau.commons.json",
+    "rejection_reason": "Visual inspection: concert venue crowd, no useful celebrity portrait."
+  }
+]
