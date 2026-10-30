@@ -54,7 +54,7 @@ def graphite_strokes(tone,theta,coherence):
     return rasterize(make_plan(tone,theta,coherence),tone.shape)
 
 
-def pencil_layers(prepared,p):
+def pencil_layers(prepared,p,cancel=None):
     rgb=prepared['blur'];gray=cv2.cvtColor(rgb,cv2.COLOR_RGB2GRAY).astype(np.float32)/255
     outer,inner,theta,coherence=_contours(gray,p.smooth)
     face=prepared['mask'];features=prepared['features']
@@ -88,8 +88,17 @@ def pencil_layers(prepared,p):
             zone=_blur(zone,max(1.,bw*.06))*face*p.face_strength
             density+=np.maximum(form-density,0)*zone
     density*=1-p.face_strength*(1-focus)*.72 if p.protect else 1.
-    from .strokes import make_plan
-    plan=make_plan(tone,theta,coherence,density,prepared['skin'] if p.protect else None)
+    from .flow_pencil import tangent_flow,ordered_plan,directional_structure
+    theta,reliability=tangent_flow(gray,cancel)
+    # Quantized drawing layers carry shadows; keep only a little broad graphite.
+    density=np.clip(density*1.45,0,1)
+    plan=ordered_plan(tone,theta,reliability,density,prepared['skin'] if p.protect else None,
+                      focus if p.protect else None,features,cancel)
+    structure=directional_structure(gray,p.smooth)
+    if p.protect:structure*=1-prepared['skin']*(1-features)*p.face_strength*.8
+    outer=outer*.68+structure*.55
+    inner*=.5
+    density*=.14
     # Optical absorption describes pigments, rather than tinting the paper.
     color=_blur(rgb.astype(np.float32)/255,3)
     absorption=1-color
