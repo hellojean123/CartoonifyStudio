@@ -239,7 +239,7 @@ def _layers(prepared,style,p,cancel=None):
     from .npr import flow_lines,region_smooth
     if style==STYLES[3]:
         from .pencil import pencil_layers
-        return pencil_layers(prepared,p)
+        return pencil_layers(prepared,p,cancel)
     if style==STYLES[1]:
         from .flat import illustration_layers
         return illustration_layers(prepared,p,cancel)
@@ -358,7 +358,7 @@ def process(image,style,params=None,preview=False,quality='精细',cache=CACHE,p
     digest=fingerprint(im);prekey=('prepare-v4',digest,p.smooth,p.contrast,p.protect,p.face_strength,p.face_boxes)
     prepared=cache.compute(prekey,lambda:_prepare(im,p,cache,digest)) if cache is not None else _prepare(im,p)
     prepared_at=time.perf_counter()
-    key=('layers-caricature-v9',prekey,style,p.colors if style in STYLES[1:3] else None,p.anime_mode if style==STYLES[0] else None,(p.caricature_feature,p.caricature_strength) if style==STYLES[2] else None)
+    key=('layers-etf-pencil-v11b',prekey,style,p.colors if style in STYLES[1:3] else None,p.anime_mode if style==STYLES[0] else None,(p.caricature_feature,p.caricature_strength) if style==STYLES[2] else None)
     layers=cache.compute(key,lambda:_layers(prepared,style,p,cancel)) if cache is not None else _layers(prepared,style,p,cancel)
     layers_at=time.perf_counter()
     result=render(im,prepared,layers,style,p,quality,preview_limit if preview else None,tile_size,cancel,cache)
@@ -367,5 +367,5 @@ def process(image,style,params=None,preview=False,quality='精细',cache=CACHE,p
         plan=layers['stroke_plan']
         diagnostics['pencil_brush']={'stroke_count':len(plan['width']),
             'width_reference_quantiles':np.percentile(plan['width'],[10,50,90]).tolist() if len(plan['width']) else [0,0,0],
-            'native_rasterization':True}
+            'native_rasterization':True,'method':'ETF gray-layer ordered strokes','gray_levels':10,'directions':10,'etf_iterations':15}
     return result

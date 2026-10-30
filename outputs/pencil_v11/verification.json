@@ -1,0 +1,100 @@
+{
+  "tests": 132,
+  "failures": 0,
+  "samples": 33,
+  "http": {
+    "selection_verified": true,
+    "http_status": 200,
+    "formats": [
+      {
+        "style": "铅笔素描",
+        "pencil_mode": "灰度",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 19.911007900023833,
+        "format": "PNG",
+        "size": [
+          1180,
+          1600
+        ],
+        "export_status": "2.04 秒 · 精细原尺寸导出 1180×1600"
+      },
+      {
+        "style": "铅笔素描",
+        "pencil_mode": "彩色",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 8.600998700014316,
+        "format": "JPG",
+        "size": [
+          1180,
+          1600
+        ],
+        "export_status": "2.01 秒 · 精细原尺寸导出 1180×1600"
+      }
+    ],
+    "batch_png_count": 2,
+    "cancel_response": "没有正在运行的任务。"
+  },
+  "benchmark": [
+    {
+      "size": [
+        640,
+        480
+      ],
+      "cold_seconds": 6.269,
+      "warm_preview_seconds": 0.117,
+      "peak_rss_mib": 103.9,
+      "baseline_rss_mib": 49.8,
+      "preview_export_mae": 0.0,
+      "stages": {
+        "prepare": 0.32868309994228184,
+        "layers": 5.509835200035013,
+        "render": 0.427884400007315,
+        "total": 6.266403799992986
+      }
+    },
+    {
+      "size": [
+        1920,
+        1080
+      ],
+      "cold_seconds": 9.174,
+      "warm_preview_seconds": 0.894,
+      "peak_rss_mib": 144.9,
+      "baseline_rss_mib": 68.9,
+      "preview_export_mae": 2.165,
+      "stages": {
+        "prepare": 0.3688041999703273,
+        "layers": 6.799114200053737,
+        "render": 2.004716399940662,
+        "total": 9.17263509996701
+      }
+    },
+    {
+      "size": [
+        3840,
+        2160
+      ],
+      "cold_seconds": 13.712,
+      "warm_preview_seconds": 0.714,
+      "peak_rss_mib": 183.4,
+      "baseline_rss_mib": 93.7,
+      "preview_export_mae": 2.304,
+      "stages": {
+        "prepare": 0.4457250999985263,
+        "layers": 6.313544900040142,
+        "render": 6.951517699984834,
+        "total": 13.710787900025025
+      }
+    }
+  ],
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_cpus": 12,
+  "live_url": "http://127.0.0.1:7863/",
+  "source_sha256": {
+    "cartoonify/core.py": "be862b4e23577fead7d56e218db3292222ddb03903ffc4a7788645403f5ac08a",
+    "cartoonify/pencil.py": "e3f0bd9a5f6ed64d9ced6822815af4643acd7394cff7e012a0359cd8cee49ef8",
+    "cartoonify/flow_pencil.py": "8c5bf6aa7d643baeb08823713906cdaa220b038578029432cff2b2584951f3b1",
+    "cartoonify/strokes.py": "d815e6c4fb3ac40af7eb965288fc9d8b2a95b47dbd44d5be8833c779353d4965",
+    "app.py": "765bd2dd826258e829ae727c25830f6d86f2356a1b53d3e52cb886b5b5aa6e61"
+  }
+}

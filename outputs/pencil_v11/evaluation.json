@@ -1,0 +1,1981 @@
+[
+  {
+    "file": "01_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      853
+    ],
+    "seconds": 62.069,
+    "baseline_rss_mib": 46.9,
+    "peak_rss_mib": 159.9,
+    "diagnostics": {
+      "faces": [
+        [
+          84,
+          2,
+          794,
+          724
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        666,
+        1000
+      ],
+      "cache": {
+        "bytes": 46312356,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.513297599973157,
+        "layers": 57.91528139996808,
+        "render": 3.6381396000506356,
+        "total": 62.06671899999492
+      },
+      "pencil_brush": {
+        "stroke_count": 51708,
+        "width_reference_quantiles": [
+          0.24318485260009767,
+          0.3630005866289139,
+          0.5490967273712158
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "02_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1600
+    ],
+    "seconds": 8.218,
+    "baseline_rss_mib": 73.2,
+    "peak_rss_mib": 175.9,
+    "diagnostics": {
+      "faces": [
+        [
+          272,
+          106,
+          180,
+          238
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        800
+      ],
+      "cache": {
+        "bytes": 47116070,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.48705529992002994,
+        "layers": 5.982137500075623,
+        "render": 1.7475669999839738,
+        "total": 8.216760099981911
+      },
+      "pencil_brush": {
+        "stroke_count": 19670,
+        "width_reference_quantiles": [
+          0.2894002377986908,
+          0.4251221716403961,
+          0.6282386958599092
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "03_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1600
+    ],
+    "seconds": 8.625,
+    "baseline_rss_mib": 78.5,
+    "peak_rss_mib": 186.8,
+    "diagnostics": {
+      "faces": [
+        [
+          246,
+          188,
+          247,
+          381
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        800
+      ],
+      "cache": {
+        "bytes": 47464957,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.38863970001693815,
+        "layers": 6.0263294000178576,
+        "render": 2.2089854000369087,
+        "total": 8.623954700073227
+      },
+      "pencil_brush": {
+        "stroke_count": 24201,
+        "width_reference_quantiles": [
+          0.2715774178504944,
+          0.4085158407688141,
+          0.6089050769805908
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "04_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1228
+    ],
+    "seconds": 7.57,
+    "baseline_rss_mib": 77.8,
+    "peak_rss_mib": 201.5,
+    "diagnostics": {
+      "faces": [
+        [
+          237,
+          228,
+          159,
+          208
+        ],
+        [
+          705,
+          397,
+          72,
+          72
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        959,
+        1000
+      ],
+      "cache": {
+        "bytes": 56041340,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.531233899993822,
+        "layers": 5.873005100060254,
+        "render": 1.1645019999705255,
+        "total": 7.568741300026886
+      },
+      "pencil_brush": {
+        "stroke_count": 17868,
+        "width_reference_quantiles": [
+          0.2881730020046234,
+          0.42806442081928253,
+          0.6239532649517059
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "05_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      853
+    ],
+    "seconds": 8.351,
+    "baseline_rss_mib": 74.7,
+    "peak_rss_mib": 160.7,
+    "diagnostics": {
+      "faces": [
+        [
+          308,
+          124,
+          499,
+          596
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        666,
+        1000
+      ],
+      "cache": {
+        "bytes": 44491229,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.39164670009631664,
+        "layers": 6.753330799983814,
+        "render": 1.2047278999816626,
+        "total": 8.349706100067124
+      },
+      "pencil_brush": {
+        "stroke_count": 28057,
+        "width_reference_quantiles": [
+          0.2547559916973114,
+          0.3890827000141144,
+          0.5867716312408447
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "06_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1920
+    ],
+    "seconds": 7.195,
+    "baseline_rss_mib": 78.6,
+    "peak_rss_mib": 166.8,
+    "diagnostics": {
+      "faces": [
+        [
+          259,
+          169,
+          173,
+          236
+        ],
+        [
+          53,
+          544,
+          183,
+          183
+        ],
+        [
+          386,
+          426,
+          136,
+          136
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        667
+      ],
+      "cache": {
+        "bytes": 38620433,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.36236509995069355,
+        "layers": 5.277268200065009,
+        "render": 1.5540630999021232,
+        "total": 7.19369669992011
+      },
+      "pencil_brush": {
+        "stroke_count": 7765,
+        "width_reference_quantiles": [
+          0.2665316104888916,
+          0.4046964645385742,
+          0.60026113986969
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "07_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1094
+    ],
+    "seconds": 7.352,
+    "baseline_rss_mib": 86.9,
+    "peak_rss_mib": 199.5,
+    "diagnostics": {
+      "faces": [
+        [
+          399,
+          152,
+          47,
+          65
+        ],
+        [
+          579,
+          177,
+          53,
+          67
+        ],
+        [
+          754,
+          155,
+          57,
+          76
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        855,
+        1000
+      ],
+      "cache": {
+        "bytes": 55376458,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.5561351999640465,
+        "layers": 6.070548100047745,
+        "render": 0.7237681000260636,
+        "total": 7.350451600039378
+      },
+      "pencil_brush": {
+        "stroke_count": 13458,
+        "width_reference_quantiles": [
+          0.3009288877248764,
+          0.4397658258676529,
+          0.6412457287311556
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "08_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1396
+    ],
+    "seconds": 7.053,
+    "baseline_rss_mib": 78.7,
+    "peak_rss_mib": 198.6,
+    "diagnostics": {
+      "faces": [
+        [
+          347,
+          261,
+          188,
+          243
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        917
+      ],
+      "cache": {
+        "bytes": 52804783,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.629946899949573,
+        "layers": 5.723271000082605,
+        "render": 0.6983829999808222,
+        "total": 7.051601200015284
+      },
+      "pencil_brush": {
+        "stroke_count": 6939,
+        "width_reference_quantiles": [
+          0.27704960703849796,
+          0.41305118799209595,
+          0.6109132170677185
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "13_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      719
+    ],
+    "seconds": 4.579,
+    "baseline_rss_mib": 81.1,
+    "peak_rss_mib": 148.0,
+    "diagnostics": {
+      "faces": [
+        [
+          633,
+          214,
+          27,
+          31
+        ],
+        [
+          471,
+          236,
+          19,
+          22
+        ],
+        [
+          560,
+          194,
+          15,
+          17
+        ],
+        [
+          370,
+          230,
+          15,
+          21
+        ],
+        [
+          71,
+          267,
+          17,
+          22
+        ],
+        [
+          403,
+          247,
+          18,
+          21
+        ],
+        [
+          518,
+          226,
+          16,
+          21
+        ],
+        [
+          371,
+          300,
+          19,
+          24
+        ],
+        [
+          507,
+          191,
+          15,
+          19
+        ],
+        [
+          596,
+          207,
+          17,
+          22
+        ],
+        [
+          431,
+          195,
+          18,
+          21
+        ],
+        [
+          653,
+          197,
+          20,
+          24
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        562,
+        1000
+      ],
+      "cache": {
+        "bytes": 36354144,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.5133373000426218,
+        "layers": 3.6722335000522435,
+        "render": 0.3926502999383956,
+        "total": 4.578221400035545
+      },
+      "pencil_brush": {
+        "stroke_count": 8104,
+        "width_reference_quantiles": [
+          0.30048041939735415,
+          0.4378477483987808,
+          0.640739768743515
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "14_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      719
+    ],
+    "seconds": 5.579,
+    "baseline_rss_mib": 79.4,
+    "peak_rss_mib": 146.8,
+    "diagnostics": {
+      "faces": [
+        [
+          173,
+          221,
+          23,
+          30
+        ],
+        [
+          822,
+          173,
+          15,
+          18
+        ],
+        [
+          793,
+          194,
+          17,
+          21
+        ],
+        [
+          712,
+          195,
+          14,
+          18
+        ],
+        [
+          759,
+          168,
+          13,
+          15
+        ],
+        [
+          667,
+          167,
+          14,
+          17
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        562,
+        1000
+      ],
+      "cache": {
+        "bytes": 36336607,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.40144869999494404,
+        "layers": 4.646810500067659,
+        "render": 0.5298241999698803,
+        "total": 5.578083600034006
+      },
+      "pencil_brush": {
+        "stroke_count": 7971,
+        "width_reference_quantiles": [
+          0.30000078678131104,
+          0.43641945719718933,
+          0.6341610550880432
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "15_landscape.jpg",
+    "person": "",
+    "size": [
+      1280,
+      960
+    ],
+    "seconds": 12.144,
+    "baseline_rss_mib": 74.6,
+    "peak_rss_mib": 178.0,
+    "diagnostics": {
+      "faces": [],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        750,
+        1000
+      ],
+      "cache": {
+        "bytes": 52431610,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.3172911999281496,
+        "layers": 9.377367799985223,
+        "render": 2.447239700006321,
+        "total": 12.141898899921216
+      },
+      "pencil_brush": {
+        "stroke_count": 61898,
+        "width_reference_quantiles": [
+          0.3033741325139999,
+          0.43908266723155975,
+          0.6378086924552917
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "16_landscape.jpg",
+    "person": "",
+    "size": [
+      1280,
+      863
+    ],
+    "seconds": 9.085,
+    "baseline_rss_mib": 77.0,
+    "peak_rss_mib": 168.5,
+    "diagnostics": {
+      "faces": [],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        674,
+        1000
+      ],
+      "cache": {
+        "bytes": 44580566,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.5118332999991253,
+        "layers": 7.339595900033601,
+        "render": 1.2322882000589743,
+        "total": 9.083717700093985
+      },
+      "pencil_brush": {
+        "stroke_count": 22646,
+        "width_reference_quantiles": [
+          0.30292952060699463,
+          0.4406161308288574,
+          0.6390904188156128
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "17_architecture.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1303
+    ],
+    "seconds": 9.099,
+    "baseline_rss_mib": 79.5,
+    "peak_rss_mib": 203.9,
+    "diagnostics": {
+      "faces": [
+        [
+          197,
+          308,
+          53,
+          58
+        ],
+        [
+          729,
+          297,
+          77,
+          77
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        982
+      ],
+      "cache": {
+        "bytes": 57056583,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.6737429000204429,
+        "layers": 7.3493574999738485,
+        "render": 1.0749368000542745,
+        "total": 9.098037400050089
+      },
+      "pencil_brush": {
+        "stroke_count": 14027,
+        "width_reference_quantiles": [
+          0.3031643867492676,
+          0.4401908218860626,
+          0.6400583267211915
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "18_architecture.jpg",
+    "person": "",
+    "size": [
+      1280,
+      737
+    ],
+    "seconds": 8.311,
+    "baseline_rss_mib": 84.0,
+    "peak_rss_mib": 155.8,
+    "diagnostics": {
+      "faces": [],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        576,
+        1000
+      ],
+      "cache": {
+        "bytes": 39953895,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.33342080004513264,
+        "layers": 6.524688899982721,
+        "render": 1.4508395999437198,
+        "total": 8.308949599973857
+      },
+      "pencil_brush": {
+        "stroke_count": 43483,
+        "width_reference_quantiles": [
+          0.3038551568984985,
+          0.4403013586997986,
+          0.637006211280823
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "19_animal.jpg",
+    "person": "",
+    "size": [
+      1280,
+      960
+    ],
+    "seconds": 11.306,
+    "baseline_rss_mib": 78.2,
+    "peak_rss_mib": 180.4,
+    "diagnostics": {
+      "faces": [],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        750,
+        1000
+      ],
+      "cache": {
+        "bytes": 50655528,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.37748010002542287,
+        "layers": 9.132629100000486,
+        "render": 1.7943147999467328,
+        "total": 11.304424399975687
+      },
+      "pencil_brush": {
+        "stroke_count": 38832,
+        "width_reference_quantiles": [
+          0.301637077331543,
+          0.4396517723798752,
+          0.6396145224571228
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "23_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1792
+    ],
+    "seconds": 7.545,
+    "baseline_rss_mib": 84.2,
+    "peak_rss_mib": 183.9,
+    "diagnostics": {
+      "faces": [
+        [
+          245,
+          179,
+          190,
+          250
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        714
+      ],
+      "cache": {
+        "bytes": 41742984,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.41645899997092783,
+        "layers": 5.61085230007302,
+        "render": 1.5168857999378815,
+        "total": 7.544197599985637
+      },
+      "pencil_brush": {
+        "stroke_count": 13552,
+        "width_reference_quantiles": [
+          0.2749530225992203,
+          0.4125697910785675,
+          0.6170949220657348
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "22_portrait.jpg",
+    "person": "",
+    "size": [
+      960,
+      981
+    ],
+    "seconds": 10.615,
+    "baseline_rss_mib": 91.5,
+    "peak_rss_mib": 215.6,
+    "diagnostics": {
+      "faces": [
+        [
+          377,
+          173,
+          226,
+          282
+        ],
+        [
+          370,
+          465,
+          193,
+          193
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        981,
+        960
+      ],
+      "cache": {
+        "bytes": 58836172,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.5173731000395492,
+        "layers": 9.444767600041814,
+        "render": 0.6520650999154896,
+        "total": 10.614206099999137
+      },
+      "pencil_brush": {
+        "stroke_count": 18004,
+        "width_reference_quantiles": [
+          0.25731064975261686,
+          0.3900243639945984,
+          0.5831745624542236
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "26_portrait.jpg",
+    "person": "",
+    "size": [
+      960,
+      1328
+    ],
+    "seconds": 7.803,
+    "baseline_rss_mib": 87.8,
+    "peak_rss_mib": 181.7,
+    "diagnostics": {
+      "faces": [
+        [
+          257,
+          116,
+          188,
+          266
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        723
+      ],
+      "cache": {
+        "bytes": 47402320,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.38320879999082536,
+        "layers": 6.4577857999829575,
+        "render": 0.9609290000516921,
+        "total": 7.801923900027759
+      },
+      "pencil_brush": {
+        "stroke_count": 14160,
+        "width_reference_quantiles": [
+          0.2776068836450577,
+          0.4156520813703537,
+          0.618611615896225
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "27_portrait.jpg",
+    "person": "",
+    "size": [
+      960,
+      1439
+    ],
+    "seconds": 8.618,
+    "baseline_rss_mib": 88.4,
+    "peak_rss_mib": 173.2,
+    "diagnostics": {
+      "faces": [
+        [
+          199,
+          104,
+          234,
+          319
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        667
+      ],
+      "cache": {
+        "bytes": 45013090,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.4088614999782294,
+        "layers": 6.7501452000578865,
+        "render": 1.457688899943605,
+        "total": 8.616695899982005
+      },
+      "pencil_brush": {
+        "stroke_count": 19050,
+        "width_reference_quantiles": [
+          0.26426921486854554,
+          0.4001656472682953,
+          0.6024976849555973
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "28_portrait.jpg",
+    "person": "",
+    "size": [
+      960,
+      1260
+    ],
+    "seconds": 8.083,
+    "baseline_rss_mib": 82.9,
+    "peak_rss_mib": 185.2,
+    "diagnostics": {
+      "faces": [
+        [
+          272,
+          144,
+          207,
+          298
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        762
+      ],
+      "cache": {
+        "bytes": 49424953,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.5098793000215665,
+        "layers": 6.512897899956442,
+        "render": 1.057918700040318,
+        "total": 8.080696400022134
+      },
+      "pencil_brush": {
+        "stroke_count": 14949,
+        "width_reference_quantiles": [
+          0.27594524025917055,
+          0.4159976541996002,
+          0.6154633402824402
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "29_portrait.jpg",
+    "person": "",
+    "size": [
+      960,
+      1439
+    ],
+    "seconds": 5.591,
+    "baseline_rss_mib": 90.1,
+    "peak_rss_mib": 173.4,
+    "diagnostics": {
+      "faces": [
+        [
+          269,
+          77,
+          147,
+          192
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        667
+      ],
+      "cache": {
+        "bytes": 44082622,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.4665847000433132,
+        "layers": 4.526720399968326,
+        "render": 0.596818899968639,
+        "total": 5.590124299982563
+      },
+      "pencil_brush": {
+        "stroke_count": 6966,
+        "width_reference_quantiles": [
+          0.29709939658641815,
+          0.4336477369070053,
+          0.6405459344387054
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "30_hu_ge.jpg",
+    "person": "胡歌",
+    "size": [
+      1109,
+      712
+    ],
+    "seconds": 7.787,
+    "baseline_rss_mib": 87.1,
+    "peak_rss_mib": 171.6,
+    "diagnostics": {
+      "faces": [
+        [
+          375,
+          128,
+          206,
+          263
+        ],
+        [
+          386,
+          389,
+          159,
+          159
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        642,
+        1000
+      ],
+      "cache": {
+        "bytes": 41781884,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.40516910003498197,
+        "layers": 6.417846499942243,
+        "render": 0.9623927000211552,
+        "total": 7.785408499999903
+      },
+      "pencil_brush": {
+        "stroke_count": 26324,
+        "width_reference_quantiles": [
+          0.28193853199481966,
+          0.42137502133846283,
+          0.6222492754459382
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "31_zhou_xun.jpg",
+    "person": "周迅",
+    "size": [
+      1280,
+      1582
+    ],
+    "seconds": 8.269,
+    "baseline_rss_mib": 84.0,
+    "peak_rss_mib": 187.4,
+    "diagnostics": {
+      "faces": [
+        [
+          323,
+          182,
+          231,
+          315
+        ],
+        [
+          19,
+          672,
+          41,
+          41
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        809
+      ],
+      "cache": {
+        "bytes": 46844925,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.6077076999936253,
+        "layers": 6.494489399949089,
+        "render": 1.1659551999764517,
+        "total": 8.268152799922973
+      },
+      "pencil_brush": {
+        "stroke_count": 9473,
+        "width_reference_quantiles": [
+          0.2760117590427399,
+          0.4167753756046295,
+          0.619692134857178
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "32_zhang_ziyi.jpg",
+    "person": "章子怡",
+    "size": [
+      1280,
+      1434
+    ],
+    "seconds": 10.902,
+    "baseline_rss_mib": 95.4,
+    "peak_rss_mib": 208.5,
+    "diagnostics": {
+      "faces": [
+        [
+          271,
+          224,
+          354,
+          440
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        893
+      ],
+      "cache": {
+        "bytes": 53004888,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.6438361000036821,
+        "layers": 8.393562200013548,
+        "render": 1.8632035999326035,
+        "total": 10.900602099951357
+      },
+      "pencil_brush": {
+        "stroke_count": 27304,
+        "width_reference_quantiles": [
+          0.2808764100074768,
+          0.4193619191646576,
+          0.6206262886524201
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "33_gong_li.jpg",
+    "person": "巩俐",
+    "size": [
+      507,
+      798
+    ],
+    "seconds": 5.608,
+    "baseline_rss_mib": 87.6,
+    "peak_rss_mib": 137.5,
+    "diagnostics": {
+      "faces": [
+        [
+          222,
+          72,
+          206,
+          256
+        ],
+        [
+          449,
+          234,
+          42,
+          58
+        ],
+        [
+          78,
+          234,
+          45,
+          66
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        798,
+        507
+      ],
+      "cache": {
+        "bytes": 25903107,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.44521749997511506,
+        "layers": 4.83539889997337,
+        "render": 0.3265459999674931,
+        "total": 5.60716249991674
+      },
+      "pencil_brush": {
+        "stroke_count": 15837,
+        "width_reference_quantiles": [
+          0.22295698821544646,
+          0.33359187841415405,
+          0.4918968141078949
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "34_tang_wei.jpg",
+    "person": "汤唯",
+    "size": [
+      1067,
+      1600
+    ],
+    "seconds": 7.99,
+    "baseline_rss_mib": 82.1,
+    "peak_rss_mib": 167.4,
+    "diagnostics": {
+      "faces": [
+        [
+          440,
+          274,
+          80,
+          111
+        ],
+        [
+          91,
+          301,
+          82,
+          109
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        667
+      ],
+      "cache": {
+        "bytes": 39107550,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.4231673999456689,
+        "layers": 5.9481511999620125,
+        "render": 1.6175024000694975,
+        "total": 7.988821199978702
+      },
+      "pencil_brush": {
+        "stroke_count": 14102,
+        "width_reference_quantiles": [
+          0.2983891248703003,
+          0.43796099722385406,
+          0.6394340872764587
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "35_shu_qi.jpg",
+    "person": "舒淇",
+    "size": [
+      1180,
+      1600
+    ],
+    "seconds": 9.549,
+    "baseline_rss_mib": 95.1,
+    "peak_rss_mib": 184.6,
+    "diagnostics": {
+      "faces": [
+        [
+          174,
+          143,
+          310,
+          439
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        738
+      ],
+      "cache": {
+        "bytes": 43913170,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.680286500020884,
+        "layers": 6.919870899990201,
+        "render": 1.9479616999160498,
+        "total": 9.548119299928658
+      },
+      "pencil_brush": {
+        "stroke_count": 23970,
+        "width_reference_quantiles": [
+          0.2720752388238907,
+          0.4063677042722702,
+          0.6059072256088257
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "37_donnie_yen.jpg",
+    "person": "甄子丹",
+    "size": [
+      1067,
+      1600
+    ],
+    "seconds": 9.609,
+    "baseline_rss_mib": 87.2,
+    "peak_rss_mib": 179.6,
+    "diagnostics": {
+      "faces": [
+        [
+          60,
+          328,
+          347,
+          517
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        667
+      ],
+      "cache": {
+        "bytes": 41195806,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.3747563000069931,
+        "layers": 6.861220700084232,
+        "render": 2.371576799894683,
+        "total": 9.60755399998743
+      },
+      "pencil_brush": {
+        "stroke_count": 41238,
+        "width_reference_quantiles": [
+          0.25726925432682035,
+          0.39173005521297455,
+          0.5887237191200256
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "39_jackie_chan.jpg",
+    "person": "成龙",
+    "size": [
+      888,
+      1184
+    ],
+    "seconds": 8.113,
+    "baseline_rss_mib": 85.8,
+    "peak_rss_mib": 182.3,
+    "diagnostics": {
+      "faces": [
+        [
+          197,
+          195,
+          337,
+          465
+        ],
+        [
+          552,
+          434,
+          103,
+          131
+        ],
+        [
+          469,
+          36,
+          141,
+          141
+        ],
+        [
+          512,
+          756,
+          86,
+          86
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        750
+      ],
+      "cache": {
+        "bytes": 49184842,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.497157400008291,
+        "layers": 6.688749900087714,
+        "render": 0.9253869999665767,
+        "total": 8.111294600064866
+      },
+      "pencil_brush": {
+        "stroke_count": 28890,
+        "width_reference_quantiles": [
+          0.2590261071920395,
+          0.388860285282135,
+          0.584776419401169
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "40_liu_yifei.jpg",
+    "person": "刘亦菲",
+    "size": [
+      1143,
+      1600
+    ],
+    "seconds": 6.48,
+    "baseline_rss_mib": 87.8,
+    "peak_rss_mib": 187.1,
+    "diagnostics": {
+      "faces": [
+        [
+          227,
+          166,
+          269,
+          384
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        714
+      ],
+      "cache": {
+        "bytes": 41851939,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.3749266000231728,
+        "layers": 4.951823099981993,
+        "render": 1.1522063999436796,
+        "total": 6.478956299950369
+      },
+      "pencil_brush": {
+        "stroke_count": 14967,
+        "width_reference_quantiles": [
+          0.2793661653995514,
+          0.4146755635738373,
+          0.6124956369400024
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "41_zhou_xun_group.jpg",
+    "person": "周迅、王圣迪",
+    "size": [
+      1280,
+      1036
+    ],
+    "seconds": 8.232,
+    "baseline_rss_mib": 96.4,
+    "peak_rss_mib": 198.3,
+    "diagnostics": {
+      "faces": [
+        [
+          178,
+          233,
+          143,
+          182
+        ],
+        [
+          650,
+          281,
+          133,
+          173
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        809,
+        1000
+      ],
+      "cache": {
+        "bytes": 52416781,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.44441110000479966,
+        "layers": 7.056089899968356,
+        "render": 0.7307755000656471,
+        "total": 8.231276600039564
+      },
+      "pencil_brush": {
+        "stroke_count": 12945,
+        "width_reference_quantiles": [
+          0.2920359790325165,
+          0.4298652410507202,
+          0.6305032730102541
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "36_tony_leung.jpg",
+    "person": "梁朝伟",
+    "size": [
+      953,
+      1423
+    ],
+    "seconds": 8.19,
+    "baseline_rss_mib": 87.1,
+    "peak_rss_mib": 171.7,
+    "diagnostics": {
+      "faces": [
+        [
+          87,
+          205,
+          349,
+          452
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        670
+      ],
+      "cache": {
+        "bytes": 45160114,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.4443479999899864,
+        "layers": 6.32722570002079,
+        "render": 1.4162277999566868,
+        "total": 8.18780189997051
+      },
+      "pencil_brush": {
+        "stroke_count": 20054,
+        "width_reference_quantiles": [
+          0.27439909875392915,
+          0.41168366372585297,
+          0.61422159075737
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  },
+  {
+    "file": "38_andy_lau.jpg",
+    "person": "刘德华",
+    "size": [
+      483,
+      500
+    ],
+    "seconds": 5.898,
+    "baseline_rss_mib": 90.7,
+    "peak_rss_mib": 131.5,
+    "diagnostics": {
+      "faces": [
+        [
+          206,
+          69,
+          106,
+          143
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        500,
+        483
+      ],
+      "cache": {
+        "bytes": 16225933,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.3313229000195861,
+        "layers": 5.323624900076538,
+        "render": 0.24186139996163547,
+        "total": 5.896809600060806
+      },
+      "pencil_brush": {
+        "stroke_count": 19389,
+        "width_reference_quantiles": [
+          0.14335127174854279,
+          0.21196269989013672,
+          0.31180235743522644
+        ],
+        "native_rasterization": true,
+        "method": "ETF gray-layer ordered strokes",
+        "gray_levels": 10,
+        "directions": 10,
+        "etf_iterations": 15
+      }
+    }
+  }
+]

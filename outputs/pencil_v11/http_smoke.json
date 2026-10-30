@@ -1,0 +1,32 @@
+{
+  "selection_verified": true,
+  "http_status": 200,
+  "formats": [
+    {
+      "style": "铅笔素描",
+      "pencil_mode": "灰度",
+      "preview_stages": 2,
+      "preview_end_to_end_seconds": 19.911007900023833,
+      "format": "PNG",
+      "size": [
+        1180,
+        1600
+      ],
+      "export_status": "2.04 秒 · 精细原尺寸导出 1180×1600"
+    },
+    {
+      "style": "铅笔素描",
+      "pencil_mode": "彩色",
+      "preview_stages": 2,
+      "preview_end_to_end_seconds": 8.600998700014316,
+      "format": "JPG",
+      "size": [
+        1180,
+        1600
+      ],
+      "export_status": "2.01 秒 · 精细原尺寸导出 1180×1600"
+    }
+  ],
+  "batch_png_count": 2,
+  "cancel_response": "没有正在运行的任务。"
+}

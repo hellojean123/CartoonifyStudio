@@ -78,7 +78,7 @@ def build_app():
         with gr.Tab('照片卡通化'):
             with gr.Row():
                 with gr.Column(scale=1):
-                    style=gr.Dropdown([('动漫人像（双模型）',STYLES[0]),('扁平插画（区域配色）',STYLES[1]),('夸张手绘漫画',STYLES[2]),('铅笔素描（变宽笔触）',STYLES[3])],value=STYLES[0],label='风格与预设')
+                    style=gr.Dropdown([('动漫人像（双模型）',STYLES[0]),('扁平插画（区域配色）',STYLES[1]),('夸张手绘漫画',STYLES[2]),('铅笔素描（方向流逐笔）',STYLES[3])],value=STYLES[0],label='风格与预设')
                     anime_mode=gr.Radio(['动漫增强','柔和插画'],value='动漫增强',label='动漫表现',info='动漫增强使用独立的 Webtoon 预训练模型；可能改变脸形、年龄感和肤色。柔和插画保留原版模型。')
                     outline=gr.Slider(0,1,.35,step=.05,label='整体轮廓强度')
                     smooth=gr.Slider(1,10,5,step=1,label='区域平滑')
@@ -108,7 +108,7 @@ def build_app():
                             angle=gr.Slider(0,90,15,step=1,label='网点角度')
                             opacity=gr.Slider(0,.65,0,step=.01,label='网点浓度')
                     with gr.Group(visible=False) as pencil_group:
-                        shade=gr.Slider(0,.8,.48,step=.02,label='铅笔明暗与排线浓度',info='设为 0 只保留结构线；细笔触连续变宽变淡，暗部以轻笔叠加。')
+                        shade=gr.Slider(0,.8,.48,step=.02,label='铅笔明暗与排线浓度',info='设为 0 只保留结构线；按方向流和十级明暗逐笔铺排，暗部叠加、亮部留白。')
                         paper=gr.Slider(0,.4,.08,step=.01,label='纸张颗粒')
                     reset=gr.Button('恢复当前风格默认参数')
                     preview_btn=gr.Button('重新预览',variant='primary')

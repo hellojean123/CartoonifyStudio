@@ -1,0 +1,37 @@
+[
+  {
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/TZYSJTU/Sketch-Generation-with-Drawing-Process-Guided-by-Vector-Flow-and-Grayscale/main/LICENSE",
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+  },
+  {
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/TZYSJTU/Sketch-Generation-with-Drawing-Process-Guided-by-Vector-Flow-and-Grayscale/main/README.md",
+    "sha256": "822e7c58c32b54ecd5fec76e73de0f5089ee4c69ae649b5765dd2b3a69898457"
+  },
+  {
+    "path": "process_order.py",
+    "url": "https://raw.githubusercontent.com/TZYSJTU/Sketch-Generation-with-Drawing-Process-Guided-by-Vector-Flow-and-Grayscale/main/process_order.py",
+    "sha256": "634e174e1baff3798b367f768991dc244b92a2cb1bd0943f62775321352eb3e9"
+  },
+  {
+    "path": "ETF/edge_tangent_flow.py",
+    "url": "https://raw.githubusercontent.com/TZYSJTU/Sketch-Generation-with-Drawing-Process-Guided-by-Vector-Flow-and-Grayscale/main/ETF/edge_tangent_flow.py",
+    "sha256": "e2320c2206c5284464743bcf0d87d3a9f15edfb8b58ddfbc1bb89494ca145cf5"
+  },
+  {
+    "path": "genStroke_origin.py",
+    "url": "https://raw.githubusercontent.com/TZYSJTU/Sketch-Generation-with-Drawing-Process-Guided-by-Vector-Flow-and-Grayscale/main/genStroke_origin.py",
+    "sha256": "626a89236d8bd0c99261d189e741d1a2af2ca588ec6960a5ded8bd4d7738b57b"
+  },
+  {
+    "path": "LDR.py",
+    "url": "https://raw.githubusercontent.com/TZYSJTU/Sketch-Generation-with-Drawing-Process-Guided-by-Vector-Flow-and-Grayscale/main/LDR.py",
+    "sha256": "bdd38d2bf9e523f92111a2f4fbd3ff1bccbe34b50cfadd9631d2be13edf78628"
+  },
+  {
+    "path": "simulate.py",
+    "url": "https://raw.githubusercontent.com/TZYSJTU/Sketch-Generation-with-Drawing-Process-Guided-by-Vector-Flow-and-Grayscale/main/simulate.py",
+    "sha256": "9734eba47dbd325a90b8b858632a25a70cfca6cec3356e47c3313277ecc53189"
+  }
+]
