@@ -1,0 +1,55 @@
+{
+  "tests": 128,
+  "failures": 0,
+  "new_photos": 12,
+  "total_photos": 33,
+  "new_style_results": 48,
+  "comparisons": 12,
+  "http": {
+    "selection_verified": true,
+    "http_status": 200,
+    "formats": [
+      {
+        "style": "美式漫画",
+        "feature": "鼻子",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 5.862790500046685,
+        "format": "PNG",
+        "size": [
+          1180,
+          1600
+        ],
+        "export_status": "0.44 秒 · 精细原尺寸导出 1180×1600"
+      },
+      {
+        "style": "美式漫画",
+        "feature": "眼睛",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 5.519921500002965,
+        "format": "JPG",
+        "size": [
+          1180,
+          1600
+        ],
+        "export_status": "0.34 秒 · 精细原尺寸导出 1180×1600"
+      }
+    ],
+    "batch_png_count": 2,
+    "cancel_response": "没有正在运行的任务。"
+  },
+  "live_url": "http://127.0.0.1:7863/",
+  "sha256": {
+    "30_hu_ge.jpg": "e3f015a61504f56d4043f052d53060ddc98fc3b31ccdf0827678be9831dc95dd",
+    "31_zhou_xun.jpg": "9de0363db6497c9e60085485f6fa546ab7aa06a7dd8be5f11ce20cf03e2c62b6",
+    "32_zhang_ziyi.jpg": "afec9a476386618b4e75962fae78a044775f71c31d9aff347eb873c6c58b5f37",
+    "33_gong_li.jpg": "43eef94b889cedae70a53944830f0a2681acf56c842e5455292781f0d2999708",
+    "34_tang_wei.jpg": "daecfe6aa88dbbef009a0992be83924fccf73bdc3bf54e571cee6c686f1d996b",
+    "35_shu_qi.jpg": "e2eeaa21d430e967f43aa004f1a5cbc2036d87da0c4619db843fecbd8c9c265d",
+    "37_donnie_yen.jpg": "efb7edef68a29acb200ad5f9fb81ef3a33bb9066750ebc8c079b33384033afe6",
+    "39_jackie_chan.jpg": "eba26c02ba84fba9166a0056e95d286201170382d72c9abdd9b387a8e50790c2",
+    "40_liu_yifei.jpg": "828c540c78c73dce1ea6c28e2b9d0f7df99803750feeed11b7bf363cc9ed5139",
+    "41_zhou_xun_group.jpg": "56ad93a1f8becba2f38aa0cb3a7fcd4e6946c9969baf7abc6b8f5b55314e89c6",
+    "36_tony_leung.jpg": "69d9004a59b2eccbed1707636ab83ed961c6ec8ff5457d43404ab6f33a698f9b",
+    "38_andy_lau.jpg": "fc9846c4b5c6a97c1151b3dfa220a71c976dfc2f3f61c9c4b44f731866f76e37"
+  }
+}

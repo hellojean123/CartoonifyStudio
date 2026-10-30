@@ -272,6 +272,367 @@
       "download_date": "2026-10-21T06:00:48.335112+00:00",
       "modifications": "Wikimedia thumbnail resized; JPEG conversion",
       "description": "31/08/2023. London, United Kingdom. The Rt Hon Grant Shapps appointed Secretary of State for Defence in 10 Downing Street. Picture by Alice Hodgson / No 10 Downing Street"
+    },
+    {
+      "filename": "30_hu_ge.jpg",
+      "category": "portrait",
+      "collection": "chinese_celebrities",
+      "person": "胡歌",
+      "title": "File:Hu Ge 2019.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hu_Ge_2019.jpg",
+      "source_revision": {
+        "revid": 732013693,
+        "parentid": 521817382,
+        "timestamp": "2023-02-12T10:42:11Z"
+      },
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Hu_Ge_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Hu_Ge_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "中国新闻网",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "download_date": "2026-10-30T06:01:57.255548+00:00",
+      "verification_date": "2026-10-30",
+      "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+      "description": "Hu Ge in 2019",
+      "original_credit": "cut from File:电影《攀登者》亮相上影节 吴京、章子怡、胡歌分享难忘经历 (6).webm",
+      "sha256": "e3f015a61504f56d4043f052d53060ddc98fc3b31ccdf0827678be9831dc95dd",
+      "download_sha256": "84824f101f52cbf2abc35bc588a5ab3dcab405930fb99e34f7cf4a3588511588",
+      "dimensions": [
+        1109,
+        712
+      ],
+      "source_evidence": "source_records/30_hu_ge.commons.json"
+    },
+    {
+      "filename": "31_zhou_xun.jpg",
+      "category": "portrait",
+      "collection": "chinese_celebrities",
+      "person": "周迅",
+      "title": "File:Zhou Xun at 2026 Busan International Film Festival.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg",
+      "source_revision": {
+        "revid": 1289337399,
+        "parentid": 1287666996,
+        "timestamp": "2026-10-20T03:37:58Z"
+      },
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg/1280px-Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Arielaortizb",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "download_date": "2026-10-30T06:02:00.233207+00:00",
+      "verification_date": "2026-10-30",
+      "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+      "description": "Zhou Xun at 31st Busan International Film Festival for First Taste of Loneliness Press Conference",
+      "original_credit": "Own work",
+      "sha256": "9de0363db6497c9e60085485f6fa546ab7aa06a7dd8be5f11ce20cf03e2c62b6",
+      "download_sha256": "303e03406829704c5b4e874f25f1d312696b3617bdb056f9c2392f1f6ea864b8",
+      "dimensions": [
+        1280,
+        1582
+      ],
+      "source_evidence": "source_records/31_zhou_xun.commons.json"
+    },
+    {
+      "filename": "32_zhang_ziyi.jpg",
+      "category": "portrait",
+      "collection": "chinese_celebrities",
+      "person": "章子怡",
+      "title": "File:Zhang Ziyi-63357 (cropped).jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zhang_Ziyi-63357_(cropped).jpg",
+      "source_revision": {
+        "revid": 1231958229,
+        "parentid": 1009283964,
+        "timestamp": "2026-06-15T19:27:59Z"
+      },
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Zhang_Ziyi-63357_%28cropped%29.jpg/1280px-Zhang_Ziyi-63357_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Zhang_Ziyi-63357_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Harald Krichel",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "download_date": "2026-10-30T06:02:02.400384+00:00",
+      "verification_date": "2026-10-30",
+      "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+      "description": "Actress Zhang Ziyi at the 81st Venice International Film Festival",
+      "original_credit": "Own work",
+      "sha256": "afec9a476386618b4e75962fae78a044775f71c31d9aff347eb873c6c58b5f37",
+      "download_sha256": "787acec5eaf901917d8544a6b07f30ae019235d601d92814e9398514fbf98e96",
+      "dimensions": [
+        1280,
+        1434
+      ],
+      "source_evidence": "source_records/32_zhang_ziyi.commons.json"
+    },
+    {
+      "filename": "33_gong_li.jpg",
+      "category": "portrait",
+      "collection": "chinese_celebrities",
+      "person": "巩俐",
+      "title": "File:Gong Li Cannes 2016.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gong_Li_Cannes_2016.jpg",
+      "source_revision": {
+        "revid": 1275336586,
+        "parentid": 1138569225,
+        "timestamp": "2026-09-12T04:26:27Z"
+      },
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Gong_Li_Cannes_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Gong_Li_Cannes_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Georges Biard",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "download_date": "2026-10-30T06:02:04.018698+00:00",
+      "verification_date": "2026-10-30",
+      "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+      "description": "Gong Li au festival de Cannes",
+      "original_credit": "Own work",
+      "sha256": "43eef94b889cedae70a53944830f0a2681acf56c842e5455292781f0d2999708",
+      "download_sha256": "b31e452ff1cc00dab133bfc686e07d18478045f187f2c431b31b16b4a19fb9e6",
+      "dimensions": [
+        507,
+        798
+      ],
+      "source_evidence": "source_records/33_gong_li.commons.json"
+    },
+    {
+      "filename": "34_tang_wei.jpg",
+      "category": "portrait",
+      "collection": "chinese_celebrities",
+      "person": "汤唯",
+      "title": "File:Tang Wei.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tang_Wei.jpg",
+      "source_revision": {
+        "revid": 1218769840,
+        "parentid": 1142049193,
+        "timestamp": "2026-05-23T09:24:17Z"
+      },
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Tang_Wei.jpg/1280px-Tang_Wei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Tang_Wei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Mai Le from San Francisco, CA, USA",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "download_date": "2026-10-30T06:02:05.889628+00:00",
+      "verification_date": "2026-10-30",
+      "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+      "description": "Tang Wei and Ang Lee at the  Mill Valley Film Festival 2007",
+      "original_credit": "tang wei & ang lee, cropped by Zureks",
+      "sha256": "daecfe6aa88dbbef009a0992be83924fccf73bdc3bf54e571cee6c686f1d996b",
+      "download_sha256": "733a147b3dc8048746f55ee56f7b38b4283c0c0c375fc88ae14e23980f5f764e",
+      "dimensions": [
+        1067,
+        1600
+      ],
+      "source_evidence": "source_records/34_tang_wei.commons.json"
+    },
+    {
+      "filename": "35_shu_qi.jpg",
+      "category": "portrait",
+      "collection": "chinese_celebrities",
+      "person": "舒淇",
+      "title": "File:Shu Qi at the 2025 Toronto International Film Festival. 01 (cropped).jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_(cropped).jpg",
+      "source_revision": {
+        "revid": 1255959272,
+        "parentid": 1232308124,
+        "timestamp": "2026-08-03T10:47:47Z"
+      },
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_%28cropped%29.jpg/1280px-Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Sara Komatsu",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "download_date": "2026-10-30T06:02:07.843294+00:00",
+      "verification_date": "2026-10-30",
+      "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+      "description": "Shu Qi, director, at the 2025 Toronto International Film Festival (TIFF) for the movie Girl.",
+      "original_credit": "Own work",
+      "sha256": "e2eeaa21d430e967f43aa004f1a5cbc2036d87da0c4619db843fecbd8c9c265d",
+      "download_sha256": "614a6fa1d632c68616533d3fd92a3da50660645d40ba3d2eaef89e63b765555e",
+      "dimensions": [
+        1180,
+        1600
+      ],
+      "source_evidence": "source_records/35_shu_qi.commons.json"
+    },
+    {
+      "filename": "37_donnie_yen.jpg",
+      "category": "portrait",
+      "collection": "chinese_celebrities",
+      "person": "甄子丹",
+      "title": "File:Donnie Yen at MCM May 2017.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Donnie_Yen_at_MCM_May_2017.jpg",
+      "source_revision": {
+        "revid": 1209271531,
+        "parentid": 1029151312,
+        "timestamp": "2026-05-06T06:03:27Z"
+      },
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Donnie_Yen_at_MCM_May_2017.jpg/1280px-Donnie_Yen_at_MCM_May_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Donnie_Yen_at_MCM_May_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Simon King",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "download_date": "2026-10-30T06:02:11.595825+00:00",
+      "verification_date": "2026-10-30",
+      "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+      "description": "Actor Donnie Yen at signing stand, MCM May 2017.",
+      "original_credit": "Own work",
+      "sha256": "efb7edef68a29acb200ad5f9fb81ef3a33bb9066750ebc8c079b33384033afe6",
+      "download_sha256": "7cde413943c4218f8d907c7c55234072c05c14b8de578cc23246945a564a55c1",
+      "dimensions": [
+        1067,
+        1600
+      ],
+      "source_evidence": "source_records/37_donnie_yen.commons.json"
+    },
+    {
+      "filename": "39_jackie_chan.jpg",
+      "category": "portrait",
+      "collection": "chinese_celebrities",
+      "person": "成龙",
+      "title": "File:Jackie Chan 2024.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jackie_Chan_2024.jpg",
+      "source_revision": {
+        "revid": 1267982784,
+        "parentid": 1041345012,
+        "timestamp": "2026-08-26T22:47:12Z"
+      },
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Jackie_Chan_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Jackie_Chan_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "John Jason Junior",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "download_date": "2026-10-30T06:02:14.786918+00:00",
+      "verification_date": "2026-10-30",
+      "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+      "description": "Jackie Chan in Paris in 2024",
+      "original_credit": "Own work",
+      "sha256": "eba26c02ba84fba9166a0056e95d286201170382d72c9abdd9b387a8e50790c2",
+      "download_sha256": "a7df35c827302ccaae76e40f0433628e64798e1a938c21b426b2fabcf9ac445f",
+      "dimensions": [
+        888,
+        1184
+      ],
+      "source_evidence": "source_records/39_jackie_chan.commons.json"
+    },
+    {
+      "filename": "40_liu_yifei.jpg",
+      "category": "portrait",
+      "collection": "chinese_celebrities",
+      "person": "刘亦菲",
+      "title": "File:Liu Yifei Portrait1.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Liu_Yifei_Portrait1.jpg",
+      "source_revision": {
+        "revid": 1053616188,
+        "parentid": 685355294,
+        "timestamp": "2025-07-07T13:46:31Z"
+      },
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Liu_Yifei_Portrait1.jpg/1280px-Liu_Yifei_Portrait1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Liu_Yifei_Portrait1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "刘亦菲吧官方",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "download_date": "2026-10-30T06:02:16.595958+00:00",
+      "verification_date": "2026-10-30",
+      "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+      "description": "Liu Yifei Portrait1",
+      "original_credit": "https://bdliuyifeiba.lofter.com/post/1cd86ed8_eec069c",
+      "sha256": "828c540c78c73dce1ea6c28e2b9d0f7df99803750feeed11b7bf363cc9ed5139",
+      "download_sha256": "fa02845cd6c93073dc9b15b64774004975fe1576370d03796d1195c0c34b3414",
+      "dimensions": [
+        1143,
+        1600
+      ],
+      "source_evidence": "source_records/40_liu_yifei.commons.json",
+      "license_review": "Commons review by Shizhao on 2022-05-05, confirmed on file description page; public event portrait, downloaded from Commons only."
+    },
+    {
+      "filename": "41_zhou_xun_group.jpg",
+      "category": "portrait",
+      "collection": "chinese_celebrities",
+      "person": "周迅、王圣迪",
+      "title": "File:Actresses, Wang Shengdi and Zhou Xun at 2026 Busan International Film Festival.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Actresses,_Wang_Shengdi_and_Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg",
+      "source_revision": {
+        "revid": 1289976223,
+        "parentid": 1288654806,
+        "timestamp": "2026-10-21T17:59:31Z"
+      },
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Actresses%2C_Wang_Shengdi_and_Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg/1280px-Actresses%2C_Wang_Shengdi_and_Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Actresses%2C_Wang_Shengdi_and_Zhou_Xun_at_2026_Busan_International_Film_Festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Arielaortizb",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "download_date": "2026-10-30T06:02:18.319527+00:00",
+      "verification_date": "2026-10-30",
+      "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+      "description": "Actresses, Wang Shengdi and Zhou Xun at 31st Busan International Film Festival for First Taste of Loneliness Press Conference",
+      "original_credit": "Own work",
+      "sha256": "56ad93a1f8becba2f38aa0cb3a7fcd4e6946c9969baf7abc6b8f5b55314e89c6",
+      "download_sha256": "e13bbe9f42d4b826dda6c5d4de54769ab81b85726e3680b90c7f7750b3346775",
+      "dimensions": [
+        1280,
+        1036
+      ],
+      "source_evidence": "source_records/41_zhou_xun_group.commons.json"
+    },
+    {
+      "filename": "36_tony_leung.jpg",
+      "category": "portrait",
+      "collection": "chinese_celebrities",
+      "person": "梁朝伟",
+      "title": "File:Tony Leung Chiu Wai (Berlin Film Festival 2013) 2 (cropped).jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tony_Leung_Chiu_Wai_(Berlin_Film_Festival_2013)_2_(cropped).jpg",
+      "source_revision": {
+        "revid": 1232264222,
+        "parentid": 1180504041,
+        "timestamp": "2026-06-16T09:20:43Z"
+      },
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Tony_Leung_Chiu_Wai_%28Berlin_Film_Festival_2013%29_2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Tony_Leung_Chiu_Wai_%28Berlin_Film_Festival_2013%29_2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Siebbi",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "download_date": "2026-10-30T06:12:07.214475+00:00",
+      "verification_date": "2026-10-30",
+      "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+      "description": "Hong Kong Actor Tony Leung Chiu Wai at the Berlin Film Festival 2013",
+      "original_credit": "ipernity.com",
+      "sha256": "69d9004a59b2eccbed1707636ab83ed961c6ec8ff5457d43404ab6f33a698f9b",
+      "download_sha256": "2ca74ac66ea16992329c52f9daf05a4e563374e20213a3b44b9ba82bb0ddfb7d",
+      "dimensions": [
+        953,
+        1423
+      ],
+      "source_evidence": "source_records/36_tony_leung.commons.json"
+    },
+    {
+      "filename": "38_andy_lau.jpg",
+      "category": "portrait",
+      "collection": "chinese_celebrities",
+      "person": "刘德华",
+      "title": "File:Andy Lau (cropped).jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Andy_Lau_(cropped).jpg",
+      "source_revision": {
+        "revid": 1012078702,
+        "parentid": 899336896,
+        "timestamp": "2025-03-20T22:50:52Z"
+      },
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Andy_Lau_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Andy_Lau_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Original image: Pete Yeung\nderivative work:  deerstop.",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "download_date": "2026-10-30T06:12:08.312428+00:00",
+      "verification_date": "2026-10-30",
+      "modifications": "EXIF orientation normalized; resized to longest edge at most 1600 pixels and converted to JPEG. Derived style outputs retain this source license.",
+      "description": "Andy Lau being interviewed at the 29th Hong Kong International Film Festival (2005).",
+      "original_credit": "AndyLau2005_2.jpg",
+      "sha256": "fc9846c4b5c6a97c1151b3dfa220a71c976dfc2f3f61c9c4b44f731866f76e37",
+      "download_sha256": "26f406353f870c745f4b4eb137aaf306db4f370c9c6dacf95f2e423819b5bed0",
+      "dimensions": [
+        483,
+        500
+      ],
+      "source_evidence": "source_records/38_andy_lau.commons.json"
     }
   ],
   "failures": [

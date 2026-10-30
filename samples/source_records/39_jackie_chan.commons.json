@@ -1,0 +1,132 @@
+{
+  "retrieved_api": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3AJackie+Chan+2024.jpg&prop=imageinfo%7Ccategories%7Crevisions&iiprop=url%7Cextmetadata%7Csize%7Csha1%7Cmime&iiurlwidth=1280&cllimit=500&rvprop=ids%7Ctimestamp",
+  "retrieved_at": "2026-10-30T06:02:14.786918+00:00",
+  "page": {
+    "pageid": 166711100,
+    "ns": 6,
+    "title": "File:Jackie Chan 2024.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 145645,
+        "width": 888,
+        "height": 1184,
+        "thumburl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Jackie_Chan_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbwidth": 1280,
+        "thumbheight": 1707,
+        "thumbattribs": {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Jackie_Chan_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "decoding": "async",
+          "loading": "lazy",
+          "width": 1280,
+          "height": 1707
+        },
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Jackie_Chan_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Jackie_Chan_2024.jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=166711100",
+        "sha1": "8874c1fec1fce67362a281f04269bf0b1219ffd0",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2025-06-03 13:52:49",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Jackie Chan 2024",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "CC-Zero|Self-published work|Extracted images|Jackie Chan in 2024",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Jackie Chan in Paris in 2024",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2024-08-30",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:John_Jason_Junior\" title=\"User:John Jason Junior\">John Jason Junior</a>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Zero, Public Domain Dedication",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "false",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        },
+        "mime": "image/jpeg"
+      }
+    ],
+    "categories": [
+      {
+        "ns": 14,
+        "title": "Category:CC-Zero"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Extracted images"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Jackie Chan in 2024"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Self-published work"
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1267982784,
+        "parentid": 1041345012,
+        "timestamp": "2026-08-26T22:47:12Z"
+      }
+    ]
+  }
+}

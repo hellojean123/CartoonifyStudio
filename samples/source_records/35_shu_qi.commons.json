@@ -1,0 +1,157 @@
+{
+  "retrieved_api": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3AShu+Qi+at+the+2025+Toronto+International+Film+Festival.+01+%28cropped%29.jpg&prop=imageinfo%7Ccategories%7Crevisions&iiprop=url%7Cextmetadata%7Csize%7Csha1%7Cmime&iiurlwidth=1280&cllimit=500&rvprop=ids%7Ctimestamp",
+  "retrieved_at": "2026-10-30T06:02:07.843294+00:00",
+  "page": {
+    "pageid": 192715310,
+    "ns": 6,
+    "title": "File:Shu Qi at the 2025 Toronto International Film Festival. 01 (cropped).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 4129858,
+        "width": 2206,
+        "height": 2990,
+        "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_%28cropped%29.jpg/1280px-Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbwidth": 1280,
+        "thumbheight": 1735,
+        "responsiveUrls": {
+          "2": "https://upload.wikimedia.org/wikipedia/commons/9/93/Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        },
+        "thumbattribs": {
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_%28cropped%29.jpg/1280px-Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "decoding": "async",
+          "loading": "lazy",
+          "width": 1280,
+          "height": 1735,
+          "srcset": "https://upload.wikimedia.org/wikipedia/commons/9/93/Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+        },
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Shu_Qi_at_the_2025_Toronto_International_Film_Festival._01_(cropped).jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=192715310",
+        "sha1": "f26a8d6eadafa7675b875c831d219a2352d35759",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2026-05-24 04:40:29",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Shu Qi at the 2025 Toronto International Film Festival. 01 (cropped)",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Personality rights warning|Self-published work|Extracted images|Information field template with formatting|Shu Qi in 2025|WikiPortraits photos missing depicts statements|WikiPortraits at 2025 Toronto International Film Festival",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Shu Qi, director, at the 2025 <a href=\"https://en.wikipedia.org/wiki/Toronto_International_Film_Festival\" class=\"extiw\" title=\"en:Toronto International Film Festival\">Toronto International Film Festival</a> (TIFF) for the movie <i>Girl</i>.",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2025-09-09 13:44:38",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:Saraa.kom\" title=\"User:Saraa.kom\">Sara Komatsu</a>",
+            "source": "commons-desc-page"
+          },
+          "Attribution": {
+            "value": "Sara Komatsu / WikiPortraits",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseShortName": {
+            "value": "CC BY-SA 4.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution-Share Alike 4.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "personality",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-sa-4.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        },
+        "mime": "image/jpeg"
+      }
+    ],
+    "categories": [
+      {
+        "ns": 14,
+        "title": "Category:CC-BY-SA-4.0"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Extracted images"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Information field template with formatting"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Personality rights warning"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Self-published work"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Shu Qi in 2025"
+      },
+      {
+        "ns": 14,
+        "title": "Category:WikiPortraits at 2025 Toronto International Film Festival"
+      },
+      {
+        "ns": 14,
+        "title": "Category:WikiPortraits photos missing depicts statements"
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1255959272,
+        "parentid": 1232308124,
+        "timestamp": "2026-08-03T10:47:47Z"
+      }
+    ]
+  }
+}

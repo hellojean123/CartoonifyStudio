@@ -1,0 +1,164 @@
+{
+  "retrieved_api": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3AZhang+Ziyi-63357+%28cropped%29.jpg&prop=imageinfo%7Ccategories%7Crevisions&iiprop=url%7Cextmetadata%7Csize%7Csha1%7Cmime&iiurlwidth=1280&cllimit=500&rvprop=ids%7Ctimestamp",
+  "retrieved_at": "2026-10-30T06:02:02.400384+00:00",
+  "page": {
+    "pageid": 153617016,
+    "ns": 6,
+    "title": "File:Zhang Ziyi-63357 (cropped).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 1491266,
+        "width": 1802,
+        "height": 2019,
+        "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Zhang_Ziyi-63357_%28cropped%29.jpg/1280px-Zhang_Ziyi-63357_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbwidth": 1280,
+        "thumbheight": 1434,
+        "responsiveUrls": {
+          "2": "https://upload.wikimedia.org/wikipedia/commons/4/45/Zhang_Ziyi-63357_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        },
+        "thumbattribs": {
+          "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Zhang_Ziyi-63357_%28cropped%29.jpg/1280px-Zhang_Ziyi-63357_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "decoding": "async",
+          "loading": "lazy",
+          "width": 1280,
+          "height": 1434,
+          "srcset": "https://upload.wikimedia.org/wikipedia/commons/4/45/Zhang_Ziyi-63357_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+        },
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Zhang_Ziyi-63357_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Zhang_Ziyi-63357_(cropped).jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=153617016",
+        "sha1": "528355ac9cf214a6113dafe8cc931b59f18a0b9d",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2024-10-06 17:49:43",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Zhang Ziyi-63357 (cropped)",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Zhang Ziyi|Personality rights warning|Extracted images|Uploaded with LrMediaWiki|2024 Venice Film Festival|Photographs by Harald Krichel|Supported by Wikimedia Deutschland 2024|WikiPortraits at 2024 Venice Film Festival|WikiPortraits photos of BIPOC individuals|WikiPortraits photos of females",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Actress <a href=\"https://en.wikipedia.org/wiki/Zhang_Ziyi\" class=\"extiw\" title=\"en:Zhang Ziyi\">Zhang Ziyi</a> at the <a href=\"https://en.wikipedia.org/wiki/81st_Venice_International_Film_Festival\" class=\"extiw\" title=\"en:81st Venice International Film Festival\">81st Venice International Film Festival</a>",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2024-08-28",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q640\" class=\"extiw\" title=\"d:Q640\"><span title=\"German photographer; former vice chair of Wikimedia Deutschland\">Harald Krichel</span></a></bdi>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY-SA 4.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution-Share Alike 4.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "personality",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-sa-4.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        },
+        "mime": "image/jpeg"
+      }
+    ],
+    "categories": [
+      {
+        "ns": 14,
+        "title": "Category:2024 Venice Film Festival"
+      },
+      {
+        "ns": 14,
+        "title": "Category:CC-BY-SA-4.0"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Extracted images"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Personality rights warning"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Photographs by Harald Krichel"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Supported by Wikimedia Deutschland 2024"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Uploaded with LrMediaWiki"
+      },
+      {
+        "ns": 14,
+        "title": "Category:WikiPortraits at 2024 Venice Film Festival"
+      },
+      {
+        "ns": 14,
+        "title": "Category:WikiPortraits photos of BIPOC individuals"
+      },
+      {
+        "ns": 14,
+        "title": "Category:WikiPortraits photos of females"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Zhang Ziyi"
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 1231958229,
+        "parentid": 1009283964,
+        "timestamp": "2026-06-15T19:27:59Z"
+      }
+    ]
+  }
+}

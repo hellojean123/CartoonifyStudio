@@ -1,0 +1,128 @@
+{
+  "retrieved_api": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3AHu+Ge+2019.jpg&prop=imageinfo%7Ccategories%7Crevisions&iiprop=url%7Cextmetadata%7Csize%7Csha1%7Cmime&iiurlwidth=1280&cllimit=500&rvprop=ids%7Ctimestamp",
+  "retrieved_at": "2026-10-30T06:01:57.255548+00:00",
+  "page": {
+    "pageid": 98144444,
+    "ns": 6,
+    "title": "File:Hu Ge 2019.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+      {
+        "size": 96236,
+        "width": 1109,
+        "height": 712,
+        "thumburl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Hu_Ge_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbwidth": 1280,
+        "thumbheight": 822,
+        "thumbattribs": {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Hu_Ge_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "decoding": "async",
+          "loading": "lazy",
+          "width": 1280,
+          "height": 822
+        },
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Hu_Ge_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionurl": "https://commons.wikimedia.org/wiki/File:Hu_Ge_2019.jpg",
+        "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=98144444",
+        "sha1": "079ec4d4b4c1e06c34ca02b5cd983d206103eb84",
+        "extmetadata": {
+          "DateTime": {
+            "value": "2020-12-27 21:18:47",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Hu Ge 2019",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Media from YouTube|Hu Ge",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Hu Ge in 2019",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2020-12-27",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "cut from <a href=\"//commons.wikimedia.org/wiki/File:%E7%94%B5%E5%BD%B1%E3%80%8A%E6%94%80%E7%99%BB%E8%80%85%E3%80%8B%E4%BA%AE%E7%9B%B8%E4%B8%8A%E5%BD%B1%E8%8A%82_%E5%90%B4%E4%BA%AC%E3%80%81%E7%AB%A0%E5%AD%90%E6%80%A1%E3%80%81%E8%83%A1%E6%AD%8C%E5%88%86%E4%BA%AB%E9%9A%BE%E5%BF%98%E7%BB%8F%E5%8E%86_(6).webm\" title=\"File:电影《攀登者》亮相上影节 吴京、章子怡、胡歌分享难忘经历 (6).webm\">File:电影《攀登者》亮相上影节 吴京、章子怡、胡歌分享难忘经历 (6).webm</a>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "中国新闻网",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY 3.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution 3.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by/3.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-3.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        },
+        "mime": "image/jpeg"
+      }
+    ],
+    "categories": [
+      {
+        "ns": 14,
+        "title": "Category:CC-BY-3.0"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Hu Ge"
+      },
+      {
+        "ns": 14,
+        "title": "Category:Media from YouTube"
+      }
+    ],
+    "revisions": [
+      {
+        "revid": 732013693,
+        "parentid": 521817382,
+        "timestamp": "2023-02-12T10:42:11Z"
+      }
+    ]
+  }
+}
