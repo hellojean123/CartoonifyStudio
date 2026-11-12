@@ -1,0 +1,97 @@
+{
+  "tests": 142,
+  "samples": 33,
+  "http": {
+    "selection_verified": true,
+    "http_status": 200,
+    "formats": [
+      {
+        "style": "铅笔素描",
+        "pencil_mode": "灰度",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 17.389041299999008,
+        "format": "PNG",
+        "size": [
+          1180,
+          1600
+        ],
+        "export_status": "2.92 秒 · 精细原尺寸导出 1180×1600"
+      },
+      {
+        "style": "铅笔素描",
+        "pencil_mode": "彩色",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 6.751015200001348,
+        "format": "JPG",
+        "size": [
+          1180,
+          1600
+        ],
+        "export_status": "3.57 秒 · 精细原尺寸导出 1180×1600"
+      }
+    ],
+    "batch_png_count": 2,
+    "cancel_response": "没有正在运行的任务。"
+  },
+  "benchmark": [
+    {
+      "size": [
+        640,
+        480
+      ],
+      "cold_seconds": 4.14,
+      "warm_preview_seconds": 0.063,
+      "peak_rss_mib": 120.2,
+      "baseline_rss_mib": 48.2,
+      "preview_export_mae": 0.0,
+      "stages": {
+        "prepare": 0.21304390000295825,
+        "layers": 3.2873107999985223,
+        "render": 0.6370591999984754,
+        "total": 4.137414400000125
+      }
+    },
+    {
+      "size": [
+        1920,
+        1080
+      ],
+      "cold_seconds": 6.312,
+      "warm_preview_seconds": 0.886,
+      "peak_rss_mib": 156.4,
+      "baseline_rss_mib": 62.1,
+      "preview_export_mae": 1.04,
+      "stages": {
+        "prepare": 0.22772919999988517,
+        "layers": 3.604348499997286,
+        "render": 2.4787219000027108,
+        "total": 6.310799799997767
+      }
+    },
+    {
+      "size": [
+        3840,
+        2160
+      ],
+      "cold_seconds": 13.866,
+      "warm_preview_seconds": 0.893,
+      "peak_rss_mib": 185.4,
+      "baseline_rss_mib": 86.7,
+      "preview_export_mae": 1.023,
+      "stages": {
+        "prepare": 0.32209960000182036,
+        "layers": 3.1753153999998176,
+        "render": 10.36713729999974,
+        "total": 13.864552500002901
+      }
+    }
+  ],
+  "source_sha256": {
+    "cartoonify/core.py": "94cbfa10c096ff5f38be3bd75fa28b74b2d10d0580241f296d3cb5704ed404d8",
+    "cartoonify/pencil.py": "9ba99608204207c81e2b07df4dfa5f89682233f5e24dcc57f2e5efd09b958635",
+    "cartoonify/portrait_pencil.py": "04ae0a3ba94c5872d925734883d7154e36ae365f3bf355a1001b24ba8a13bf10",
+    "cartoonify/progressive_pencil.py": "1b719e24a08cd25ed68db5175b08883572523964f3b265eb96c5d7d2ae08e173",
+    "cartoonify/material_pencil.py": "4f498da8b5c536847d4414180a0816ca99dea2446a72ff7794ff5057776f8e44",
+    "app.py": "8301714efaadc0aa393e9dfeffa0337f18bf57a3e04e8e802427fc09feeb903f"
+  }
+}

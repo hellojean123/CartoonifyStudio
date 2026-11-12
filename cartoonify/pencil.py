@@ -56,6 +56,8 @@ def graphite_strokes(tone,theta,coherence):
 
 def pencil_layers(prepared,p,cancel=None):
     rgb=prepared['blur'];gray=cv2.cvtColor(rgb,cv2.COLOR_RGB2GRAY).astype(np.float32)/255
+    from .material_pencil import material_structure
+    relief,form=material_structure(prepared['guide'],prepared['skin'])
     outer,inner,theta,coherence=_contours(gray,p.smooth)
     face=prepared['mask'];features=prepared['features']
     # Selective simplification is continuous: no hard face-box boundaries.
@@ -69,7 +71,7 @@ def pencil_layers(prepared,p,cancel=None):
         focus=np.clip(focus*2.,0,1)
         inner*=.48+.52*focus
         outer*=.72+.28*focus
-    tone=_blur(gray,2.5+p.smooth*.5)
+    tone=_blur(form,1.5+p.smooth*.3)
     density=np.clip((.86-tone)/.86,0,1)**1.65
     if p.protect:
         # A fixed luminance curve erased form on pale/brightly lit faces.
@@ -94,7 +96,9 @@ def pencil_layers(prepared,p,cancel=None):
     density=np.clip(density*1.45,0,1)
     from .portrait_pencil import portrait_detail
     detail=portrait_detail(prepared) if p.protect else {'eye_mask':np.zeros_like(tone),'eye_drawing':np.zeros_like(tone),'hair_boundary':np.zeros_like(tone),'eyes_refined':0}
-    density*=1-detail['eye_mask']*.88
+    # Persistent folds and skin grooves get accents, not a full pore texture overlay.
+    inner+=relief*(1-detail['eye_mask'])*.65
+    density*=1-detail['eye_mask']*.35
     outer+=detail['hair_boundary']*.85
     from .progressive_pencil import regional_plan
     plan=regional_plan(tone,theta,density,prepared['skin'] if p.protect else np.zeros_like(tone),
@@ -102,7 +106,7 @@ def pencil_layers(prepared,p,cancel=None):
     # Establish persistent contours; do not amplify every directional texture edge.
     outer*=1.05
     inner*=.6
-    density*=.14
+    density*=.65
     # Optical absorption describes pigments, rather than tinting the paper.
     color=_blur(rgb.astype(np.float32)/255,3)
     absorption=1-color
@@ -110,7 +114,7 @@ def pencil_layers(prepared,p,cancel=None):
     absorption=.22+.78*absorption
     return {'base':np.full_like(rgb,255),'coarse':outer,'internal':inner,
             'tone':tone,'density':density,'stroke_plan':plan,
-            'pigment':absorption.astype(np.float32),'anime_faces':0,**detail}
+            'pigment':absorption.astype(np.float32),'anime_faces':0,'material_relief':relief,**detail}
 
 
 def paper_grain(xx,yy):

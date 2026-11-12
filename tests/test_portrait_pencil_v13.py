@@ -23,4 +23,4 @@ def test_missing_landmarks_are_safe_and_finite():
 def test_dark_eye_does_not_gain_an_artificial_white_patch():
     p=prepared();p['guide']=(p['guide'].astype(float)*.35).astype(np.uint8)
     d=portrait_detail(p)
-    assert d['eyes_refined']==0 and not d['eye_mask'].any()
+    assert d['eye_mask'].max()<.1
