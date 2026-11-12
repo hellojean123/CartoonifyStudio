@@ -92,12 +92,12 @@ def pencil_layers(prepared,p,cancel=None):
     theta,reliability=tangent_flow(gray,cancel)
     # Quantized drawing layers carry shadows; keep only a little broad graphite.
     density=np.clip(density*1.45,0,1)
-    plan=ordered_plan(tone,theta,reliability,density,prepared['skin'] if p.protect else None,
-                      focus if p.protect else None,features,cancel)
-    structure=directional_structure(gray,p.smooth)
-    if p.protect:structure*=1-prepared['skin']*(1-features)*p.face_strength*.8
-    outer=outer*.68+structure*.55
-    inner*=.5
+    from .progressive_pencil import regional_plan
+    plan=regional_plan(tone,theta,density,prepared['skin'] if p.protect else np.zeros_like(tone),
+                       features,focus if p.protect else np.ones_like(tone),cancel,contours=outer*.65+inner*.2)
+    # Establish persistent contours; do not amplify every directional texture edge.
+    outer*=1.05
+    inner*=.6
     density*=.14
     # Optical absorption describes pigments, rather than tinting the paper.
     color=_blur(rgb.astype(np.float32)/255,3)
