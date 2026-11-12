@@ -1,0 +1,26 @@
+[
+  {
+    "round": 1,
+    "new_strokes": 5659,
+    "mean_positive_error_before": 0.17276769876480103,
+    "mean_positive_error_after": 0.10760556161403656
+  },
+  {
+    "round": 2,
+    "new_strokes": 14474,
+    "mean_positive_error_before": 0.25993895530700684,
+    "mean_positive_error_after": 0.1800372302532196
+  },
+  {
+    "round": 3,
+    "new_strokes": 15424,
+    "mean_positive_error_before": 0.2817399501800537,
+    "mean_positive_error_after": 0.2413751482963562
+  },
+  {
+    "round": 4,
+    "new_strokes": 29192,
+    "mean_positive_error_before": 0.31849732995033264,
+    "mean_positive_error_after": 0.2885150909423828
+  }
+]

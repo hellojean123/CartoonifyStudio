@@ -1,0 +1,53 @@
+[
+  {
+    "size": [
+      640,
+      480
+    ],
+    "cold_seconds": 3.75,
+    "warm_preview_seconds": 0.068,
+    "peak_rss_mib": 111.8,
+    "baseline_rss_mib": 48.1,
+    "preview_export_mae": 0.0,
+    "stages": {
+      "prepare": 0.22574919999897247,
+      "layers": 2.7819863999993686,
+      "render": 0.7404421000010188,
+      "total": 3.748177899999064
+    }
+  },
+  {
+    "size": [
+      1920,
+      1080
+    ],
+    "cold_seconds": 6.124,
+    "warm_preview_seconds": 0.827,
+    "peak_rss_mib": 145.3,
+    "baseline_rss_mib": 61.7,
+    "preview_export_mae": 1.417,
+    "stages": {
+      "prepare": 0.28813630000149715,
+      "layers": 3.2768031999985396,
+      "render": 2.557013600000573,
+      "total": 6.121953600000779
+    }
+  },
+  {
+    "size": [
+      3840,
+      2160
+    ],
+    "cold_seconds": 12.056,
+    "warm_preview_seconds": 0.721,
+    "peak_rss_mib": 174.2,
+    "baseline_rss_mib": 86.6,
+    "preview_export_mae": 1.639,
+    "stages": {
+      "prepare": 0.2604582999992999,
+      "layers": 3.142890000000989,
+      "render": 8.651715899999544,
+      "total": 12.055064399999537
+    }
+  }
+]

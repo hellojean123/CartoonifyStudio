@@ -179,3 +179,10 @@ Set-Location D:\CartoonifyStudio
 - [完整处理逻辑](处理逻辑说明.md)
 
 旧版报告和画廊用于历史对照；此处为最新素描实现。
+
+
+## 素描 v12：轮廓起稿与分区多轮刻画
+
+采用轮廓引导、四轮残差反馈、由粗到细的笔刷和五官保护。每轮实际绘制并检查当前画布，仅在尚缺明暗的区域补笔。
+
+[33张新旧对照](outputs/pencil_v12/gallery.html) · [五阶段过程图](outputs/pencil_v12/drawing_stages.jpg) · [方法、性能与局限](pencil_v12_report.md)。旧版画廊用于历史对照。

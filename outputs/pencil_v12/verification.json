@@ -1,0 +1,96 @@
+{
+  "tests": 135,
+  "failures": 0,
+  "samples": 33,
+  "http": {
+    "selection_verified": true,
+    "http_status": 200,
+    "formats": [
+      {
+        "style": "铅笔素描",
+        "pencil_mode": "灰度",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 14.91257509999923,
+        "format": "PNG",
+        "size": [
+          1180,
+          1600
+        ],
+        "export_status": "2.69 秒 · 精细原尺寸导出 1180×1600"
+      },
+      {
+        "style": "铅笔素描",
+        "pencil_mode": "彩色",
+        "preview_stages": 2,
+        "preview_end_to_end_seconds": 5.955781599999682,
+        "format": "JPG",
+        "size": [
+          1180,
+          1600
+        ],
+        "export_status": "2.52 秒 · 精细原尺寸导出 1180×1600"
+      }
+    ],
+    "batch_png_count": 2,
+    "cancel_response": "没有正在运行的任务。"
+  },
+  "benchmark": [
+    {
+      "size": [
+        640,
+        480
+      ],
+      "cold_seconds": 3.75,
+      "warm_preview_seconds": 0.068,
+      "peak_rss_mib": 111.8,
+      "baseline_rss_mib": 48.1,
+      "preview_export_mae": 0.0,
+      "stages": {
+        "prepare": 0.22574919999897247,
+        "layers": 2.7819863999993686,
+        "render": 0.7404421000010188,
+        "total": 3.748177899999064
+      }
+    },
+    {
+      "size": [
+        1920,
+        1080
+      ],
+      "cold_seconds": 6.124,
+      "warm_preview_seconds": 0.827,
+      "peak_rss_mib": 145.3,
+      "baseline_rss_mib": 61.7,
+      "preview_export_mae": 1.417,
+      "stages": {
+        "prepare": 0.28813630000149715,
+        "layers": 3.2768031999985396,
+        "render": 2.557013600000573,
+        "total": 6.121953600000779
+      }
+    },
+    {
+      "size": [
+        3840,
+        2160
+      ],
+      "cold_seconds": 12.056,
+      "warm_preview_seconds": 0.721,
+      "peak_rss_mib": 174.2,
+      "baseline_rss_mib": 86.6,
+      "preview_export_mae": 1.639,
+      "stages": {
+        "prepare": 0.2604582999992999,
+        "layers": 3.142890000000989,
+        "render": 8.651715899999544,
+        "total": 12.055064399999537
+      }
+    }
+  ],
+  "source_sha256": {
+    "cartoonify/core.py": "934483cf84b178b95c455473b2c63515f1fb84db78e916cc9a7f99e31e467962",
+    "cartoonify/pencil.py": "4925a1a91366892cfcb9afb66539e33854de14c770ffbf8c0a1fde9bef69bcf7",
+    "cartoonify/progressive_pencil.py": "600129a5df289fc5ff61255414917024bec55486505e5d9c0e1ddd0ae39c4cec",
+    "app.py": "51df31b90bb157716fa253582379bfcd45dd43e130d739979901bda8b14f5ca7"
+  }
+}
