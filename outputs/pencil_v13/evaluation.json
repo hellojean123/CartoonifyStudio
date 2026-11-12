@@ -1,0 +1,2839 @@
+[
+  {
+    "file": "01_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      853
+    ],
+    "seconds": 10.403,
+    "baseline_rss_mib": 45.4,
+    "peak_rss_mib": 180.5,
+    "diagnostics": {
+      "faces": [
+        [
+          84,
+          2,
+          794,
+          724
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        666,
+        1000
+      ],
+      "cache": {
+        "bytes": 60348428,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.3319286000005377,
+        "layers": 6.8546363999994355,
+        "render": 3.2147733999991033,
+        "total": 10.401338699999542
+      },
+      "pencil_brush": {
+        "stroke_count": 131887,
+        "width_reference_quantiles": [
+          0.16721636950969695,
+          0.27274903655052185,
+          0.6258296370506287
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 9721,
+            "mean_positive_error_before": 0.3972710072994232,
+            "mean_positive_error_after": 0.22717700898647308
+          },
+          {
+            "round": 2,
+            "new_strokes": 20673,
+            "mean_positive_error_before": 0.5799404978752136,
+            "mean_positive_error_after": 0.4173811078071594
+          },
+          {
+            "round": 3,
+            "new_strokes": 35465,
+            "mean_positive_error_before": 0.6532834768295288,
+            "mean_positive_error_after": 0.5480858087539673
+          },
+          {
+            "round": 4,
+            "new_strokes": 66028,
+            "mean_positive_error_before": 0.7258596420288086,
+            "mean_positive_error_after": 0.6500789523124695
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "02_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1600
+    ],
+    "seconds": 6.723,
+    "baseline_rss_mib": 65.8,
+    "peak_rss_mib": 182.4,
+    "diagnostics": {
+      "faces": [
+        [
+          272,
+          106,
+          180,
+          238
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        800
+      ],
+      "cache": {
+        "bytes": 57714924,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.39450810000016645,
+        "layers": 4.49487599999884,
+        "render": 1.8317762000006041,
+        "total": 6.721160499999314
+      },
+      "pencil_brush": {
+        "stroke_count": 33043,
+        "width_reference_quantiles": [
+          0.19558778405189514,
+          0.3592280149459839,
+          0.80464026927948
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 3168,
+            "mean_positive_error_before": 0.08235911279916763,
+            "mean_positive_error_after": 0.05689582601189613
+          },
+          {
+            "round": 2,
+            "new_strokes": 9582,
+            "mean_positive_error_before": 0.13464084267616272,
+            "mean_positive_error_after": 0.09559173882007599
+          },
+          {
+            "round": 3,
+            "new_strokes": 7054,
+            "mean_positive_error_before": 0.14761146903038025,
+            "mean_positive_error_after": 0.13054320216178894
+          },
+          {
+            "round": 4,
+            "new_strokes": 13239,
+            "mean_positive_error_before": 0.17000332474708557,
+            "mean_positive_error_after": 0.15728919208049774
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "03_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1600
+    ],
+    "seconds": 9.71,
+    "baseline_rss_mib": 70.2,
+    "peak_rss_mib": 194.0,
+    "diagnostics": {
+      "faces": [
+        [
+          246,
+          188,
+          247,
+          381
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        800
+      ],
+      "cache": {
+        "bytes": 59842924,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.35390150000057474,
+        "layers": 6.185214499999347,
+        "render": 3.1688124000011157,
+        "total": 9.707928600000741
+      },
+      "pencil_brush": {
+        "stroke_count": 61043,
+        "width_reference_quantiles": [
+          0.1881284922361374,
+          0.32494792342185974,
+          0.7967936635017395
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 6128,
+            "mean_positive_error_before": 0.16572517156600952,
+            "mean_positive_error_after": 0.10201111435890198
+          },
+          {
+            "round": 2,
+            "new_strokes": 15925,
+            "mean_positive_error_before": 0.24656932055950165,
+            "mean_positive_error_after": 0.16346774995326996
+          },
+          {
+            "round": 3,
+            "new_strokes": 13195,
+            "mean_positive_error_before": 0.259507417678833,
+            "mean_positive_error_after": 0.22552765905857086
+          },
+          {
+            "round": 4,
+            "new_strokes": 25795,
+            "mean_positive_error_before": 0.29846107959747314,
+            "mean_positive_error_after": 0.2723781168460846
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "04_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1228
+    ],
+    "seconds": 6.427,
+    "baseline_rss_mib": 78.1,
+    "peak_rss_mib": 207.4,
+    "diagnostics": {
+      "faces": [
+        [
+          237,
+          228,
+          159,
+          208
+        ],
+        [
+          705,
+          397,
+          72,
+          72
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        959,
+        1000
+      ],
+      "cache": {
+        "bytes": 68549236,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.4950375000007625,
+        "layers": 4.582364399999278,
+        "render": 1.3480254000005516,
+        "total": 6.425427800000762
+      },
+      "pencil_brush": {
+        "stroke_count": 31231,
+        "width_reference_quantiles": [
+          0.20022718608379364,
+          0.3987572193145752,
+          0.8219475746154785
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 3402,
+            "mean_positive_error_before": 0.07150733470916748,
+            "mean_positive_error_after": 0.04887881129980087
+          },
+          {
+            "round": 2,
+            "new_strokes": 10102,
+            "mean_positive_error_before": 0.11479542404413223,
+            "mean_positive_error_after": 0.08070410043001175
+          },
+          {
+            "round": 3,
+            "new_strokes": 5951,
+            "mean_positive_error_before": 0.12487362325191498,
+            "mean_positive_error_after": 0.11237894743680954
+          },
+          {
+            "round": 4,
+            "new_strokes": 11776,
+            "mean_positive_error_before": 0.1460646539926529,
+            "mean_positive_error_after": 0.13608591258525848
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "05_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      853
+    ],
+    "seconds": 7.414,
+    "baseline_rss_mib": 67.5,
+    "peak_rss_mib": 179.7,
+    "diagnostics": {
+      "faces": [
+        [
+          308,
+          124,
+          499,
+          596
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        666,
+        1000
+      ],
+      "cache": {
+        "bytes": 56343380,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.3469937999998365,
+        "layers": 5.395362600000226,
+        "render": 1.6696711999993568,
+        "total": 7.412027999998827
+      },
+      "pencil_brush": {
+        "stroke_count": 79189,
+        "width_reference_quantiles": [
+          0.1733619213104248,
+          0.2858101427555084,
+          0.6748480916023252
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 5872,
+            "mean_positive_error_before": 0.21307115256786346,
+            "mean_positive_error_after": 0.12674257159233093
+          },
+          {
+            "round": 2,
+            "new_strokes": 13756,
+            "mean_positive_error_before": 0.31261682510375977,
+            "mean_positive_error_after": 0.21669329702854156
+          },
+          {
+            "round": 3,
+            "new_strokes": 20801,
+            "mean_positive_error_before": 0.34080129861831665,
+            "mean_positive_error_after": 0.2810238003730774
+          },
+          {
+            "round": 4,
+            "new_strokes": 38760,
+            "mean_positive_error_before": 0.3748050630092621,
+            "mean_positive_error_after": 0.33122342824935913
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "06_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1920
+    ],
+    "seconds": 4.638,
+    "baseline_rss_mib": 69.1,
+    "peak_rss_mib": 167.2,
+    "diagnostics": {
+      "faces": [
+        [
+          259,
+          169,
+          173,
+          236
+        ],
+        [
+          53,
+          544,
+          183,
+          183
+        ],
+        [
+          386,
+          426,
+          136,
+          136
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        667
+      ],
+      "cache": {
+        "bytes": 48157692,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.33497860000170476,
+        "layers": 2.5995444000000134,
+        "render": 1.7018786999997246,
+        "total": 4.636402000000089
+      },
+      "pencil_brush": {
+        "stroke_count": 28013,
+        "width_reference_quantiles": [
+          0.18988882899284362,
+          0.301534503698349,
+          0.7107448458671569
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 1791,
+            "mean_positive_error_before": 0.06291714310646057,
+            "mean_positive_error_after": 0.04031134396791458
+          },
+          {
+            "round": 2,
+            "new_strokes": 4750,
+            "mean_positive_error_before": 0.10133924335241318,
+            "mean_positive_error_after": 0.07140418887138367
+          },
+          {
+            "round": 3,
+            "new_strokes": 7355,
+            "mean_positive_error_before": 0.11218392848968506,
+            "mean_positive_error_after": 0.0921575054526329
+          },
+          {
+            "round": 4,
+            "new_strokes": 14117,
+            "mean_positive_error_before": 0.12305600941181183,
+            "mean_positive_error_after": 0.10731751471757889
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "07_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1094
+    ],
+    "seconds": 4.159,
+    "baseline_rss_mib": 71.0,
+    "peak_rss_mib": 192.2,
+    "diagnostics": {
+      "faces": [
+        [
+          399,
+          152,
+          47,
+          65
+        ],
+        [
+          579,
+          177,
+          53,
+          67
+        ],
+        [
+          754,
+          155,
+          57,
+          76
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        855,
+        1000
+      ],
+      "cache": {
+        "bytes": 65241680,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.4506075999997847,
+        "layers": 3.1177373999998963,
+        "render": 0.5895746999995026,
+        "total": 4.157919899998888
+      },
+      "pencil_brush": {
+        "stroke_count": 8412,
+        "width_reference_quantiles": [
+          0.3591049164533615,
+          0.666613757610321,
+          0.9801914274692539
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 6,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 1587,
+            "mean_positive_error_before": 0.034256890416145325,
+            "mean_positive_error_after": 0.029156560078263283
+          },
+          {
+            "round": 2,
+            "new_strokes": 5778,
+            "mean_positive_error_before": 0.06342020630836487,
+            "mean_positive_error_after": 0.04950598627328873
+          },
+          {
+            "round": 3,
+            "new_strokes": 344,
+            "mean_positive_error_before": 0.07261388003826141,
+            "mean_positive_error_after": 0.07232344150543213
+          },
+          {
+            "round": 4,
+            "new_strokes": 703,
+            "mean_positive_error_before": 0.08988865464925766,
+            "mean_positive_error_after": 0.08959954231977463
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "08_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1396
+    ],
+    "seconds": 5.39,
+    "baseline_rss_mib": 74.6,
+    "peak_rss_mib": 198.9,
+    "diagnostics": {
+      "faces": [
+        [
+          347,
+          261,
+          188,
+          243
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        917
+      ],
+      "cache": {
+        "bytes": 64728180,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.5607572000008076,
+        "layers": 3.831301899999744,
+        "render": 0.996627599999556,
+        "total": 5.388686899999811
+      },
+      "pencil_brush": {
+        "stroke_count": 19099,
+        "width_reference_quantiles": [
+          0.18352377712726592,
+          0.30029207468032837,
+          0.7158278346061706
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 1265,
+            "mean_positive_error_before": 0.028843684121966362,
+            "mean_positive_error_after": 0.020687874406576157
+          },
+          {
+            "round": 2,
+            "new_strokes": 3753,
+            "mean_positive_error_before": 0.04883650317788124,
+            "mean_positive_error_after": 0.03455551713705063
+          },
+          {
+            "round": 3,
+            "new_strokes": 4883,
+            "mean_positive_error_before": 0.05357527360320091,
+            "mean_positive_error_after": 0.04468568414449692
+          },
+          {
+            "round": 4,
+            "new_strokes": 9198,
+            "mean_positive_error_before": 0.05920390412211418,
+            "mean_positive_error_after": 0.05246703699231148
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "13_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      719
+    ],
+    "seconds": 4.327,
+    "baseline_rss_mib": 68.2,
+    "peak_rss_mib": 148.2,
+    "diagnostics": {
+      "faces": [
+        [
+          633,
+          214,
+          27,
+          31
+        ],
+        [
+          471,
+          236,
+          19,
+          22
+        ],
+        [
+          560,
+          194,
+          15,
+          17
+        ],
+        [
+          370,
+          230,
+          15,
+          21
+        ],
+        [
+          71,
+          267,
+          17,
+          22
+        ],
+        [
+          403,
+          247,
+          18,
+          21
+        ],
+        [
+          518,
+          226,
+          16,
+          21
+        ],
+        [
+          371,
+          300,
+          19,
+          24
+        ],
+        [
+          507,
+          191,
+          15,
+          19
+        ],
+        [
+          596,
+          207,
+          17,
+          22
+        ],
+        [
+          431,
+          195,
+          18,
+          21
+        ],
+        [
+          653,
+          197,
+          20,
+          24
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        562,
+        1000
+      ],
+      "cache": {
+        "bytes": 42729696,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.4740124999989348,
+        "layers": 3.381987599999775,
+        "render": 0.46950740000102087,
+        "total": 4.325507899999138
+      },
+      "pencil_brush": {
+        "stroke_count": 3334,
+        "width_reference_quantiles": [
+          0.5026187121868133,
+          0.6891610324382782,
+          0.8708424508571626
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 0,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 449,
+            "mean_positive_error_before": 0.024803997948765755,
+            "mean_positive_error_after": 0.02327439934015274
+          },
+          {
+            "round": 2,
+            "new_strokes": 2867,
+            "mean_positive_error_before": 0.05348560959100723,
+            "mean_positive_error_after": 0.046115826815366745
+          },
+          {
+            "round": 3,
+            "new_strokes": 0,
+            "mean_positive_error_before": 0.06670816987752914,
+            "mean_positive_error_after": 0.06670816987752914
+          },
+          {
+            "round": 4,
+            "new_strokes": 18,
+            "mean_positive_error_before": 0.08233745396137238,
+            "mean_positive_error_after": 0.08230859786272049
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "14_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      719
+    ],
+    "seconds": 3.453,
+    "baseline_rss_mib": 69.2,
+    "peak_rss_mib": 143.8,
+    "diagnostics": {
+      "faces": [
+        [
+          173,
+          221,
+          23,
+          30
+        ],
+        [
+          822,
+          173,
+          15,
+          18
+        ],
+        [
+          793,
+          194,
+          17,
+          21
+        ],
+        [
+          712,
+          195,
+          14,
+          18
+        ],
+        [
+          759,
+          168,
+          13,
+          15
+        ],
+        [
+          667,
+          167,
+          14,
+          17
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        562,
+        1000
+      ],
+      "cache": {
+        "bytes": 42730760,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.4288814999999886,
+        "layers": 2.5895458000013605,
+        "render": 0.4338735999990604,
+        "total": 3.452301000001171
+      },
+      "pencil_brush": {
+        "stroke_count": 3444,
+        "width_reference_quantiles": [
+          0.5058601677417756,
+          0.6927220523357391,
+          0.9027449727058411
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 0,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 522,
+            "mean_positive_error_before": 0.026661477982997894,
+            "mean_positive_error_after": 0.024835169315338135
+          },
+          {
+            "round": 2,
+            "new_strokes": 2922,
+            "mean_positive_error_before": 0.054550282657146454,
+            "mean_positive_error_after": 0.04702424257993698
+          },
+          {
+            "round": 3,
+            "new_strokes": 0,
+            "mean_positive_error_before": 0.06712675839662552,
+            "mean_positive_error_after": 0.06712675839662552
+          },
+          {
+            "round": 4,
+            "new_strokes": 0,
+            "mean_positive_error_before": 0.08236368000507355,
+            "mean_positive_error_after": 0.08236368000507355
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "15_landscape.jpg",
+    "person": "",
+    "size": [
+      1280,
+      960
+    ],
+    "seconds": 12.573,
+    "baseline_rss_mib": 65.4,
+    "peak_rss_mib": 193.0,
+    "diagnostics": {
+      "faces": [],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        750,
+        1000
+      ],
+      "cache": {
+        "bytes": 65421852,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.37095100000078673,
+        "layers": 8.53928950000045,
+        "render": 3.6602134999993723,
+        "total": 12.57045460000154
+      },
+      "pencil_brush": {
+        "stroke_count": 115187,
+        "width_reference_quantiles": [
+          0.20502686500549316,
+          0.31398695707321167,
+          0.7685473799705509
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 0,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 9136,
+            "mean_positive_error_before": 0.4294339120388031,
+            "mean_positive_error_after": 0.21088889241218567
+          },
+          {
+            "round": 2,
+            "new_strokes": 17792,
+            "mean_positive_error_before": 0.5771825909614563,
+            "mean_positive_error_after": 0.403800368309021
+          },
+          {
+            "round": 3,
+            "new_strokes": 31012,
+            "mean_positive_error_before": 0.649608850479126,
+            "mean_positive_error_after": 0.5415919423103333
+          },
+          {
+            "round": 4,
+            "new_strokes": 57247,
+            "mean_positive_error_before": 0.7265390157699585,
+            "mean_positive_error_after": 0.6515188813209534
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "16_landscape.jpg",
+    "person": "",
+    "size": [
+      1280,
+      863
+    ],
+    "seconds": 7.011,
+    "baseline_rss_mib": 66.9,
+    "peak_rss_mib": 171.2,
+    "diagnostics": {
+      "faces": [],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        674,
+        1000
+      ],
+      "cache": {
+        "bytes": 55795332,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.4505730000000767,
+        "layers": 4.9387006999986625,
+        "render": 1.6199474000004557,
+        "total": 7.00922139999966
+      },
+      "pencil_brush": {
+        "stroke_count": 64057,
+        "width_reference_quantiles": [
+          0.20472378730773927,
+          0.31247133016586304,
+          0.7527760028839112
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 0,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 4518,
+            "mean_positive_error_before": 0.18957339227199554,
+            "mean_positive_error_after": 0.09068973362445831
+          },
+          {
+            "round": 2,
+            "new_strokes": 9808,
+            "mean_positive_error_before": 0.25524094700813293,
+            "mean_positive_error_after": 0.16475018858909607
+          },
+          {
+            "round": 3,
+            "new_strokes": 17371,
+            "mean_positive_error_before": 0.27544400095939636,
+            "mean_positive_error_after": 0.21701128780841827
+          },
+          {
+            "round": 4,
+            "new_strokes": 32360,
+            "mean_positive_error_before": 0.30077680945396423,
+            "mean_positive_error_after": 0.2591361403465271
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "17_architecture.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1303
+    ],
+    "seconds": 7.504,
+    "baseline_rss_mib": 67.5,
+    "peak_rss_mib": 204.2,
+    "diagnostics": {
+      "faces": [
+        [
+          197,
+          308,
+          53,
+          58
+        ],
+        [
+          729,
+          297,
+          77,
+          77
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        982
+      ],
+      "cache": {
+        "bytes": 68429732,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.6835193000006257,
+        "layers": 5.762043099999573,
+        "render": 1.0575293000001693,
+        "total": 7.503091900000072
+      },
+      "pencil_brush": {
+        "stroke_count": 8777,
+        "width_reference_quantiles": [
+          0.26060367822647096,
+          0.6188873648643494,
+          0.8550799727439882
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 1200,
+            "mean_positive_error_before": 0.026972871273756027,
+            "mean_positive_error_after": 0.02369622327387333
+          },
+          {
+            "round": 2,
+            "new_strokes": 5485,
+            "mean_positive_error_before": 0.05464749410748482,
+            "mean_positive_error_after": 0.04370204731822014
+          },
+          {
+            "round": 3,
+            "new_strokes": 703,
+            "mean_positive_error_before": 0.06475091725587845,
+            "mean_positive_error_after": 0.06384580582380295
+          },
+          {
+            "round": 4,
+            "new_strokes": 1389,
+            "mean_positive_error_before": 0.07993070781230927,
+            "mean_positive_error_after": 0.07917028665542603
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "18_architecture.jpg",
+    "person": "",
+    "size": [
+      1280,
+      737
+    ],
+    "seconds": 11.206,
+    "baseline_rss_mib": 73.9,
+    "peak_rss_mib": 171.1,
+    "diagnostics": {
+      "faces": [],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        576,
+        1000
+      ],
+      "cache": {
+        "bytes": 51056952,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.4255751999990025,
+        "layers": 7.941182399999889,
+        "render": 2.837620300000708,
+        "total": 11.204378200000065
+      },
+      "pencil_brush": {
+        "stroke_count": 99172,
+        "width_reference_quantiles": [
+          0.204444782435894,
+          0.31242065131664276,
+          0.7510132312774659
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 0,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 6723,
+            "mean_positive_error_before": 0.3042999804019928,
+            "mean_positive_error_after": 0.16798368096351624
+          },
+          {
+            "round": 2,
+            "new_strokes": 15557,
+            "mean_positive_error_before": 0.45209839940071106,
+            "mean_positive_error_after": 0.3034232556819916
+          },
+          {
+            "round": 3,
+            "new_strokes": 26775,
+            "mean_positive_error_before": 0.49282217025756836,
+            "mean_positive_error_after": 0.39327043294906616
+          },
+          {
+            "round": 4,
+            "new_strokes": 50117,
+            "mean_positive_error_before": 0.5366328954696655,
+            "mean_positive_error_after": 0.46379128098487854
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "19_animal.jpg",
+    "person": "",
+    "size": [
+      1280,
+      960
+    ],
+    "seconds": 14.493,
+    "baseline_rss_mib": 65.8,
+    "peak_rss_mib": 203.3,
+    "diagnostics": {
+      "faces": [],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        750,
+        1000
+      ],
+      "cache": {
+        "bytes": 67568928,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.3495423000003939,
+        "layers": 9.435895700000401,
+        "render": 4.704137699998682,
+        "total": 14.489575900001
+      },
+      "pencil_brush": {
+        "stroke_count": 143438,
+        "width_reference_quantiles": [
+          0.20472567677497863,
+          0.3131757378578186,
+          0.75841503739357
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 0,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 10355,
+            "mean_positive_error_before": 0.360039085149765,
+            "mean_positive_error_after": 0.18130066990852356
+          },
+          {
+            "round": 2,
+            "new_strokes": 22518,
+            "mean_positive_error_before": 0.49091753363609314,
+            "mean_positive_error_after": 0.3150842785835266
+          },
+          {
+            "round": 3,
+            "new_strokes": 38549,
+            "mean_positive_error_before": 0.521562397480011,
+            "mean_positive_error_after": 0.40899020433425903
+          },
+          {
+            "round": 4,
+            "new_strokes": 72016,
+            "mean_positive_error_before": 0.565502941608429,
+            "mean_positive_error_after": 0.4844955503940582
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "23_portrait.jpg",
+    "person": "",
+    "size": [
+      1280,
+      1792
+    ],
+    "seconds": 6.484,
+    "baseline_rss_mib": 70.9,
+    "peak_rss_mib": 175.8,
+    "diagnostics": {
+      "faces": [
+        [
+          245,
+          179,
+          190,
+          250
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        714
+      ],
+      "cache": {
+        "bytes": 51577396,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.40693970000029367,
+        "layers": 4.022248999999647,
+        "render": 2.0538496999997733,
+        "total": 6.483038599999418
+      },
+      "pencil_brush": {
+        "stroke_count": 30365,
+        "width_reference_quantiles": [
+          0.1922963500022888,
+          0.3626161217689514,
+          0.8019986510276795
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 2929,
+            "mean_positive_error_before": 0.08352865278720856,
+            "mean_positive_error_after": 0.060262467712163925
+          },
+          {
+            "round": 2,
+            "new_strokes": 9207,
+            "mean_positive_error_before": 0.13625513017177582,
+            "mean_positive_error_after": 0.09911932051181793
+          },
+          {
+            "round": 3,
+            "new_strokes": 6291,
+            "mean_positive_error_before": 0.1496528834104538,
+            "mean_positive_error_after": 0.13357825577259064
+          },
+          {
+            "round": 4,
+            "new_strokes": 11938,
+            "mean_positive_error_before": 0.17185494303703308,
+            "mean_positive_error_after": 0.15970762073993683
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "22_portrait.jpg",
+    "person": "",
+    "size": [
+      960,
+      981
+    ],
+    "seconds": 6.877,
+    "baseline_rss_mib": 70.1,
+    "peak_rss_mib": 209.4,
+    "diagnostics": {
+      "faces": [
+        [
+          377,
+          173,
+          226,
+          282
+        ],
+        [
+          370,
+          465,
+          193,
+          193
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        981,
+        960
+      ],
+      "cache": {
+        "bytes": 72074740,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.35564679999879445,
+        "layers": 5.407093400001031,
+        "render": 1.112660799999503,
+        "total": 6.8754011999990325
+      },
+      "pencil_brush": {
+        "stroke_count": 43705,
+        "width_reference_quantiles": [
+          0.1783720701932907,
+          0.30607879161834717,
+          0.7490242481231688
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 3666,
+            "mean_positive_error_before": 0.08299688994884491,
+            "mean_positive_error_after": 0.059782419353723526
+          },
+          {
+            "round": 2,
+            "new_strokes": 10573,
+            "mean_positive_error_before": 0.13568544387817383,
+            "mean_positive_error_after": 0.10020122677087784
+          },
+          {
+            "round": 3,
+            "new_strokes": 10076,
+            "mean_positive_error_before": 0.15072943270206451,
+            "mean_positive_error_after": 0.13420692086219788
+          },
+          {
+            "round": 4,
+            "new_strokes": 19390,
+            "mean_positive_error_before": 0.17245614528656006,
+            "mean_positive_error_after": 0.1594770848751068
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "26_portrait.jpg",
+    "person": "",
+    "size": [
+      960,
+      1328
+    ],
+    "seconds": 7.334,
+    "baseline_rss_mib": 66.7,
+    "peak_rss_mib": 173.5,
+    "diagnostics": {
+      "faces": [
+        [
+          257,
+          116,
+          188,
+          266
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        723
+      ],
+      "cache": {
+        "bytes": 57330064,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.3595837999982905,
+        "layers": 5.421258000000307,
+        "render": 1.5520035000008647,
+        "total": 7.332845599999928
+      },
+      "pencil_brush": {
+        "stroke_count": 30788,
+        "width_reference_quantiles": [
+          0.1933995321393013,
+          0.37911316752433777,
+          0.8069529592990875
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 3020,
+            "mean_positive_error_before": 0.08486712723970413,
+            "mean_positive_error_after": 0.06575212627649307
+          },
+          {
+            "round": 2,
+            "new_strokes": 9954,
+            "mean_positive_error_before": 0.14176400005817413,
+            "mean_positive_error_after": 0.1049618124961853
+          },
+          {
+            "round": 3,
+            "new_strokes": 6244,
+            "mean_positive_error_before": 0.15528638660907745,
+            "mean_positive_error_after": 0.14131145179271698
+          },
+          {
+            "round": 4,
+            "new_strokes": 11570,
+            "mean_positive_error_before": 0.17935113608837128,
+            "mean_positive_error_after": 0.16889166831970215
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "27_portrait.jpg",
+    "person": "",
+    "size": [
+      960,
+      1439
+    ],
+    "seconds": 8.045,
+    "baseline_rss_mib": 68.3,
+    "peak_rss_mib": 172.6,
+    "diagnostics": {
+      "faces": [
+        [
+          199,
+          104,
+          234,
+          319
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        667
+      ],
+      "cache": {
+        "bytes": 54901280,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.3109935000011319,
+        "layers": 6.044733099999576,
+        "render": 1.6874367000000348,
+        "total": 8.043163500000446
+      },
+      "pencil_brush": {
+        "stroke_count": 44064,
+        "width_reference_quantiles": [
+          0.1875637486577034,
+          0.3361726254224777,
+          0.7972591519355775
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 4316,
+            "mean_positive_error_before": 0.13325877487659454,
+            "mean_positive_error_after": 0.09293413907289505
+          },
+          {
+            "round": 2,
+            "new_strokes": 12148,
+            "mean_positive_error_before": 0.21176829934120178,
+            "mean_positive_error_after": 0.14899905025959015
+          },
+          {
+            "round": 3,
+            "new_strokes": 9545,
+            "mean_positive_error_before": 0.22767741978168488,
+            "mean_positive_error_after": 0.2014218270778656
+          },
+          {
+            "round": 4,
+            "new_strokes": 18055,
+            "mean_positive_error_before": 0.2610163986682892,
+            "mean_positive_error_after": 0.2414342612028122
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "28_portrait.jpg",
+    "person": "",
+    "size": [
+      960,
+      1260
+    ],
+    "seconds": 6.383,
+    "baseline_rss_mib": 67.9,
+    "peak_rss_mib": 182.5,
+    "diagnostics": {
+      "faces": [
+        [
+          272,
+          144,
+          207,
+          298
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        762
+      ],
+      "cache": {
+        "bytes": 60408300,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.4213733999986289,
+        "layers": 4.6190187000011065,
+        "render": 1.3404209000000264,
+        "total": 6.380813300000227
+      },
+      "pencil_brush": {
+        "stroke_count": 39319,
+        "width_reference_quantiles": [
+          0.18814188539981844,
+          0.35002970695495605,
+          0.7979388833045963
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 3862,
+            "mean_positive_error_before": 0.09140636026859283,
+            "mean_positive_error_after": 0.06680357456207275
+          },
+          {
+            "round": 2,
+            "new_strokes": 11495,
+            "mean_positive_error_before": 0.1488177627325058,
+            "mean_positive_error_after": 0.10425842553377151
+          },
+          {
+            "round": 3,
+            "new_strokes": 8367,
+            "mean_positive_error_before": 0.15854297578334808,
+            "mean_positive_error_after": 0.13965348899364471
+          },
+          {
+            "round": 4,
+            "new_strokes": 15595,
+            "mean_positive_error_before": 0.18081171810626984,
+            "mean_positive_error_after": 0.16706284880638123
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "29_portrait.jpg",
+    "person": "",
+    "size": [
+      960,
+      1439
+    ],
+    "seconds": 3.567,
+    "baseline_rss_mib": 68.3,
+    "peak_rss_mib": 163.6,
+    "diagnostics": {
+      "faces": [
+        [
+          269,
+          77,
+          147,
+          192
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        667
+      ],
+      "cache": {
+        "bytes": 52608360,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.3673639999997249,
+        "layers": 2.4887923000005685,
+        "render": 0.7101237999995647,
+        "total": 3.5662804000003234
+      },
+      "pencil_brush": {
+        "stroke_count": 13894,
+        "width_reference_quantiles": [
+          0.20267369896173476,
+          0.45897461473941803,
+          0.8116966485977174
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 1253,
+            "mean_positive_error_before": 0.042634058743715286,
+            "mean_positive_error_after": 0.03775661066174507
+          },
+          {
+            "round": 2,
+            "new_strokes": 5385,
+            "mean_positive_error_before": 0.07730592787265778,
+            "mean_positive_error_after": 0.06297974288463593
+          },
+          {
+            "round": 3,
+            "new_strokes": 2438,
+            "mean_positive_error_before": 0.0893852636218071,
+            "mean_positive_error_after": 0.0858163982629776
+          },
+          {
+            "round": 4,
+            "new_strokes": 4818,
+            "mean_positive_error_before": 0.10575108975172043,
+            "mean_positive_error_after": 0.10280350595712662
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "30_hu_ge.jpg",
+    "person": "胡歌",
+    "size": [
+      1109,
+      712
+    ],
+    "seconds": 6.497,
+    "baseline_rss_mib": 73.5,
+    "peak_rss_mib": 171.2,
+    "diagnostics": {
+      "faces": [
+        [
+          375,
+          128,
+          206,
+          263
+        ],
+        [
+          386,
+          389,
+          159,
+          159
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        642,
+        1000
+      ],
+      "cache": {
+        "bytes": 51741812,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.35212460000002466,
+        "layers": 4.725639799999044,
+        "render": 1.417626200000086,
+        "total": 6.495390800000678
+      },
+      "pencil_brush": {
+        "stroke_count": 56325,
+        "width_reference_quantiles": [
+          0.19357309639453887,
+          0.3282463252544403,
+          0.7976233124732971
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 1,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 5490,
+            "mean_positive_error_before": 0.1750599592924118,
+            "mean_positive_error_after": 0.10891851782798767
+          },
+          {
+            "round": 2,
+            "new_strokes": 14123,
+            "mean_positive_error_before": 0.26352354884147644,
+            "mean_positive_error_after": 0.17424464225769043
+          },
+          {
+            "round": 3,
+            "new_strokes": 12562,
+            "mean_positive_error_before": 0.27669355273246765,
+            "mean_positive_error_after": 0.23668172955513
+          },
+          {
+            "round": 4,
+            "new_strokes": 24150,
+            "mean_positive_error_before": 0.3146384060382843,
+            "mean_positive_error_after": 0.2843914031982422
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "31_zhou_xun.jpg",
+    "person": "周迅",
+    "size": [
+      1280,
+      1582
+    ],
+    "seconds": 4.862,
+    "baseline_rss_mib": 69.3,
+    "peak_rss_mib": 185.4,
+    "diagnostics": {
+      "faces": [
+        [
+          323,
+          182,
+          231,
+          315
+        ],
+        [
+          19,
+          672,
+          41,
+          41
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        809
+      ],
+      "cache": {
+        "bytes": 57890676,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.37594799999897077,
+        "layers": 3.226373900000908,
+        "render": 1.25919359999898,
+        "total": 4.8615155999996205
+      },
+      "pencil_brush": {
+        "stroke_count": 27171,
+        "width_reference_quantiles": [
+          0.18184369802474976,
+          0.31159141659736633,
+          0.7509992718696594
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 1931,
+            "mean_positive_error_before": 0.057250265032052994,
+            "mean_positive_error_after": 0.04443847015500069
+          },
+          {
+            "round": 2,
+            "new_strokes": 6771,
+            "mean_positive_error_before": 0.09735003858804703,
+            "mean_positive_error_after": 0.07468504458665848
+          },
+          {
+            "round": 3,
+            "new_strokes": 6402,
+            "mean_positive_error_before": 0.11013846844434738,
+            "mean_positive_error_after": 0.0989006906747818
+          },
+          {
+            "round": 4,
+            "new_strokes": 12067,
+            "mean_positive_error_before": 0.12567020952701569,
+            "mean_positive_error_after": 0.11689776927232742
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "32_zhang_ziyi.jpg",
+    "person": "章子怡",
+    "size": [
+      1280,
+      1434
+    ],
+    "seconds": 10.014,
+    "baseline_rss_mib": 72.0,
+    "peak_rss_mib": 212.6,
+    "diagnostics": {
+      "faces": [
+        [
+          271,
+          224,
+          354,
+          440
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        893
+      ],
+      "cache": {
+        "bytes": 67164248,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.5457894999999553,
+        "layers": 5.858777699999337,
+        "render": 3.6073355999997148,
+        "total": 10.011902899999768
+      },
+      "pencil_brush": {
+        "stroke_count": 72942,
+        "width_reference_quantiles": [
+          0.1887542337179184,
+          0.3206125944852829,
+          0.7874125421047212
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 6606,
+            "mean_positive_error_before": 0.15502582490444183,
+            "mean_positive_error_after": 0.09848657995462418
+          },
+          {
+            "round": 2,
+            "new_strokes": 18049,
+            "mean_positive_error_before": 0.23602299392223358,
+            "mean_positive_error_after": 0.15782953798770905
+          },
+          {
+            "round": 3,
+            "new_strokes": 16455,
+            "mean_positive_error_before": 0.24921803176403046,
+            "mean_positive_error_after": 0.21342188119888306
+          },
+          {
+            "round": 4,
+            "new_strokes": 31832,
+            "mean_positive_error_before": 0.2827899754047394,
+            "mean_positive_error_after": 0.25547337532043457
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "33_gong_li.jpg",
+    "person": "巩俐",
+    "size": [
+      507,
+      798
+    ],
+    "seconds": 3.694,
+    "baseline_rss_mib": 67.7,
+    "peak_rss_mib": 136.3,
+    "diagnostics": {
+      "faces": [
+        [
+          222,
+          72,
+          206,
+          256
+        ],
+        [
+          449,
+          234,
+          42,
+          58
+        ],
+        [
+          78,
+          234,
+          45,
+          66
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        798,
+        507
+      ],
+      "cache": {
+        "bytes": 32723290,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.40199919999940903,
+        "layers": 2.626244499999302,
+        "render": 0.6639734000000317,
+        "total": 3.692217300000266
+      },
+      "pencil_brush": {
+        "stroke_count": 41874,
+        "width_reference_quantiles": [
+          0.14669691622257233,
+          0.2416214793920517,
+          0.5871702492237094
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 4,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 3015,
+            "mean_positive_error_before": 0.09416621178388596,
+            "mean_positive_error_after": 0.060181524604558945
+          },
+          {
+            "round": 2,
+            "new_strokes": 8575,
+            "mean_positive_error_before": 0.15222112834453583,
+            "mean_positive_error_after": 0.10004110634326935
+          },
+          {
+            "round": 3,
+            "new_strokes": 10398,
+            "mean_positive_error_before": 0.16174978017807007,
+            "mean_positive_error_after": 0.13363105058670044
+          },
+          {
+            "round": 4,
+            "new_strokes": 19886,
+            "mean_positive_error_before": 0.18073280155658722,
+            "mean_positive_error_after": 0.1590619683265686
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "34_tang_wei.jpg",
+    "person": "汤唯",
+    "size": [
+      1067,
+      1600
+    ],
+    "seconds": 4.237,
+    "baseline_rss_mib": 77.1,
+    "peak_rss_mib": 163.4,
+    "diagnostics": {
+      "faces": [
+        [
+          440,
+          274,
+          80,
+          111
+        ],
+        [
+          91,
+          301,
+          82,
+          109
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        667
+      ],
+      "cache": {
+        "bytes": 47854532,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.2922309999994468,
+        "layers": 2.7529805000012857,
+        "render": 1.191354999999021,
+        "total": 4.236566699999457
+      },
+      "pencil_brush": {
+        "stroke_count": 24035,
+        "width_reference_quantiles": [
+          0.21475961208343505,
+          0.4988541603088379,
+          0.8402175903320312
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 4,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 3071,
+            "mean_positive_error_before": 0.08113496750593185,
+            "mean_positive_error_after": 0.0607798732817173
+          },
+          {
+            "round": 2,
+            "new_strokes": 9875,
+            "mean_positive_error_before": 0.1345808357000351,
+            "mean_positive_error_after": 0.09167653322219849
+          },
+          {
+            "round": 3,
+            "new_strokes": 3504,
+            "mean_positive_error_before": 0.1404435932636261,
+            "mean_positive_error_after": 0.13199831545352936
+          },
+          {
+            "round": 4,
+            "new_strokes": 7585,
+            "mean_positive_error_before": 0.16915911436080933,
+            "mean_positive_error_after": 0.16119743883609772
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "35_shu_qi.jpg",
+    "person": "舒淇",
+    "size": [
+      1180,
+      1600
+    ],
+    "seconds": 6.467,
+    "baseline_rss_mib": 71.5,
+    "peak_rss_mib": 189.1,
+    "diagnostics": {
+      "faces": [
+        [
+          174,
+          143,
+          310,
+          439
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        738
+      ],
+      "cache": {
+        "bytes": 55802120,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.3175197999989905,
+        "layers": 3.9262221999997564,
+        "render": 2.222010200001023,
+        "total": 6.465752299998712
+      },
+      "pencil_brush": {
+        "stroke_count": 64164,
+        "width_reference_quantiles": [
+          0.18409907519817353,
+          0.3112797439098358,
+          0.7700000286102299
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 5642,
+            "mean_positive_error_before": 0.1723487675189972,
+            "mean_positive_error_after": 0.10767905414104462
+          },
+          {
+            "round": 2,
+            "new_strokes": 14574,
+            "mean_positive_error_before": 0.2590833306312561,
+            "mean_positive_error_after": 0.1793709099292755
+          },
+          {
+            "round": 3,
+            "new_strokes": 15049,
+            "mean_positive_error_before": 0.2800959646701813,
+            "mean_positive_error_after": 0.240594282746315
+          },
+          {
+            "round": 4,
+            "new_strokes": 28899,
+            "mean_positive_error_before": 0.3169804513454437,
+            "mean_positive_error_after": 0.2873608469963074
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "37_donnie_yen.jpg",
+    "person": "甄子丹",
+    "size": [
+      1067,
+      1600
+    ],
+    "seconds": 8.048,
+    "baseline_rss_mib": 71.5,
+    "peak_rss_mib": 187.6,
+    "diagnostics": {
+      "faces": [
+        [
+          60,
+          328,
+          347,
+          517
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        667
+      ],
+      "cache": {
+        "bytes": 52632348,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.2664325999994617,
+        "layers": 4.659127000000808,
+        "render": 3.1209605999993073,
+        "total": 8.046520399999281
+      },
+      "pencil_brush": {
+        "stroke_count": 86917,
+        "width_reference_quantiles": [
+          0.1803582191467285,
+          0.30217522382736206,
+          0.7444956541061405
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 0,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 7595,
+            "mean_positive_error_before": 0.31227266788482666,
+            "mean_positive_error_after": 0.18693086504936218
+          },
+          {
+            "round": 2,
+            "new_strokes": 17465,
+            "mean_positive_error_before": 0.4560525119304657,
+            "mean_positive_error_after": 0.328967422246933
+          },
+          {
+            "round": 3,
+            "new_strokes": 21307,
+            "mean_positive_error_before": 0.5083777904510498,
+            "mean_positive_error_after": 0.4403250217437744
+          },
+          {
+            "round": 4,
+            "new_strokes": 40550,
+            "mean_positive_error_before": 0.5758392810821533,
+            "mean_positive_error_after": 0.5257677435874939
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "39_jackie_chan.jpg",
+    "person": "成龙",
+    "size": [
+      888,
+      1184
+    ],
+    "seconds": 6.958,
+    "baseline_rss_mib": 68.8,
+    "peak_rss_mib": 192.1,
+    "diagnostics": {
+      "faces": [
+        [
+          197,
+          195,
+          337,
+          465
+        ],
+        [
+          552,
+          434,
+          103,
+          131
+        ],
+        [
+          469,
+          36,
+          141,
+          141
+        ],
+        [
+          512,
+          756,
+          86,
+          86
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        750
+      ],
+      "cache": {
+        "bytes": 61656636,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.3191320000005362,
+        "layers": 4.326583300000493,
+        "render": 2.309571399999186,
+        "total": 6.955287300001146
+      },
+      "pencil_brush": {
+        "stroke_count": 74923,
+        "width_reference_quantiles": [
+          0.18159387409687044,
+          0.2964576184749603,
+          0.71009978055954
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 4,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 5463,
+            "mean_positive_error_before": 0.173064723610878,
+            "mean_positive_error_after": 0.1092863455414772
+          },
+          {
+            "round": 2,
+            "new_strokes": 13789,
+            "mean_positive_error_before": 0.2672879099845886,
+            "mean_positive_error_after": 0.18787677586078644
+          },
+          {
+            "round": 3,
+            "new_strokes": 19301,
+            "mean_positive_error_before": 0.293089896440506,
+            "mean_positive_error_after": 0.24543243646621704
+          },
+          {
+            "round": 4,
+            "new_strokes": 36370,
+            "mean_positive_error_before": 0.32498177886009216,
+            "mean_positive_error_after": 0.2893677353858948
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "40_liu_yifei.jpg",
+    "person": "刘亦菲",
+    "size": [
+      1143,
+      1600
+    ],
+    "seconds": 6.794,
+    "baseline_rss_mib": 70.0,
+    "peak_rss_mib": 177.9,
+    "diagnostics": {
+      "faces": [
+        [
+          227,
+          166,
+          269,
+          384
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        714
+      ],
+      "cache": {
+        "bytes": 52359968,
+        "budget": 117440512,
+        "entries": 3,
+        "hits": 0,
+        "misses": 3
+      },
+      "stages": {
+        "prepare": 0.5193354000002728,
+        "layers": 4.724309699999139,
+        "render": 1.549886400000105,
+        "total": 6.793531600000279
+      },
+      "pencil_brush": {
+        "stroke_count": 40662,
+        "width_reference_quantiles": [
+          0.18440034836530686,
+          0.31216494739055634,
+          0.7671904742717743
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 3367,
+            "mean_positive_error_before": 0.09167549014091492,
+            "mean_positive_error_after": 0.0638771578669548
+          },
+          {
+            "round": 2,
+            "new_strokes": 9604,
+            "mean_positive_error_before": 0.14831310510635376,
+            "mean_positive_error_after": 0.10351388156414032
+          },
+          {
+            "round": 3,
+            "new_strokes": 9571,
+            "mean_positive_error_before": 0.15949495136737823,
+            "mean_positive_error_after": 0.13645485043525696
+          },
+          {
+            "round": 4,
+            "new_strokes": 18120,
+            "mean_positive_error_before": 0.17894726991653442,
+            "mean_positive_error_after": 0.16132701933383942
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "41_zhou_xun_group.jpg",
+    "person": "周迅、王圣迪",
+    "size": [
+      1280,
+      1036
+    ],
+    "seconds": 4.699,
+    "baseline_rss_mib": 70.7,
+    "peak_rss_mib": 188.3,
+    "diagnostics": {
+      "faces": [
+        [
+          178,
+          233,
+          143,
+          182
+        ],
+        [
+          650,
+          281,
+          133,
+          173
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        809,
+        1000
+      ],
+      "cache": {
+        "bytes": 63112880,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.3104361000005156,
+        "layers": 3.6030529999989085,
+        "render": 0.7847110000002431,
+        "total": 4.6982004000001325
+      },
+      "pencil_brush": {
+        "stroke_count": 26088,
+        "width_reference_quantiles": [
+          0.1945570558309555,
+          0.37410546839237213,
+          0.8053154468536377
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 4,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 2381,
+            "mean_positive_error_before": 0.058416616171598434,
+            "mean_positive_error_after": 0.0468384325504303
+          },
+          {
+            "round": 2,
+            "new_strokes": 8312,
+            "mean_positive_error_before": 0.10162903368473053,
+            "mean_positive_error_after": 0.07501553744077682
+          },
+          {
+            "round": 3,
+            "new_strokes": 5200,
+            "mean_positive_error_before": 0.11143413186073303,
+            "mean_positive_error_after": 0.10311651974916458
+          },
+          {
+            "round": 4,
+            "new_strokes": 10195,
+            "mean_positive_error_before": 0.13073572516441345,
+            "mean_positive_error_after": 0.1237064078450203
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "36_tony_leung.jpg",
+    "person": "梁朝伟",
+    "size": [
+      953,
+      1423
+    ],
+    "seconds": 6.718,
+    "baseline_rss_mib": 68.4,
+    "peak_rss_mib": 178.6,
+    "diagnostics": {
+      "faces": [
+        [
+          87,
+          205,
+          349,
+          452
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        1000,
+        670
+      ],
+      "cache": {
+        "bytes": 56329244,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.2966703000001871,
+        "layers": 4.114913299999898,
+        "render": 2.304878299999473,
+        "total": 6.71646200000032
+      },
+      "pencil_brush": {
+        "stroke_count": 61462,
+        "width_reference_quantiles": [
+          0.18153998255729675,
+          0.3071034252643585,
+          0.7619826018810273
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 5082,
+            "mean_positive_error_before": 0.14940926432609558,
+            "mean_positive_error_after": 0.09536059200763702
+          },
+          {
+            "round": 2,
+            "new_strokes": 13590,
+            "mean_positive_error_before": 0.2270992547273636,
+            "mean_positive_error_after": 0.1501750946044922
+          },
+          {
+            "round": 3,
+            "new_strokes": 14750,
+            "mean_positive_error_before": 0.2377014458179474,
+            "mean_positive_error_after": 0.19915011525154114
+          },
+          {
+            "round": 4,
+            "new_strokes": 28040,
+            "mean_positive_error_before": 0.2656403183937073,
+            "mean_positive_error_after": 0.23687870800495148
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "38_andy_lau.jpg",
+    "person": "刘德华",
+    "size": [
+      483,
+      500
+    ],
+    "seconds": 2.63,
+    "baseline_rss_mib": 65.9,
+    "peak_rss_mib": 114.1,
+    "diagnostics": {
+      "faces": [
+        [
+          206,
+          69,
+          106,
+          143
+        ]
+      ],
+      "anime_refined_faces": 0,
+      "anime": {},
+      "flat": {},
+      "caricature": {},
+      "analysis_size": [
+        500,
+        483
+      ],
+      "cache": {
+        "bytes": 20654764,
+        "budget": 117440512,
+        "entries": 4,
+        "hits": 0,
+        "misses": 4
+      },
+      "stages": {
+        "prepare": 0.24049430000013672,
+        "layers": 2.1205718999990495,
+        "render": 0.2679866000016773,
+        "total": 2.6290530000005674
+      },
+      "pencil_brush": {
+        "stroke_count": 39758,
+        "width_reference_quantiles": [
+          0.09679241701960564,
+          0.1791849583387375,
+          0.4011438697576524
+        ],
+        "native_rasterization": true,
+        "method": "contours and regional residual refinement",
+        "refinement_passes": 4,
+        "etf_iterations": 15,
+        "eyes_refined": 2,
+        "rounds": [
+          {
+            "round": 1,
+            "new_strokes": 3893,
+            "mean_positive_error_before": 0.08553528785705566,
+            "mean_positive_error_after": 0.05533914640545845
+          },
+          {
+            "round": 2,
+            "new_strokes": 11631,
+            "mean_positive_error_before": 0.13442566990852356,
+            "mean_positive_error_after": 0.09147406369447708
+          },
+          {
+            "round": 3,
+            "new_strokes": 8339,
+            "mean_positive_error_before": 0.14522232115268707,
+            "mean_positive_error_after": 0.12775123119354248
+          },
+          {
+            "round": 4,
+            "new_strokes": 15895,
+            "mean_positive_error_before": 0.16838006675243378,
+            "mean_positive_error_after": 0.15553927421569824
+          }
+        ]
+      }
+    }
+  }
+]

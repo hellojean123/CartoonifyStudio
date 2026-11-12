@@ -92,6 +92,10 @@ def pencil_layers(prepared,p,cancel=None):
     theta,reliability=tangent_flow(gray,cancel)
     # Quantized drawing layers carry shadows; keep only a little broad graphite.
     density=np.clip(density*1.45,0,1)
+    from .portrait_pencil import portrait_detail
+    detail=portrait_detail(prepared) if p.protect else {'eye_mask':np.zeros_like(tone),'eye_drawing':np.zeros_like(tone),'hair_boundary':np.zeros_like(tone),'eyes_refined':0}
+    density*=1-detail['eye_mask']*.88
+    outer+=detail['hair_boundary']*.85
     from .progressive_pencil import regional_plan
     plan=regional_plan(tone,theta,density,prepared['skin'] if p.protect else np.zeros_like(tone),
                        features,focus if p.protect else np.ones_like(tone),cancel,contours=outer*.65+inner*.2)
@@ -106,7 +110,7 @@ def pencil_layers(prepared,p,cancel=None):
     absorption=.22+.78*absorption
     return {'base':np.full_like(rgb,255),'coarse':outer,'internal':inner,
             'tone':tone,'density':density,'stroke_plan':plan,
-            'pigment':absorption.astype(np.float32),'anime_faces':0}
+            'pigment':absorption.astype(np.float32),'anime_faces':0,**detail}
 
 
 def paper_grain(xx,yy):

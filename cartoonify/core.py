@@ -340,7 +340,11 @@ def render(image,prepared,layers,style,p,quality='精细',output_limit=None,tile
                 graphite=p.pencil_shade*(density*.90+strokes*1.5)
                 graphite*=np.clip(1+grain*p.paper*.55,.5,1.5)
                 pigment=take(layers['pigment']) if p.colored else np.ones((*density.shape,3),np.float32)
+                eye=take(layers['eye_mask']) if 'eye_mask' in layers else np.zeros_like(density)
+                # The local drawing replaces generic hatch/contour only inside supported eye regions.
+                eye_drawing=take(layers['eye_drawing']) if 'eye_drawing' in layers else np.zeros_like(density)
                 absorption=graphite[...,None]*pigment+ink[...,None]
+                absorption=absorption*(1-eye[...,None]*.93)+(eye_drawing*(.35*p.outline+1.5*p.pencil_shade))[...,None]*eye[...,None]
                 result[y:y1,x:x1]=np.clip(255*np.exp(-absorption),0,255).astype(np.uint8)
             else:
                 result[y:y1,x:x1]=np.clip(base*(1-ink[...,None]),0,255).astype(np.uint8)
@@ -358,7 +362,7 @@ def process(image,style,params=None,preview=False,quality='精细',cache=CACHE,p
     digest=fingerprint(im);prekey=('prepare-v4',digest,p.smooth,p.contrast,p.protect,p.face_strength,p.face_boxes)
     prepared=cache.compute(prekey,lambda:_prepare(im,p,cache,digest)) if cache is not None else _prepare(im,p)
     prepared_at=time.perf_counter()
-    key=('layers-regional-pencil-v12c',prekey,style,p.colors if style in STYLES[1:3] else None,p.anime_mode if style==STYLES[0] else None,(p.caricature_feature,p.caricature_strength) if style==STYLES[2] else None)
+    key=('layers-eye-hair-pencil-v13c',prekey,style,p.colors if style in STYLES[1:3] else None,p.anime_mode if style==STYLES[0] else None,(p.caricature_feature,p.caricature_strength) if style==STYLES[2] else None)
     layers=cache.compute(key,lambda:_layers(prepared,style,p,cancel)) if cache is not None else _layers(prepared,style,p,cancel)
     layers_at=time.perf_counter()
     result=render(im,prepared,layers,style,p,quality,preview_limit if preview else None,tile_size,cancel,cache)
@@ -367,5 +371,5 @@ def process(image,style,params=None,preview=False,quality='精细',cache=CACHE,p
         plan=layers['stroke_plan']
         diagnostics['pencil_brush']={'stroke_count':len(plan['width']),
             'width_reference_quantiles':np.percentile(plan['width'],[10,50,90]).tolist() if len(plan['width']) else [0,0,0],
-            'native_rasterization':True,'method':'contours and regional residual refinement','refinement_passes':4,'etf_iterations':15,'rounds':plan.get('round_metrics',[])}
+            'native_rasterization':True,'method':'contours and regional residual refinement','refinement_passes':4,'etf_iterations':15,'eyes_refined':layers.get('eyes_refined',0),'rounds':plan.get('round_metrics',[])}
     return result

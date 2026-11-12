@@ -24,7 +24,8 @@ def main():
     extras+='<p><a href="flat_v8/gallery.html">当前扁平插画 v8：同预算和默认配色对照</a> · <a href="../flat_v8_report.md">实测与局限</a></p>'
     extras+='<p><a href="caricature_v9/gallery.html">夸张手绘漫画 v9：几何变形与四特征对照</a> · <a href="../caricature_v9_report.md">实测与局限</a></p>'
     extras+='<p><a href="pencil_v11/gallery.html">历史素描 v11：方向流逐笔与旧版33张对照</a> · <a href="../pencil_v11_report.md">方法、CPU实测与局限</a></p>'
-    extras+='<p><a href="pencil_v12/gallery.html">当前素描 v12：轮廓起稿与分区多轮细化</a> · <a href="pencil_v12/drawing_stages.jpg">五阶段过程图</a> · <a href="../pencil_v12_report.md">说明与实测</a></p>'
+    extras+='<p><a href="pencil_v12/gallery.html">历史素描 v12：轮廓起稿与分区多轮细化</a> · <a href="pencil_v12/drawing_stages.jpg">五阶段过程图</a> · <a href="../pencil_v12_report.md">说明与实测</a></p>'
+    extras+='<p><a href="pencil_v13/gallery.html">当前素描 v13：眼部保护与头发边缘对照</a> · <a href="../pencil_v13_report.md">说明与实测</a></p>'
     document=document.replace('</html>',extras+'</html>')
     (root/'outputs'/'gallery.html').write_text(document,encoding='utf-8')
 
