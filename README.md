@@ -186,3 +186,10 @@ Set-Location D:\CartoonifyStudio
 采用轮廓引导、四轮残差反馈、由粗到细的笔刷和五官保护。每轮实际绘制并检查当前画布，仅在尚缺明暗的区域补笔。
 
 [33张新旧对照](outputs/pencil_v12/gallery.html) · [五阶段过程图](outputs/pencil_v12/drawing_stages.jpg) · [方法、性能与局限](pencil_v12_report.md)。旧版画廊用于历史对照。
+
+
+## 当前素描 v13：眼部保护和头发弱边缘
+
+在v12四轮绘制基础上，为双眼单独保留源图支持的深色结构和亮点，限制通用排线覆盖，并在头部周围补强持续弱边界。需要开启人像保护；不是精确虹膜或头发语义分割。
+
+[新旧对照](outputs/pencil_v13/gallery.html) · [实现、测试、性能和局限](pencil_v13_report.md)。

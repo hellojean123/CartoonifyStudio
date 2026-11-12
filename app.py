@@ -108,7 +108,7 @@ def build_app():
                             angle=gr.Slider(0,90,15,step=1,label='网点角度')
                             opacity=gr.Slider(0,.65,0,step=.01,label='网点浓度')
                     with gr.Group(visible=False) as pencil_group:
-                        shade=gr.Slider(0,.8,.48,step=.02,label='铅笔明暗与排线浓度',info='设为 0 只保留结构线；先勾轮廓，再分区进行四轮明暗与细节刻画。')
+                        shade=gr.Slider(0,.8,.48,step=.02,label='铅笔明暗与排线浓度',info='设为 0 只保留结构线；先勾轮廓，再四轮刻画；开启人像保护可保留眼部亮点与细节，补强头发边缘。')
                         paper=gr.Slider(0,.4,.08,step=.01,label='纸张颗粒')
                     reset=gr.Button('恢复当前风格默认参数')
                     preview_btn=gr.Button('重新预览',variant='primary')
