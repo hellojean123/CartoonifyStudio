@@ -32,8 +32,9 @@ def regional_plan(tone,theta,density,skin,features,focus,cancel=None,contours=No
     theta=.5*np.arctan2(np.sin(2*theta)*(1-weight)+np.sin(2*smooth)*weight,
                         np.cos(2*theta)*(1-weight)+np.cos(2*smooth)*weight)
     # Related hatching directions rather than copying every local wrinkle/texture.
-    delta=(theta+.65+np.pi/2)%np.pi-np.pi/2
-    theta=(-.65+delta*(.32-.18*skin*(1-features))).astype(np.float32)
+    related=.32-.18*skin*(1-features)
+    theta=(.5*np.arctan2(np.sin(-1.3)*(1-related)+np.sin(2*theta)*related,
+                        np.cos(-1.3)*(1-related)+np.cos(2*theta)*related)).astype(np.float32)
     target=np.clip(density*(.18+.82*focus)*2.5,0,2.2).astype(np.float32)
     contour=np.zeros_like(tone) if contours is None else contours.astype(np.float32)
     current=contour.copy();parts=[];metrics=[]
@@ -53,18 +54,19 @@ def regional_plan(tone,theta,density,skin,features,focus,cancel=None,contours=No
         y=np.clip(yy.ravel()+rng.uniform(-.45,.45,yy.size)*spacing*scale,0,h-1)
         r=sample(residual,x,y);f=sample(features,x,y);k=sample(skin,x,y)
         keep=(r>.04)&(rng.random(len(x))<np.clip(r*2.8,.03,.95))
-        if stage>=2:keep&=(sample(focus,x,y)>.15)|(r>.35)
+        if stage>=2:keep&=rng.random(len(x))<np.clip(.2+sample(focus,x,y)*.8+r,.2,1)
         x=x[keep];y=y[keep];r=r[keep];f=f[keep];k=k[keep];n=len(x)
         angle=sample(theta,x,y)+rng.normal(0,.045,n)
-        if stage==3:angle+=np.where((sample(target,x,y)>.8)&(k<.25),.55,0)
+        if stage==3:angle+=.55*(1-np.exp(-np.maximum(sample(target,x,y)-.5,0)*2))*np.exp(-k*5)
         lengths=length*scale*rng.uniform(.65,1.25,n)*(1-.5*f)
         center=np.stack((x,y),axis=1);direction=np.stack((np.cos(angle),np.sin(angle)),axis=1)
         # Reject paths crossing strong tonal boundaries before depositing pigment.
         ends=center[:,None,:]+direction[:,None,:]*lengths[:,None,None]*np.array([-.5,.5],np.float32)[None,:,None]
         at_center=sample(tone,x,y)
         for side in (0,1):
-            crossing=np.abs(sample(tone,ends[:,side,0],ends[:,side,1])-at_center)>.12
-            ends[crossing,side]=center[crossing]+(ends[crossing,side]-center[crossing])*.28
+            difference=np.abs(sample(tone,ends[:,side,0],ends[:,side,1])-at_center)
+            shorten=.22+.78*np.exp(-(difference/.12)**2)
+            ends[:,side]=center+(ends[:,side]-center)*shorten[:,None]
         tangent0=sample(theta,ends[:,0,0],ends[:,0,1]);tangent1=sample(theta,ends[:,1,0],ends[:,1,1])
         v0=np.stack((np.cos(tangent0),np.sin(tangent0)),axis=1);v1=np.stack((np.cos(tangent1),np.sin(tangent1)),axis=1)
         v0*=np.where((v0*direction).sum(1)<0,-1,1)[:,None];v1*=np.where((v1*direction).sum(1)<0,-1,1)[:,None]

@@ -14,24 +14,26 @@ def portrait_detail(prepared):
         axis=(points[1]-points[0])/d;normal=np.array([-axis[1],axis[0]])
         for center in points[:2]:
             rx=max(5,d*.23);ry=max(3,d*.11)
-            x0=max(0,int(center[0]-rx*1.5));x1=min(w,int(center[0]+rx*1.5)+1)
-            y0=max(0,int(center[1]-rx*.9));y1=min(h,int(center[1]+rx*.9)+1)
+            x0=max(0,int(center[0]-rx*2.6));x1=min(w,int(center[0]+rx*2.6)+1)
+            y0=max(0,int(center[1]-rx*1.3));y1=min(h,int(center[1]+rx*1.3)+1)
             if x1<=x0 or y1<=y0:continue
             yy,xx=np.mgrid[y0:y1,x0:x1];dx=xx-center[0];dy=yy-center[1]
             u=(dx*axis[0]+dy*axis[1])/rx;v=(dx*normal[0]+dy*normal[1])/ry
-            radius=u*u+v*v;mask=np.clip((1.25-radius)/.55,0,1).astype(np.float32)
+            radius=u*u+v*v;mask=np.exp(-radius*.9).astype(np.float32)
             crop=fine[y0:y1,x0:x1];selected=crop[radius<.8]
             if selected.size<12 or np.ptp(selected)<.035:continue
             lo,hi=np.quantile(selected,[.08,.92])
-            if hi<.32:continue  # Insufficient exposure: keep the original drawing rather than invent contrast.
+            if hi<.24:continue  # Insufficient exposure: keep the original drawing rather than invent contrast.
             span=max(float(hi-lo),.10)
             dark=np.clip((hi-crop)/span,0,1)
             # Source-supported dark shapes retain eyelids/iris; no invented eye geometry.
             detail=np.maximum(cv2.GaussianBlur(crop,(0,0),1.5)-crop-.008,0)
             base=.10+1.5*max(.65-float(hi),0)/.65
-            drawing=base+.9*dark**1.6+np.clip(detail*7,0,.45)
+            global_dark=np.clip((.86-crop)/.86,0,1)
+            drawing=.55*global_dark**1.2+.45*dark**1.6+np.clip(detail*4,0,.25)
             # Keep small, bright source features (including visible catchlights) white.
             drawing[(crop>=max(float(hi),.75))&(radius<.9)]=0
+            mask*=float(np.clip((hi-.24)/.20,0,1))
             dest=eye[y0:y1,x0:x1];take=mask>dest
             ink[y0:y1,x0:x1][take]=drawing[take];dest[take]=mask[take];count+=1
     # Head envelopes restrict edge recovery; this is not semantic hair segmentation.
