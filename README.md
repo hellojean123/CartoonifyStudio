@@ -1,5 +1,7 @@
 # Cartoonify Studio
 
+[素描改进实验报告（v14）](experiment_report.md) · [效果对照画廊](outputs/pencil_v14/gallery.html)
+
 Windows 11 / Python 3.12 / 纯 CPU 照片风格化与拼豆图纸。无 CUDA、无训练、无付费 API；图片留在本机，启动后处理不联网。四种风格分别采用人像动漫模型、区域插画、夸张彩墨漫画和分层铅笔素描路线。
 
 ![原图与四种风格](outputs/03_portrait_comparison.jpg)

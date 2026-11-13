@@ -1,0 +1,418 @@
+{
+  "branch": "main",
+  "head": "50b1e40104074c14e95b7e14d8a605d97560e4fd",
+  "origin_main": "50b1e40104074c14e95b7e14d8a605d97560e4fd",
+  "source_matches_record": {
+    "cartoonify/core.py": true,
+    "cartoonify/pencil.py": true,
+    "cartoonify/portrait_pencil.py": true,
+    "cartoonify/progressive_pencil.py": true,
+    "cartoonify/material_pencil.py": true,
+    "app.py": true
+  },
+  "clean": true,
+  "python": "3.12.10",
+  "os": "Windows-11-10.0.26200-SP0",
+  "report_date": "2026-11-13",
+  "experiment_date": "2026-11-12",
+  "reran_algorithm": false,
+  "image_files_verified": 99,
+  "verified_images": [
+    {
+      "path": "outputs/pencil_v14/01_portrait.png",
+      "sha256": "5018c5f5c6306c97d4c819bad06e76c40470ec2c882a4b9b0f0057e4c276a1a8"
+    },
+    {
+      "path": "outputs/pencil_v14/before/01_portrait.png",
+      "sha256": "6a66d1192af06bc0e256152ef37588551d5c6141ff01415abb4d390348284877"
+    },
+    {
+      "path": "outputs/pencil_v14/01_portrait_compare.jpg",
+      "sha256": "f046d710c5ec2ab6f8120b93f185a4ae79977703a024ee1bc0df2c739b5475dd"
+    },
+    {
+      "path": "outputs/pencil_v14/02_portrait.png",
+      "sha256": "6e0d109503757e321d578a1b73cd4c4ed35674fcca6c657c30a148d00f6faff8"
+    },
+    {
+      "path": "outputs/pencil_v14/before/02_portrait.png",
+      "sha256": "cd4627b582307f7ddac603a8f7dfd83107978303eb8bb9c958f9143f70cd7c34"
+    },
+    {
+      "path": "outputs/pencil_v14/02_portrait_compare.jpg",
+      "sha256": "e84f2604341575e51886d11bcffd449fc390122954608c67059c198516bbb92c"
+    },
+    {
+      "path": "outputs/pencil_v14/03_portrait.png",
+      "sha256": "5fddf735adbfb1136fe3003cbbe8a2b2ccf42a1893b1379b33619519fb73aa0f"
+    },
+    {
+      "path": "outputs/pencil_v14/before/03_portrait.png",
+      "sha256": "8ec9d2e6bd5b46f139d7aee9f4cf2b0b825837a6aa9848765716b071581e132d"
+    },
+    {
+      "path": "outputs/pencil_v14/03_portrait_compare.jpg",
+      "sha256": "03184c36e1c816a4080e677313a0a00c6228d64857d4b5c22ec2bce314307649"
+    },
+    {
+      "path": "outputs/pencil_v14/04_portrait.png",
+      "sha256": "69e171ae559997d35222826da09513ecbaad67c76e20bf541d6d326821bff8b1"
+    },
+    {
+      "path": "outputs/pencil_v14/before/04_portrait.png",
+      "sha256": "e12db9a7c676305a17026db3660d8f827a7e456cce0c0c9c8e874d2a251f1f7a"
+    },
+    {
+      "path": "outputs/pencil_v14/04_portrait_compare.jpg",
+      "sha256": "46f244c37704f5b9d4f96f1d3d3984e7e34e53ad4011bdda7ba210282cc087af"
+    },
+    {
+      "path": "outputs/pencil_v14/05_portrait.png",
+      "sha256": "d44ea8a8bb6061a5e13c2866b995018ce53e962316b031cd44f567e455db8ac3"
+    },
+    {
+      "path": "outputs/pencil_v14/before/05_portrait.png",
+      "sha256": "4545c1da540c0f786c6ca0ca5a583eb9589f451a150b33628b42f7355f2e2d78"
+    },
+    {
+      "path": "outputs/pencil_v14/05_portrait_compare.jpg",
+      "sha256": "ae3e3fd0b41e20599bfce0c24b101319175ad42d8a171056be323b5e8aa9ca16"
+    },
+    {
+      "path": "outputs/pencil_v14/06_portrait.png",
+      "sha256": "321f6f506f9f726b52750590ecf06e9b7a20ca6f3d99d32e26069c6a2e2f8b32"
+    },
+    {
+      "path": "outputs/pencil_v14/before/06_portrait.png",
+      "sha256": "d6e4ab1eefe95d85039b65c55ad50315cc82ee35935e3f15e64bc909f3977891"
+    },
+    {
+      "path": "outputs/pencil_v14/06_portrait_compare.jpg",
+      "sha256": "6d6f8138fa0bd12b6d94ed0d4ec206b038412048cfd24d68e65cb06f396f37e8"
+    },
+    {
+      "path": "outputs/pencil_v14/07_portrait.png",
+      "sha256": "24585b858b0594eb04311baf9fd59fdd3b690f08d222ea42588c00aab326dda5"
+    },
+    {
+      "path": "outputs/pencil_v14/before/07_portrait.png",
+      "sha256": "48a7e9fbe775e615130a2ead130e2a297ae1e76541965b8fa7fd4626f9f06d2c"
+    },
+    {
+      "path": "outputs/pencil_v14/07_portrait_compare.jpg",
+      "sha256": "6d55f4552eb2883d298e39167beb99718d9893f6ab1b76dde369ee47c78e9238"
+    },
+    {
+      "path": "outputs/pencil_v14/08_portrait.png",
+      "sha256": "64539107132ff6bcc8acfef25c902c52ce0c01235a26359851e48489f9b332df"
+    },
+    {
+      "path": "outputs/pencil_v14/before/08_portrait.png",
+      "sha256": "08fc7239f90dcfedb7be84918d012d8689a853ce102578e8cfab34aefe72fda7"
+    },
+    {
+      "path": "outputs/pencil_v14/08_portrait_compare.jpg",
+      "sha256": "fb4c055a0adad977a86cdc2737dfd40861a21831ec72a9bd0082fa735d0d0100"
+    },
+    {
+      "path": "outputs/pencil_v14/13_portrait.png",
+      "sha256": "7d64c9b4d6c64ff493a719e938d64a14efb8782bea2fd535963422e58f667731"
+    },
+    {
+      "path": "outputs/pencil_v14/before/13_portrait.png",
+      "sha256": "bfbed42fe0aa0f32420fd3c8d5964e0a17e15f86c7f3a5a3beaa91ade1b07595"
+    },
+    {
+      "path": "outputs/pencil_v14/13_portrait_compare.jpg",
+      "sha256": "173ed0a7a93d12dced6de67769fb68c7b3714c296f662178377d559194b3ed7f"
+    },
+    {
+      "path": "outputs/pencil_v14/14_portrait.png",
+      "sha256": "c1065a21406dd7f263fd3773816c79b4cea407d2ecfee6e524c5502df992ee38"
+    },
+    {
+      "path": "outputs/pencil_v14/before/14_portrait.png",
+      "sha256": "1e941a48b1b9bfe6c829cceffb143dad38dcf2ddd83a922a5a4d43109e3416ff"
+    },
+    {
+      "path": "outputs/pencil_v14/14_portrait_compare.jpg",
+      "sha256": "cc16215005be8ff83c866354b9953bab6d36958b8d5ee769fc596671fbaa220a"
+    },
+    {
+      "path": "outputs/pencil_v14/15_landscape.png",
+      "sha256": "8699397aa83ce4a2a2ee5f32f71bd492ca9b23ba61dc7706373ebd08e9818730"
+    },
+    {
+      "path": "outputs/pencil_v14/before/15_landscape.png",
+      "sha256": "10b70205f9105217547adfa6e7069a4f5e660435773b107041526b319b5dcfbc"
+    },
+    {
+      "path": "outputs/pencil_v14/15_landscape_compare.jpg",
+      "sha256": "771cad3c0cab853afb527f7350b6b8ec6e15b554cf8b9929f4434cf658ba1142"
+    },
+    {
+      "path": "outputs/pencil_v14/16_landscape.png",
+      "sha256": "48a09d6c35661c48ea1eba30511d2f0b647e6f1464bd9414de87b276ac441fa9"
+    },
+    {
+      "path": "outputs/pencil_v14/before/16_landscape.png",
+      "sha256": "9f2a73c52b8190826aba3341776453a2e3ced638ea1666856d37769fe46f56f1"
+    },
+    {
+      "path": "outputs/pencil_v14/16_landscape_compare.jpg",
+      "sha256": "942c43397a067e0fd4139485ee1d200635bdf77196e27fcfd10d6632540bafbe"
+    },
+    {
+      "path": "outputs/pencil_v14/17_architecture.png",
+      "sha256": "891966d70d8776e8436f8734071ddf47a280f058e006dc00193bf6baf0747cd9"
+    },
+    {
+      "path": "outputs/pencil_v14/before/17_architecture.png",
+      "sha256": "41c4148c4c19b92dfbbd34ea71a60cac15c9a36a9813c2ed9afcfa2dabbfe4ff"
+    },
+    {
+      "path": "outputs/pencil_v14/17_architecture_compare.jpg",
+      "sha256": "f07c7adc5ac5fcc329eaebfc951ec018c9c445a7b43466c2844e95cfb37916c1"
+    },
+    {
+      "path": "outputs/pencil_v14/18_architecture.png",
+      "sha256": "74fcfd06651321e76f5f708bb2d61f8d79b54f7e304a1eb58f3b1b488a71b3b3"
+    },
+    {
+      "path": "outputs/pencil_v14/before/18_architecture.png",
+      "sha256": "56e9dc82aba416e10da1cb6e5a07fe87d1f57857da6061a04aee8b066c425d6b"
+    },
+    {
+      "path": "outputs/pencil_v14/18_architecture_compare.jpg",
+      "sha256": "3d3e42353c231c1cb74b704a3b1c33b1066f6801e725b24753fd627339cd9111"
+    },
+    {
+      "path": "outputs/pencil_v14/19_animal.png",
+      "sha256": "b0ff1f18fbf5d66f706934e1f2b663721d1c64ca46706c9cba83417ac4710de1"
+    },
+    {
+      "path": "outputs/pencil_v14/before/19_animal.png",
+      "sha256": "1ebd4265e377f7385ff3ef4fb089c1cf98d304ff382c21912da89cd8653928b0"
+    },
+    {
+      "path": "outputs/pencil_v14/19_animal_compare.jpg",
+      "sha256": "9d873218bf5324575eaeb2b3e27e750bfa66f09ee08ccf0a745c964e5b751372"
+    },
+    {
+      "path": "outputs/pencil_v14/23_portrait.png",
+      "sha256": "b041b1cbfa173a99e7e3beb327b8ded30e99607d0b5cc1b104fa5068c7390fa4"
+    },
+    {
+      "path": "outputs/pencil_v14/before/23_portrait.png",
+      "sha256": "673155ac8f2d3e0bf5525fd28801c955f768ed86d6879d5ffcb1b539202263b5"
+    },
+    {
+      "path": "outputs/pencil_v14/23_portrait_compare.jpg",
+      "sha256": "6abcddc7a393756cbe19eb80dd8316598fa5678ce11eb6079d0f974c10286834"
+    },
+    {
+      "path": "outputs/pencil_v14/22_portrait.png",
+      "sha256": "4c0c17204d22b57cec5c7e775cd0fe08477264a5a6b465542138b816609cffb9"
+    },
+    {
+      "path": "outputs/pencil_v14/before/22_portrait.png",
+      "sha256": "eaf93c2d73961d1029ccd46d60a5305b07cdf4454a08c1bcedd0ce1417195779"
+    },
+    {
+      "path": "outputs/pencil_v14/22_portrait_compare.jpg",
+      "sha256": "05608be481a34e7430f833c99a896bf00aa0d26f5dba14553fa8ef9ab6f668f6"
+    },
+    {
+      "path": "outputs/pencil_v14/26_portrait.png",
+      "sha256": "e66bf736bdfacceaca907761b7fc5d1849211e7928579d33d872d69643f07d9c"
+    },
+    {
+      "path": "outputs/pencil_v14/before/26_portrait.png",
+      "sha256": "0b166370cd9f08b90f3e56190c96f0f708a91191bb4f7dc801f6cf5e2d086ee8"
+    },
+    {
+      "path": "outputs/pencil_v14/26_portrait_compare.jpg",
+      "sha256": "a930f04e75f048a99298b442adcd608cdccc0fbdc8819db7adecf69e0978dba3"
+    },
+    {
+      "path": "outputs/pencil_v14/27_portrait.png",
+      "sha256": "8dedbc1e9a8bf27c19d74b10b9e2dae6c7d0bfa300a174d1c160c89b66715dd4"
+    },
+    {
+      "path": "outputs/pencil_v14/before/27_portrait.png",
+      "sha256": "412953c48e195376a32d0da3902ace1622baa2e7571ff9c5429701cab9b5ac94"
+    },
+    {
+      "path": "outputs/pencil_v14/27_portrait_compare.jpg",
+      "sha256": "fac4b5c8547078d32418e1492bedf6616e6975975c700533fa281086bef035bc"
+    },
+    {
+      "path": "outputs/pencil_v14/28_portrait.png",
+      "sha256": "73d208085ee6c8e3a86259ed2ad1648e5789dbc671b20db0a08d699fb27ee615"
+    },
+    {
+      "path": "outputs/pencil_v14/before/28_portrait.png",
+      "sha256": "a51003f4680fb3d813fc8f69b82e65d86ebe0257cee1858bc425afff3123fa04"
+    },
+    {
+      "path": "outputs/pencil_v14/28_portrait_compare.jpg",
+      "sha256": "0be5afbb3e6f154f102e6d69597c61309b669e46741ecc959b6415528210811d"
+    },
+    {
+      "path": "outputs/pencil_v14/29_portrait.png",
+      "sha256": "1c80227adb2a97dd7871d053ae39d268095e3bee502b0e1242972da7e9878258"
+    },
+    {
+      "path": "outputs/pencil_v14/before/29_portrait.png",
+      "sha256": "488c4c9a93d5bb510e8fbd339feda5559fcc566b221130481157a99fce67ffaa"
+    },
+    {
+      "path": "outputs/pencil_v14/29_portrait_compare.jpg",
+      "sha256": "194e83418661ed997f7c244087b70ee8681cf83ec8dd5dcbbddf85ed56dd54d7"
+    },
+    {
+      "path": "outputs/pencil_v14/30_hu_ge.png",
+      "sha256": "b7e2fc3b04dc6c8861212c7e53f771d362452ed8c8f12e3ac960c5a4dd995119"
+    },
+    {
+      "path": "outputs/pencil_v14/before/30_hu_ge.png",
+      "sha256": "34104b466c715f403654773539488aaa44334a022dccea1ec9bad2d66a869971"
+    },
+    {
+      "path": "outputs/pencil_v14/30_hu_ge_compare.jpg",
+      "sha256": "af82793b6ac6c87d98057fb0ad2360bd5a5410bf7613eaa18cacd57e9ba5bcac"
+    },
+    {
+      "path": "outputs/pencil_v14/31_zhou_xun.png",
+      "sha256": "b751e186f2d634bfe21700087160b1b516f568a3b87ae632f7af9629fe7db087"
+    },
+    {
+      "path": "outputs/pencil_v14/before/31_zhou_xun.png",
+      "sha256": "1a62502065fcddebd68622aa4dd37c00264561a081247301fd07df8fd5ffab28"
+    },
+    {
+      "path": "outputs/pencil_v14/31_zhou_xun_compare.jpg",
+      "sha256": "5d1a8ae06f07a784df9b8c6384da5bfcdc6ab9d71ce201f3e92a1700b475d3dc"
+    },
+    {
+      "path": "outputs/pencil_v14/32_zhang_ziyi.png",
+      "sha256": "7314eb8de86335aab755817496c39a1a253b0150e40d89b6b86b4e7bd2b13589"
+    },
+    {
+      "path": "outputs/pencil_v14/before/32_zhang_ziyi.png",
+      "sha256": "8c170c437d8ca39d56ebf9d2080535a579faf2ebb9a7f297caceba87bfc98569"
+    },
+    {
+      "path": "outputs/pencil_v14/32_zhang_ziyi_compare.jpg",
+      "sha256": "87e6e974629033ccb8b0b169d41c95af5d7a39d9a3dffeaa638048942fa1d27e"
+    },
+    {
+      "path": "outputs/pencil_v14/33_gong_li.png",
+      "sha256": "e1622819c401afd039f291595b35211c0f04d3f385f1a1a31a6b5b0a36eca642"
+    },
+    {
+      "path": "outputs/pencil_v14/before/33_gong_li.png",
+      "sha256": "55504ed8e9b8b1206fd6d21a80479630b334253ca5f983aee54a4a141b8ec07e"
+    },
+    {
+      "path": "outputs/pencil_v14/33_gong_li_compare.jpg",
+      "sha256": "bed47f1690973b4713015cf6864ca942036091e23f23203e482edfa32c6ec0a1"
+    },
+    {
+      "path": "outputs/pencil_v14/34_tang_wei.png",
+      "sha256": "2f5dc6375fee9e2735015ac491572a1b710c88fb54365023024e7a487d5ca399"
+    },
+    {
+      "path": "outputs/pencil_v14/before/34_tang_wei.png",
+      "sha256": "97ae9d6912ccb5f9396906d36830ffd254f061cf599c157ad71b6112d0bf7e9a"
+    },
+    {
+      "path": "outputs/pencil_v14/34_tang_wei_compare.jpg",
+      "sha256": "fc44866cfed145ad37f73c623350d02c3010f6db566565950e60a82ad7c1df52"
+    },
+    {
+      "path": "outputs/pencil_v14/35_shu_qi.png",
+      "sha256": "115ccd000a75aaf38ea3c97e653e826e7635c00bd2c46ef7bb98bb50ca215a90"
+    },
+    {
+      "path": "outputs/pencil_v14/before/35_shu_qi.png",
+      "sha256": "7dd53a256297cbd57d567bc66e37c379bece54f7c468d1ce6dec290d32a53e56"
+    },
+    {
+      "path": "outputs/pencil_v14/35_shu_qi_compare.jpg",
+      "sha256": "83ead768916cc9837c694f1c79b5b7e1d80561e9c2d74275601570cb4dabb827"
+    },
+    {
+      "path": "outputs/pencil_v14/37_donnie_yen.png",
+      "sha256": "864d1cb9ac9ea0f20be8b22bf5179e145ccbacef011fa96c27c35a956c4704c7"
+    },
+    {
+      "path": "outputs/pencil_v14/before/37_donnie_yen.png",
+      "sha256": "4d8b17b79b5e6906e4a8b95123de655a326445eb8aaa596a0bde6b40cbd31b52"
+    },
+    {
+      "path": "outputs/pencil_v14/37_donnie_yen_compare.jpg",
+      "sha256": "2d24518a660663308689fdb231b42fa69255942c8d95fc210ea6773aae1b08b2"
+    },
+    {
+      "path": "outputs/pencil_v14/39_jackie_chan.png",
+      "sha256": "92eab6cb751b90785ad4f2b013018a58b71525d0af4a613775d0a94b2384806d"
+    },
+    {
+      "path": "outputs/pencil_v14/before/39_jackie_chan.png",
+      "sha256": "5a420dd0bd3f1c71a05d0900debc9a633da49dfdd2e49c256e9a10125fd6f4e5"
+    },
+    {
+      "path": "outputs/pencil_v14/39_jackie_chan_compare.jpg",
+      "sha256": "2650d04c5f40948add07cb086c3f4d03e1cfa0d016ec5b56579879f50e90e0ee"
+    },
+    {
+      "path": "outputs/pencil_v14/40_liu_yifei.png",
+      "sha256": "e225b313b84d40978006b95ed83c08387987bf6869eead03b9313d40c273956a"
+    },
+    {
+      "path": "outputs/pencil_v14/before/40_liu_yifei.png",
+      "sha256": "b09ab4ef4197f4417d98ae3fec49db5b1704bcb1b47f8928d4834720193d49e8"
+    },
+    {
+      "path": "outputs/pencil_v14/40_liu_yifei_compare.jpg",
+      "sha256": "2387e4a658c8b599c33114e5cbb602d2452015fcc6db36487ae60424adc9d38d"
+    },
+    {
+      "path": "outputs/pencil_v14/41_zhou_xun_group.png",
+      "sha256": "4c48bea0e3efa01964ae2aca9294abbf21d0ba478c6023c6f6e96363ade9bb1d"
+    },
+    {
+      "path": "outputs/pencil_v14/before/41_zhou_xun_group.png",
+      "sha256": "b5ade0392dffec7dcbc2325dfed56c34b2b4d9eab0b3542fcc2933b7ce96391c"
+    },
+    {
+      "path": "outputs/pencil_v14/41_zhou_xun_group_compare.jpg",
+      "sha256": "6a6d66961dfcdffa5a54388526dabc7f665eafb017438652a3702a2f7765411d"
+    },
+    {
+      "path": "outputs/pencil_v14/36_tony_leung.png",
+      "sha256": "14ec0467d3c10c7c612f8fbebd381f40d918b948b6639396850b7b2daed0fd04"
+    },
+    {
+      "path": "outputs/pencil_v14/before/36_tony_leung.png",
+      "sha256": "acace1a08143ad686862383197a618630c08eb514294503de27e281c703e3563"
+    },
+    {
+      "path": "outputs/pencil_v14/36_tony_leung_compare.jpg",
+      "sha256": "bcbe56099c133301578bb8f3a9bd86926f6230093daf187b0f74bb2c8392776c"
+    },
+    {
+      "path": "outputs/pencil_v14/38_andy_lau.png",
+      "sha256": "2edfdf018f60ec24ad14d6cbcb8346577d83b68db083ff1ac43d368a980e2406"
+    },
+    {
+      "path": "outputs/pencil_v14/before/38_andy_lau.png",
+      "sha256": "0a5c549e6941b18a14a668a102cfa0114177e180b0e7e1ae47f32e039e5f6e89"
+    },
+    {
+      "path": "outputs/pencil_v14/38_andy_lau_compare.jpg",
+      "sha256": "fb2762b9dd07db379eb943b398d70699fba4ebbb701d5710545aaa6ec469e1f8"
+    }
+  ]
+}
